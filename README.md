@@ -2,7 +2,7 @@
 - 👀 I’m interested in Frontend Development 
 - 🌱 I’m currently learning React.js , tailwindCSS , Redux , Next.js & javascript
 - 💞️ I’m looking to collaborate on frontend Development Projects
-- 📫 How to reach me ...
+
 
 <!---
 jyotheshkar/jyotheshkar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
