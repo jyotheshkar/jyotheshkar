@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @jyothesh karnam 
-- 👀 I’m interested in Frontend Development 
-- 🌱 I’m currently learning React.js , tailwindCSS , Redux , Next.js & javascript
-- 💞️ I’m looking to collaborate on frontend Development Projects
+-  Hi, I’m @jyothesh karnam 
+-  I’m interested in Software Development
+-  My skills: React.js, Python, CSS, CSS frameworks, API, Tkinter and javaScript.
+-  I’m looking to collaborate on frontend Development Projects
 
 
 <!---
