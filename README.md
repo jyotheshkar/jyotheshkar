@@ -2,23 +2,28 @@
 
 London-based AI evaluation and workflow professional at Amazon AGI Data Services, with an MSc Computer Science (Distinction) from Keele University.
 
-I am interested in practical AI evaluation, applied AI, operational analytics and cloud architecture. The independent projects below are separate from my employment and are not official Amazon products.
+I work on practical AI evaluation, applied AI, operational analytics and cloud architecture. The independent projects below are separate from my employment and are not official Amazon products.
 
 ## Selected Independent Work
 
 | Project | What to inspect | Current maturity |
 |---|---|---|
-| [Rufus Eval Engine](https://github.com/jyotheshkar/Rufus-Eval-Engine) | Shopping-assistant evaluation, retrieval, judging rubrics and dashboard source | Portfolio prototype; execution and deployment evidence must be checked in the repository |
-| [NHS Elective Flow Intelligence](https://github.com/jyotheshkar/nhs-elective-flow-intelligence) | Published aggregate-data analysis, forecasting and operational scenarios | Independent portfolio prototype; not affiliated with the NHS |
-| [PrimeLift](https://github.com/jyotheshkar/PrimeLift) | Synthetic campaign data, uplift-model comparisons and targeting decisions | Local experimentation prototype; some dashboard routes remain snapshots |
-| [AWS Bedrock RAG Lab](https://github.com/jyotheshkar/jyotheshkar-RAG-Based-AI-Chatbot-with-AWS-Bedrock) | Documented retrieval workflow and cloud-service learning | Documentation and lab case study |
-| [AWS Three-Tier Architecture](https://github.com/jyotheshkar/AWS-Three-Tier-Web-Application-) | Presentation, logic and data tier design | Documentation and lab case study |
+| [Agentic Core](https://github.com/jyotheshkar/agentic-core-evidence) | Typed contracts, deterministic routing, local SQLite workflow controls, synthetic tests and architecture diagrams | Local Python runtime excerpt with 35 passing synthetic tests; AWS target architecture remains a design |
+| [System Architecture Workspace](https://github.com/jyotheshkar/system-architecture-workspace) | [Interactive workspace](https://sa-workspace.jyothesh-karnam.chatgpt.site), reviewed Site v81 application source and architecture baselines | Application/source case study with a separate design-data export; proposed AWS target |
+| [QUASAR](https://github.com/jyotheshkar/Quasar) | [Hosted dashboard](https://quasar.jyothesh-karnam.chatgpt.site), dashboard source, architecture presentation and evidence contracts | Historical Site v47 source; exact source recovery for hosted v48 remains pending |
+| [Rufus Eval Engine](https://github.com/jyotheshkar/Rufus-Eval-Engine) | Synthetic shopping-assistant evaluation, retrieval, judging rubrics and dashboard source | Portfolio prototype; fixed mock scores demonstrate wiring, not measured model quality |
+| [NHS Elective Flow Intelligence](https://github.com/jyotheshkar/nhs-elective-flow-intelligence) | Public aggregate-data analysis, forecasting and operational scenarios | Independent analytics prototype; not affiliated with the NHS |
+| [PrimeLift](https://github.com/jyotheshkar/PrimeLift) | Synthetic campaign data, treatment-effect models, saved decision reports and API/UI source | Local experimentation prototype; parts of the dashboard use saved snapshots |
+
+The first three projects connect workflow controls, architecture design and evidence monitoring. Their repositories distinguish implemented source, synthetic checks, proposed designs and hosted-product evidence. Public source does not establish that the proposed AWS systems are deployed or that separate ecosystem agents are connected.
+
+## Supporting Cloud Learning
+
+[AWS Bedrock RAG Lab](https://github.com/jyotheshkar/jyotheshkar-RAG-Based-AI-Chatbot-with-AWS-Bedrock) and [AWS Three-Tier Architecture](https://github.com/jyotheshkar/AWS-Three-Tier-Web-Application-) preserve guided learning write-ups and architecture artifacts. They are documentation/lab case studies, with implementation and deployment limits stated in each repository.
 
 ## How I Approach Projects
 
 I start with a business problem, make requirements and assumptions explicit, and separate implemented functionality from designs and future work. I value reproducible checks, clear limitations, human review and evidence that another engineer can inspect.
-
-A sixth featured slot is reserved for Agentic Core once a public demonstration has been reviewed. It is an independent workflow architecture and local-tooling project; its AWS architecture is a target design.
 
 ## Skills and Interests
 
