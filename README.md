@@ -8,9 +8,9 @@ I work on practical AI evaluation, applied AI, operational analytics and cloud a
 
 | Project | What to inspect | Current maturity |
 |---|---|---|
-| [Agentic Core](https://github.com/jyotheshkar/agentic-core-evidence) | Typed contracts, deterministic routing, local SQLite workflow controls, synthetic tests and architecture diagrams | Local Python runtime excerpt with 35 passing synthetic tests; AWS target architecture remains a design |
+| [Agentic Core](https://github.com/jyotheshkar/agentic-core-evidence) | Typed contracts, deterministic routing, local SQLite workflow controls, synthetic tests and architecture diagrams | Maintained local Python runtime excerpt; AWS target architecture remains a design |
 | [System Architecture Workspace](https://github.com/jyotheshkar/system-architecture-workspace) | [Interactive workspace](https://sa-workspace.jyothesh-karnam.chatgpt.site), privacy-sanitized v81 application-source derivative and architecture baselines | Curated source/design case study with a separate design-data export; proposed AWS target |
-| [QUASAR](https://github.com/jyotheshkar/Quasar) | [Hosted dashboard](https://quasar.jyothesh-karnam.chatgpt.site), public read-only project-evidence build and historical v47 source | Curated UNCONNECTED source derivative; exact hosted v49 source recovery remains pending |
+| [Atlas](https://github.com/jyotheshkar/Atlas) | LinkedIn agent workflow evidence, public preview, provenance checks and documented integration boundaries | Public demonstration and engineering evidence; inspect the repository for current implementation and verification limits |
 | [Rufus Eval Engine](https://github.com/jyotheshkar/Rufus-Eval-Engine) | Synthetic shopping-assistant evaluation, retrieval, judging rubrics and dashboard source | Portfolio prototype; fixed mock scores demonstrate wiring, not measured model quality |
 | [NHS Elective Flow Intelligence](https://github.com/jyotheshkar/nhs-elective-flow-intelligence) | Public aggregate-data analysis, forecasting and operational scenarios | Independent analytics prototype; not affiliated with the NHS |
 | [PrimeLift](https://github.com/jyotheshkar/PrimeLift) | Synthetic campaign data, treatment-effect models, saved decision reports and API/UI source | Local experimentation prototype; parts of the dashboard use saved snapshots |
@@ -32,3 +32,10 @@ Python | SQL | AI evaluation | Human-in-the-loop quality review | FastAPI | Reac
 I am interested in UK opportunities in AI evaluation, applied AI, workflow delivery and technical operations, and in junior cloud solutions roles.
 
 Contact: [jyotheshkar@gmail.com](mailto:jyotheshkar@gmail.com)
+
+## Engineering documentation
+
+[Portfolio architecture and maintenance](docs/architecture.md) explains the source,
+validation and documentation boundaries used across these independent projects.
+[Archived project inventory](docs/archived-projects.md) records the inspected
+public learning repositories and their known limitations without reopening them.
