@@ -68,8 +68,8 @@ def main():
                 errors.append(f"README.md: missing or out-of-root reference {ref}")
         if re.search(r"<script|<iframe|\bstyle=|\bonclick=", content, re.I):
             errors.append("README contains HTML GitHub will strip")
-        if "linkedin.com/in/jyotheshkarnam" not in content:
-            errors.append("README lacks verified LinkedIn contact")
+        if "assets/profile.svg" not in content:
+            errors.append("README lacks the profile artwork")
     if errors:
         print("\n".join(errors), file=sys.stderr)
         raise SystemExit(1)

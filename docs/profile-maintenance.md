@@ -1,6 +1,8 @@
 # Connected GitHub profile
 
-The README is a repository-local animated SVG canvas and three linked action images. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS, external image services or scripts in Markdown.
+The README uses a repository-hosted animated SVG canvas followed by contribution visuals. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS or scripts in Markdown. Contact links are in the GitHub sidebar. The closing slogan, opportunity text, action buttons and repository-year note were removed from the displayed profile.
+
+The main canvas is referenced by its verified commit revision to avoid stale branch-image caching. When changing it, advance the README image revision after the new SVG has been committed and validated.
 
 ## Rebuild and validation
 
@@ -32,4 +34,4 @@ The profile builder embeds it locally; no remote asset is loaded when the profil
 
 ## Retained history
 
-Earlier orb, diagram, project-gallery and telemetry assets remain as historical source; the current README does not display them. Automatic telemetry refresh is disabled. The workflow validates assets and links with read-only repository access. The profile does not claim an Amazon affiliation for independent projects or a production deployment.
+Earlier orb, diagram, project-gallery, action-button and telemetry assets remain as historical source; the current README does not display them. Automatic repository telemetry refresh is disabled. The profile validation workflow has read-only access; contribution visuals have a separate refresh workflow described in [contribution-visuals.md](contribution-visuals.md). The profile does not claim an Amazon affiliation for independent projects or a production deployment.

@@ -1,0 +1,89 @@
+name: Refresh contribution visuals
+
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/contribution-visuals.yml'
+      - 'config/contribution-3d.json'
+      - 'scripts/prepare_contribution_visuals.py'
+  pull_request:
+    paths:
+      - '.github/workflows/contribution-visuals.yml'
+      - 'config/contribution-3d.json'
+      - 'scripts/prepare_contribution_visuals.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-visuals-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.repository == 'jyotheshkar/jyotheshkar'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Generate the 3D contribution landscape
+        uses: yoshi389111/github-profile-3d-contrib@e235d118909be71eb7edb05482a3de4e76156df3
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          USERNAME: jyotheshkar
+          SETTING_JSON: config/contribution-3d.json
+          MAX_REPOS: '100'
+      - name: Generate the contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: jyotheshkar
+          github_token: ${{ github.token }}
+          outputs: |
+            dist/contributions/contribution-snake.svg?palette=github-dark&color_snake=%2379c0ff&color_dots=%23161b22,%2317365d,%23245b95,%234493f8,%23a5d6ff
+      - name: Validate and prepare both SVGs
+        run: python3 scripts/prepare_contribution_visuals.py
+      - name: Retain generated visuals
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: contribution-visuals
+          path: dist/contributions/*.svg
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: generate
+    if: github.repository == 'jyotheshkar/jyotheshkar' && github.event_name != 'pull_request' && github.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Retrieve validated visuals
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        with:
+          name: contribution-visuals
+          path: generated-contributions
+      - name: Publish only generated contribution assets
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          mkdir -p assets/contributions
+          cp generated-contributions/contribution-3d.svg assets/contributions/contribution-3d.svg
+          cp generated-contributions/contribution-snake.svg assets/contributions/contribution-snake.svg
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/contributions/contribution-3d.svg assets/contributions/contribution-snake.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Refresh GitHub contribution visuals'
+          git push origin "HEAD:$TARGET_BRANCH"
