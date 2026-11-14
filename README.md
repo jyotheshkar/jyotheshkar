@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Jyothesh Karnam — Developing Agentic AI Systems. Python, tool orchestration, retrieval and evaluation. London, United Kingdom." />
+  <img src="assets/hero.svg?v=github-dark" width="100%" alt="Jyothesh Karnam — Developing Agentic AI Systems. Python, tool orchestration, retrieval and evaluation. London, United Kingdom." />
 </p>
 
 <p align="center">
@@ -16,19 +16,19 @@ At **Amazon AGI Data Services**, I work as a **Machine Learning Data Associate I
 
 **MSc Computer Science, Distinction — Keele University** · Best Performance Award, School of Mathematics and Computer Science.
 
-<img src="assets/agent-loop.svg" width="100%" alt="Conceptual agent engineering loop: define goal and context, make a bounded plan, check policy and approvals, execute a tool, validate evidence and checkpoint state. Retry within limits or request human review." />
+<img src="assets/agent-loop.svg?v=github-dark" width="100%" alt="Conceptual agent engineering loop: define goal and context, make a bounded plan, check policy and approvals, execute a tool, validate evidence and checkpoint state. Retry within limits or request human review." />
 
 ### Selected systems
 
 Start with **Agentic Core** for workflow controls, **Rufus Eval Engine** for retrieval and evaluation, and **Atlas** for evidence and provenance. Each card links directly to its repository.
 
 <p align="center">
-  <a href="https://github.com/jyotheshkar/agentic-core-evidence"><img src="assets/projects/agentic-core.svg" width="49%" alt="Agentic Core — Python and SQLite workflow runtime with typed contracts, routing, approval checks and recovery. Working local core; AWS is a target design." /></a>
-  <a href="https://github.com/jyotheshkar/Rufus-Eval-Engine"><img src="assets/projects/rufus-eval.svg" width="49%" alt="Rufus Eval Engine — FAISS retrieval, assistant and judge components, evaluation fixtures and dashboard. Independent synthetic prototype." /></a>
-  <a href="https://github.com/jyotheshkar/Atlas"><img src="assets/projects/atlas.svg" width="49%" alt="Atlas — public evidence viewer with allowlisted registry, provenance and privacy checks. Local public build; live adapters are unconnected." /></a>
-  <a href="https://github.com/jyotheshkar/system-architecture-workspace"><img src="assets/projects/architecture.svg" width="49%" alt="System Architecture Workspace — interactive component and connection exploration, architecture baselines and source provenance. Sanitized app export and design case study." /></a>
-  <a href="https://github.com/jyotheshkar/nhs-elective-flow-intelligence"><img src="assets/projects/nhs-flow.svg" width="49%" alt="NHS Elective Flow Intelligence — public aggregate-data analysis, transparent priority scores and capacity scenarios. Independent analytics prototype." /></a>
-  <a href="https://github.com/jyotheshkar/PrimeLift"><img src="assets/projects/primelift.svg" width="49%" alt="PrimeLift — synthetic campaign data, treatment-effect estimation and targeting reports. Local experimentation prototype with saved reports." /></a>
+  <a href="https://github.com/jyotheshkar/agentic-core-evidence"><img src="assets/projects/agentic-core.svg?v=github-dark" width="49%" alt="Agentic Core — Python and SQLite workflow runtime with typed contracts, routing, approval checks and recovery. Working local core; AWS is a target design." /></a>
+  <a href="https://github.com/jyotheshkar/Rufus-Eval-Engine"><img src="assets/projects/rufus-eval.svg?v=github-dark" width="49%" alt="Rufus Eval Engine — FAISS retrieval, assistant and judge components, evaluation fixtures and dashboard. Independent synthetic prototype." /></a>
+  <a href="https://github.com/jyotheshkar/Atlas"><img src="assets/projects/atlas.svg?v=github-dark" width="49%" alt="Atlas — public evidence viewer with allowlisted registry, provenance and privacy checks. Local public build; live adapters are unconnected." /></a>
+  <a href="https://github.com/jyotheshkar/system-architecture-workspace"><img src="assets/projects/architecture.svg?v=github-dark" width="49%" alt="System Architecture Workspace — interactive component and connection exploration, architecture baselines and source provenance. Sanitized app export and design case study." /></a>
+  <a href="https://github.com/jyotheshkar/nhs-elective-flow-intelligence"><img src="assets/projects/nhs-flow.svg?v=github-dark" width="49%" alt="NHS Elective Flow Intelligence — public aggregate-data analysis, transparent priority scores and capacity scenarios. Independent analytics prototype." /></a>
+  <a href="https://github.com/jyotheshkar/PrimeLift"><img src="assets/projects/primelift.svg?v=github-dark" width="49%" alt="PrimeLift — synthetic campaign data, treatment-effect estimation and targeting reports. Local experimentation prototype with saved reports." /></a>
 </p>
 
 <details>
@@ -49,7 +49,7 @@ All featured work is independent of my employment. Rufus Eval Engine is an indep
 
 ### Engineering toolkit
 
-<img src="assets/stack.svg" width="100%" alt="Engineering toolkit: Python, SQL and SQLite, FastAPI, FAISS and embeddings, JavaScript and Next.js, PyTorch, workflow controls and evaluation. AWS architecture is an active learning area." />
+<img src="assets/stack.svg?v=github-dark" width="100%" alt="Engineering toolkit: Python, SQL and SQLite, FastAPI, FAISS and embeddings, JavaScript and Next.js, PyTorch, workflow controls and evaluation. AWS architecture is an active learning area." />
 
 I design around **explicit contracts, bounded tool use, durable state, human approval and inspectable evidence**. I care about how a system fails, how it recovers, and whether its results can be checked.
 
@@ -57,12 +57,12 @@ Supporting cloud studies: [AWS Bedrock RAG lab](https://github.com/jyotheshkar/j
 
 ### Public GitHub telemetry
 
-<img src="assets/metrics.svg" width="100%" alt="Dated public GitHub repository metrics and primary-language distribution. Language counts describe repositories, not proficiency." />
-<img src="assets/activity.svg" width="100%" alt="Public repository activity snapshot showing last-push recency. Repository push dates are not commit counts or a productivity score." />
+<img src="assets/metrics.svg?v=github-dark" width="100%" alt="Dated public GitHub repository metrics and primary-language distribution. Language counts describe repositories, not proficiency." />
+<img src="assets/activity.svg?v=github-dark" width="100%" alt="Public repository activity snapshot showing last-push recency. Repository push dates are not commit counts or a productivity score." />
 
 Generated from public repository metadata; capture time and scope appear in each panel. [Metric definitions and refresh](docs/profile-maintenance.md). GitHub's native contribution calendar appears below this profile.
 
-<a href="https://www.linkedin.com/in/jyotheshkarnam/"><img src="assets/contact.svg" width="100%" alt="Connect with Jyothesh Karnam on LinkedIn — interested in AI Engineer and Agentic AI Engineer opportunities." /></a>
+<a href="https://www.linkedin.com/in/jyotheshkarnam/"><img src="assets/contact.svg?v=github-dark" width="100%" alt="Connect with Jyothesh Karnam on LinkedIn — interested in AI Engineer and Agentic AI Engineer opportunities." /></a>
 
 <p align="center"><strong>Open to AI Engineer / Agentic AI Engineer opportunities.</strong><br />
 <a href="https://www.linkedin.com/in/jyotheshkarnam/">LinkedIn</a> · <a href="mailto:jyotheshkar@gmail.com">jyotheshkar@gmail.com</a></p>
