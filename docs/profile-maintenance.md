@@ -5,6 +5,7 @@ The README is a repository-local animated SVG canvas and three linked action ima
 ## Rebuild and validation
 
 ```sh
+python scripts/import_brand_icons.py
 python scripts/build_profile.py
 python scripts/validate_profile.py
 ```
@@ -13,11 +14,17 @@ The builder uses only Python's standard library and the local brand registry. Th
 
 ## Meaning of the network
 
-The ChatGPT-centered network is a conceptual illustration of agent tool orchestration and research interests. Routes are decorative. They do not establish connected accounts, implemented adapters, trading automation, investment holdings, endorsements, market availability or IPO status. SpaceX and Anthropic appear as IPO-watch research topics without an asserted listing event or date. Google Flow uses the authentic Google parent mark with its product name; a dedicated Flow symbol is not invented.
+The heading is "Current Agentic AI Projects I Am Working On". It branches to two concept projects, each with exactly eight tool nodes. The YouTube Agent Concept includes Gemini, Google Search, Gmail, Google Drive, AI Studio, Google Cloud, Python and GitHub. The Crypto Agent Concept includes Binance, Bitcoin, Ethereum, Solana, Python, PostgreSQL, OpenAI and Redis. The Google tools support discovery, planning and review; the crypto tools illustrate research, analysis, model reasoning and evidence storage.
+
+Routes are decorative. They do not establish connected accounts, implemented adapters, trading automation, investment holdings or endorsements. Both projects are explicitly labelled concepts, with human review in the loop. The experience and education section remains separate from these independent project ideas.
 
 ## Brand provenance
 
-`assets/brands/icons.json` preserves the actual vector paths and upstream source references. `docs/brand-sources.json` records attribution and source/license details. Simple Icons and Lobe Icons license files are retained beside the registry. Logos identify ecosystem services; respective owners retain their trademarks.
+`assets/brands/color-originals.json` retains the upstream color SVG source and exact Git blob hashes. `scripts/import_brand_icons.py` verifies those hashes offline and regenerates the matching entries in `assets/brands/icons.json`. Internal gradient and mask IDs are prefixed per brand to prevent collisions. Optional `--download` retrieves the exact pinned Git blobs and verifies their hashes before replacing the local originals. Normal builds use no network access.
+
+Upstream multicolor fills and gradients are preserved, including Gmail, Google Drive, Gemini, Python and Solana. OpenAI, GitHub and AI Studio retain their white dark-background variants. Binance uses official gold. A light backing badge makes Ethereum's original gray facets legible. `assets/profile-icon-sources.json` is generated from the current project definitions and records the 8+8 node lists and icon provenance. `docs/brand-sources.json` records attribution and source/license details. Simple Icons, Lobe Icons, Devicon and SVG Logos license files are retained beside the registry. Logos identify ecosystem services; respective owners retain their trademarks.
+
+Validation checks all local SVGs and README links, rejects active or external embedded resources, and checks the live canvas for duplicate IDs, unresolved local symbol/gradient references and exactly eight tool nodes per concept. CI also rebuilds the generated profile assets to detect stale output.
 
 The Keele white logo is the unmodified transparent PNG from the university's official logo ZIP:
 https://www.keele.ac.uk/media/keeleuniversity/brand/logos/keele-logo.zip

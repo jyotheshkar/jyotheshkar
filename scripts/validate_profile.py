@@ -35,6 +35,24 @@ def main():
         except (ET.ParseError, OSError) as exc:
             errors.append(f"{path.relative_to(ROOT)}: {type(exc).__name__}")
     readme = ROOT / "README.md"
+    # The live canvas is self-contained and preserves the requested 8+8 concept
+    # contract. Missing local gradients or symbols can silently hide brand art.
+    profile = ET.parse(ROOT / "assets/profile.svg").getroot()
+    ids = [e.get("id") for e in profile.iter() if e.get("id")]
+    if len(ids) != len(set(ids)):
+        errors.append("profile.svg: duplicate IDs")
+    for element in profile.iter():
+        for key, value in element.attrib.items():
+            refs = re.findall(r"url\(#([^)]+)\)", value)
+            if key.split("}")[-1] == "href" and value.startswith("#"):
+                refs.append(value[1:])
+            for ref in refs:
+                if ref not in ids:
+                    errors.append(f"profile.svg: unresolved local reference #{ref}")
+    for concept in ("youtube", "crypto"):
+        nodes = [e for e in profile.iter() if e.get("data-concept") == concept]
+        if len(nodes) != 8:
+            errors.append(f"profile.svg: {concept} concept requires eight tool nodes, found {len(nodes)}")
     if not readme.exists():
         errors.append("README.md missing")
     else:

@@ -2,6 +2,12 @@ name: Validate GitHub profile
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'assets/**'
+      - 'scripts/**'
+      - '.github/workflows/profile-metrics.yml'
   push:
     branches: [main]
     paths:
@@ -19,5 +25,10 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: Rebuild current profile
+        run: |
+          python3 scripts/import_brand_icons.py
+          python3 scripts/build_profile.py
+          git diff --exit-code -- assets/brands/icons.json assets/profile-icon-sources.json assets/profile.svg assets/linkedin-link.svg assets/projects-link.svg assets/email-link.svg
       - name: Validate profile assets and links
         run: python3 scripts/validate_profile.py
