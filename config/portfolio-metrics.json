@@ -1,0 +1,3449 @@
+{
+  "captured_at": "2026-11-14",
+  "repo_count": 23,
+  "scope": "23 public, non-archived project repositories; excludes the profile repository",
+  "repositories": [
+    {
+      "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
+      "tree_sha": "3a7f5572e21d92541be6ded72935807d2af7fb82"
+    },
+    {
+      "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+      "tree_sha": "52716b324b953ac509370c6637e86b31d3d3c401"
+    },
+    {
+      "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+      "tree_sha": "b45a7e0e6c4e03b80b2af28434c2ce695dd07d91"
+    },
+    {
+      "repo": "Web-Technologies-and-Security-CSC-40046-Keele-University-2024",
+      "tree_sha": "78558d8128bb605f7e12ba5a66470e40a398a42b"
+    },
+    {
+      "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+      "tree_sha": "19f97c87d0877ee2caf538f3a7991b209cd9c185"
+    },
+    {
+      "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+      "tree_sha": "b55c5dd2e70e3d02a47b1ba2130e58b49892aa16"
+    },
+    {
+      "repo": "Dairy-Herd-Monitoring-2024",
+      "tree_sha": "b3da681b3e4cb84bb5c01e6ad62a51cdbc991b01"
+    },
+    {
+      "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+      "tree_sha": "604c7fe749c9687b3abf979262de6d4ef395cdeb"
+    },
+    {
+      "repo": "ReInforcement-Learning-Agent-2025",
+      "tree_sha": "3cdc285d2b3f5ce61c61c109bd87e6c65c6b0392"
+    },
+    {
+      "repo": "nextwork-web-project-2025",
+      "tree_sha": "8bf3b5f89ef462f813b3a3c60aee4fc80b52422e"
+    },
+    {
+      "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+      "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
+    },
+    {
+      "repo": "AWS-Three-Tier-Web-Application-2025",
+      "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+    },
+    {
+      "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+      "tree_sha": "5356e8125323fb21a2e95ef39794e2551b48381f"
+    },
+    {
+      "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+      "tree_sha": "1d84af9b04c5701585de2b6f376fe8ffb679348f"
+    },
+    {
+      "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+      "tree_sha": "7e784d90ecfac7503ac574fba9689b6c10274187"
+    },
+    {
+      "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+      "tree_sha": "1bf79d51ad8c927ba3a96b20aa8d2b226c738a16"
+    },
+    {
+      "repo": "Agentic-Core-Concept-Prototype-2026",
+      "tree_sha": "969f1e03e23f129e62f5d6175e08652e414d60fd"
+    },
+    {
+      "repo": "agentic-core-evidence-2026",
+      "tree_sha": "3d0b0287362f09fcc5abb7f4b5c9918ff6b7a50b"
+    },
+    {
+      "repo": "System-Design-Architecture-Concept-Prototype-2026",
+      "tree_sha": "039a8fa5b9e502d92f41da3cfb523815f60b2c09"
+    },
+    {
+      "repo": "Fundamentals-of-Computers-and-Networks-CSC-40064-Keele-University-2024",
+      "tree_sha": "2f59f10ef02cd4016acf6553c5eaac4b83d7554c"
+    },
+    {
+      "repo": "Mathematics-for-AI-and-Data-Science-CSC-40072-Keele-University-2024",
+      "tree_sha": "042bbdae76e1e13b2d40cd394168d3b5f31649a2"
+    },
+    {
+      "repo": "An-Introduction-to-Academic-Skills-for-Postgraduates-ENL-40013-Keele-University-2024",
+      "tree_sha": "057203f57a69baeddbc922af90c381ef94c6e39e"
+    },
+    {
+      "repo": "Developing-Critical-Academic-Skills-for-Postgraduates-ENL-40015-Keele-University-2024",
+      "tree_sha": "256ce07eff7a386b6c2e191f1afdb9d5e6ba5e0a"
+    }
+  ],
+  "methodology": {
+    "languages": "Extension-classified source bytes; deduplicated by Git blob SHA across repositories. Excludes notebooks, dependencies, builds, vendored and original-work copies, minified files, TS declarations, data/report exports and the revision-baseline HTML snapshot. This is not GitHub Linguist or authored-line share.",
+    "topics": "One match per repository per selected category in root README or dependency manifests; Docker/CI additionally use filenames. Agentic categories are scoped to READMEs mentioning agentic, RAG, tool calling or LLM agents. Counts describe documentation and dependency coverage, including concepts and labs, not implementation or proficiency. A repository may match multiple categories. Percentages use the sum of category matches, not all repositories. Zero means no match in this bounded sample."
+  },
+  "charts": [
+    {
+      "key": "languages",
+      "title": "Language footprint",
+      "subtitle": "Share of unique source-file bytes",
+      "unit": "bytes",
+      "items": [
+        {
+          "label": "Python",
+          "value": 2504469,
+          "evidence": [
+            {
+              "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
+              "path": "carpark.py",
+              "sha": "67d8ceb03b57e83c941e1a5d7d25bf24b7ec0e65",
+              "size": 8690
+            },
+            {
+              "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
+              "path": "cmd.py",
+              "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "size": 0
+            },
+            {
+              "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
+              "path": "gui.py",
+              "sha": "ee7f89e648235feec5002996f8b58683144b3597",
+              "size": 7311
+            },
+            {
+              "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
+              "path": "tests/test_parking.py",
+              "sha": "b6ead2621b82c495f6e3b446cbbccfca754c340c",
+              "size": 2293
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "size": 54834
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "advancepython2.py",
+              "sha": "dbe81cb34e454693092d5f4ee81f02fd1682df9b",
+              "size": 53034
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "advancepython3.py",
+              "sha": "7d88b3472de29a3b4f7cca7f122cde1bda75fc9d",
+              "size": 315
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "legacy/advancepython3_2024.py",
+              "sha": "a9799b4d0c4165a595b3c3b6a7e7885ea5e5c108",
+              "size": 58698
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "tests/test_warehouse.py",
+              "sha": "bd52a6bb6e0aff2ab79c34f4f08b1b4a6abe211f",
+              "size": 17146
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "warehouse_core.py",
+              "sha": "61887a66e2d66be2c0fb5161a11573a7ce6476cb",
+              "size": 14612
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "warehouse_gui.py",
+              "sha": "f01affc2034062e22d24299962e133d1671f31c5",
+              "size": 11565
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "size": 1698
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Classification Models/Random Forest Full Data Accuracy.py",
+              "sha": "540e8eb1ce201d7ae6e399bf7ed8589852eefb2c",
+              "size": 1698
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Analysis/dataAnalysis.py",
+              "sha": "a1b2a3c971e23efc52a5cd28e519baf7c26ac982",
+              "size": 7864
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Imputation/KNN test.py",
+              "sha": "764a754794b66b44d249b0d1079b320895e57b18",
+              "size": 4384
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Imputation/KNN.py",
+              "sha": "2f6e4c46b197c3c2fa46546c323d613c24165018",
+              "size": 5605
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Imputation/Linear regression.py",
+              "sha": "6e24271aca582f32733225df881c377e3a1aa94f",
+              "size": 5041
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Imputation/Logistic First Accuracy.py",
+              "sha": "77a8eaa9e0e5599091dc029d0764ef5cf81ea498",
+              "size": 4742
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Imputation/Logistic First Prediction.py",
+              "sha": "c4856b2a44110483a57cbd3f2ef263e4208070b2",
+              "size": 2685
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Data Imputation/Mode.py",
+              "sha": "65f181639c8f43613f50c598d47e7f123344e1f3",
+              "size": 3967
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Prediction Model and GUI/DataPrep.py",
+              "sha": "e6de1d258082140012bed6ae363fbbd8707ef816",
+              "size": 11137
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Prediction Model and GUI/FinalModel.py",
+              "sha": "dbfcd818b3b1bf9675081d7cecde46e1cb3db3b1",
+              "size": 6107
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Prediction Model and GUI/FutureWorkPrediction.py",
+              "sha": "b0f66e4aca103612718bba629bc5f609165a0004",
+              "size": 4185
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Prediction Model and GUI/GUI.py",
+              "sha": "60e82db3e012c34786268544046919489a0bce37",
+              "size": 9274
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Regression Models/data_prep.py",
+              "sha": "aac1a582d2696b11ed2efb117305a2d1f09a2753",
+              "size": 11105
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Regression Models/elastic net.py",
+              "sha": "bf2c265ca0147aacd4f0ac08e0cf65cb64a7a20d",
+              "size": 7392
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Regression Models/regression trees.py",
+              "sha": "ed918b4c6b7a17a827f3cf6a9855842481167939",
+              "size": 10229
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Regression Models/regression with cv.py",
+              "sha": "e23b86e339e89c6933cd0096a9bb3718be9e8683",
+              "size": 9452
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "size": 34275
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "tests/test_preparation.py",
+              "sha": "92804cc64f5e38aa07390202b1056c06f1813b65",
+              "size": 1230
+            },
+            {
+              "repo": "Web-Technologies-and-Security-CSC-40046-Keele-University-2024",
+              "path": "tests/http_security_tests.py",
+              "sha": "c7eff89673a24bc13cf81b7608f64dac1946dd98",
+              "size": 6313
+            },
+            {
+              "repo": "Web-Technologies-and-Security-CSC-40046-Keele-University-2024",
+              "path": "tests/source_checks.py",
+              "sha": "81357f5a2e5100999c235343c8032fefb660cecf",
+              "size": 2060
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Authentication/Auth.py",
+              "sha": "7ef72ef0992a06b8558b9b8a5de89e0d7901fb21",
+              "size": 3821
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "size": 5851
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Authentication/test.py",
+              "sha": "7ff54221b2c4664603fda40e3e5378fe1d12a0c8",
+              "size": 697
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/DT.py",
+              "sha": "fac011cc3e317fba9e04da8e502fd5e2665ae7a0",
+              "size": 4071
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/api.py",
+              "sha": "60bb651c2fe20ba459db977c5c3ae70120bfc90f",
+              "size": 4593
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/config.py",
+              "sha": "c2076b271bfe0244a85a54013b5921c18c597e25",
+              "size": 503
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/convo.py",
+              "sha": "c36f170abb00c7f9ac665b0952c43e6617b39546",
+              "size": 3987
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/folders.py",
+              "sha": "6998f756970be7de7f11f8adab1afefad6d47d66",
+              "size": 3231
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/joke.py",
+              "sha": "339f205db03f2b30dcce9c77e8a59ea5d687dc12",
+              "size": 3044
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "size": 8084
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/makenotes.py",
+              "sha": "a215b899fa5b4802b7b519b30294e8c4f3b99130",
+              "size": 4462
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/novah.py",
+              "sha": "f7c1551f80cafbbcbf7159c43ae00d7ed0d83e2b",
+              "size": 4492
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/open.py",
+              "sha": "2df3b4ea946af95911b730123b6aed46320430fc",
+              "size": 3807
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/voice.py",
+              "sha": "e489d3b880fd378d6545d1a64309ae8090a8df44",
+              "size": 1889
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/weather.py",
+              "sha": "e51d387463eb5b55a5924db9a8683d751dd27d20",
+              "size": 6799
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/web.py",
+              "sha": "06f537467610047eaee6b9d2530760cfbf662e0d",
+              "size": 4242
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Nova Software/youtube.py",
+              "sha": "eb8a8e97316175ef89efdc1c269cd50889be29a5",
+              "size": 5378
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/integrated_test_api.py",
+              "sha": "ce1230a35d10625f58a3cfc0a4138f3240da3964",
+              "size": 6089
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_DT.py",
+              "sha": "1ac034cb5e7b75a8ed8819caf65c2f9377f767fc",
+              "size": 3973
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_folders.py",
+              "sha": "62d5c3b9e524878737f0f6ec8ef8709d11f31805",
+              "size": 4144
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_joke.py",
+              "sha": "b0934f6fe1877a50f4088bb88407412ced5c2a45",
+              "size": 2882
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_main.py",
+              "sha": "4cd813038893ff1be9630fd0a6dd34a9e6215b91",
+              "size": 7001
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_novah.py",
+              "sha": "58fe85a2207a2678534f09e864c7d4106532cb29",
+              "size": 4689
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_open.py",
+              "sha": "53f98086c10bf939b2a68949b695998a42357289",
+              "size": 4394
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_voice.py",
+              "sha": "88513f6e3bbfede3e99d497f306dbf5cd39a9ebc",
+              "size": 3407
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_weather.py",
+              "sha": "b7c411199dd7e17e69b00af941d6131a6f0c1f6d",
+              "size": 3253
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_web.py",
+              "sha": "b88cc006bf8db21f07527001e4d477230c01c124",
+              "size": 4218
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unit_test_youtube.py",
+              "sha": "bad5c1f3521b3323cec0ae15408ce8fc4d7ab9fe",
+              "size": 3965
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "Unit and Integration Testing/unite_test_makenotes.py",
+              "sha": "64a73ff52664397ee02549fbfb386f5696446cff",
+              "size": 4001
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "tests/test_web.py",
+              "sha": "c077d4410c0a725d06b11001740498bcadcac0d1",
+              "size": 1731
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "size": 14587
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/BeSpoke_Multimodel.py",
+              "sha": "8393a77ab1b24c31e9c3297b90038267e7733fa8",
+              "size": 19293
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/BeSpoke_Temp_Model.py",
+              "sha": "a7b6bc94a702ecbd47a27e031131fc3b752b07e2",
+              "size": 14147
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/FAILEDCODES.py",
+              "sha": "0f0b4efa4af1c97624e9867ad6794e4457beb0bb",
+              "size": 157521
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/Generic_Activity_Model.py",
+              "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5",
+              "size": 52671
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/Generic_Multi_Model.py",
+              "sha": "4d40368754b49601288b3f279b32904c9ef4aa34",
+              "size": 45942
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/Generic_Temp_Model.py",
+              "sha": "b6bf2f17b9b4013afcc2caf9d600b7e12ea41f8e",
+              "size": 51998
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/activity.py",
+              "sha": "b6fee2d35245e8ab10ab3897d7e5c225a75d4719",
+              "size": 6602
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/alerts.py",
+              "sha": "349020b4dd2a68cbca1800c017d78ce05ed6512f",
+              "size": 1609
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/confusion_matrix.py",
+              "sha": "d4a87f584b94c34b772e9f1a28d0ab5f2759d0e6",
+              "size": 1606
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/data_utils.py",
+              "sha": "10ef03ab1aeb9c5456631746b1b498e031f46b23",
+              "size": 1808
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/datavisualize.py",
+              "sha": "6a423479a311b5b2d702385edc20bfa1dc0e072b",
+              "size": 2924
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/leftbuttons.py",
+              "sha": "307d645e87da8ed3eb9a94c1c981d5bccd6e414c",
+              "size": 7350
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/leftgraphmain.py",
+              "sha": "b464dbe37c80dd5bfad43d7c255e5797ba3d927d",
+              "size": 8333
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/main.py",
+              "sha": "922cc44ad637a0938b2ee153e20832723760326d",
+              "size": 19414
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/originalgraph.py",
+              "sha": "7b47f7178853b3b19f4b31646af115a41fa5d075",
+              "size": 817
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/results.py",
+              "sha": "479f143b076b5af0bc2e7b7056b21dbf86f4a33c",
+              "size": 4669
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/rightbuttons.py",
+              "sha": "c6f57430203915d39d891beedc97cdb3ad9d8a0c",
+              "size": 2641
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/rightgraphmain.py",
+              "sha": "d8b80cb2374279f2ef8476a7fbd0c466aab1390e",
+              "size": 6704
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/shared_functions.py",
+              "sha": "44527f527dd8208d3993f00dabb7451bfd70479e",
+              "size": 5470
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/temperature.py",
+              "sha": "92e80f033891c74f60b1151ee508739ba0181764",
+              "size": 6866
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/test.py",
+              "sha": "099b63dd49c209b1bcb8b174554de7b49666004e",
+              "size": 1210
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/upload_data.py",
+              "sha": "812f80f58396bc6e408e8c4854c028c07f84a779",
+              "size": 5867
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/utils.py",
+              "sha": "da1a48e8ba2bc6ff268dc4a44621384e93129a0e",
+              "size": 3231
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/visualize_uploaded_data.py",
+              "sha": "daa96d7378447cd1512358b7095614e9a2ae06e6",
+              "size": 12342
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/visualizebutton.py",
+              "sha": "4cd838c8774d454b877e78283427a71386a07ea6",
+              "size": 6775
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "scripts/verify_import.py",
+              "sha": "1e3c442420f15f972e749fb607f264c06fefc783",
+              "size": 1865
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "tests/test_import_provenance.py",
+              "sha": "065df9df0e8f568465e62a15743789111a592957",
+              "size": 2049
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "tests/test_upload_config.py",
+              "sha": "1c42fb31664e05efc8d7a02ab232371f29d9997e",
+              "size": 2096
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "activity.py",
+              "sha": "9df98a2536511a3881cf68e4e467cd0c39fb59f5",
+              "size": 6209
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "activitypreprocessing.py",
+              "sha": "0128e901cdf596e3cbcd1cbdad99e434cd0b9222",
+              "size": 4996
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "datavisualize.py",
+              "sha": "2dbcb1fbaa47ffdc51dc0711b973604b894c18a1",
+              "size": 2904
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "leftbuttons.py",
+              "sha": "1cc589580ebef7d22c048ab4df08d84183008944",
+              "size": 8212
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "leftgraphmain.py",
+              "sha": "057980066c81cb57b5bebbb8bc6257497daee7b9",
+              "size": 1158
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "main.py",
+              "sha": "85ed9f649f09c6dfb92355be8c623787eb6b8357",
+              "size": 6929
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "rightbuttons.py",
+              "sha": "67d1e99f75086252b90e128dc98e17a9f5cea2dd",
+              "size": 1371
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "rightgraphmain.py",
+              "sha": "f4fef738a7d84490e21006bd2f6113150c5c22a7",
+              "size": 1167
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "temperature.py",
+              "sha": "bcf92a79bad8d7a68aebed5e8e2a8358aa9b4386",
+              "size": 5156
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "temppreprocessing.py",
+              "sha": "2f6a31f84c0844ad9eb27b7a8a585b0bbd92fb9e",
+              "size": 5010
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "tests/test_sequences.py",
+              "sha": "a45775eb1bc649cec72e16dc1bce905a1252f38c",
+              "size": 1378
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "timeseriesformatting.py",
+              "sha": "9956318cb5ca3b5e0d166351aa7133489337f89a",
+              "size": 2628
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "traincode.py",
+              "sha": "d344951e9feb10845696e98015252546bfef9e94",
+              "size": 1882
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "utils.py",
+              "sha": "ab8f46455a4a3673363249bfdb421ebea2eb68ec",
+              "size": 3307
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": "visualizebutton.py",
+              "sha": "2255aeb2563c29d271a52637c0f0070b7d069393",
+              "size": 5341
+            },
+            {
+              "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+              "path": "scripts/notebook_smoke.py",
+              "sha": "0e4bd1a1354d94b167563b9acbde818e7fe23e12",
+              "size": 2230
+            },
+            {
+              "repo": "ReInforcement-Learning-Agent-2025",
+              "path": "ai.py",
+              "sha": "027cbc97094b073ef609e4f61c5492d122990c3a",
+              "size": 15765
+            },
+            {
+              "repo": "ReInforcement-Learning-Agent-2025",
+              "path": "tests/test_terminal_transition.py",
+              "sha": "97c4ee8a352d6b5eb580006114e5fc1166d81da2",
+              "size": 1856
+            },
+            {
+              "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+              "path": "scripts/inspect_database.py",
+              "sha": "0c20a32c308484b4751a2bc961384ef607612cbc",
+              "size": 2606
+            },
+            {
+              "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+              "path": "scripts/verify_migration_archive.py",
+              "sha": "3d3c0e44ff95eb1b20145a67c961255d4b447720",
+              "size": 2119
+            },
+            {
+              "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+              "path": "tests/test_database_inspection.py",
+              "sha": "7e3dc66c9f63e5e90a2c27db1b9eb987b81cb4e8",
+              "size": 1986
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/generate_dataset.py",
+              "sha": "7ceadd8ed8f8bf8c070a06987bd44b6fcb8886b3",
+              "size": 366
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/prepare_model_data.py",
+              "sha": "2a9e568f5ed71146853ea5ff5acc3542096fa02f",
+              "size": 2159
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/render_dataset_view.py",
+              "sha": "a9a77d8107dff8dfde4064da9fcf103a8e116ea4",
+              "size": 368
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_budget_allocation.py",
+              "sha": "8efa3c06f5ad955cfaf33090cad50185ff398512",
+              "size": 6550
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_causal_analysis.py",
+              "sha": "f7f72160dd59d896ddd9933816e441d1604e110f",
+              "size": 2278
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_causal_forest_conversion.py",
+              "sha": "ba3dcb9b4b8c65ae07fd7c28916562aa0798053f",
+              "size": 3386
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_decision_ranking.py",
+              "sha": "d3271a3fdc7e87879fbc389551bb2e1730a81525",
+              "size": 2472
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_drlearner_conversion.py",
+              "sha": "2863c52eb69126ced2f03e4b4cb8b781d89de912",
+              "size": 3029
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_drlearner_revenue.py",
+              "sha": "700e7ef859eb2c69d4f7355262d5802b93fffe99",
+              "size": 3011
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_drpolicyforest_conversion.py",
+              "sha": "1c9de8d8549a8f300a53b55d311f50a2afc9f912",
+              "size": 5622
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_drpolicytree_conversion.py",
+              "sha": "70bc53d1632d5100f27b1be6c7b7e72c47cc6d1d",
+              "size": 4111
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_model_based_rollups.py",
+              "sha": "3889af36f5aa36113873e223e8db85e59bccf740",
+              "size": 5542
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_model_based_uplift_deciles.py",
+              "sha": "fbf7d167a436dbcf57ec62a3162d0a59241c9eec",
+              "size": 5130
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_model_targeting_decisions.py",
+              "sha": "f5b10410cdde28103b2b8b022304aafc6a73cf7a",
+              "size": 7386
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_phase3_model_comparison.py",
+              "sha": "ea2d312a555c4a98d3309e74f60560754bad634a",
+              "size": 3886
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_phase4_validation_summary.py",
+              "sha": "50a43c9913e950560fa4e00a934a25495ed73eed",
+              "size": 5279
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_phase5_decision_closeout.py",
+              "sha": "cb8e757d410a705e39551f1feeede0e5df92316b",
+              "size": 4144
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_segment_uplift_analysis.py",
+              "sha": "420ffa3b285e6c76965a25411cacee85c37de7af",
+              "size": 2066
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/run_xlearner_conversion.py",
+              "sha": "a5f7b1818b08ff5bbcc19ab03a3479a0f3553a74",
+              "size": 2584
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/show_ml_foundation.py",
+              "sha": "34bc66ac71a0d51dafb4c8f4727fac4757b61bd2",
+              "size": 1221
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/summarize_dataset.py",
+              "sha": "dcb01d6f28789108d96e670339e28918fb9bdf09",
+              "size": 367
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/scripts/summarize_model_data.py",
+              "sha": "5af93ba10bbf575fba1038d408044a892b84b30f",
+              "size": 1191
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/__init__.py",
+              "sha": "e1bf9a97d0e5756180d240c00c6c0923c0b9dd49",
+              "size": 83
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/api/__init__.py",
+              "sha": "373b798dd633311d91767a4472017a78702fe5b3",
+              "size": 1323
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/api/analysis.py",
+              "sha": "2ab448d7cffcf92c4a44755c51bbd46616677222",
+              "size": 8438
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/api/app.py",
+              "sha": "59209cf58b52776e7fafac7a17fa38b88c784e81",
+              "size": 4997
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/api/dataset.py",
+              "sha": "b40a7c55ec076cc85242fd3eb16ec23138511378",
+              "size": 1928
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/api/health.py",
+              "sha": "9062ccc78eca5bb7dede37a2417c77f619087d91",
+              "size": 996
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/api/schemas.py",
+              "sha": "9767f76cbf42775925488a052b2cb52ef59d8f70",
+              "size": 5030
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/__init__.py",
+              "sha": "58da238bd129cdc5a097f4556c47eaf20a36e486",
+              "size": 2168
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/ate.py",
+              "sha": "6f642ce3628e1da20c7dd5c05d31d55427aa1296",
+              "size": 7570
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "size": 15540
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/drlearner.py",
+              "sha": "fad6ee9464823e47082accdace104bfa8a0b1a3c",
+              "size": 17991
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/xlearner.py",
+              "sha": "00ddbf991819e5f7c9f650d1f9a85c4505752304",
+              "size": 14041
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/__init__.py",
+              "sha": "9e727173db48d1e413dd5c590a9ff54a2d0f2e9f",
+              "size": 2094
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/budget_allocation.py",
+              "sha": "0da83c87f1a775b75ad4051fefeff29e9a1b15ec",
+              "size": 15200
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/decision_closeout.py",
+              "sha": "942b91ba0f89b366bee9ce76915d944364739fc7",
+              "size": 14361
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/model_targeting.py",
+              "sha": "8c9e6b5cb07a4a65a32521fdc159a31f9d2d020d",
+              "size": 14580
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/policy_forest.py",
+              "sha": "9695e135d50fad375817bca776fb26b21ff933fe",
+              "size": 11259
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/policy_tree.py",
+              "sha": "8e95a957dcb8a5c1e9f11e62402c3dd4c997509f",
+              "size": 20536
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/decision/recommendations.py",
+              "sha": "e70bcd57dc21c7c44304b844fa11ba9e5dfbcb09",
+              "size": 5089
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/evaluation/__init__.py",
+              "sha": "9fa0434114c5dacfacfebaa3089385c7a65d0022",
+              "size": 881
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/evaluation/model_comparison.py",
+              "sha": "20b7c52d542ae804437b71dd54c59355785f7f11",
+              "size": 9423
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/evaluation/phase4_validation.py",
+              "sha": "f7a776d052a0468532701c121c6a049c0ae66aab",
+              "size": 10674
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/evaluation/registry.py",
+              "sha": "6c42536b51141f2d93d2a5e07653c23d9b36668e",
+              "size": 2240
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/features/__init__.py",
+              "sha": "db244b25ac713ea8a02f8df11be4b6f9ea9fd2b6",
+              "size": 1056
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/features/columns.py",
+              "sha": "3c9cd283740e5b11242cf2962d66480f3fdbe5d4",
+              "size": 1968
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/features/preprocessing.py",
+              "sha": "a2ef1c4cf08aa01792585acbf475e1cb385987e1",
+              "size": 3132
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/models/__init__.py",
+              "sha": "3f21392e645d1cd52e14c8c02063c13a14fb8a63",
+              "size": 208
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/models/registry.py",
+              "sha": "8bd4c07a341729734be88245b70ad4d8f1a9824a",
+              "size": 4487
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/uplift/__init__.py",
+              "sha": "6ba842d242b8a1a9add0988c6832c9c37ff2d709",
+              "size": 1152
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/uplift/model_based_analysis.py",
+              "sha": "e369eaad222a56edbf111e09cb2604b1fab34b2f",
+              "size": 10247
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/uplift/model_based_rollups.py",
+              "sha": "fab313c244e483fae4e92b36227fb025a403962e",
+              "size": 12189
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/uplift/segment_analysis.py",
+              "sha": "b7cb0cdb33752f418d0fc42932504a56c04b9105",
+              "size": 6537
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/utils/__init__.py",
+              "sha": "5e683051882dfd63912ff8e5e2aca0b5eea6ca69",
+              "size": 54
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/utils/artifacts.py",
+              "sha": "e57ab25c99113a43dced25d49949e5382a76cd58",
+              "size": 1069
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/utils/paths.py",
+              "sha": "d7acc2b000e78a6625bdd3341e432b2f794b8058",
+              "size": 6038
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/conftest.py",
+              "sha": "3b33d48d23e7cd3b43c46564677946671b5b7fd8",
+              "size": 264
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_analysis_ate.py",
+              "sha": "cf0303292facd38c8a69a40716559ffe0bb441cf",
+              "size": 3056
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_analysis_models.py",
+              "sha": "ba7c394c17ebdd50807263bbcd124e6fe166efad",
+              "size": 5291
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_analysis_recommendations.py",
+              "sha": "82151388f366abb362051e72ef0f7e512472ab31",
+              "size": 5658
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_analysis_segments.py",
+              "sha": "934592595772b289371d80b43716ae8a79c78a71",
+              "size": 12929
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_dataset_generate.py",
+              "sha": "a9566ca4748e6a0430ebf8b208941411ca9a73e5",
+              "size": 1524
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_dataset_sample.py",
+              "sha": "af8cffd1230bbfec192069bff3604cb4d64e3c1a",
+              "size": 2112
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_api_health.py",
+              "sha": "a3f5a93c84cbfce39f5c79191ea1a584f8609c4e",
+              "size": 1683
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_ate.py",
+              "sha": "52d744c9d7eefa8dadd13ede846dd88b8f6c4511",
+              "size": 5888
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_atomic_dataset.py",
+              "sha": "b5ae790e798106e360a2a9f9bce75d8ffb02289b",
+              "size": 863
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_budget_allocation.py",
+              "sha": "52f4bf627ab189c61d38ec7ee92a0f7c44af55be",
+              "size": 5386
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_causal_forest.py",
+              "sha": "298f8fa620d83871a3594a3c57f04f7b339a9d8d",
+              "size": 4662
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_dataset.py",
+              "sha": "9766157c9bc87da26787eb9d2fef283b0da7a303",
+              "size": 2150
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_decision_closeout.py",
+              "sha": "9f8774a82d7d630303fdaef2b33908f433af537d",
+              "size": 5662
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_decision_ranking.py",
+              "sha": "f8d4a57aa488d3ff209773aff1b288b7c845c872",
+              "size": 6081
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_drlearner.py",
+              "sha": "042ce422f338702b71ce4f0bb2738cae9b3a377e",
+              "size": 4381
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_drlearner_revenue.py",
+              "sha": "98284168435b5e62076798156515a65876f35006",
+              "size": 4616
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_ml_foundation.py",
+              "sha": "2f3c233240ace8210b48652c030493d3a12798eb",
+              "size": 2860
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_model_based_rollups.py",
+              "sha": "c101d120b96d1f7b71980581a9c5b60bf66f7e59",
+              "size": 8639
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_model_based_uplift.py",
+              "sha": "091bef8f9f07e9181552f82f492f9d2d3e6c6662",
+              "size": 4663
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_model_comparison.py",
+              "sha": "c50fce192ad54652d513b040df1968f9328c942c",
+              "size": 5050
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_model_preparation.py",
+              "sha": "51cd26f5f58e7f995f584e1a7a67797ab6d6f921",
+              "size": 3528
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_model_targeting.py",
+              "sha": "5840fc398ad88e40454d6032b4ce89171e6526b4",
+              "size": 5572
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase4_validation_summary.py",
+              "sha": "3e6113c7355038decce8a900066b90d9af4aa00b",
+              "size": 5605
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_policy_forest.py",
+              "sha": "b5f241686a9edba32a3bf42317f4519f4512d826",
+              "size": 8299
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_policy_tree.py",
+              "sha": "086f77f168fa29c6531cc2d2f91de5b4b3bda61c",
+              "size": 6970
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_segment_uplift.py",
+              "sha": "025c9487c0b27574aee8c59e3323b1e355b6a449",
+              "size": 3621
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/tests/test_xlearner.py",
+              "sha": "fa72a453f9b67fa80943053f3df99566ee822711",
+              "size": 4128
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "scripts/validate_demo_artifacts.py",
+              "sha": "cb675709406a44c309c6327cbfa16cae411253c6",
+              "size": 7212
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/agents/judge_agent.py",
+              "sha": "03d2dca9d3a0983275cc6334cd0db0745e160ed4",
+              "size": 8398
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/agents/product_context.py",
+              "sha": "64cee1dade2049ac2739fb071f554eb529edbf54",
+              "size": 1071
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/agents/rufus_agent.py",
+              "sha": "9b7a165b14f3a22d0c1238c7f9b4fb1c6249e01b",
+              "size": 3767
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/agents/scoring.py",
+              "sha": "6ff8c5e49c82ba9197208522313590f82e439e45",
+              "size": 1847
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/evaluation/anomaly.py",
+              "sha": "bf757a466a43f6a51bbe4b054cc4a6b856754d93",
+              "size": 7216
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/evaluation/pipeline.py",
+              "sha": "5cd0c42c50e225df90cb835a97fee597b8ccb319",
+              "size": 7210
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/main.py",
+              "sha": "8573c56c1dffd7cde884865333516b73f2262132",
+              "size": 1361
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/models.py",
+              "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3",
+              "size": 5439
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "size": 4344
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/routes/__init__.py",
+              "sha": "b41e3d7febc5e3cd3d5a184af21e9193031480f6",
+              "size": 69
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/routes/adversarial.py",
+              "sha": "29461e1bb7d8c7559208829a38c4a3a43691f3fb",
+              "size": 2136
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/routes/data.py",
+              "sha": "5245d10ef4caf50f7656e30ec87d19977718982e",
+              "size": 2003
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/routes/evals.py",
+              "sha": "7263e2f738ba01164d9810833a1d7022a0fc0f72",
+              "size": 4179
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/routes/stats.py",
+              "sha": "883961332f31e6dd95ef76a2cf4027e6da5bcf5c",
+              "size": 7257
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/build_index.py",
+              "sha": "359bb345a7188ec0b30e27a8a974d0739a60e51f",
+              "size": 1422
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/fixup_phase1.py",
+              "sha": "5d9e7d5292ac9de22e202ba50ed1a7b8417625e1",
+              "size": 10748
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/generate_products.py",
+              "sha": "e794c3d503cf19162ac42181f3b760432513b79d",
+              "size": 4410
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/generate_questions.py",
+              "sha": "40d29f6ce45c31f61d6bcf608b3519ba548d4050",
+              "size": 52928
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/run_adversarial.py",
+              "sha": "925df8433ea837146d62b0ef4d5fd2a517f8e16f",
+              "size": 1832
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/run_eval.py",
+              "sha": "e4d68d54f678cd1ed5c13d25a5c72d05a77538e8",
+              "size": 2349
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/test_pipeline.py",
+              "sha": "a6d678b1ab93f700aab35c3e92e560261b2c7e90",
+              "size": 1741
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/test_retriever.py",
+              "sha": "f95768fa1330bb549c42d92eb3e072a1b9980304",
+              "size": 1152
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/scripts/test_rufus_agent.py",
+              "sha": "4d1b6f6389d816c596c7b0a53adc60a68c468c15",
+              "size": 1337
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase2.py",
+              "sha": "f1ec804084b25262d61cb48caf0d36669a3af476",
+              "size": 4650
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase3.py",
+              "sha": "974db19bb1b7736df3b5c91cc120d561195ecb4b",
+              "size": 2952
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase4.py",
+              "sha": "6a3cab5a906c57c85d21bc1a9c74560120d96c9a",
+              "size": 5461
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase5.py",
+              "sha": "6b022db6c90d219b18212f12baeccb1cf7af4516",
+              "size": 4483
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase6.py",
+              "sha": "7c3d5b03d65230ff7c37ccc608d04b5728c83558",
+              "size": 5238
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/tests/test_phase7.py",
+              "sha": "5bad5bb88b74fad8a261e3e73dacc28a993ff208",
+              "size": 12696
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "tests/offline/test_agent_evidence.py",
+              "sha": "866c1cb84c5b0f709a9be3203f20524ee781fcad",
+              "size": 1634
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "tests/offline/test_async_agents.py",
+              "sha": "8c7525f3ab5f283599b88867ea93e2d79bd70982",
+              "size": 2360
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "tests/offline/test_mock_agents.py",
+              "sha": "37588ca81de1122b5d020545c1812d06d5ee13e2",
+              "size": 4713
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "tests/offline/test_score_boundary.py",
+              "sha": "93d0da0d530c58af515f4dafff4ac4929ebd012e",
+              "size": 3116
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/analytics/benchmarks.py",
+              "sha": "6a2d7bc08f887764d36b0a9498636f1ee61f8ad0",
+              "size": 1958
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/analytics/metrics.py",
+              "sha": "13d14dd27d1bc85a825538b721a169433973bfff",
+              "size": 7493
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/analytics/narrative.py",
+              "sha": "be6eb084f36814c3e894b406df0b8c2c7bc199a7",
+              "size": 16411
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/analytics/priority.py",
+              "sha": "7fa3a1dff2822ffafe1f11c577b9bedee93f20dc",
+              "size": 12185
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/api/filters.py",
+              "sha": "e69b4af39051b96ff967e3235971a08934db313b",
+              "size": 3037
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/api/kpis.py",
+              "sha": "6afd556666d0ef21f019c58cf9c1a21f5182bee6",
+              "size": 10872
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/api/methodology.py",
+              "sha": "f1e487c3c7ecfe17d5cb192059dcb16c5bdfc7b7",
+              "size": 14339
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/api/repository.py",
+              "sha": "8b157c6386e2645f86e8fe89a4a71f2111433d4f",
+              "size": 12211
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/api/routes.py",
+              "sha": "2e156cef81e426b5c1493bda3ed723d90bb0e263",
+              "size": 38241
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/config.py",
+              "sha": "705bc7721dc56cc46b68eb1fd8dfc4fb407144d2",
+              "size": 4484
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/database/builder.py",
+              "sha": "96b981fb0a5a347080188c3ef534c8e2dbf9b6a4",
+              "size": 5026
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/database/warehouse.py",
+              "sha": "51536608463b3a6416acf62db00d5cb005b90e47",
+              "size": 3804
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/forecasting/engine.py",
+              "sha": "436a8d74158fa32576cc4ae5a3214f2f2c59ee5d",
+              "size": 9712
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/forecasting/models.py",
+              "sha": "42ada54d613487e22b2c60acbee976e4588fe57e",
+              "size": 9235
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/forecasting/validation.py",
+              "sha": "0f5f64c37207a7125eb61b3b85d40f89ceb5797a",
+              "size": 5337
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/ingestion/audit.py",
+              "sha": "3013d737307209f27253069d4671183d36854e92",
+              "size": 2947
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/ingestion/discovery.py",
+              "sha": "d3b0b16defabf850c676b534cba7be6a49ba33f7",
+              "size": 7243
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/ingestion/downloader.py",
+              "sha": "9deb49852ea57f2af1dd003e6cdcf7ef044fcf1d",
+              "size": 6607
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/ingestion/pipeline.py",
+              "sha": "12ce6e4d8d458fdfed1507c846817d8ef96c9c19",
+              "size": 10920
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/ingestion/rtt_reader.py",
+              "sha": "d4e5f60bbc49141f4d825756305597903245046d",
+              "size": 8783
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/main.py",
+              "sha": "7096b57cc99f2a3376fbd58879da76ff023a729f",
+              "size": 5401
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/models/schemas.py",
+              "sha": "ca54e4557a952b7135babe0d9b63d27b42b83e56",
+              "size": 12615
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/quality/checks.py",
+              "sha": "8dbc3a87575ee33c6c953bd3ba2e61fd8b68d0f0",
+              "size": 15389
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/quality/score.py",
+              "sha": "3a385ea96b036d00557b757da91f9e55e3f52cc0",
+              "size": 5938
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/scenarios/engine.py",
+              "sha": "98707c02d224419f44934b1451b7926de62031bf",
+              "size": 9195
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/transformation/build.py",
+              "sha": "47ef6e4afcf57a2cf550745c47bc7b7c1c3c8101",
+              "size": 9119
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/transformation/cleaning.py",
+              "sha": "97507a219a14dce4d81ca7a43975db8eef24ce51",
+              "size": 5801
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/transformation/schema.py",
+              "sha": "9c7bfd3105e6088c5466f4659c98fcde1e4554a6",
+              "size": 5751
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/transformation/validation.py",
+              "sha": "2bc4b6a57afb5b859a198fb1844f49da59c9f125",
+              "size": 7067
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/utils/logging.py",
+              "sha": "00a5ff4b5cec5efface754fe1791437d4b843ad9",
+              "size": 962
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/utils/mathx.py",
+              "sha": "5331c67b866bd323b03f1e186a9f21e07873ea40",
+              "size": 5079
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/conftest.py",
+              "sha": "391278eff6296a21d1a4dd8a82e867210e736b65",
+              "size": 4777
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_api.py",
+              "sha": "31d8a479a22fdad5b72c17e47e4d93cd50e37911",
+              "size": 17763
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_downloader.py",
+              "sha": "e918483e24e843730e2ed5ab9ea8d66a0beb74ff",
+              "size": 3012
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_forecasting.py",
+              "sha": "38ebfe130d949073dd46d345e0d6a452c1f6fa70",
+              "size": 8146
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_metrics.py",
+              "sha": "804e1779720ef2282677ab295f5f08174838ff00",
+              "size": 7469
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_priority.py",
+              "sha": "117083f666de53fcb867a79c96906ff3fbc7be5d",
+              "size": 7988
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_scenarios.py",
+              "sha": "7df6b0d1eb3727b5e91ceba8f1f0dfa817f6da6a",
+              "size": 8426
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/tests/test_validation_and_quality.py",
+              "sha": "728d7cdcaeedebd8d29b181c64938135c30f73e0",
+              "size": 11100
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "scripts/_bootstrap.py",
+              "sha": "d91aed2e3f9998c576695d6f062a32a8db4ae042",
+              "size": 284
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "scripts/build_warehouse.py",
+              "sha": "9308e810c31498e7026cc69ff3b6534c0c3f539c",
+              "size": 5530
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "scripts/download_data.py",
+              "sha": "69446f3e4b275561962234da544659d1e92ac01c",
+              "size": 3474
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "scripts/materialise_warehouse.py",
+              "sha": "70bb442fdf10918fb016210a05907d20ddf70ef5",
+              "size": 3052
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "scripts/seed_demo.py",
+              "sha": "c5c299e2695ffca0a828ef0c9401095dc328fcbe",
+              "size": 8971
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "scripts/validate_data.py",
+              "sha": "82145e5cf13df40b7e50919b3a77160b0be323c5",
+              "size": 4162
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "core/broker/aios_skills.py",
+              "sha": "a0b555448dfd6cadcd308df8df0fa14229e5e365",
+              "size": 23571
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "core/broker/build_shared_library_v1.py",
+              "sha": "10f95c2e5210f915bbd52dfbc324ba7db6f19b16",
+              "size": 41328
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "core/validation/test_aios_skills.py",
+              "sha": "712dfa5fc1a63a3d3f01372a3c2dc3c84f5c446b",
+              "size": 8870
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "core/validation/validate_shared_library_v1.py",
+              "sha": "3727e9e98961665d4176f6d712383038b6601b6e",
+              "size": 8505
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "evals/test_repository_baseline.py",
+              "sha": "cd86f961add9757df0529efcdfc08d5259314115",
+              "size": 1329
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/forge/scripts/route_forge.py",
+              "sha": "85d5c56a7312ce884f35787ede46b4fe46bf0c98",
+              "size": 9539
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/forge/scripts/test_forge.py",
+              "sha": "7fc905d4cb2839182f374a9f7313f8f8d2590e2f",
+              "size": 8582
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/forge/scripts/verify_gate.py",
+              "sha": "58a07b5fe443bbddec3c70a9212b5907baf812fd",
+              "size": 1530
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/legacy/devil/scripts/validate_behavior.py",
+              "sha": "bc468a964a11dbced2c3d77ded1dc33269717aab",
+              "size": 1554
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/minister/scripts/route_minister.py",
+              "sha": "ab236f1a89ab7c3f9fb876d8f038a9e1cc28cff6",
+              "size": 7484
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/minister/scripts/test_minister.py",
+              "sha": "2ba8e030d265123864339a25b3d465e43bdb24da",
+              "size": 5642
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/moa/scripts/moa_core.py",
+              "sha": "c1f9e139048e49fe7d4919ab568b49a75b2044de",
+              "size": 20031
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/moa/scripts/test_moa.py",
+              "sha": "b12b8904dd6a03180b5d7975183c0a3e27e27652",
+              "size": 5556
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/scout/scripts/scout_core.py",
+              "sha": "d91a1b5b59867d31c190b2f7414ce9a5eb1807e4",
+              "size": 17532
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/scout/scripts/test_scout.py",
+              "sha": "8816f0acad40ec4d6797799a9032c24d00cb1a06",
+              "size": 11211
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "scripts/import-runtime-sources/import_sources.py",
+              "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
+              "size": 7535
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "scripts/validate-repository.py",
+              "sha": "fd365c98e7b796d2393e1d0ba90f0087a0dfd21f",
+              "size": 1345
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/core/__init__.py",
+              "sha": "04d75095a48c899ab038c3c1c150d194a56310ac",
+              "size": 556
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/core/algorithms.py",
+              "sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132",
+              "size": 8027
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/core/contracts.py",
+              "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
+              "size": 9466
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/core/engine.py",
+              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
+              "size": 27282
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/core/safety.py",
+              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
+              "size": 2987
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/examples/__init__.py",
+              "sha": "a20a9ef4965421ce3a339b7277e917681650ffd7",
+              "size": 62
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/examples/support_case.py",
+              "sha": "1b8d5ed421f86cc029280c2c04b9b3d069ea91e3",
+              "size": 5866
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/tests/test_core_algorithms.py",
+              "sha": "30712364e784236f299a8ea912a9ab9c74f06017",
+              "size": 6819
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/tests/test_core_engine.py",
+              "sha": "1e72ee489f61024f4e9f351461baf5213c32b302",
+              "size": 15194
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/tests/test_support_demo.py",
+              "sha": "917ed340e0c5baac804412ca9b0beeeca78f72d5",
+              "size": 1888
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "runtime/tests/test_support_regressions.py",
+              "sha": "2701958132177f4b928d8ceaf7271593146b57fe",
+              "size": 3030
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/build-formal-model.py",
+              "sha": "dda8006ba110f73f56ace2453b6567e5898d5bb0",
+              "size": 41379
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/build_aws.py",
+              "sha": "503df71874085f6d829dbeacdf29a80155a49d2c",
+              "size": 3520
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/build_communications.py",
+              "sha": "0c30a19d929cd52e8960cacb73fece1dd95d40d6",
+              "size": 7268
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/build_docs.py",
+              "sha": "96583b9dc6a6adb010e0976bf9486e606da749f9",
+              "size": 51634
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/integrate_enterprise.py",
+              "sha": "95a9721a521dac5dba13c24f03c316870ffbc341",
+              "size": 11573
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/package_enterprise.py",
+              "sha": "a7e6ec87d6b0ade9174a620e23534b681e22ed54",
+              "size": 7284
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/qa/enterprise-independent-checks.py",
+              "sha": "8e5d222865646c63d086cd4b104a06c44074cc2c",
+              "size": 14078
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/rebuild_enterprise.py",
+              "sha": "db3fab141e434d79ed4aadba61c748c15d65568b",
+              "size": 32510
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/render-case-diagrams.py",
+              "sha": "d5caa1992e3d2c0d4c8a324f5a489630c3844248",
+              "size": 17337
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "scripts/validate_design_export.py",
+              "sha": "3d20f52c49ed1acbb471cbfb0e5e31a328b24191",
+              "size": 7394
+            }
+          ]
+        },
+        {
+          "label": "TypeScript",
+          "value": 401827,
+          "evidence": [
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/next.config.ts",
+              "sha": "e9ffa3083ad279ecf95fd8eae59cb253e9a539c4",
+              "size": 133
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/app/dataset-models/page.tsx",
+              "sha": "881c259e1419de0ab4fd74176eb1dcf5ccccd64d",
+              "size": 179
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/app/layout.tsx",
+              "sha": "781ed88bfd8431bb69d98a6099e4ae32106e2c50",
+              "size": 615
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/app/page.tsx",
+              "sha": "e6a291861d3be458fa47d4e6f70b85561566557d",
+              "size": 128
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/app/recommendations/page.tsx",
+              "sha": "c68c20099a996ce089f2335f97462d9fdd771c81",
+              "size": 186
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/app/uplift-insights/page.tsx",
+              "sha": "7572b21a74dd0570662134f409ff32647e82efda",
+              "size": 183
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/app-header.tsx",
+              "sha": "e4c51b39e6b691fe069a4fafdeb977c042c0d085",
+              "size": 1820
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/dataset-models-live-dashboard.tsx",
+              "sha": "df23f3b083e4791e2f5deb33331492b80b29d788",
+              "size": 20024
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/metric-card.tsx",
+              "sha": "41fcb8afcdb03e23df62dae280293ec5e537e036",
+              "size": 1273
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/overview-live-dashboard.tsx",
+              "sha": "c80887e4aac5ecf37b0e90f7be0ab9aaf01e6a03",
+              "size": 21610
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/prime-dashboard.tsx",
+              "sha": "ed84c262422e883776a7e03975a47ef1d06b4e14",
+              "size": 34210
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/recommendations-live-dashboard.tsx",
+              "sha": "41e87489f4a01ca09f1595ec5da49d44867f1269",
+              "size": 18930
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/section-card.tsx",
+              "sha": "641eaa4d9230b21f1908715357f78e5ec95055a0",
+              "size": 737
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/ui/badge.tsx",
+              "sha": "b20959dd775e40754a5f66940c62ee4f7feaef36",
+              "size": 1925
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/ui/button.tsx",
+              "sha": "09df753676cbb937c76c080deaea440a4345a28f",
+              "size": 3197
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/ui/card.tsx",
+              "sha": "40cac5f98d7f50f860277e034cab8b6544d66695",
+              "size": 2641
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/ui/separator.tsx",
+              "sha": "6e1369e43cce8be3da7ef04940b79dd276245290",
+              "size": 545
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/ui/tooltip.tsx",
+              "sha": "69e8a822c0e10629683093292a1b3b5de14ccb08",
+              "size": 2846
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/uplift-insights-live-dashboard.tsx",
+              "sha": "3bac68ccd402b29690bae062ab7c52ff1aa20717",
+              "size": 21040
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/lib/dataset-models-data.ts",
+              "sha": "ee1168ad2f5115fcafd1a3ecf31555c6accf70d5",
+              "size": 4274
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/lib/overview-data.ts",
+              "sha": "b2041b7de339ed513cb372284bdc1ab743b10f96",
+              "size": 2863
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/lib/primelift-api.ts",
+              "sha": "4ce4d5a1bd88711d7409bdd1bcdf63eaec0ef0e9",
+              "size": 6198
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/lib/recommendations-data.ts",
+              "sha": "bd38a3f06a18a0b73627a264b842454cc4a554fe",
+              "size": 3964
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/lib/uplift-insights-data.ts",
+              "sha": "27f2dc0502c8438e52871b9ee0a4c635b11dd754",
+              "size": 3601
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/lib/utils.ts",
+              "sha": "bd0c391ddd1088e9067844c48835bf4abcd61783",
+              "size": 166
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/__tests__/AnomalyBadge.test.tsx",
+              "sha": "81c0fa46c4d9029fc810f42a4a1e9cdf1362f361",
+              "size": 1067
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/__tests__/AnswerTable.test.tsx",
+              "sha": "bcfee6e7c78bafd0ce415032dee885be4cbfffdb",
+              "size": 2162
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/__tests__/CategoryBarChart.test.tsx",
+              "sha": "beb579470185f26d3f89997dd1ec58a3f3d145ad",
+              "size": 1172
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/__tests__/ScoreCard.test.tsx",
+              "sha": "a98d90febef5114296b4e91a239fb04cf27710fb",
+              "size": 1057
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/__tests__/ScoreTrendChart.test.tsx",
+              "sha": "80d9330429d8d2d31766d4dacba589efeb825585",
+              "size": 1203
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/adversarial/page.tsx",
+              "sha": "8660179209563f93c8ce04fdca892a7f53a44d03",
+              "size": 6066
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/analysis/page.tsx",
+              "sha": "8a20d6fc0bf327e89f1e21c42ad692b69131d2f3",
+              "size": 5762
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/dataset/page.tsx",
+              "sha": "64d550ec6c4940dce3aba951e97658eae9476978",
+              "size": 14834
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/feed/page.tsx",
+              "sha": "a84be2265790bd88f4e03ca9b902b078a82439d0",
+              "size": 3472
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/layout.tsx",
+              "sha": "b441b87072d47d361aa22753a3123e3ee1ed30e1",
+              "size": 719
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/page.tsx",
+              "sha": "f305a280aced39981e357a43e1805b5a4f308452",
+              "size": 4365
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/AnomalyBadge.tsx",
+              "sha": "5d96a80b6284809d173c0a8df71c463a7049d094",
+              "size": 655
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/AnswerTable.tsx",
+              "sha": "f96a0065b9f388e0104ba0ac28595b98889c11f7",
+              "size": 5702
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/CategoryBarChart.tsx",
+              "sha": "911a33bbf720ff3453da5a220b7f1fdba61763ba",
+              "size": 1705
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/Nav.tsx",
+              "sha": "4c422054fff4b39484925115cf9992e4a08fd5c2",
+              "size": 1455
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/ScoreCard.tsx",
+              "sha": "ba68b0094c84ef8beaf855b16d6af20c14e05c6d",
+              "size": 681
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/ScoreTrendChart.tsx",
+              "sha": "aba7af102c65329c1384507a92abdbbf664008a7",
+              "size": 2030
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/jest.setup.ts",
+              "sha": "abb2685eac3525060f1d04fd043416ff10ee3648",
+              "size": 105
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/lib/api.ts",
+              "sha": "b96e7199d7ab8678d33bc7d413926e5a53656530",
+              "size": 2349
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/lib/types.ts",
+              "sha": "bfd2c94ce16b7a8ceae41809fb03df3e3544ca6f",
+              "size": 1457
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/tailwind.config.ts",
+              "sha": "099a74ef5f516a6f7f57657cd23c21b38c10903e",
+              "size": 333
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/compare/page.tsx",
+              "sha": "82704ed589ebbefac06688eb977b236fd119106d",
+              "size": 18891
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/layout.tsx",
+              "sha": "0a9ade8447832fd71dcf0bf3d7cf8483c72e645a",
+              "size": 1396
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/methodology/page.tsx",
+              "sha": "68da32c9618f53059bf8efd5e2209ff9981981f1",
+              "size": 10336
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/page.tsx",
+              "sha": "0c5fd973f8b6192fd04b9cc76dc21f3c1b8d1dfa",
+              "size": 10936
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/quality/page.tsx",
+              "sha": "30585ea02dce49b888d1d9e12f729723331715f2",
+              "size": 13448
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/rankings/page.tsx",
+              "sha": "7ee5882259ce233bc0ba623fb0b4f6b4fc74dfc9",
+              "size": 7095
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/scenario/page.tsx",
+              "sha": "c299f876f5585c4ea1225ab78562e0cb8961496a",
+              "size": 8971
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/service/[providerCode]/[specialtyCode]/page.tsx",
+              "sha": "2f890a273b276d69552e94d9633369e47832617d",
+              "size": 23663
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/AppShell.tsx",
+              "sha": "3b7ee0d8e1e8afd3a243cb5e9d159b06970c06c3",
+              "size": 1182
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/AttentionCards.tsx",
+              "sha": "6e7bc0837630d1f3c4232e5d9e94e5a1a3159fb2",
+              "size": 2851
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/ExecutiveBrief.tsx",
+              "sha": "3e2786b63037137cbe7d03ff3cbdd011611d0710",
+              "size": 2598
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/FilterBar.tsx",
+              "sha": "c5ada81fc2e78a81015f3ae1d6d82ad6703a8892",
+              "size": 6350
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/InfoTooltip.tsx",
+              "sha": "439a5961134326c9745bbf1a85a281f03cd52e7f",
+              "size": 2984
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/KpiRow.tsx",
+              "sha": "6b23625a19071a80b7b0f4c2cc4457c7230473aa",
+              "size": 2113
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/PriorityBadge.tsx",
+              "sha": "ad374370c50f1cab65648eebf1cce6a9b7845a3a",
+              "size": 2200
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/RankedTable.tsx",
+              "sha": "980b9c9d4be328e916922cbc7af752b6632e7c51",
+              "size": 7262
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/ScenarioSimulator.tsx",
+              "sha": "7989c5c5647cf10108877890f4c81e3f71bec2bb",
+              "size": 12519
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/ScoreBreakdown.tsx",
+              "sha": "5312eb8b5eb496cf22d4fdcc88f387c9c66725ef",
+              "size": 3176
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/SiteFooter.tsx",
+              "sha": "75e894b8ed8da4aa1be3e2ec74f693bc979ce67f",
+              "size": 4004
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/SiteHeader.tsx",
+              "sha": "2cb25aa18fbeeafc1d52a6aa1812458873428427",
+              "size": 4692
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/States.tsx",
+              "sha": "eebfb829b4fa6105f3ba957ceb02b1878e260ed4",
+              "size": 3618
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/charts/PriorityMatrix.tsx",
+              "sha": "f67040e559fb9b46fdbaea857e3f0ead82d252c5",
+              "size": 7261
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/charts/WaitingListTrendChart.tsx",
+              "sha": "06f6721a53737e834a746dda5c33d6062235bee2",
+              "size": 5320
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/lib/api.ts",
+              "sha": "a39238ab3a5f8de252d542b9fcefcf3baff43f1e",
+              "size": 8288
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/lib/format.ts",
+              "sha": "180023fda3e958ac90b12dc6bc031efa243d43d5",
+              "size": 3320
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/lib/useApiData.ts",
+              "sha": "a55ffb28d8e8b2331d9c3c4a0417e6fea864c77d",
+              "size": 2141
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/lib/useReferenceData.ts",
+              "sha": "7949ce19515412bdec8e2c7028484c9a8abce7dd",
+              "size": 925
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/tailwind.config.ts",
+              "sha": "9b2d18bd2f9948b9aea3a94e6be6af72abebb5b5",
+              "size": 2904
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/types/api.ts",
+              "sha": "3056f88a18f05b5b2edf1a5ea5bc95bf1568cefa",
+              "size": 9744
+            }
+          ]
+        },
+        {
+          "label": "JavaScript",
+          "value": 146057,
+          "evidence": [
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "web/verify.cjs",
+              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
+              "size": 2880
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "script.js",
+              "sha": "44dfb236828562d51d92b63a169b25e896fdacbe",
+              "size": 209
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/eslint.config.mjs",
+              "sha": "05e726d1b4201bc8c7716d2b058279676582e8c0",
+              "size": 465
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/postcss.config.mjs",
+              "sha": "61e36849cf7cfa9f1f71b4a3964a4953e3e243d3",
+              "size": 94
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/jest.config.js",
+              "sha": "ed5ec03b2b7235bcac7d561f1f3f8160d2bbfdd2",
+              "size": 360
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/jest.setup.js",
+              "sha": "34d4562209839c059eb22ef06729ada79cfe6402",
+              "size": 105
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/next.config.js",
+              "sha": "466faa1e199e6a87c62c1a72b87753ad361c3350",
+              "size": 160
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/postcss.config.js",
+              "sha": "94ae506f073f1ae8d5799886e4d71f708613aad6",
+              "size": 146
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "web/verify.mjs",
+              "sha": "d74453edc9a42bd582f175a4601880571afb6efb",
+              "size": 1436
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/eslint.config.mjs",
+              "sha": "e7c58747d81e401392761b7c68f042ad2ccaf77c",
+              "size": 828
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/next.config.mjs",
+              "sha": "4e45555debe29f2c4a594793d0c19a4057ecd4e2",
+              "size": 424
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/postcss.config.mjs",
+              "sha": "2ef30fcf4272e19cf6a23d07b0544027954f9627",
+              "size": 157
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/app.js",
+              "sha": "6084ad9f385618083a82792efc4dfe0d556b97ab",
+              "size": 4737
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/scenario.js",
+              "sha": "344977b2a3e6dab3a3b4c08e5dc2c68104e226c3",
+              "size": 1879
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/tests/scenario.test.cjs",
+              "sha": "fc286a8c4bfe84d021c71d53d1bbb49e2ed4170f",
+              "size": 1616
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/aws-shared.js",
+              "sha": "a235d5b5389ba74261271ff99122149bb5968210",
+              "size": 20480
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/integrate-study.mjs",
+              "sha": "06c552f3ac1300277c162fe6f37061e3dc9a4cbb",
+              "size": 4808
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/polish-copy.mjs",
+              "sha": "8f1d9ba8ef2bffedfe2be9635ebafdaa7df9a664",
+              "size": 3678
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/qa/test-enterprise.cjs",
+              "sha": "7e8d0e4aba4042f5b35bea26b9e1fb05752985e0",
+              "size": 9240
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/test-case-studies.mjs",
+              "sha": "75473ecdb5c14b1192cd0f367ae7015fa29856d9",
+              "size": 3026
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/test-formal-model.mjs",
+              "sha": "a9ccb8c3107b1ca2964ecf006ce1dbf0db1b0bc8",
+              "size": 8693
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/test-native-case-studies.mjs",
+              "sha": "9a7ce698c8f42a409bb97408abd99a238080dbbc",
+              "size": 15241
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/tools/test-workspace-guide.mjs",
+              "sha": "8b05a1128e0520bc89727bc95d6c2718daf1f258",
+              "size": 9427
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/build.mjs",
+              "sha": "8a9d139bbe7d6adea12c9b1c328cefc919266f30",
+              "size": 1892
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/index.mjs",
+              "sha": "9fe85315c60fc2c492d48187d9e8b19381b5cb8d",
+              "size": 8811
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/local-preview.mjs",
+              "sha": "9a6f9bf2b6d250407603c1df6e98384f81fcf1ec",
+              "size": 3182
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/preview.mjs",
+              "sha": "6c0de5d124c07f2c76b4f404f66eb1afdf1a18dd",
+              "size": 716
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/preview.test.mjs",
+              "sha": "ffe8d5c9eadf115091fe270619874f2fcbd120ea",
+              "size": 1894
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/test-workspace-store.mjs",
+              "sha": "853e2eb91a64d4cff473803355bd34e7ae8d408e",
+              "size": 15726
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/test.mjs",
+              "sha": "d168fb77f6a2e6790153e359c3c8e48bd7b204b4",
+              "size": 6477
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "app/worker/workspace-store.mjs",
+              "sha": "ed24c946b0a694a85defdb5c3cd330c90139ecac",
+              "size": 17270
+            }
+          ]
+        },
+        {
+          "label": "HTML",
+          "value": 98695,
+          "evidence": [
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "web/index.html",
+              "sha": "4f9425f6edbf3bce8069b4cda3529193eb958f8d",
+              "size": 19345
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "index.html",
+              "sha": "3d6dd704d2c2d14d89194a20c4acce574d6cf13e",
+              "size": 3317
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "web/index.html",
+              "sha": "27f1c9c7f3ac86e0bd0fe9137826c378872080b8",
+              "size": 19309
+            },
+            {
+              "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+              "path": "web/index.html",
+              "sha": "f1f82cd99b17cab0d661f3d75e6dccb7000f3a07",
+              "size": 19680
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "web/index.html",
+              "sha": "35307fe29a3b6fe561cfa60ea443d722b9bff12d",
+              "size": 25042
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/index.html",
+              "sha": "f326e49caae12790a4155c2a3d697ae0d2426df0",
+              "size": 12002
+            }
+          ]
+        },
+        {
+          "label": "CSS",
+          "value": 24315,
+          "evidence": [
+            {
+              "repo": "Web-Technologies-and-Security-CSC-40046-Keele-University-2024",
+              "path": "login.css",
+              "sha": "e22c18e58ab2c161b94505d336d8b325d0fefecd",
+              "size": 1030
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "mediaqueries.css",
+              "sha": "ec3048bc8d3a49081ac7156d8d860c777e44f2b6",
+              "size": 138
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "style.css",
+              "sha": "03588fcb69ef25da0cacad7838682375e1f84243",
+              "size": 4029
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/app/globals.css",
+              "sha": "dd75c8f2824c14f27839e03041fbd3b99a1eb2da",
+              "size": 4635
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/globals.css",
+              "sha": "25a9859fc7eb0e5b83c8a908e3a5fe2ebf6c3fc2",
+              "size": 426
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/globals.css",
+              "sha": "60721c8b13997ea28a9e54ea8d86ef6b952e5f1e",
+              "size": 2424
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/styles.css",
+              "sha": "a31aceb6418fd4990ef88679861f8b383ba7ec38",
+              "size": 11633
+            }
+          ]
+        },
+        {
+          "label": "SQL",
+          "value": 6390,
+          "evidence": [
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/sql/views.sql",
+              "sha": "cdd437b49d8da1f176461e0641a50bcd6f4d75cd",
+              "size": 6390
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "engineering",
+      "title": "Engineering stack",
+      "subtitle": "Documented repository-topic matches",
+      "unit": "matches",
+      "items": [
+        {
+          "label": "CI / CD",
+          "value": 17,
+          "evidence": [
+            {
+              "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "e9c90a52f991246ceb571e6716c52804db7da1bd",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": ".github/workflows/checks.yml",
+              "sha": "344abe3f0f3ee094554b9e2a4a1f6221a8c63cba",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "516d7cee91728197e6238574319144c14569c984",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Web-Technologies-and-Security-CSC-40046-Keele-University-2024",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "8ab870c24d0491df6ab48e04bc9aae97331a15a0",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "e9c90a52f991246ceb571e6716c52804db7da1bd",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "c08ae2a68b47b3f3aa928700c7c9ad4cb7b686c2",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Dairy-Herd-Monitoring-2024",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "d85b8810d1a16b028b1946cb061a06c6d804d06a",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+              "path": ".github/workflows/notebook-smoke.yml",
+              "sha": "924b46700f5b5afcfe40da9ab271fd5310ff2081",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "ReInforcement-Learning-Agent-2025",
+              "path": ".github/workflows/maintenance.yml",
+              "sha": "f06ad13d4952360528d72618a5c208f1fcd0190b",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "nextwork-web-project-2025",
+              "path": ".github/workflows/build.yml",
+              "sha": "526d5823e63ca90983a3149c5608c417bf0a4ecc",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+              "path": ".github/workflows/database-contracts.yml",
+              "sha": "d69ed1ca233a0b3ef25b4498415446af901abdc0",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
+              "excerpt": "The lightweight GitHub Actions workflow runs this check and Python syntax compilation without generating data or training models."
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "GitHub Actions runs the frontend checks and focused agent contracts on pull"
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": ".github/workflows/ci.yml",
+              "sha": "392ff2960f4ab0206693bd1dde6ed4ae0620e3b4",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": ".github/workflows/ci.yml",
+              "sha": "87f2856690b81bf8be6a22409660bccf45c64172",
+              "excerpt": "Repository file exists."
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "The tests construct synthetic cases and temporary SQLite state. They do not call models, send messages or access live career data. The historical 35-test exported-source receipt remains at [docs/verification/core-tests.json](docs/verification/core-tests.json). Fresh checks of the maintained code are recorded separately in [the 10 November maintenance report](docs/verification/2026-11-10-maintenance.md). Neither result establishes a full native-pl"
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": ".github/workflows/verify-workspace.yml",
+              "sha": "02f8d09ef5d6e9fdbcc155c74c72d3a7131818e3",
+              "excerpt": "Repository file exists."
+            }
+          ],
+          "pattern": "github actions|\\bCI/CD\\b|continuous integration"
+        },
+        {
+          "label": "Testing",
+          "value": 6,
+          "evidence": [
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "README.md",
+              "sha": "71f3cc26e82d49bd78f45cefcbc66e6ece05b0be",
+              "excerpt": "python -m unittest discover -s tests -v"
+            },
+            {
+              "repo": "AWS-Three-Tier-Web-Application-2025",
+              "path": "README.md",
+              "sha": "b64f1a94f717793029bb35659590cd806d6790ad",
+              "excerpt": "**Maturity:** Documentation and architecture lab. This repository contains an architecture image and four PDFs; it does not contain the frontend files, Lambda source, infrastructure as code or automated tests. A current deployment, reproducible build and performance benchmark have not been established."
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
+              "excerpt": "python -m pytest backend/tests -q"
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "python -m unittest discover -s tests/offline -v"
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "DuckDB · PyArrow/Parquet · httpx · BeautifulSoup · openpyxl · pytest · ruff"
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "python -B -m unittest discover -s tests -p \"test_*.py\" -v"
+            }
+          ],
+          "pattern": "\\bpytest\\b|\\bunittest\\b|\\bjest\\b|automated tests"
+        },
+        {
+          "label": "SQL databases",
+          "value": 5,
+          "evidence": [
+            {
+              "repo": "Advanced-Programming-in-Python-CSC-40068-Keele-University-2024",
+              "path": "README.md",
+              "sha": "71f3cc26e82d49bd78f45cefcbc66e6ece05b0be",
+              "excerpt": "- Persist products, orders and timestamped events in a local SQLite database."
+            },
+            {
+              "repo": "Data-Analytics-and-Databases-CSC-40054-Keele-University-2024",
+              "path": "README.md",
+              "sha": "1cde03475022eb3e97f1f59167530659f5db90e8",
+              "excerpt": "| Original delivery | Python notebooks + SQLite |"
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "LLM evaluation and adversarial scenarios; strict data contracts; FastAPI; SQLite;"
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "repository module, so PostgreSQL could replace it without touching the API."
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "Agentic Core is Jyothesh Karnam's personal project for compiling bounded requirements into governed workflows. This public repository contains the actual deterministic Python and SQLite core excerpt, with synthetic tests and an independently labelled reference design."
+            }
+          ],
+          "pattern": "\\bsqlite\\b|\\bpostgres(?:ql)?\\b|\\bmysql\\b"
+        },
+        {
+          "label": "AWS",
+          "value": 5,
+          "evidence": [
+            {
+              "repo": "nextwork-web-project-2025",
+              "path": "README.md",
+              "sha": "2fffb61d4d7f698e46b9d7387ff537e275e98fc5",
+              "excerpt": "A guided Maven WAR sample containing a JSP and servlet descriptor. No database, API, authentication or AWS provisioning code is supplied."
+            },
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "**Maturity:** Personal guided AWS learning lab. This repository contains a lab write-up, an architecture image and a PDF. It does not include application source code, infrastructure as code or an automated evaluation suite."
+            },
+            {
+              "repo": "AWS-Three-Tier-Web-Application-2025",
+              "path": "README.md",
+              "sha": "b64f1a94f717793029bb35659590cd806d6790ad",
+              "excerpt": "# AWS Three-Tier Web Application Lab"
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "| Inspect the proposed AWS target | [Scoped architecture case study](docs/diagrams/Agentic-Core-AWS-Case-Study.md) |"
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
+              "excerpt": "Turn a customer idea into an architecture baseline an engineer can review: map component responsibilities, inspect connections, record controls and assumptions, and compare proposed AWS service choices in an interactive 3D workspace.\r"
+            }
+          ],
+          "pattern": "\\bAWS\\b|Amazon (?:S3|Bedrock|Lambda|DynamoDB)"
+        },
+        {
+          "label": "Node.js / npm",
+          "value": 4,
+          "evidence": [
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
+              "excerpt": "Use Python 3.11 or 3.12 and a Node.js version supported by the pinned Next.js 16 release (20.9+). Run commands from the repository root unless shown otherwise."
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "Use Python 3.11 and Node.js 22. Run backend commands from the **repository root**."
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "**Prerequisites:** Python 3.11+, Node 22 (matching the frontend Docker image)"
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
+              "excerpt": "Node labels such as implemented or connection required are historical design/source-review descriptions. They are not fresh passing tests. Conditional mathematical arguments are design reasoning; defined acceptance tests are definitions unless an execution receipt states otherwise. The wider reference is not proof that every component exists in the bounded Agentic Core runtime.\r"
+            }
+          ],
+          "pattern": "\\bnode(?:\\.js)?\\b|\\bnpm\\b|@types/node"
+        },
+        {
+          "label": "Backend APIs",
+          "value": 4,
+          "evidence": [
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/requirements.txt",
+              "sha": "cf4e73354758e073b3dedb754e0a51ec05d3cf4d",
+              "excerpt": "Django==3.2\r"
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
+              "excerpt": "A personal causal-inference and decision-support prototype for a **synthetic** London marketing experiment. It estimates treatment effects, compares uplift models, builds targeting and budget recommendations, and presents results through FastAPI and a Next.js dashboard."
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "LLM evaluation and adversarial scenarios; strict data contracts; FastAPI; SQLite;"
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "    N --> Q[\"FastAPI<br/>/api/v1\"]"
+            }
+          ],
+          "pattern": "\\bfastapi\\b|\\bflask\\b|\\bdjango\\b|\\bexpress\\b"
+        },
+        {
+          "label": "React",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/package.json",
+              "sha": "5807a4b0373103e4a8a754702f91bda47f336d00",
+              "excerpt": "    \"@base-ui/react\": \"^1.3.0\","
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/package.json",
+              "sha": "b3d2191d54f239881a63f073e478d8aaa5410e05",
+              "excerpt": "    \"react\": \"^18\","
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "**Frontend** — Next.js 16 (App Router) · React 19 · TypeScript (strict) · Tailwind CSS ·"
+            }
+          ],
+          "pattern": "\\breact\\b"
+        },
+        {
+          "label": "Containers",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "nextwork-web-project-2025",
+              "path": "README.md",
+              "sha": "2fffb61d4d7f698e46b9d7387ff537e275e98fc5",
+              "excerpt": "The resulting WAR requires a separately configured compatible JSP/servlet container. Packaging does not prove deployment. Default builds require no AWS account. The optional `settings.xml` private mirror requires your own `CODEARTIFACT_MAVEN_URL` and `CODEARTIFACT_AUTH_TOKEN`; never commit token values."
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
+              "excerpt": "- Docker/Fly.io configuration is present; the Docker build generates a dataset. Configuration alone is not proof of an active deployment."
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "**Prerequisites:** Python 3.11+, Node 22 (matching the frontend Docker image)"
+            }
+          ],
+          "pattern": "\\bdocker\\b|\\bcontainers?\\b"
+        }
+      ]
+    },
+    {
+      "key": "ai",
+      "title": "AI & machine learning",
+      "subtitle": "Documented repository-topic matches",
+      "unit": "matches",
+      "items": [
+        {
+          "label": "Model evaluation",
+          "value": 5,
+          "evidence": [
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "README.md",
+              "sha": "33cb9921147cc4d5b53f149162c6ac5b7fe1e679",
+              "excerpt": "- model evaluation"
+            },
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "The following notes describe the original exercise. Model availability, access steps and pricing must be checked against current AWS documentation before repeating it. No live endpoint, current deployment or benchmark is claimed here."
+            },
+            {
+              "repo": "AWS-Three-Tier-Web-Application-2025",
+              "path": "README.md",
+              "sha": "b64f1a94f717793029bb35659590cd806d6790ad",
+              "excerpt": "**Maturity:** Documentation and architecture lab. This repository contains an architecture image and four PDFs; it does not contain the frontend files, Lambda source, infrastructure as code or automated tests. A current deployment, reproducible build and performance benchmark have not been established."
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "# Amazon Rufus AI Evaluation Concept Prototype"
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "  data a naive benchmark wins **43% of the time**, and that is published rather than"
+            }
+          ],
+          "pattern": "LLM eval|model eval|AI eval|\\bbenchmark|\\bRLHF\\b"
+        },
+        {
+          "label": "Scikit-learn",
+          "value": 4,
+          "evidence": [
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "requirements-maintenance.txt",
+              "sha": "e80e7962b005569b5e9b1e1e7cc63f88c864446b",
+              "excerpt": "scikit-learn>=1.4,<2"
+            },
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/requirements.txt",
+              "sha": "cf4e73354758e073b3dedb754e0a51ec05d3cf4d",
+              "excerpt": "scikit-learn==1.4.1.post1\r"
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "requirements.txt",
+              "sha": "5d9f238804735aa3244315ff5820ab2af775c60f",
+              "excerpt": "scikit-learn>=1.5,<2"
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "**Backend** — Python 3.11 · FastAPI · Pandas · NumPy · Pydantic v2 · scikit-learn ·"
+            }
+          ],
+          "pattern": "\\bscikit-learn\\b|\\bsklearn\\b"
+        },
+        {
+          "label": "PyTorch",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/requirements.txt",
+              "sha": "cf4e73354758e073b3dedb754e0a51ec05d3cf4d",
+              "excerpt": "torch==2.2.1\r"
+            },
+            {
+              "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+              "path": "README.md",
+              "sha": "988bbd40731cb09bbbc6ae1fc75b9127f6fb0337",
+              "excerpt": "python -m pip install torch --index-url https://download.pytorch.org/whl/cpu"
+            },
+            {
+              "repo": "ReInforcement-Learning-Agent-2025",
+              "path": "README.md",
+              "sha": "9f21e761f7f9fa2b3b3142862cdd3ab7ea51f9a7",
+              "excerpt": "- **PyTorch**: For implementing the Deep Q-Network (DQN)."
+            }
+          ],
+          "pattern": "\\bpytorch\\b|\\btorch\\b"
+        },
+        {
+          "label": "Transformers",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/requirements.txt",
+              "sha": "cf4e73354758e073b3dedb754e0a51ec05d3cf4d",
+              "excerpt": "transformers==4.38.2\r"
+            },
+            {
+              "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+              "path": "README.md",
+              "sha": "988bbd40731cb09bbbc6ae1fc75b9127f6fb0337",
+              "excerpt": "This repository contains an implementation of a GPT architecture with a focus on understanding the components and flow of a Transformer-based model. The core concept revolves around attention mechanisms, particularly the scaled dot-product attention, which is essential to GPT's functionality."
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "The full pipeline may download the sentence-transformer model on first use and"
+            }
+          ],
+          "pattern": "\\btransformers?\\b|multihead attention"
+        },
+        {
+          "label": "Embeddings",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+              "path": "README.md",
+              "sha": "988bbd40731cb09bbbc6ae1fc75b9127f6fb0337",
+              "excerpt": "   - **Embedding + Positional Encodings**: Tokens are embedded into dense vectors, with positional encodings added to retain sequence information."
+            },
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "![Document storage, Bedrock knowledge base, embeddings, vector store and model flow](architecture-complete.png)"
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "- FAISS product retrieval using `all-MiniLM-L6-v2` embeddings and an"
+            }
+          ],
+          "pattern": "\\bembeddings?\\b"
+        },
+        {
+          "label": "NLP",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "README.md",
+              "sha": "618eda8a13f504045b7a5da88087083f57e0e267",
+              "excerpt": "Novah is a desktop application that empowers individuals with disabilities by providing seamless computer access through voice commands and natural language processing. With Novah, users can effortlessly open applications, write emails, access the weather and time, and much more—all hands-free."
+            },
+            {
+              "repo": "Creating-a-Large-Language-Model-from-Scratch-2025",
+              "path": "README.md",
+              "sha": "988bbd40731cb09bbbc6ae1fc75b9127f6fb0337",
+              "excerpt": "   - **Tokenized Inputs**: The raw input text is tokenized into numerical representations."
+            }
+          ],
+          "pattern": "\\bNLP\\b|natural language processing|\\btokeniz(?:ed|er|ation)\\b|\\btokenis(?:ed|er|ation)\\b"
+        },
+        {
+          "label": "TensorFlow",
+          "value": 1,
+          "evidence": [
+            {
+              "repo": "MSc-DHMS-Thesis-CSC-40040-Keele-University-2024",
+              "path": "Codes/requirements.txt",
+              "sha": "cf4e73354758e073b3dedb754e0a51ec05d3cf4d",
+              "excerpt": "tensorflow==2.16.1\r"
+            }
+          ],
+          "pattern": "\\btensorflow\\b"
+        },
+        {
+          "label": "Reinforcement learning",
+          "value": 1,
+          "evidence": [
+            {
+              "repo": "ReInforcement-Learning-Agent-2025",
+              "path": "README.md",
+              "sha": "9f21e761f7f9fa2b3b3142862cdd3ab7ea51f9a7",
+              "excerpt": "# Zombie Hunter with Reinforcement Learning"
+            }
+          ],
+          "pattern": "reinforcement learning|\\bDQN\\b"
+        }
+      ]
+    },
+    {
+      "key": "agentic",
+      "title": "Agentic AI focus",
+      "subtitle": "Documented repository-topic matches",
+      "unit": "matches",
+      "items": [
+        {
+          "label": "Tracing / evals",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "**Maturity:** Personal guided AWS learning lab. This repository contains a lab write-up, an architecture image and a PDF. It does not include application source code, infrastructure as code or an automated evaluation suite."
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "| Review the current code checks | [10 November validation](docs/verification/2026-11-10-maintenance.md) |"
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
+              "excerpt": "| Application validation | [Build, authentication and mocked storage receipts](app/docs/verification-receipts.json) |\r"
+            }
+          ],
+          "pattern": "\\btracing\\b|\\btraces?\\b|\\bevaluation\\b|\\bverification\\b"
+        },
+        {
+          "label": "Planning",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "Agentic-Core-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "2b94c267e43f1e3a9ae068337d517ecaccac136a",
+              "excerpt": "Agentic Core is Jyothesh Karnam's private, capability-routed and authority-separated operating architecture for planning, research, judgment, engineering, and evidence-based completion."
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "This target design separates approval of the exact contract from the owner's later acceptance of the exact verified candidate. It allows **two total candidate attempts: the initial attempt and at most one admitted repair**. Bounded plan proposals, reviewed operators, independent verification, guarded release and separately authorised child operation are design requirements. AWS deployment and cloud runtime validation remain pending."
+            }
+          ],
+          "pattern": "\\bplanning\\b|\\bplan proposals\\b|\\bplanner\\b"
+        },
+        {
+          "label": "Tool use",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "### Tools and concepts"
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "The maintained implementation is a local, sequential engine. Its host supplies reasoning and supported tools. The documentation below distinguishes the implemented core, reproducible fixtures and separately proposed AWS deployment."
+            }
+          ],
+          "pattern": "\\btool(?:s|ing)?\\b|tool.call"
+        },
+        {
+          "label": "Memory / state",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "Connecting the S3 data source was followed by an ingestion/sync step in the exercise. The notes below describe that historical workflow; they do not establish the current state of any AWS resource."
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "- Local SQLite runs, tasks, approvals and events; sequential task advancement, checkpoints, bounded retries, cancellation and ambiguous-outcome reconciliation."
+            }
+          ],
+          "pattern": "\\bmemory\\b|\\bcheckpoints?\\b|\\bstate\\b"
+        },
+        {
+          "label": "Orchestration",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "Retrieval Augmented Generation (RAG) retrieves information from a document source and adds it to the context used to generate a response. This lab explores that workflow with Amazon Bedrock; it does not train or fine-tune a model on the documents. See the [AWS explanation of how knowledge bases work](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html)."
+            },
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "- Typed requirements, workflow packages and output schemas; graph and version/hash validation."
+            }
+          ],
+          "pattern": "\\borchestrat\\w*|\\bworkflow\\b"
+        },
+        {
+          "label": "Guardrails",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "Agentic Core is Jyothesh Karnam's personal project for compiling bounded requirements into governed workflows. This public repository contains the actual deterministic Python and SQLite core excerpt, with synthetic tests and an independently labelled reference design."
+            },
+            {
+              "repo": "System-Design-Architecture-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
+              "excerpt": "| Foundation design | `workspace/foundation-reference.json`: four Agentic Core components, inherited PIC controls, a bounded example and defined acceptance tests |\r"
+            }
+          ],
+          "pattern": "\\bguardrails?\\b|\\bpermission rules\\b|\\bbounded\\b"
+        },
+        {
+          "label": "RAG / retrieval",
+          "value": 1,
+          "evidence": [
+            {
+              "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "README.md",
+              "sha": "bd1e9e281a6228f3e8db6d1c834f3b2922acf5f9",
+              "excerpt": "# Set Up a RAG Chatbot in Bedrock"
+            }
+          ],
+          "pattern": "\\bRAG\\b|\\bretrieval\\b|retrieval.augmented"
+        },
+        {
+          "label": "Human review",
+          "value": 1,
+          "evidence": [
+            {
+              "repo": "agentic-core-evidence-2026",
+              "path": "README.md",
+              "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
+              "excerpt": "- Engine-scoped permission rules, approval hashes, denial precedence, path checks and redaction."
+            }
+          ],
+          "pattern": "human.review|human.in.the.loop|\\bapprovals?\\b|\\bHITL\\b"
+        }
+      ]
+    }
+  ]
+}

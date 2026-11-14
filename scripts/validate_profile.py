@@ -3,6 +3,8 @@
 
 from pathlib import Path
 import re
+import json
+import math
 import sys
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
@@ -57,9 +59,24 @@ def main():
     groups = [e for e in circles.iter() if e.get("data-skill-circle")]
     if {e.get("data-skill-circle") for e in groups} != {"languages", "engineering", "ai", "agentic"} or len(groups) != 4:
         errors.append("skill-circles.svg: expected four named circles")
+    metrics = json.loads((ROOT / "config/portfolio-metrics.json").read_text(encoding="utf-8"))
     for group in groups:
-        if len([e for e in group.iter() if e.get("data-skill-node")]) != 8:
-            errors.append("skill-circles.svg: each circle requires eight nodes")
+        chart = next(c for c in metrics["charts"] if c["key"] == group.get("data-skill-circle"))
+        expected = {i["label"]: i["value"] for i in chart["items"]}
+        if {e.get("data-skill-node") for e in group.iter() if e.get("data-skill-node")} != set(expected):
+            errors.append("skill-circles.svg: legend does not match source data")
+        segments = [e for e in group.iter() if e.get("data-segment")]
+        total = sum(expected.values())
+        if int(group.get("data-total")) != total:
+            errors.append("skill-circles.svg: incorrect total")
+        if {e.get("data-segment") for e in segments} != {k for k,v in expected.items() if v}:
+            errors.append("skill-circles.svg: missing data segment")
+        for segment in segments:
+            value = expected[segment.get("data-segment")]
+            length = float(segment.get("stroke-dasharray").split()[0])
+            expected_length = 2 * math.pi * float(segment.get("r")) * value / total
+            if int(segment.get("data-value")) != value or abs(length - expected_length) > 1e-6:
+                errors.append("skill-circles.svg: non-proportional data segment")
     circle_ids = [e.get("id") for e in circles.iter() if e.get("id")]
     if len(circle_ids) != len(set(circle_ids)):
         errors.append("skill-circles.svg: duplicate IDs")
