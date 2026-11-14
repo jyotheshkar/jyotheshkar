@@ -1,0 +1,840 @@
+{
+  "user": "jyotheshkar",
+  "captured_at": "2026-11-14T09:03:01.854Z",
+  "complete": true,
+  "source": "GitHub public repository REST metadata; public repositories only.",
+  "repositories": [
+    {
+      "id": 439523998,
+      "name": "NumCounter",
+      "full_name": "jyotheshkar/NumCounter",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "CSS",
+      "pushed_at": "2021-12-18T18:54:24Z",
+      "html_url": "https://github.com/jyotheshkar/NumCounter",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 476355697,
+      "name": "Jk-properties-Real-Estate",
+      "full_name": "jyotheshkar/Jk-properties-Real-Estate",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "CSS",
+      "pushed_at": "2022-04-01T06:24:53Z",
+      "html_url": "https://github.com/jyotheshkar/Jk-properties-Real-Estate",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 476616728,
+      "name": "Supercorp-admin",
+      "full_name": "jyotheshkar/Supercorp-admin",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "CSS",
+      "pushed_at": "2022-04-01T07:33:29Z",
+      "html_url": "https://github.com/jyotheshkar/Supercorp-admin",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 483966856,
+      "name": "Complex-counter-",
+      "full_name": "jyotheshkar/Complex-counter-",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "CSS",
+      "pushed_at": "2022-04-21T08:33:15Z",
+      "html_url": "https://github.com/jyotheshkar/Complex-counter-",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 488989895,
+      "name": "Traveler",
+      "full_name": "jyotheshkar/Traveler",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:22:33Z",
+      "html_url": "https://github.com/jyotheshkar/Traveler",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 532253784,
+      "name": "Airbnb-clone",
+      "full_name": "jyotheshkar/Airbnb-clone",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:14:06Z",
+      "html_url": "https://github.com/jyotheshkar/Airbnb-clone",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 532254326,
+      "name": "javascript-basic-projects",
+      "full_name": "jyotheshkar/javascript-basic-projects",
+      "private": false,
+      "fork": true,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2022-09-03T07:05:30Z",
+      "html_url": "https://github.com/jyotheshkar/javascript-basic-projects",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 532258275,
+      "name": "netflixClone.github.io",
+      "full_name": "jyotheshkar/netflixClone.github.io",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "CSS",
+      "pushed_at": "2026-11-11T13:11:51Z",
+      "html_url": "https://github.com/jyotheshkar/netflixClone.github.io",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 532622209,
+      "name": "live-sessions",
+      "full_name": "jyotheshkar/live-sessions",
+      "private": false,
+      "fork": true,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2022-08-13T07:24:47Z",
+      "html_url": "https://github.com/jyotheshkar/live-sessions",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 539833010,
+      "name": "Assassins-creed",
+      "full_name": "jyotheshkar/Assassins-creed",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:14:09Z",
+      "html_url": "https://github.com/jyotheshkar/Assassins-creed",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 552354757,
+      "name": "DEFI-Decentralized-trading-protocol",
+      "full_name": "jyotheshkar/DEFI-Decentralized-trading-protocol",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:11:54Z",
+      "html_url": "https://github.com/jyotheshkar/DEFI-Decentralized-trading-protocol",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 554750819,
+      "name": "Crypto-Explore",
+      "full_name": "jyotheshkar/Crypto-Explore",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:30:30Z",
+      "html_url": "https://github.com/jyotheshkar/Crypto-Explore",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 556281593,
+      "name": "react-covid-tracker",
+      "full_name": "jyotheshkar/react-covid-tracker",
+      "private": false,
+      "fork": true,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2022-01-31T13:46:11Z",
+      "html_url": "https://github.com/jyotheshkar/react-covid-tracker",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 556633331,
+      "name": "Covid-Tracker-App",
+      "full_name": "jyotheshkar/Covid-Tracker-App",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:14:12Z",
+      "html_url": "https://github.com/jyotheshkar/Covid-Tracker-App",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 559201482,
+      "name": "Instagram-clone",
+      "full_name": "jyotheshkar/Instagram-clone",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:25:18Z",
+      "html_url": "https://github.com/jyotheshkar/Instagram-clone",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 560269740,
+      "name": "jyotheshkar",
+      "full_name": "jyotheshkar/jyotheshkar",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2026-11-11T13:04:01Z",
+      "html_url": "https://github.com/jyotheshkar/jyotheshkar",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 560772890,
+      "name": "Tesla-Clone",
+      "full_name": "jyotheshkar/Tesla-Clone",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:14:15Z",
+      "html_url": "https://github.com/jyotheshkar/Tesla-Clone",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 561461565,
+      "name": "React.js-Portfolio",
+      "full_name": "jyotheshkar/React.js-Portfolio",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:14:18Z",
+      "html_url": "https://github.com/jyotheshkar/React.js-Portfolio",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 563436245,
+      "name": "Omnifood-website",
+      "full_name": "jyotheshkar/Omnifood-website",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "pushed_at": "2026-11-11T13:14:21Z",
+      "html_url": "https://github.com/jyotheshkar/Omnifood-website",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 587217700,
+      "name": "Token-Generator-Application",
+      "full_name": "jyotheshkar/Token-Generator-Application",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2023-12-13T11:23:36Z",
+      "html_url": "https://github.com/jyotheshkar/Token-Generator-Application",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 698643002,
+      "name": "React-weather-app",
+      "full_name": "jyotheshkar/React-weather-app",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-10-25T09:49:22Z",
+      "html_url": "https://github.com/jyotheshkar/React-weather-app",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 753061862,
+      "name": "Car-Parking-System",
+      "full_name": "jyotheshkar/Car-Parking-System",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:10:38Z",
+      "html_url": "https://github.com/jyotheshkar/Car-Parking-System",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 753827905,
+      "name": "Asus-ROG-warehouse-Pro",
+      "full_name": "jyotheshkar/Asus-ROG-warehouse-Pro",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-10T15:17:16Z",
+      "html_url": "https://github.com/jyotheshkar/Asus-ROG-warehouse-Pro",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 754725026,
+      "name": "Data-Analytics",
+      "full_name": "jyotheshkar/Data-Analytics",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:10:41Z",
+      "html_url": "https://github.com/jyotheshkar/Data-Analytics",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 756776509,
+      "name": "Quantum-AI-Nexus",
+      "full_name": "jyotheshkar/Quantum-AI-Nexus",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T13:13:44Z",
+      "html_url": "https://github.com/jyotheshkar/Quantum-AI-Nexus",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 759782141,
+      "name": "My-Portfolio",
+      "full_name": "jyotheshkar/My-Portfolio",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2024-02-19T10:23:02Z",
+      "html_url": "https://github.com/jyotheshkar/My-Portfolio",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 765058912,
+      "name": "CSC-40038",
+      "full_name": "jyotheshkar/CSC-40038",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:10:44Z",
+      "html_url": "https://github.com/jyotheshkar/CSC-40038",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 788958695,
+      "name": "To-do-List",
+      "full_name": "jyotheshkar/To-do-List",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2024-04-19T12:33:41Z",
+      "html_url": "https://github.com/jyotheshkar/To-do-List",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 797167608,
+      "name": "web-tech",
+      "full_name": "jyotheshkar/web-tech",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "PHP",
+      "pushed_at": "2026-11-11T13:19:14Z",
+      "html_url": "https://github.com/jyotheshkar/web-tech",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 797837256,
+      "name": "Software-Engineering-1",
+      "full_name": "jyotheshkar/Software-Engineering-1",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:10:53Z",
+      "html_url": "https://github.com/jyotheshkar/Software-Engineering-1",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 823883894,
+      "name": "Time-series-Neural-network-software-application",
+      "full_name": "jyotheshkar/Time-series-Neural-network-software-application",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:11:20Z",
+      "html_url": "https://github.com/jyotheshkar/Time-series-Neural-network-software-application",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 837692910,
+      "name": "Dairy-Herd-Monitoring",
+      "full_name": "jyotheshkar/Dairy-Herd-Monitoring",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:10:56Z",
+      "html_url": "https://github.com/jyotheshkar/Dairy-Herd-Monitoring",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 901062433,
+      "name": "thrive-shine-website",
+      "full_name": "jyotheshkar/thrive-shine-website",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2024-12-10T01:11:06Z",
+      "html_url": "https://github.com/jyotheshkar/thrive-shine-website",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 909049786,
+      "name": "interview-help",
+      "full_name": "jyotheshkar/interview-help",
+      "private": false,
+      "fork": true,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2024-01-24T16:32:29Z",
+      "html_url": "https://github.com/jyotheshkar/interview-help",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 919738589,
+      "name": "Creating-a-Large-Language-Model-from-Scratch",
+      "full_name": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-11-11T13:11:14Z",
+      "html_url": "https://github.com/jyotheshkar/Creating-a-Large-Language-Model-from-Scratch",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 923215841,
+      "name": "ReInforcement-Learning-Agent-",
+      "full_name": "jyotheshkar/ReInforcement-Learning-Agent-",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:11:17Z",
+      "html_url": "https://github.com/jyotheshkar/ReInforcement-Learning-Agent-",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 947225694,
+      "name": "nextwork-web-project",
+      "full_name": "jyotheshkar/nextwork-web-project",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Java",
+      "pushed_at": "2026-11-11T13:10:05Z",
+      "html_url": "https://github.com/jyotheshkar/nextwork-web-project",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 954229262,
+      "name": "jyotheshkar-RAG-Based-AI-Chatbot-with-AWS-Bedrock",
+      "full_name": "jyotheshkar/jyotheshkar-RAG-Based-AI-Chatbot-with-AWS-Bedrock",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2026-11-11T13:10:07Z",
+      "html_url": "https://github.com/jyotheshkar/jyotheshkar-RAG-Based-AI-Chatbot-with-AWS-Bedrock",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 957066769,
+      "name": "AWS-Three-Tier-Web-Application-",
+      "full_name": "jyotheshkar/AWS-Three-Tier-Web-Application-",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2026-11-11T13:10:11Z",
+      "html_url": "https://github.com/jyotheshkar/AWS-Three-Tier-Web-Application-",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 957192993,
+      "name": "Jyothesh-Karnam-Portfolio",
+      "full_name": "jyotheshkar/Jyothesh-Karnam-Portfolio",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "pushed_at": "2026-11-11T13:26:22Z",
+      "html_url": "https://github.com/jyotheshkar/Jyothesh-Karnam-Portfolio",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 966757148,
+      "name": "Car-Sharing-Demand-Analysis",
+      "full_name": "jyotheshkar/Car-Sharing-Demand-Analysis",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-11-11T13:11:23Z",
+      "html_url": "https://github.com/jyotheshkar/Car-Sharing-Demand-Analysis",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1026397639,
+      "name": "Portfolio-",
+      "full_name": "jyotheshkar/Portfolio-",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "pushed_at": "2026-11-11T13:14:24Z",
+      "html_url": "https://github.com/jyotheshkar/Portfolio-",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1031314964,
+      "name": "Stable-Diffusion-Dreams",
+      "full_name": "jyotheshkar/Stable-Diffusion-Dreams",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2025-08-03T13:39:24Z",
+      "html_url": "https://github.com/jyotheshkar/Stable-Diffusion-Dreams",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1176102985,
+      "name": "PrimeLift",
+      "full_name": "jyotheshkar/PrimeLift",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "pushed_at": "2026-11-11T13:11:08Z",
+      "html_url": "https://github.com/jyotheshkar/PrimeLift",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1187490657,
+      "name": "sentinel-ai",
+      "full_name": "jyotheshkar/sentinel-ai",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:11:11Z",
+      "html_url": "https://github.com/jyotheshkar/sentinel-ai",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1195164991,
+      "name": "Rufus-Eval-Engine",
+      "full_name": "jyotheshkar/Rufus-Eval-Engine",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:15:11Z",
+      "html_url": "https://github.com/jyotheshkar/Rufus-Eval-Engine",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1198717985,
+      "name": "Jyothesh-Karnam-Portfolio-2026",
+      "full_name": "jyotheshkar/Jyothesh-Karnam-Portfolio-2026",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2026-04-01T17:33:14Z",
+      "html_url": "https://github.com/jyotheshkar/Jyothesh-Karnam-Portfolio-2026",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1203123538,
+      "name": "random",
+      "full_name": "jyotheshkar/random",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "pushed_at": "2026-11-11T13:12:03Z",
+      "html_url": "https://github.com/jyotheshkar/random",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1339494613,
+      "name": "nhs-elective-flow-intelligence",
+      "full_name": "jyotheshkar/nhs-elective-flow-intelligence",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-11T13:19:09Z",
+      "html_url": "https://github.com/jyotheshkar/nhs-elective-flow-intelligence",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1433090077,
+      "name": "Atlas",
+      "full_name": "jyotheshkar/Atlas",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-11T22:43:42Z",
+      "html_url": "https://github.com/jyotheshkar/Atlas",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1433090855,
+      "name": "agentic-core-evidence",
+      "full_name": "jyotheshkar/agentic-core-evidence",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-11-10T15:13:29Z",
+      "html_url": "https://github.com/jyotheshkar/agentic-core-evidence",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    },
+    {
+      "id": 1433091316,
+      "name": "system-architecture-workspace",
+      "full_name": "jyotheshkar/system-architecture-workspace",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "pushed_at": "2026-11-11T13:12:16Z",
+      "html_url": "https://github.com/jyotheshkar/system-architecture-workspace",
+      "owner": {
+        "login": "jyotheshkar"
+      }
+    }
+  ]
+}

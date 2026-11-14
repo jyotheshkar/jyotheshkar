@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Jyothesh Karnam — Developing Agentic AI Systems</title>
+  <desc id="desc">London, UK. Python, tool orchestration, retrieval and evaluation. An original teal and black engineering console with an animated agent core.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071518"/><stop offset="1" stop-color="#03090C"/></linearGradient>
+    <linearGradient id="line"><stop stop-color="#2DE2C2"/><stop offset="1" stop-color="#2DE2C2" stop-opacity="0"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#2DE2C2" stop-opacity=".14"/><stop offset="1" stop-color="#2DE2C2" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#214A4D" stroke-opacity=".21"/></pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 .5H4" stroke="#000" stroke-opacity=".15"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="panel"><rect x="1" y="1" width="998" height="358" rx="15"/></clipPath>
+    <style>
+      text{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace}
+      .sans{font-family:Arial,Helvetica,sans-serif}
+      .orbit{transform-origin:793px 179px;animation:orbit 26s linear infinite}
+      .orbitBack{transform-origin:793px 179px;animation:orbit 36s linear infinite reverse}
+      .pulse{animation:pulse 4s ease-in-out infinite}.cursor{animation:blink 1.2s steps(1) infinite}
+      .flow{stroke-dasharray:4 10;animation:flow 4s linear infinite}
+      @keyframes orbit{to{transform:rotate(360deg)}}
+      @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+      @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+      @keyframes flow{to{stroke-dashoffset:-56}}
+      @media(prefers-reduced-motion:reduce){.orbit,.orbitBack,.pulse,.cursor,.flow{animation:none}}
+    </style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1000" height="360" fill="url(#bg)"/>
+    <rect width="1000" height="360" fill="url(#grid)"/>
+    <circle cx="800" cy="180" r="250" fill="url(#aura)"/>
+    <path d="M651 0V62L690 101M1000 263H941L910 232M735 360V310L756 289" fill="none" stroke="#2DE2C2" stroke-opacity=".11"/>
+    <rect x="1" y="1" width="998" height="51" fill="#071215"/>
+    <path d="M1 52H999" stroke="#193C40"/>
+    <path d="M31 25h7m-3.5-3.5v7" stroke="#2DE2C2"/>
+    <text x="49" y="30" fill="#93B9B5" font-size="11" letter-spacing="1.6">PROFILE // JYOTHESHKAR</text>
+    <text x="969" y="30" text-anchor="end" fill="#668D8C" font-size="10" letter-spacing="1.5">BUILD · EVALUATE · ITERATE</text>
+    <text x="38" y="116" class="sans" fill="#E6FAF5" font-size="46" font-weight="700" letter-spacing="-.8">JYOTHESH KARNAM</text>
+    <text x="41" y="154" fill="#87A9A7" font-size="12" letter-spacing="3.5">DEVELOPING</text>
+    <text x="38" y="195" class="sans" fill="#2DE2C2" font-size="36" font-weight="700" letter-spacing="-.3">AGENTIC AI SYSTEMS</text>
+    <path d="M41 214H584" stroke="url(#line)"/>
+    <text x="41" y="243" fill="#B2CCC8" font-size="13">Python / tool orchestration / retrieval / evaluation</text>
+    <text x="41" y="270" fill="#719492" font-size="12">From model evaluation to evidence-driven AI workflows.</text>
+    <g transform="translate(41 299)"><path d="M5 0a5 5 0 0 0-5 5c0 4 5 9 5 9s5-5 5-9a5 5 0 0 0-5-5Z" fill="none" stroke="#2DE2C2" stroke-width="1.2"/><circle cx="5" cy="5" r="1.6" fill="#2DE2C2"/><text x="20" y="10" fill="#B2CCC8" font-size="11">LONDON, UK</text></g>
+    <text x="211" y="309" fill="#496B6C" font-size="11">//</text>
+    <text x="240" y="309" fill="#87A9A7" font-size="11">turning context into deliberate action</text>
+    <rect class="cursor" x="529" y="299" width="6" height="12" fill="#2DE2C2"/>
+    <g fill="none">
+      <circle cx="793" cy="179" r="116" stroke="#21494B" stroke-width="1"/>
+      <circle cx="793" cy="179" r="99" stroke="#235A58" stroke-dasharray="2 9"/>
+      <g class="orbit"><circle cx="793" cy="179" r="116" stroke="#2DE2C2" stroke-opacity=".55" stroke-dasharray="77 652"/><circle cx="793" cy="63" r="3" fill="#2DE2C2" stroke="none"/></g>
+      <g class="orbitBack"><circle cx="793" cy="179" r="81" stroke="#2DE2C2" stroke-opacity=".28" stroke-dasharray="42 467"/></g>
+      <path class="flow" d="M793 91V130M881 179H842M793 268V228M704 179H744" stroke="#2DE2C2" stroke-opacity=".65" stroke-width="1.5"/>
+      <path d="m793 125 49 27v55l-49 27-49-27v-55Z" fill="#0A2325" stroke="#2DE2C2" stroke-opacity=".7" stroke-width="1.5"/>
+      <path d="m793 137 38 21v43l-38 21-38-21v-43Z" stroke="#215958"/>
+      <path d="M793 156v16m-14-8 14 8 14-8m-14 8v25m-14-8 14 8 14-8" stroke="#6BF2D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle class="pulse" cx="793" cy="179" r="60" stroke="#2DE2C2" stroke-opacity=".14" stroke-width="8" filter="url(#glow)"/>
+      <path d="M668 116h32l15 15M916 242h-31l-14-14M683 257h23l15-15" stroke="#245C5A"/>
+    </g>
+    <g font-size="9" fill="#8BB8B3" letter-spacing="1.3"><text x="793" y="83" text-anchor="middle">CONTEXT</text><text x="896" y="183">TOOLS</text><text x="793" y="286" text-anchor="middle">EVIDENCE</text><text x="689" y="183" text-anchor="end">PLAN</text></g>
+    <text x="793" y="328" text-anchor="middle" fill="#4E7E7B" font-size="9" letter-spacing="2">HUMAN JUDGEMENT IN THE LOOP</text>
+    <rect width="1000" height="360" fill="url(#scan)" pointer-events="none"/>
+  </g>
+  <rect x=".5" y=".5" width="999" height="359" rx="15" fill="none" stroke="#24504F"/>
+  <path d="M19 .5H122M.5 19V43" stroke="#2DE2C2" stroke-opacity=".7" stroke-width="2"/>
+</svg>
