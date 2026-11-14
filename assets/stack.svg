@@ -2,19 +2,19 @@
   <title id="title">Technical focus</title>
   <desc id="desc">Build: Python, SQL and SQLite, FastAPI. Retrieve and evaluate: FAISS and PyTorch. Interfaces and architecture: Next.js and AWS architecture learning. These labels describe tools and learning focus, not proficiency scores.</desc>
   <defs>
-    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071518"/><stop offset="1" stop-color="#03090C"/></linearGradient>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#151B23"/><stop offset="1" stop-color="#0D1117"/></linearGradient>
     <style>text{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace}.sans{font-family:Arial,Helvetica,sans-serif}.line{stroke-dasharray:3 9;animation:flow 5s linear infinite}@keyframes flow{to{stroke-dashoffset:-48}}@media(prefers-reduced-motion:reduce){.line{animation:none}}</style>
   </defs>
-  <rect x=".5" y=".5" width="999" height="247" rx="15" fill="url(#bg)" stroke="#24504F"/>
-  <text x="33" y="36" fill="#2DE2C2" font-size="10" letter-spacing="2.5">TECHNICAL FOCUS // BUILDING BLOCKS</text>
-  <text x="32" y="75" class="sans" fill="#E6FAF5" font-size="26" font-weight="700">Tools with a purpose.</text>
-  <g fill="none" stroke="#184341"><path d="M332 105V209M660 105V209"/><path class="line" d="M33 226H968"/></g>
-  <g fill="#0A2426" stroke="#2D7569"><rect x="34" y="108" width="29" height="29" rx="6"/><rect x="360" y="108" width="29" height="29" rx="6"/><rect x="689" y="108" width="29" height="29" rx="6"/></g>
-  <g fill="none" stroke="#2DE2C2" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="m45 117-5 5 5 5m7-10 5 5-5 5M374 116a6 6 0 1 0 0 12 6 6 0 0 0 0-12m4 10 5 5M699 118h9v9h-9Zm-3-3h15v15h-15Z"/></g>
-  <text x="76" y="128" fill="#BEDCD4" class="sans" font-size="15" font-weight="700">Build</text>
-  <text x="34" y="164" fill="#E0F5ED" font-size="14">Python · SQL / SQLite</text><text x="34" y="191" fill="#87A9A7" font-size="12">FastAPI</text>
-  <text x="402" y="128" fill="#BEDCD4" class="sans" font-size="15" font-weight="700">Retrieve + evaluate</text>
-  <text x="360" y="164" fill="#E0F5ED" font-size="14">FAISS · PyTorch</text><text x="360" y="191" fill="#87A9A7" font-size="12">Retrieval and model evaluation</text>
-  <text x="731" y="128" fill="#BEDCD4" class="sans" font-size="15" font-weight="700">Interfaces + architecture</text>
-  <text x="689" y="164" fill="#E0F5ED" font-size="14">Next.js</text><text x="689" y="191" fill="#87A9A7" font-size="12">AWS architecture · learning</text>
+  <rect x=".5" y=".5" width="999" height="247" rx="15" fill="url(#bg)" stroke="#3D444D"/>
+  <text x="33" y="36" fill="#4493F8" font-size="10" letter-spacing="2.5">TECHNICAL FOCUS // BUILDING BLOCKS</text>
+  <text x="32" y="75" class="sans" fill="#F0F6FC" font-size="26" font-weight="700">Tools with a purpose.</text>
+  <g fill="none" stroke="#3D444D"><path d="M332 105V209M660 105V209"/><path class="line" d="M33 226H968"/></g>
+  <g fill="#151B23" stroke="#9198A1"><rect x="34" y="108" width="29" height="29" rx="6"/><rect x="360" y="108" width="29" height="29" rx="6"/><rect x="689" y="108" width="29" height="29" rx="6"/></g>
+  <g fill="none" stroke="#4493F8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="m45 117-5 5 5 5m7-10 5 5-5 5M374 116a6 6 0 1 0 0 12 6 6 0 0 0 0-12m4 10 5 5M699 118h9v9h-9Zm-3-3h15v15h-15Z"/></g>
+  <text x="76" y="128" fill="#F0F6FC" class="sans" font-size="15" font-weight="700">Build</text>
+  <text x="34" y="164" fill="#F0F6FC" font-size="14">Python · SQL / SQLite</text><text x="34" y="191" fill="#9198A1" font-size="12">FastAPI</text>
+  <text x="402" y="128" fill="#F0F6FC" class="sans" font-size="15" font-weight="700">Retrieve + evaluate</text>
+  <text x="360" y="164" fill="#F0F6FC" font-size="14">FAISS · PyTorch</text><text x="360" y="191" fill="#9198A1" font-size="12">Retrieval and model evaluation</text>
+  <text x="731" y="128" fill="#F0F6FC" class="sans" font-size="15" font-weight="700">Interfaces + architecture</text>
+  <text x="689" y="164" fill="#F0F6FC" font-size="14">Next.js</text><text x="689" y="191" fill="#9198A1" font-size="12">AWS architecture · learning</text>
 </svg>

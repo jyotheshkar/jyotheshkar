@@ -1,50 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="title desc">
 <title id="title">ENGINEERING TELEMETRY</title><desc id="desc">PUBLIC GITHUB SNAPSHOT / 14 Nov 2026 09:06 UTC</desc>
-<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#163035" stroke-width=".5"/></pattern></defs>
-<rect width="1000" height="480" rx="14" fill="#050B0D"/><rect x="1" y="1" width="998" height="478" rx="13" fill="url(#grid)" stroke="#204148"/>
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3D444D" stroke-width=".5"/></pattern></defs>
+<rect width="1000" height="480" rx="14" fill="#0D1117"/><rect x="1" y="1" width="998" height="478" rx="13" fill="url(#grid)" stroke="#3D444D"/>
 <g font-family="Consolas,DejaVu Sans Mono,monospace">
-<path d="M28 44H42M35 37V51" stroke="#2DE2C2" stroke-width="2"/>
-<text x="54" y="50" fill="#2DE2C2" font-size="20" font-weight="700" >ENGINEERING TELEMETRY</text>
-<text x="30" y="78" fill="#8CA9A6" font-size="12" font-weight="400" >PUBLIC GITHUB SNAPSHOT / 14 Nov 2026 09:06 UTC</text>
-<rect x="30" y="102" width="220" height="108" rx="8" fill="#0B1C20" stroke="#204148"/>
-<text x="48" y="132" fill="#8CA9A6" font-size="12" font-weight="400" >PUBLIC REPOS</text>
-<text x="48" y="183" fill="#DFFAF5" font-size="42" font-weight="700" >52</text>
-<path d="M205 178h23v-20" fill="none" stroke="#2DE2C2" stroke-width="2"/>
-<rect x="270" y="102" width="220" height="108" rx="8" fill="#0B1C20" stroke="#204148"/>
-<text x="288" y="132" fill="#8CA9A6" font-size="12" font-weight="400" >ACTIVE SOURCE</text>
-<text x="288" y="183" fill="#DFFAF5" font-size="42" font-weight="700" >34</text>
-<path d="M445 178h23v-20" fill="none" stroke="#2DE2C2" stroke-width="2"/>
-<rect x="510" y="102" width="220" height="108" rx="8" fill="#0B1C20" stroke="#204148"/>
-<text x="528" y="132" fill="#8CA9A6" font-size="12" font-weight="400" >REPO STARS</text>
-<text x="528" y="183" fill="#DFFAF5" font-size="42" font-weight="700" >1</text>
-<path d="M685 178h23v-20" fill="none" stroke="#2DE2C2" stroke-width="2"/>
-<rect x="750" y="102" width="220" height="108" rx="8" fill="#0B1C20" stroke="#204148"/>
-<text x="768" y="132" fill="#8CA9A6" font-size="12" font-weight="400" >REPO FORKS</text>
-<text x="768" y="183" fill="#DFFAF5" font-size="42" font-weight="700" >4</text>
-<path d="M925 178h23v-20" fill="none" stroke="#2DE2C2" stroke-width="2"/>
-<text x="30" y="251" fill="#2DE2C2" font-size="16" font-weight="700" >LANGUAGE FOOTPRINT</text>
-<text x="30" y="277" fill="#8CA9A6" font-size="13" font-weight="400" >Primary language by active source repository</text>
-<rect x="30.00" y="300" width="363.87" height="18" fill="#2DE2C2"/>
-<rect x="393.87" y="300" width="333.55" height="18" fill="#43BFE5"/>
-<rect x="727.42" y="300" width="90.97" height="18" fill="#91D8A8"/>
-<rect x="818.39" y="300" width="60.65" height="18" fill="#8AA8E8"/>
-<rect x="879.03" y="300" width="30.32" height="18" fill="#BAA3E8"/>
-<rect x="909.35" y="300" width="30.32" height="18" fill="#E2CE80"/>
-<rect x="939.68" y="300" width="30.32" height="18" fill="#688E92"/>
-<rect x="30" y="342" width="9" height="9" fill="#2DE2C2"/>
-<text x="48" y="352" fill="#DFFAF5" font-size="12" font-weight="400" >Python  12</text>
-<rect x="270" y="342" width="9" height="9" fill="#43BFE5"/>
-<text x="288" y="352" fill="#DFFAF5" font-size="12" font-weight="400" >JavaScript  11</text>
-<rect x="510" y="342" width="9" height="9" fill="#91D8A8"/>
-<text x="528" y="352" fill="#DFFAF5" font-size="12" font-weight="400" >HTML  3</text>
-<rect x="750" y="342" width="9" height="9" fill="#8AA8E8"/>
-<text x="768" y="352" fill="#DFFAF5" font-size="12" font-weight="400" >Jupyter Notebook  2</text>
-<rect x="30" y="374" width="9" height="9" fill="#BAA3E8"/>
-<text x="48" y="384" fill="#DFFAF5" font-size="12" font-weight="400" >TypeScript  1</text>
-<rect x="270" y="374" width="9" height="9" fill="#E2CE80"/>
-<text x="288" y="384" fill="#DFFAF5" font-size="12" font-weight="400" >Java  1</text>
-<rect x="510" y="374" width="9" height="9" fill="#688E92"/>
-<text x="528" y="384" fill="#DFFAF5" font-size="12" font-weight="400" >Other  1</text>
-<text x="30" y="433" fill="#8CA9A6" font-size="11" font-weight="400" >Counts are repositories, not skill scores. Unclassified active source repos: 3.</text>
-<text x="30" y="456" fill="#8CA9A6" font-size="10" font-weight="400" >Active source = owned, public, non-fork, non-archived. Stars/forks span all public repos.</text>
+<path d="M28 44H42M35 37V51" stroke="#4493F8" stroke-width="2"/>
+<text x="54" y="50" fill="#4493F8" font-size="20" font-weight="700" >ENGINEERING TELEMETRY</text>
+<text x="30" y="78" fill="#9198A1" font-size="12" font-weight="400" >PUBLIC GITHUB SNAPSHOT / 14 Nov 2026 09:06 UTC</text>
+<rect x="30" y="102" width="220" height="108" rx="8" fill="#151B23" stroke="#3D444D"/>
+<text x="48" y="132" fill="#9198A1" font-size="12" font-weight="400" >PUBLIC REPOS</text>
+<text x="48" y="183" fill="#F0F6FC" font-size="42" font-weight="700" >52</text>
+<path d="M205 178h23v-20" fill="none" stroke="#4493F8" stroke-width="2"/>
+<rect x="270" y="102" width="220" height="108" rx="8" fill="#151B23" stroke="#3D444D"/>
+<text x="288" y="132" fill="#9198A1" font-size="12" font-weight="400" >ACTIVE SOURCE</text>
+<text x="288" y="183" fill="#F0F6FC" font-size="42" font-weight="700" >34</text>
+<path d="M445 178h23v-20" fill="none" stroke="#4493F8" stroke-width="2"/>
+<rect x="510" y="102" width="220" height="108" rx="8" fill="#151B23" stroke="#3D444D"/>
+<text x="528" y="132" fill="#9198A1" font-size="12" font-weight="400" >REPO STARS</text>
+<text x="528" y="183" fill="#F0F6FC" font-size="42" font-weight="700" >1</text>
+<path d="M685 178h23v-20" fill="none" stroke="#4493F8" stroke-width="2"/>
+<rect x="750" y="102" width="220" height="108" rx="8" fill="#151B23" stroke="#3D444D"/>
+<text x="768" y="132" fill="#9198A1" font-size="12" font-weight="400" >REPO FORKS</text>
+<text x="768" y="183" fill="#F0F6FC" font-size="42" font-weight="700" >4</text>
+<path d="M925 178h23v-20" fill="none" stroke="#4493F8" stroke-width="2"/>
+<text x="30" y="251" fill="#4493F8" font-size="16" font-weight="700" >LANGUAGE FOOTPRINT</text>
+<text x="30" y="277" fill="#9198A1" font-size="13" font-weight="400" >Primary language by active source repository</text>
+<rect x="30.00" y="300" width="363.87" height="18" fill="#4493F8"/>
+<rect x="393.87" y="300" width="333.55" height="18" fill="#79C0FF"/>
+<rect x="727.42" y="300" width="90.97" height="18" fill="#A5A5FF"/>
+<rect x="818.39" y="300" width="60.65" height="18" fill="#D2A8FF"/>
+<rect x="879.03" y="300" width="30.32" height="18" fill="#F78166"/>
+<rect x="909.35" y="300" width="30.32" height="18" fill="#FFA657"/>
+<rect x="939.68" y="300" width="30.32" height="18" fill="#9198A1"/>
+<rect x="30" y="342" width="9" height="9" fill="#4493F8"/>
+<text x="48" y="352" fill="#F0F6FC" font-size="12" font-weight="400" >Python  12</text>
+<rect x="270" y="342" width="9" height="9" fill="#79C0FF"/>
+<text x="288" y="352" fill="#F0F6FC" font-size="12" font-weight="400" >JavaScript  11</text>
+<rect x="510" y="342" width="9" height="9" fill="#A5A5FF"/>
+<text x="528" y="352" fill="#F0F6FC" font-size="12" font-weight="400" >HTML  3</text>
+<rect x="750" y="342" width="9" height="9" fill="#D2A8FF"/>
+<text x="768" y="352" fill="#F0F6FC" font-size="12" font-weight="400" >Jupyter Notebook  2</text>
+<rect x="30" y="374" width="9" height="9" fill="#F78166"/>
+<text x="48" y="384" fill="#F0F6FC" font-size="12" font-weight="400" >TypeScript  1</text>
+<rect x="270" y="374" width="9" height="9" fill="#FFA657"/>
+<text x="288" y="384" fill="#F0F6FC" font-size="12" font-weight="400" >Java  1</text>
+<rect x="510" y="374" width="9" height="9" fill="#9198A1"/>
+<text x="528" y="384" fill="#F0F6FC" font-size="12" font-weight="400" >Other  1</text>
+<text x="30" y="433" fill="#9198A1" font-size="11" font-weight="400" >Counts are repositories, not skill scores. Unclassified active source repos: 3.</text>
+<text x="30" y="456" fill="#9198A1" font-size="10" font-weight="400" >Active source = owned, public, non-fork, non-archived. Stars/forks span all public repos.</text>
 </g></svg>

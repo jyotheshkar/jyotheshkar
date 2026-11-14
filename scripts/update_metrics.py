@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-PALETTE = ["#2DE2C2", "#43BFE5", "#91D8A8", "#8AA8E8", "#BAA3E8", "#E2CE80", "#688E92"]
+PALETTE = ["#4493F8", "#79C0FF", "#A5A5FF", "#D2A8FF", "#F78166", "#FFA657", "#9198A1"]
 FIELDS = ("id", "name", "full_name", "private", "fork", "archived", "stargazers_count", "forks_count", "language", "pushed_at", "html_url")
 
 
@@ -85,12 +85,12 @@ def validate_snapshot(data, user):
     return repos
 
 
-def text(x, y, value, size=14, fill="#DFFAF5", weight=400, extra=""):
+def text(x, y, value, size=14, fill="#F0F6FC", weight=400, extra=""):
     return f'<text x="{x}" y="{y}" fill="{fill}" font-size="{size}" font-weight="{weight}" {extra}>{escape(str(value))}</text>'
 
 
 def frame(title, subtitle, height):
-    return [f'<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="{height}" viewBox="0 0 1000 {height}" role="img" aria-labelledby="title desc">', f'<title id="title">{escape(title)}</title><desc id="desc">{escape(subtitle)}</desc>', '<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#163035" stroke-width=".5"/></pattern></defs>', f'<rect width="1000" height="{height}" rx="14" fill="#050B0D"/><rect x="1" y="1" width="998" height="{height-2}" rx="13" fill="url(#grid)" stroke="#204148"/>', '<g font-family="Consolas,DejaVu Sans Mono,monospace">', '<path d="M28 44H42M35 37V51" stroke="#2DE2C2" stroke-width="2"/>', text(54, 50, title, 20, "#2DE2C2", 700), text(30, 78, subtitle, 12, "#8CA9A6")]
+    return [f'<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="{height}" viewBox="0 0 1000 {height}" role="img" aria-labelledby="title desc">', f'<title id="title">{escape(title)}</title><desc id="desc">{escape(subtitle)}</desc>', '<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3D444D" stroke-width=".5"/></pattern></defs>', f'<rect width="1000" height="{height}" rx="14" fill="#0D1117"/><rect x="1" y="1" width="998" height="{height-2}" rx="13" fill="url(#grid)" stroke="#3D444D"/>', '<g font-family="Consolas,DejaVu Sans Mono,monospace">', '<path d="M28 44H42M35 37V51" stroke="#4493F8" stroke-width="2"/>', text(54, 50, title, 20, "#4493F8", 700), text(30, 78, subtitle, 12, "#9198A1")]
 
 
 def render_metrics(data, repos):
@@ -100,14 +100,14 @@ def render_metrics(data, repos):
     svg = frame("ENGINEERING TELEMETRY", f"PUBLIC GITHUB SNAPSHOT / {dated}", 480)
     for i, (label, count) in enumerate(counts):
         x = 30 + 240 * i
-        svg += [f'<rect x="{x}" y="102" width="220" height="108" rx="8" fill="#0B1C20" stroke="#204148"/>', text(x+18, 132, label, 12, "#8CA9A6"), text(x+18, 183, count, 42, "#DFFAF5", 700), f'<path d="M{x+175} 178h23v-20" fill="none" stroke="#2DE2C2" stroke-width="2"/>']
+        svg += [f'<rect x="{x}" y="102" width="220" height="108" rx="8" fill="#151B23" stroke="#3D444D"/>', text(x+18, 132, label, 12, "#9198A1"), text(x+18, 183, count, 42, "#F0F6FC", 700), f'<path d="M{x+175} 178h23v-20" fill="none" stroke="#4493F8" stroke-width="2"/>']
     language_counts = Counter(r["language"] for r in active if r["language"])
     ordered = language_counts.most_common(6)
     rest = sum(language_counts.values()) - sum(v for _, v in ordered)
     if rest:
         ordered.append(("Other", rest))
     total = sum(language_counts.values())
-    svg += [text(30, 251, "LANGUAGE FOOTPRINT", 16, "#2DE2C2", 700), text(30, 277, "Primary language by active source repository", 13, "#8CA9A6")]
+    svg += [text(30, 251, "LANGUAGE FOOTPRINT", 16, "#4493F8", 700), text(30, 277, "Primary language by active source repository", 13, "#9198A1")]
     offset = 0
     if total:
         for i, (_, count) in enumerate(ordered):
@@ -115,13 +115,13 @@ def render_metrics(data, repos):
             svg.append(f'<rect x="{30+offset:.2f}" y="300" width="{width:.2f}" height="18" fill="{PALETTE[i]}"/>')
             offset += width
     else:
-        svg.append('<rect x="30" y="300" width="940" height="18" fill="#204148"/>')
+        svg.append('<rect x="30" y="300" width="940" height="18" fill="#3D444D"/>')
     for i, (lang, count) in enumerate(ordered):
         col, row = i % 4, i // 4
         x, y = 30 + col*240, 352 + row*32
         svg += [f'<rect x="{x}" y="{y-10}" width="9" height="9" fill="{PALETTE[i]}"/>', text(x+18, y, f"{lang}  {count}", 12)]
     no_language = len(active) - total
-    svg += [text(30, 433, f"Counts are repositories, not skill scores. Unclassified active source repos: {no_language}.", 11, "#8CA9A6"), text(30, 456, "Active source = owned, public, non-fork, non-archived. Stars/forks span all public repos.", 10, "#8CA9A6"), '</g></svg>']
+    svg += [text(30, 433, f"Counts are repositories, not skill scores. Unclassified active source repos: {no_language}.", 11, "#9198A1"), text(30, 456, "Active source = owned, public, non-fork, non-archived. Stars/forks span all public repos.", 10, "#9198A1"), '</g></svg>']
     return "\n".join(svg)
 
 
@@ -132,15 +132,15 @@ def render_activity(data, repos, user):
     start, end = 460, 935
     for days in (90, 60, 30, 0):
         x = end - days/90*(end-start)
-        svg += [f'<path d="M{x:.1f} 116V399" stroke="#204148" stroke-dasharray="3 5"/>', text(x, 105, "Today" if not days else f"-{days}d", 10, "#8CA9A6", extra='text-anchor="middle"')]
+        svg += [f'<path d="M{x:.1f} 116V399" stroke="#3D444D" stroke-dasharray="3 5"/>', text(x, 105, "Today" if not days else f"-{days}d", 10, "#9198A1", extra='text-anchor="middle"')]
     for i, r in enumerate(recent):
         y = 140+i*45
         age = max(0, (captured-parse_date(r["pushed_at"])).total_seconds()/86400)
         x = end-min(90,age)/90*(end-start)
         name = r["name"] if len(r["name"]) <= 39 else r["name"][:36]+"..."
         date = parse_date(r["pushed_at"]).strftime("%d %b %Y")
-        svg += [text(30, y, name, 13, "#DFFAF5", 600), text(30, y+17, date, 10, "#8CA9A6"), f'<path d="M{start} {y-3}H{end}" stroke="#153338" stroke-width="3"/>', f'<path d="M{start} {y-3}H{x:.1f}" stroke="#2DE2C2" stroke-opacity=".32" stroke-width="3"/>', f'<circle cx="{x:.1f}" cy="{y-3}" r="8" fill="#2DE2C2" opacity=".13"/><circle cx="{x:.1f}" cy="{y-3}" r="3" fill="#2DE2C2"/>']
-    svg += [text(30, 432, "Source: public repository pushed_at metadata. A push can include any contributor.", 11, "#8CA9A6"), text(30, 454, "This is repository recency, not a commit count or contribution streak. Profile repo excluded.", 10, "#8CA9A6"), '</g></svg>']
+        svg += [text(30, y, name, 13, "#F0F6FC", 600), text(30, y+17, date, 10, "#9198A1"), f'<path d="M{start} {y-3}H{end}" stroke="#3D444D" stroke-width="3"/>', f'<path d="M{start} {y-3}H{x:.1f}" stroke="#4493F8" stroke-opacity=".32" stroke-width="3"/>', f'<circle cx="{x:.1f}" cy="{y-3}" r="8" fill="#4493F8" opacity=".13"/><circle cx="{x:.1f}" cy="{y-3}" r="3" fill="#4493F8"/>']
+    svg += [text(30, 432, "Source: public repository pushed_at metadata. A push can include any contributor.", 11, "#9198A1"), text(30, 454, "This is repository recency, not a commit count or contribution streak. Profile repo excluded.", 10, "#9198A1"), '</g></svg>']
     return "\n".join(svg)
 
 

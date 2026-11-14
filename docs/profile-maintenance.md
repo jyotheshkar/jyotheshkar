@@ -36,4 +36,4 @@ The scheduled workflow commits only generated public snapshot/metrics files afte
 
 Update project descriptions when their public implementation or maturity changes. Preserve the distinction between working local code, synthetic evaluation, architecture proposals and hosted demonstrations. The professional biography states the current employment title separately from independent Agentic AI development.
 
-SVGs contain their own black background and teal styling because GitHub sanitizes README HTML. GitHub's surrounding navigation, sidebar and contribution calendar retain GitHub's own theme. Animation is decorative; essential professional text and project descriptions remain readable without motion.
+SVGs contain their own GitHub dark backgrounds, neutral text and blue accents because GitHub sanitizes README HTML. GitHub's surrounding navigation, sidebar and contribution calendar retain GitHub's own theme. Animation is decorative; essential professional text and project descriptions remain readable without motion.

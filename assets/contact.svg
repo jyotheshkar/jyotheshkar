@@ -2,18 +2,18 @@
   <title id="title">Connect with Jyothesh Karnam on LinkedIn</title>
   <desc id="desc">Discuss Agentic AI engineering, evaluation, and useful AI systems. LinkedIn: linkedin.com/in/jyotheshkarnam.</desc>
   <defs>
-    <linearGradient id="bg"><stop stop-color="#092124"/><stop offset="1" stop-color="#030B0E"/></linearGradient>
+    <linearGradient id="bg"><stop stop-color="#151B23"/><stop offset="1" stop-color="#0D1117"/></linearGradient>
     <style>text{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace}.sans{font-family:Arial,Helvetica,sans-serif}.cursor{animation:blink 1.3s steps(1) infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.cursor{animation:none}}</style>
   </defs>
-  <rect x=".5" y=".5" width="999" height="119" rx="15" fill="url(#bg)" stroke="#24504F"/>
-  <path d="M24 31V24h7M969 24h7v7M24 89v7h7M969 96h7v-7" fill="none" stroke="#2DE2C2" stroke-opacity=".55"/>
-  <text x="44" y="42" fill="#2DE2C2" font-size="10" letter-spacing="2.3">OPEN A CONVERSATION</text>
-  <text x="43" y="74" class="sans" fill="#DFF7EF" font-size="22" font-weight="700">Let’s build useful, accountable AI.</text>
-  <text x="44" y="98" fill="#709E96" font-size="10">Agentic AI engineering · LLM evaluation · applied AI</text>
-  <rect x="659" y="31" width="295" height="58" rx="8" fill="#0C2D2C" stroke="#2D9F87"/>
-  <rect x="675" y="46" width="27" height="27" rx="4" fill="#2DE2C2"/>
-  <text x="680" y="66" class="sans" fill="#06201E" font-size="19" font-weight="700">in</text>
-  <text x="715" y="56" fill="#D9F6EC" font-size="12" font-weight="700">CONNECT ON LINKEDIN</text>
-  <text x="715" y="75" fill="#79B6A7" font-size="10">/in/jyotheshkarnam</text>
-  <path d="M926 52h10v10m-12 2 12-12" fill="none" stroke="#2DE2C2" stroke-width="1.4"/>
+  <rect x=".5" y=".5" width="999" height="119" rx="15" fill="url(#bg)" stroke="#3D444D"/>
+  <path d="M24 31V24h7M969 24h7v7M24 89v7h7M969 96h7v-7" fill="none" stroke="#4493F8" stroke-opacity=".55"/>
+  <text x="44" y="42" fill="#4493F8" font-size="10" letter-spacing="2.3">OPEN A CONVERSATION</text>
+  <text x="43" y="74" class="sans" fill="#F0F6FC" font-size="22" font-weight="700">Let’s build useful, accountable AI.</text>
+  <text x="44" y="98" fill="#9198A1" font-size="10">Agentic AI engineering · LLM evaluation · applied AI</text>
+  <rect x="659" y="31" width="295" height="58" rx="8" fill="#151B23" stroke="#79C0FF"/>
+  <rect x="675" y="46" width="27" height="27" rx="4" fill="#4493F8"/>
+  <text x="680" y="66" class="sans" fill="#151B23" font-size="19" font-weight="700">in</text>
+  <text x="715" y="56" fill="#F0F6FC" font-size="12" font-weight="700">CONNECT ON LINKEDIN</text>
+  <text x="715" y="75" fill="#79C0FF" font-size="10">/in/jyotheshkarnam</text>
+  <path d="M926 52h10v10m-12 2 12-12" fill="none" stroke="#4493F8" stroke-width="1.4"/>
 </svg>
