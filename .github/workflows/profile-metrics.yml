@@ -1,42 +1,23 @@
-name: Refresh public profile telemetry
+name: Validate GitHub profile
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '23 7 * * *'
   push:
     branches: [main]
     paths:
       - 'README.md'
+      - 'assets/**'
       - 'scripts/**'
       - '.github/workflows/profile-metrics.yml'
 
 permissions:
-  contents: write
-
-concurrency:
-  group: public-profile-telemetry
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  refresh:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
-      - name: Generate public metrics
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/update_metrics.py
-      - name: Validate profile assets
+      - name: Validate profile assets and links
         run: python3 scripts/validate_profile.py
-      - name: Commit refreshed assets
-        run: |
-          if [ -z "$(git status --porcelain -- assets)" ]; then
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/metrics.svg assets/activity.svg assets/data/public-repos.json
-          git commit -m 'Refresh public GitHub profile telemetry [skip ci]'
-          git push

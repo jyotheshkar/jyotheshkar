@@ -2,7 +2,7 @@
 
 The profile is a GitHub README and repository-local image assets. It does not require a portfolio website, external image service, JavaScript in Markdown, or a paid API.
 
-## Public telemetry
+## Retained telemetry assets
 
 `scripts/update_metrics.py` uses Python's standard library and GitHub's public user-repository REST endpoint, following pagination until the final page. It sanitizes the output to public repository metadata before saving `assets/data/public-repos.json`. An optional `GITHUB_TOKEN` increases the API rate limit; tokens and request headers are never logged. The script never queries private repository endpoints or exports private source.
 
@@ -30,7 +30,7 @@ python scripts/update_metrics.py --snapshot assets/data/public-repos.json
 python scripts/validate_profile.py
 ```
 
-The scheduled workflow commits only generated public snapshot/metrics files after successful validation. Keep workflow write permissions scoped to this profile repository. Repository activity naturally changes when source projects are updated; this README makes no production usage or model-quality claims.
+The project gallery, toolkit and telemetry section were removed from the profile at the owner's request. Their source assets remain in the repository for history and optional manual reuse. The workflow now validates profile images and links with read-only repository access; automatic telemetry refresh is disabled. Repository activity naturally changes when source projects are updated; this README makes no production usage or model-quality claims.
 
 ## Content maintenance
 
