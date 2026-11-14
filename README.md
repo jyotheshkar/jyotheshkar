@@ -3,5 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/e8684c208d8f8558c7321ebd46f3b2faf9617d92/assets/skill-circles.svg" width="100%" alt="Four animated skill circles: Language Foundations, Software Engineering, AI and Machine Learning, and Agentic AI. Technologies and learning areas are mapped without proficiency scores. Includes Python, JavaScript, TypeScript, Java, SQL, HTML, CSS, Bash; React, Node.js, backend APIs, PostgreSQL, Docker, GitHub Actions, AWS, system design; PyTorch, TensorFlow, reinforcement learning, transformers, NLP, embeddings, model evaluation, RLHF; planning, tool calling, RAG, memory, workflows, guardrails, tracing and evaluation, human review." />
+  <img src="assets/skill-circles.svg" width="100%" alt="Four proportional doughnut charts of portfolio evidence: Language footprint, Engineering stack, AI and machine learning, and Agentic AI focus. Languages measure unique source-file bytes; other charts measure selected documented repository-topic matches. Snapshot: 23 public projects, 14 November 2026. Full values and methodology are linked below." />
 </p>
+
+[Chart data and methodology](docs/skill-circles.md)

@@ -1,6 +1,6 @@
 # Connected GitHub profile
 
-The README uses a repository-hosted animated SVG canvas followed by four animated skill circles. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS or scripts in Markdown. Contact links are in the GitHub sidebar. The closing slogan, opportunity text, action buttons and repository-year note were removed from the displayed profile.
+The README uses a repository-hosted animated SVG canvas followed by four proportional doughnut charts. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS or scripts in Markdown. Contact links are in the GitHub sidebar. The closing slogan, opportunity text, action buttons and repository-year note were removed from the displayed profile.
 
 The main canvas is referenced by its verified commit revision to avoid stale branch-image caching. When changing it, advance the README image revision after the new SVG has been committed and validated.
 
@@ -35,4 +35,4 @@ The profile builder embeds it locally; no remote asset is loaded when the profil
 
 ## Retained history
 
-Earlier orb, diagram, project-gallery, action-button and telemetry assets remain as historical source; the current README does not display them. Automatic repository telemetry refresh is disabled. The profile validation workflow has read-only access; the old contribution refresh workflow has been removed. The qualitative circles are documented in [skill-circles.md](skill-circles.md). The profile does not claim an Amazon affiliation for independent projects or a production deployment.
+Earlier orb, diagram, project-gallery, action-button and telemetry assets remain as historical source; the current README does not display them. Automatic repository telemetry refresh is disabled. The profile validation workflow has read-only access; the old contribution refresh workflow has been removed. The measured charts are documented in [skill-circles.md](skill-circles.md). The profile does not claim an Amazon affiliation for independent projects or a production deployment.
