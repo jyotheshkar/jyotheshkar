@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile.svg?v=agent-concepts-8nodes-20261114" width="100%" alt="Jyothesh Karnam — Developing Agentic AI systems. Current Agentic AI Projects I Am Working On: YouTube Agent Concept and Crypto Agent Concept, each with eight planned tool nodes in original brand colors. Decorative routes do not assert live integrations or investment holdings. Experience: ML Data Associate II at Amazon AGI Data Services, June 2025–present, plus prior roles at Flione IT, Thrive and Shine and Edu Lettings. Education: MSc Computer Science, Distinction, Keele University, September 2023–September 2024; Best Performance Award." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/d745637f748d6f1e0add7a1312e61e082376e2fe/assets/profile.svg" width="100%" alt="Jyothesh Karnam — Developing Agentic AI systems. Current Agentic AI Projects I Am Working On: YouTube Agent Concept and Crypto Agent Concept, each with eight planned tool nodes in original brand colors. Decorative routes do not assert live integrations or investment holdings. Experience: ML Data Associate II at Amazon AGI Data Services, June 2025–present, plus prior roles at Flione IT, Thrive and Shine and Edu Lettings. Education: MSc Computer Science, Distinction, Keele University, September 2023–September 2024; Best Performance Award." />
 </p>
 
 <p align="center">
