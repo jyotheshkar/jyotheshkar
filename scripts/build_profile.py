@@ -21,7 +21,7 @@ def build():
     symbols = []
     for key, icon in icons.items():
         symbols.append(f'<symbol id="brand-{escape(key)}" viewBox="{escape(icon["viewBox"])}">{icon["inner"]}</symbol>')
-    svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1910" viewBox="0 0 1400 1910" role="img" aria-labelledby="profile-title profile-desc" color="#f0f6fc">
+    svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1780" viewBox="0 0 1400 1780" role="img" aria-labelledby="profile-title profile-desc" color="#f0f6fc">
 <title id="profile-title">Jyothesh Karnam - Developing Agentic AI systems</title>
 <desc id="profile-desc">Current Agentic AI Projects I Am Working On: YouTube Agent Concept and Crypto Agent Concept, each with eight proposed tool nodes. Original brand-colored logos identify the Google ecosystem, development tools and crypto research services. Animated routes are illustrative and human review remains in the loop. Below: verified Amazon and earlier experience; MSc Computer Science with Distinction and Best Performance Award at Keele University. No live account connections or automated trading are asserted.</desc>
 <defs>
@@ -31,8 +31,8 @@ def build():
   <style>text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:ui-monospace,Consolas,monospace}</style>
 ''' + '\n'.join(symbols) + '''
 </defs>
-<rect width="1400" height="1910" fill="#0d1117"/>
-<rect width="1400" height="1910" fill="url(#page-grid)"/>
+<rect width="1400" height="1780" fill="#0d1117"/>
+<rect width="1400" height="1780" fill="url(#page-grid)"/>
 <ellipse cx="590" cy="535" rx="580" ry="490" fill="url(#network-aura)"/>
 <text x="40" y="52" class="mono" fill="#9198a1" font-size="17" letter-spacing="3">DEVELOPING AGENTIC AI SYSTEMS</text>
 <text x="36" y="120" fill="#f0f6fc" font-size="64" font-weight="700" letter-spacing="-1.6">Jyothesh Karnam.</text>
@@ -44,12 +44,7 @@ def build():
     svg += '''<text x="40" y="1090" class="mono" fill="#9198a1" font-size="18" letter-spacing="2">EXPERIENCE / EDUCATION</text>
 <g transform="translate(0 1110)">'''
     svg += render_career(icons)
-    svg += '''</g>
-<path d="M40 1802H1360" stroke="url(#section-rule)"/>
-<text x="40" y="1853" fill="#f0f6fc" font-size="30" font-weight="600">Build thoughtfully. Evaluate rigorously.</text>
-<text x="40" y="1888" fill="#9198a1" font-size="21">Open to AI Engineer and Agentic AI Engineer opportunities.</text>
-<text x="1360" y="1888" text-anchor="end" class="mono" fill="#9198a1" font-size="16">Independent engineering / human judgement</text>
-</svg>'''
+    svg += '</g>\n</svg>'
     ET.fromstring(svg)
     (ROOT / 'assets/profile.svg').write_text(svg, encoding='utf-8', newline='\n')
     used_keys = {'openai'} | {p['icon'] for p in PROJECTS} | {t[0] for p in PROJECTS for t in p['tools']}
