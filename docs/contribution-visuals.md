@@ -1,3 +1,5 @@
+> Retired 14 November 2026. These historical assets are no longer shown. The scheduled refresh workflow was removed when four qualitative skill circles replaced this layer. See [skill-circles.md](skill-circles.md).
+
 # Contribution visuals
 
 Two complementary repository-hosted SVGs show the past year of activity:
