@@ -1,0 +1,223 @@
+{
+  "repository": "jyotheshkar/jyotheshkar",
+  "base_files": {
+    "README.md": "c2e7ebf376777c9a580aaa97f8975a2243410aae",
+    "assets/profile.svg": "e789faa93789fcf4af3cb1f2964830552cdd78bd"
+  },
+  "files": [
+    "README.md",
+    "assets/profile.svg",
+    "assets/profile-icon-sources.json"
+  ],
+  "node_counts": {
+    "youtube": 20,
+    "crypto": 20
+  },
+  "icon_sources": [
+    {
+      "icon": "python",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg",
+      "source_blob_sha": "e0e096a24e59fb9f1e501899389e3905c6c27cd7",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "javascript",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg",
+      "source_blob_sha": "7975261bd47d0112fab7f5a376e1293e56a55584",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "typescript",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg",
+      "source_blob_sha": "e1db5f196597f0815d315dfacf4191bb3df75fa4",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "docker",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg",
+      "source_blob_sha": "bbeaed2effdc1f6840aff73491a5faa2a585885b",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "postgresql",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg",
+      "source_blob_sha": "4656cb79adde771d6eb3bf58647f4e82e89e083b",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "redis",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/redis/redis-original.svg",
+      "source_blob_sha": "7aabb0dd08a6560efc2b4fe308c2b2acf25ee438",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "react",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg",
+      "source_blob_sha": "9af92b9dd783a9e1a2f07bdc5376724c08f05ef2",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "fastapi",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original.svg",
+      "source_blob_sha": "85f2d133724ff316983242ee963694382da75e48",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "nodejs",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg",
+      "source_blob_sha": "61738185b918e53190d5cccd674dcb02e2e4c338",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "googlecloud",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/googlecloud/googlecloud-original.svg",
+      "source_blob_sha": "e9d755e8fcaf177463ef47441095e2210ae16681",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "vscode",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg",
+      "source_blob_sha": "b9a5693a952ab698fae8b49fa5dde2c27cc1b83a",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "jupyter",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/jupyter/jupyter-original.svg",
+      "source_blob_sha": "fa14d7068c441908f25f4e51abb07d2af17d6748",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "githubactions",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg",
+      "source_blob_sha": "2929e024f398fda63873ff5e94ec8d3e9833948f",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "grafana",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/grafana/grafana-original.svg",
+      "source_blob_sha": "0387019732aa7a73300adfb381d1335881326575",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "prometheus",
+      "url": "https://github.com/devicons/devicon/blob/master/icons/prometheus/prometheus-original.svg",
+      "source_blob_sha": "4925b72d7087f8fb8eb47b523f931a2f148beb53",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "coinbase",
+      "url": "https://github.com/simple-icons/simple-icons/blob/master/icons/coinbase.svg",
+      "source_blob_sha": "c3ed947a5bdae3ed1e9fb1deb4f9a933eff9ee2e",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "chainlink",
+      "url": "https://github.com/simple-icons/simple-icons/blob/master/icons/chainlink.svg",
+      "source_blob_sha": "547a2258633f16178eec56e430f2ba90a0f2651b",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "polygon",
+      "url": "https://github.com/simple-icons/simple-icons/blob/master/icons/polygon.svg",
+      "source_blob_sha": "6c2b854f14b5e6d8565a58d4b875b4faec660f0c",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "tether",
+      "url": "https://github.com/simple-icons/simple-icons/blob/master/icons/tether.svg",
+      "source_blob_sha": "758427f2cb8f23f7d0601f9cb1bf5ff0ce486f2c",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "litecoin",
+      "url": "https://github.com/simple-icons/simple-icons/blob/master/icons/litecoin.svg",
+      "source_blob_sha": "1a2ccb03f84aaca21d1be44bc2c6080909ecb4ce",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "gmail",
+      "url": "https://github.com/gilbarbara/logos/blob/main/logos/google-gmail.svg",
+      "source_blob_sha": "a1220982e1f5fbff614c95184bc1f70ea1609b0f",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "googledrive",
+      "url": "https://github.com/gilbarbara/logos/blob/main/logos/google-drive.svg",
+      "source_blob_sha": "cf120f024d61dbc59f6a41739df644a1c0eeea81",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "google",
+      "url": "https://github.com/gilbarbara/logos/blob/main/logos/google-icon.svg",
+      "source_blob_sha": "05d397a8c5d23e01e6eb776a36dcf7259449b4ab",
+      "treatment": "Original SVG geometry and native fills preserved; local IDs prefixed for collision avoidance."
+    },
+    {
+      "icon": "Binance",
+      "brand_color": "#F0B90B",
+      "brand_source": "https://binance.com",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Bitcoin",
+      "brand_color": "#F7931A",
+      "brand_source": "https://bitcoin.org",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Chainlink",
+      "brand_color": "#375BD2",
+      "brand_source": "https://chain.link/brand-assets",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Coinbase",
+      "brand_color": "#0052FF",
+      "brand_source": "https://www.coinbase.com/press",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Ethereum",
+      "brand_color": "#3C3C3D",
+      "brand_source": "https://ethereum.org/en/assets/",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "GitHub",
+      "brand_color": "#181717",
+      "brand_source": "https://github.com/logos",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Litecoin",
+      "brand_color": "#A6A9AA",
+      "brand_source": "https://litecoin-foundation.org/litecoin-branding-guidelines/",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Polygon",
+      "brand_color": "#7B3FE4",
+      "brand_source": "https://www.polygon.technology",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Solana",
+      "brand_color": "#9945FF",
+      "brand_source": "https://solana.com/branding",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "Tether",
+      "brand_color": "#50AF95",
+      "brand_source": "https://tether.to/branding/",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    },
+    {
+      "icon": "YouTube",
+      "brand_color": "#FF0000",
+      "brand_source": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+      "geometry": "Existing profile asset or upstream Simple Icons geometry."
+    }
+  ],
+  "change": "Replace existing concept graph only; preserve surrounding professional/education content."
+}
