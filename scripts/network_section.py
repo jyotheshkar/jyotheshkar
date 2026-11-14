@@ -121,8 +121,8 @@ def render_network(icons):
             if tool_key == 'ethereum':
                 out.append(f'<circle cx="{left+30}" cy="{y}" r="20" fill="#f0f6fc"/>')
             out.append(icon(tool_key, left+14, y-16, 32))
-            out.append(f'<text x="{left+58}" y="{y-3}" fill="#f0f6fc" font-size="17" font-weight="600">{escape(label)}</text>')
-            out.append(f'<text x="{left+58}" y="{y+18}" fill="#9198a1" font-size="13">{escape(sub)}</text></g>')
+            out.append(f'<text x="{left+52}" y="{y-3}" fill="#f0f6fc" font-size="17" font-weight="600">{escape(label)}</text>')
+            out.append(f'<text x="{left+52}" y="{y+18}" fill="#9198a1" font-size="13">{escape(sub)}</text></g>')
         out.append(f'<text x="{cx}" y="1009" text-anchor="middle" fill="#9198a1" font-size="15" class="nw-mono">{escape(project["subtitle"])}</text></g>')
     out.append('''<text x="700" y="1044" text-anchor="middle" fill="#9198a1" font-size="14" class="nw-mono">Concept integrations / human review in the loop / no connected accounts or automated trading implied.</text>''')
     return '\n'.join(out)
