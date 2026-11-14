@@ -7,3 +7,5 @@
   <a href="https://github.com/jyotheshkar?tab=repositories"><img src="assets/projects-link.svg?v=agentic-two-branches-v2" width="31%" alt="Explore GitHub projects" /></a>
   <a href="mailto:jyotheshkar@gmail.com"><img src="assets/email-link.svg?v=agentic-two-branches-v2" width="31%" alt="Email Jyothesh" /></a>
 </p>
+
+**Profile repository year: 2022.** This repository was created on 1 November 2022. Its name remains `jyotheshkar` so GitHub can display this README on my profile.
