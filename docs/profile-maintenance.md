@@ -1,39 +1,28 @@
-# Profile visual maintenance
+# Connected GitHub profile
 
-The profile is a GitHub README and repository-local image assets. It does not require a portfolio website, external image service, JavaScript in Markdown, or a paid API.
+The README is a repository-local animated SVG canvas and three linked action images. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS, external image services or scripts in Markdown.
 
-## Retained telemetry assets
-
-`scripts/update_metrics.py` uses Python's standard library and GitHub's public user-repository REST endpoint, following pagination until the final page. It sanitizes the output to public repository metadata before saving `assets/data/public-repos.json`. An optional `GITHUB_TOKEN` increases the API rate limit; tokens and request headers are never logged. The script never queries private repository endpoints or exports private source.
-
-The panels show:
-
-- **Public repos:** all owned public repositories, including archived repositories and forks.
-- **Active source:** owned public repositories that are neither forks nor archived.
-- **Repo stars/forks:** aggregate GitHub repository counters across all owned public repositories.
-- **Language footprint:** each active source repository contributes one count for its GitHub primary language. This is neither language bytes nor a proficiency score. Unclassified repositories are counted separately.
-- **Public build signal:** latest `pushed_at` dates for six active source repositories, excluding this profile repository. Dates can reflect any contributor's push. The plot is recency within a 90-day window, not commit volume, contribution history, or a streak.
-
-The visible snapshot date is taken from the actual retrieval, including when a saved snapshot is rendered offline. No date is presented as current merely because a renderer ran. API errors, incomplete metadata, duplicate IDs or invalid visibility fail the refresh before existing metrics are replaced.
-
-Refresh from GitHub:
+## Rebuild and validation
 
 ```sh
-python scripts/update_metrics.py
+python scripts/build_profile.py
 python scripts/validate_profile.py
 ```
 
-Reproduce the saved panels without network access:
+The builder uses only Python's standard library and the local brand registry. The network section provides animated tool-routing paths and a reduced-motion fallback. The career section contains ordinary professional facts approved in Atlas: Amazon AGI Data Services and three prior roles, plus the Keele MSc, Distinction, award and dissertation.
 
-```sh
-python scripts/update_metrics.py --snapshot assets/data/public-repos.json
-python scripts/validate_profile.py
-```
+## Meaning of the network
 
-The project gallery, toolkit and telemetry section were removed from the profile at the owner's request. Their source assets remain in the repository for history and optional manual reuse. The workflow now validates profile images and links with read-only repository access; automatic telemetry refresh is disabled. Repository activity naturally changes when source projects are updated; this README makes no production usage or model-quality claims.
+The ChatGPT-centered network is a conceptual illustration of agent tool orchestration and research interests. Routes are decorative. They do not establish connected accounts, implemented adapters, trading automation, investment holdings, endorsements, market availability or IPO status. SpaceX and Anthropic appear as IPO-watch research topics without an asserted listing event or date. Google Flow uses the authentic Google parent mark with its product name; a dedicated Flow symbol is not invented.
 
-## Content maintenance
+## Brand provenance
 
-Update project descriptions when their public implementation or maturity changes. Preserve the distinction between working local code, synthetic evaluation, architecture proposals and hosted demonstrations. The professional biography states the current employment title separately from independent Agentic AI development.
+`assets/brands/icons.json` preserves the actual vector paths and upstream source references. `docs/brand-sources.json` records attribution and source/license details. Simple Icons and Lobe Icons license files are retained beside the registry. Logos identify ecosystem services; respective owners retain their trademarks.
 
-SVGs contain their own GitHub dark backgrounds, neutral text and blue accents because GitHub sanitizes README HTML. GitHub's surrounding navigation, sidebar and contribution calendar retain GitHub's own theme. Animation is decorative; essential professional text and project descriptions remain readable without motion.
+The Keele white logo is the unmodified transparent PNG from the university's official logo ZIP:
+https://www.keele.ac.uk/media/keeleuniversity/brand/logos/keele-logo.zip
+The profile builder embeds it locally; no remote asset is loaded when the profile is viewed.
+
+## Retained history
+
+Earlier orb, diagram, project-gallery and telemetry assets remain as historical source; the current README does not display them. Automatic telemetry refresh is disabled. The workflow validates assets and links with read-only repository access. The profile does not claim an Amazon affiliation for independent projects or a production deployment.

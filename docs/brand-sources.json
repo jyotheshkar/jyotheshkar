@@ -1,0 +1,110 @@
+{
+  "purpose": "Authentic brand shapes used only for identification within Jyothesh Karnam's conceptual Agentic AI workflow illustration. No affiliation, endorsement, live integration or security listing is asserted.",
+  "retrieved_on": "2026-11-14",
+  "sources": {
+    "github": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "youtube": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "gmail": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "binance": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/binance.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "bitcoin": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/bitcoin.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "ethereum": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ethereum.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "solana": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/solana.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "spacex": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/spacex.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "tesla": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tesla.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "anthropic": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/anthropic.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "nvidia": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nvidia.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "google": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "googledrive": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googledrive.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "openai": {
+      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/openai.svg",
+      "source_project": "Lobe Icons",
+      "license": "MIT"
+    },
+    "gemini": {
+      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/gemini.svg",
+      "source_project": "Lobe Icons",
+      "license": "MIT"
+    },
+    "amazon": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/13.21.0/icons/amazon.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "microsoft": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/12.0.0/icons/microsoft.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0"
+    },
+    "googleaistudio": {
+      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/aistudio.svg",
+      "source_project": "Lobe Icons",
+      "license": "MIT"
+    },
+    "googleflow": {
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+      "source_project": "Simple Icons",
+      "license": "CC0-1.0",
+      "usage_note": "Uses the authentic Google G mark to identify Google Flow; this is a parent-brand mark, not a claimed dedicated Flow product logo."
+    },
+    "keele": {
+      "source": "https://www.keele.ac.uk/media/keeleuniversity/brand/logos/keele-logo.zip",
+      "source_file": "KeeleUni-RGB_MonoWhite.png",
+      "saved_as": "assets/brands/keele-white.png",
+      "sha256": "dfabb020c2ff70860dc907085390c28a6d275c7ca46611da4d4bf12b1f7f0b5f",
+      "note": "Unmodified official transparent white university logo; respective trademark retained."
+    }
+  },
+  "optional_keele": "Official transparent white logo retrieved and embedded locally."
+}
