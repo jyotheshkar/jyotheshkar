@@ -1,6 +1,6 @@
 # Connected GitHub profile
 
-The README uses a repository-hosted animated SVG canvas followed by contribution visuals. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS or scripts in Markdown. Contact links are in the GitHub sidebar. The closing slogan, opportunity text, action buttons and repository-year note were removed from the displayed profile.
+The README uses a repository-hosted animated SVG canvas followed by four animated skill circles. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS or scripts in Markdown. Contact links are in the GitHub sidebar. The closing slogan, opportunity text, action buttons and repository-year note were removed from the displayed profile.
 
 The main canvas is referenced by its verified commit revision to avoid stale branch-image caching. When changing it, advance the README image revision after the new SVG has been committed and validated.
 
@@ -9,6 +9,7 @@ The main canvas is referenced by its verified commit revision to avoid stale bra
 ```sh
 python scripts/import_brand_icons.py
 python scripts/build_profile.py
+python scripts/build_skill_circles.py
 python scripts/validate_profile.py
 ```
 
@@ -34,4 +35,4 @@ The profile builder embeds it locally; no remote asset is loaded when the profil
 
 ## Retained history
 
-Earlier orb, diagram, project-gallery, action-button and telemetry assets remain as historical source; the current README does not display them. Automatic repository telemetry refresh is disabled. The profile validation workflow has read-only access; contribution visuals have a separate refresh workflow described in [contribution-visuals.md](contribution-visuals.md). The profile does not claim an Amazon affiliation for independent projects or a production deployment.
+Earlier orb, diagram, project-gallery, action-button and telemetry assets remain as historical source; the current README does not display them. Automatic repository telemetry refresh is disabled. The profile validation workflow has read-only access; the old contribution refresh workflow has been removed. The qualitative circles are documented in [skill-circles.md](skill-circles.md). The profile does not claim an Amazon affiliation for independent projects or a production deployment.

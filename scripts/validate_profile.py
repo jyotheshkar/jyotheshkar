@@ -53,6 +53,23 @@ def main():
         nodes = [e for e in profile.iter() if e.get("data-concept") == concept]
         if len(nodes) != 8:
             errors.append(f"profile.svg: {concept} concept requires eight tool nodes, found {len(nodes)}")
+    circles = ET.parse(ROOT / "assets/skill-circles.svg").getroot()
+    groups = [e for e in circles.iter() if e.get("data-skill-circle")]
+    if {e.get("data-skill-circle") for e in groups} != {"languages", "engineering", "ai", "agentic"} or len(groups) != 4:
+        errors.append("skill-circles.svg: expected four named circles")
+    for group in groups:
+        if len([e for e in group.iter() if e.get("data-skill-node")]) != 8:
+            errors.append("skill-circles.svg: each circle requires eight nodes")
+    circle_ids = [e.get("id") for e in circles.iter() if e.get("id")]
+    if len(circle_ids) != len(set(circle_ids)):
+        errors.append("skill-circles.svg: duplicate IDs")
+    for element in circles.iter():
+        for key, value in element.attrib.items():
+            refs = re.findall(r"url\(#([^)]+)\)", value)
+            if key.split("}")[-1] == "href" and value.startswith("#"):
+                refs.append(value[1:])
+            if any(ref not in circle_ids for ref in refs):
+                errors.append("skill-circles.svg: unresolved local reference")
     if not readme.exists():
         errors.append("README.md missing")
     else:

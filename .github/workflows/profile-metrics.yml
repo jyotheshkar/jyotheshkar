@@ -29,6 +29,7 @@ jobs:
         run: |
           python3 scripts/import_brand_icons.py
           python3 scripts/build_profile.py
-          git diff --exit-code -- assets/brands/icons.json assets/profile-icon-sources.json assets/profile.svg assets/linkedin-link.svg assets/projects-link.svg assets/email-link.svg
+          python3 scripts/build_skill_circles.py
+          git diff --exit-code -- assets/brands/icons.json assets/profile-icon-sources.json assets/profile.svg assets/linkedin-link.svg assets/projects-link.svg assets/email-link.svg assets/skill-circles.svg
       - name: Validate profile assets and links
         run: python3 scripts/validate_profile.py
