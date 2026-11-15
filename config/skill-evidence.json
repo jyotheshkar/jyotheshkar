@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "captured_at": "2026-11-15",
+  "captured_at": "2026-11-15T09:17:30+00:00",
   "public_snapshot": {
-    "captured_at": "2026-11-15",
+    "captured_at": "2026-11-15T09:17:30+00:00",
     "sources": [
       {
         "source_id": "5b770aa2d866d420",
@@ -146,11 +146,43 @@
         "source_id": "7db9375e9c0276f4",
         "visibility": "public",
         "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
-        "tree_sha": "1d84af9b04c5701585de2b6f376fe8ffb679348f",
+        "tree_sha": "1ff3200cab952717134bf3463f5993c5c0041ba1",
         "scanned_files": [
+          {
+            "path": "backend/scripts/generate_dataset.py",
+            "sha": "7ceadd8ed8f8bf8c070a06987bd44b6fcb8886b3"
+          },
           {
             "path": "backend/scripts/prepare_model_data.py",
             "sha": "2a9e568f5ed71146853ea5ff5acc3542096fa02f"
+          },
+          {
+            "path": "backend/scripts/render_dataset_view.py",
+            "sha": "a9a77d8107dff8dfde4064da9fcf103a8e116ea4"
+          },
+          {
+            "path": "backend/scripts/run_budget_allocation.py",
+            "sha": "8efa3c06f5ad955cfaf33090cad50185ff398512"
+          },
+          {
+            "path": "backend/scripts/run_causal_analysis.py",
+            "sha": "f7f72160dd59d896ddd9933816e441d1604e110f"
+          },
+          {
+            "path": "backend/scripts/run_causal_forest_conversion.py",
+            "sha": "ba3dcb9b4b8c65ae07fd7c28916562aa0798053f"
+          },
+          {
+            "path": "backend/scripts/run_decision_ranking.py",
+            "sha": "d3271a3fdc7e87879fbc389551bb2e1730a81525"
+          },
+          {
+            "path": "backend/scripts/run_drlearner_conversion.py",
+            "sha": "2863c52eb69126ced2f03e4b4cb8b781d89de912"
+          },
+          {
+            "path": "backend/scripts/run_drlearner_revenue.py",
+            "sha": "700e7ef859eb2c69d4f7355262d5802b93fffe99"
           },
           {
             "path": "backend/scripts/run_drpolicyforest_conversion.py",
@@ -177,6 +209,22 @@
             "sha": "ea2d312a555c4a98d3309e74f60560754bad634a"
           },
           {
+            "path": "backend/scripts/run_phase4_validation_summary.py",
+            "sha": "50a43c9913e950560fa4e00a934a25495ed73eed"
+          },
+          {
+            "path": "backend/scripts/run_phase5_decision_closeout.py",
+            "sha": "cb8e757d410a705e39551f1feeede0e5df92316b"
+          },
+          {
+            "path": "backend/scripts/run_segment_uplift_analysis.py",
+            "sha": "420ffa3b285e6c76965a25411cacee85c37de7af"
+          },
+          {
+            "path": "backend/scripts/run_xlearner_conversion.py",
+            "sha": "a5f7b1818b08ff5bbcc19ab03a3479a0f3553a74"
+          },
+          {
             "path": "backend/scripts/summarize_model_data.py",
             "sha": "5af93ba10bbf575fba1038d408044a892b84b30f"
           },
@@ -185,8 +233,64 @@
             "sha": "8c9e6b5cb07a4a65a32521fdc159a31f9d2d020d"
           },
           {
-            "path": "backend/src/primelift/decision/policy_forest.py",
-            "sha": "9695e135d50fad375817bca776fb26b21ff933fe"
+            "path": "backend/src/primelift/evaluation/__init__.py",
+            "sha": "9fa0434114c5dacfacfebaa3089385c7a65d0022"
+          },
+          {
+            "path": "backend/src/primelift/evaluation/model_comparison.py",
+            "sha": "20b7c52d542ae804437b71dd54c59355785f7f11"
+          },
+          {
+            "path": "backend/src/primelift/evaluation/phase4_validation.py",
+            "sha": "f7a776d052a0468532701c121c6a049c0ae66aab"
+          },
+          {
+            "path": "backend/src/primelift/evaluation/registry.py",
+            "sha": "6c42536b51141f2d93d2a5e07653c23d9b36668e"
+          },
+          {
+            "path": "backend/src/primelift/models/__init__.py",
+            "sha": "3f21392e645d1cd52e14c8c02063c13a14fb8a63"
+          },
+          {
+            "path": "backend/src/primelift/models/registry.py",
+            "sha": "8bd4c07a341729734be88245b70ad4d8f1a9824a"
+          },
+          {
+            "path": "backend/src/primelift/uplift/model_based_analysis.py",
+            "sha": "e369eaad222a56edbf111e09cb2604b1fab34b2f"
+          },
+          {
+            "path": "backend/src/primelift/uplift/model_based_rollups.py",
+            "sha": "fab313c244e483fae4e92b36227fb025a403962e"
+          },
+          {
+            "path": "frontend/eslint.config.mjs",
+            "sha": "05e726d1b4201bc8c7716d2b058279676582e8c0"
+          },
+          {
+            "path": "frontend/next.config.ts",
+            "sha": "e9ffa3083ad279ecf95fd8eae59cb253e9a539c4"
+          },
+          {
+            "path": "frontend/postcss.config.mjs",
+            "sha": "61e36849cf7cfa9f1f71b4a3964a4953e3e243d3"
+          },
+          {
+            "path": "frontend/src/app/dataset-models/page.tsx",
+            "sha": "881c259e1419de0ab4fd74176eb1dcf5ccccd64d"
+          },
+          {
+            "path": "frontend/src/components/dataset-models-live-dashboard.tsx",
+            "sha": "df23f3b083e4791e2f5deb33331492b80b29d788"
+          },
+          {
+            "path": "frontend/src/lib/dataset-models-data.ts",
+            "sha": "ee1168ad2f5115fcafd1a3ecf31555c6accf70d5"
+          },
+          {
+            "path": "scripts/validate_demo_artifacts.py",
+            "sha": "cb675709406a44c309c6327cbfa16cae411253c6"
           }
         ],
         "skills": {
@@ -215,23 +319,15 @@
         "source_id": "311e3f8a01256a53",
         "visibility": "public",
         "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-        "tree_sha": "7e784d90ecfac7503ac574fba9689b6c10274187",
+        "tree_sha": "27d48e4f10282355017a93ba16b046b76cfcc4cb",
         "scanned_files": [
           {
             "path": "backend/agents/judge_agent.py",
-            "sha": "03d2dca9d3a0983275cc6334cd0db0745e160ed4"
-          },
-          {
-            "path": "backend/agents/product_context.py",
-            "sha": "64cee1dade2049ac2739fb071f554eb529edbf54"
+            "sha": "f28315008653ea442f8b965dddfff014915be6bd"
           },
           {
             "path": "backend/agents/rufus_agent.py",
-            "sha": "9b7a165b14f3a22d0c1238c7f9b4fb1c6249e01b"
-          },
-          {
-            "path": "backend/agents/scoring.py",
-            "sha": "6ff8c5e49c82ba9197208522313590f82e439e45"
+            "sha": "199d84d990806624edea1e4474548ba881cf6222"
           },
           {
             "path": "backend/evaluation/anomaly.py",
@@ -242,6 +338,10 @@
             "sha": "5cd0c42c50e225df90cb835a97fee597b8ccb319"
           },
           {
+            "path": "backend/main.py",
+            "sha": "8573c56c1dffd7cde884865333516b73f2262132"
+          },
+          {
             "path": "backend/models.py",
             "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3"
           },
@@ -250,19 +350,127 @@
             "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76"
           },
           {
+            "path": "backend/routes/__init__.py",
+            "sha": "b41e3d7febc5e3cd3d5a184af21e9193031480f6"
+          },
+          {
+            "path": "backend/routes/adversarial.py",
+            "sha": "29461e1bb7d8c7559208829a38c4a3a43691f3fb"
+          },
+          {
+            "path": "backend/routes/data.py",
+            "sha": "5245d10ef4caf50f7656e30ec87d19977718982e"
+          },
+          {
             "path": "backend/routes/evals.py",
             "sha": "7263e2f738ba01164d9810833a1d7022a0fc0f72"
           },
           {
+            "path": "backend/routes/stats.py",
+            "sha": "883961332f31e6dd95ef76a2cf4027e6da5bcf5c"
+          },
+          {
+            "path": "backend/scripts/build_index.py",
+            "sha": "359bb345a7188ec0b30e27a8a974d0739a60e51f"
+          },
+          {
+            "path": "backend/scripts/fixup_phase1.py",
+            "sha": "5d9e7d5292ac9de22e202ba50ed1a7b8417625e1"
+          },
+          {
+            "path": "backend/scripts/generate_products.py",
+            "sha": "e794c3d503cf19162ac42181f3b760432513b79d"
+          },
+          {
+            "path": "backend/scripts/generate_questions.py",
+            "sha": "40d29f6ce45c31f61d6bcf608b3519ba548d4050"
+          },
+          {
+            "path": "backend/scripts/run_adversarial.py",
+            "sha": "925df8433ea837146d62b0ef4d5fd2a517f8e16f"
+          },
+          {
             "path": "backend/scripts/run_eval.py",
             "sha": "e4d68d54f678cd1ed5c13d25a5c72d05a77538e8"
+          },
+          {
+            "path": "frontend/app/adversarial/page.tsx",
+            "sha": "8660179209563f93c8ce04fdca892a7f53a44d03"
+          },
+          {
+            "path": "frontend/app/analysis/page.tsx",
+            "sha": "8a20d6fc0bf327e89f1e21c42ad692b69131d2f3"
+          },
+          {
+            "path": "frontend/app/layout.tsx",
+            "sha": "b441b87072d47d361aa22753a3123e3ee1ed30e1"
+          },
+          {
+            "path": "frontend/app/page.tsx",
+            "sha": "f305a280aced39981e357a43e1805b5a4f308452"
+          },
+          {
+            "path": "frontend/components/AnomalyBadge.tsx",
+            "sha": "5d96a80b6284809d173c0a8df71c463a7049d094"
+          },
+          {
+            "path": "frontend/components/AnswerTable.tsx",
+            "sha": "f96a0065b9f388e0104ba0ac28595b98889c11f7"
+          },
+          {
+            "path": "frontend/components/CategoryBarChart.tsx",
+            "sha": "911a33bbf720ff3453da5a220b7f1fdba61763ba"
+          },
+          {
+            "path": "frontend/components/Nav.tsx",
+            "sha": "4c422054fff4b39484925115cf9992e4a08fd5c2"
+          },
+          {
+            "path": "frontend/components/ScoreCard.tsx",
+            "sha": "ba68b0094c84ef8beaf855b16d6af20c14e05c6d"
+          },
+          {
+            "path": "frontend/components/ScoreTrendChart.tsx",
+            "sha": "aba7af102c65329c1384507a92abdbbf664008a7"
+          },
+          {
+            "path": "frontend/jest.config.js",
+            "sha": "ed5ec03b2b7235bcac7d561f1f3f8160d2bbfdd2"
+          },
+          {
+            "path": "frontend/jest.setup.js",
+            "sha": "34d4562209839c059eb22ef06729ada79cfe6402"
+          },
+          {
+            "path": "frontend/jest.setup.ts",
+            "sha": "abb2685eac3525060f1d04fd043416ff10ee3648"
+          },
+          {
+            "path": "frontend/lib/api.ts",
+            "sha": "b96e7199d7ab8678d33bc7d413926e5a53656530"
+          },
+          {
+            "path": "frontend/lib/types.ts",
+            "sha": "bfd2c94ce16b7a8ceae41809fb03df3e3544ca6f"
+          },
+          {
+            "path": "frontend/next.config.js",
+            "sha": "466faa1e199e6a87c62c1a72b87753ad361c3350"
+          },
+          {
+            "path": "frontend/postcss.config.js",
+            "sha": "94ae506f073f1ae8d5799886e4d71f708613aad6"
+          },
+          {
+            "path": "frontend/tailwind.config.ts",
+            "sha": "099a74ef5f516a6f7f57657cd23c21b38c10903e"
           }
         ],
         "skills": {
           "languages": {
             "Python": {
               "path": "backend/agents/judge_agent.py",
-              "sha": "03d2dca9d3a0983275cc6334cd0db0745e160ed4",
+              "sha": "f28315008653ea442f8b965dddfff014915be6bd",
               "kind": "source"
             },
             "TypeScript": {
@@ -621,43 +829,151 @@
         "source_id": "6c0542a157bf4163",
         "visibility": "public",
         "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-        "tree_sha": "1bf79d51ad8c927ba3a96b20aa8d2b226c738a16",
+        "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739",
         "scanned_files": [
           {
-            "path": "backend/app/analytics/benchmarks.py",
-            "sha": "6a2d7bc08f887764d36b0a9498636f1ee61f8ad0"
+            "path": "backend/app/__init__.py",
+            "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
           },
           {
-            "path": "backend/app/analytics/metrics.py",
-            "sha": "13d14dd27d1bc85a825538b721a169433973bfff"
+            "path": "backend/app/config.py",
+            "sha": "705bc7721dc56cc46b68eb1fd8dfc4fb407144d2"
           },
           {
-            "path": "backend/app/analytics/narrative.py",
-            "sha": "be6eb084f36814c3e894b406df0b8c2c7bc199a7"
-          },
-          {
-            "path": "backend/app/analytics/priority.py",
-            "sha": "7fa3a1dff2822ffafe1f11c577b9bedee93f20dc"
-          },
-          {
-            "path": "backend/app/api/filters.py",
-            "sha": "e69b4af39051b96ff967e3235971a08934db313b"
-          },
-          {
-            "path": "backend/app/api/kpis.py",
-            "sha": "6afd556666d0ef21f019c58cf9c1a21f5182bee6"
-          },
-          {
-            "path": "backend/app/api/methodology.py",
-            "sha": "f1e487c3c7ecfe17d5cb192059dcb16c5bdfc7b7"
+            "path": "backend/app/forecasting/engine.py",
+            "sha": "436a8d74158fa32576cc4ae5a3214f2f2c59ee5d"
           },
           {
             "path": "backend/app/forecasting/models.py",
             "sha": "42ada54d613487e22b2c60acbee976e4588fe57e"
           },
           {
+            "path": "backend/app/ingestion/pipeline.py",
+            "sha": "12ce6e4d8d458fdfed1507c846817d8ef96c9c19"
+          },
+          {
+            "path": "backend/app/main.py",
+            "sha": "7096b57cc99f2a3376fbd58879da76ff023a729f"
+          },
+          {
+            "path": "backend/app/models/__init__.py",
+            "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
             "path": "backend/app/models/schemas.py",
             "sha": "ca54e4557a952b7135babe0d9b63d27b42b83e56"
+          },
+          {
+            "path": "backend/app/scenarios/engine.py",
+            "sha": "98707c02d224419f44934b1451b7926de62031bf"
+          },
+          {
+            "path": "frontend/app/layout.tsx",
+            "sha": "0a9ade8447832fd71dcf0bf3d7cf8483c72e645a"
+          },
+          {
+            "path": "frontend/app/page.tsx",
+            "sha": "0c5fd973f8b6192fd04b9cc76dc21f3c1b8d1dfa"
+          },
+          {
+            "path": "frontend/components/AppShell.tsx",
+            "sha": "3b7ee0d8e1e8afd3a243cb5e9d159b06970c06c3"
+          },
+          {
+            "path": "frontend/components/AttentionCards.tsx",
+            "sha": "6e7bc0837630d1f3c4232e5d9e94e5a1a3159fb2"
+          },
+          {
+            "path": "frontend/components/ExecutiveBrief.tsx",
+            "sha": "3e2786b63037137cbe7d03ff3cbdd011611d0710"
+          },
+          {
+            "path": "frontend/components/FilterBar.tsx",
+            "sha": "c5ada81fc2e78a81015f3ae1d6d82ad6703a8892"
+          },
+          {
+            "path": "frontend/components/InfoTooltip.tsx",
+            "sha": "439a5961134326c9745bbf1a85a281f03cd52e7f"
+          },
+          {
+            "path": "frontend/components/KpiRow.tsx",
+            "sha": "6b23625a19071a80b7b0f4c2cc4457c7230473aa"
+          },
+          {
+            "path": "frontend/components/PriorityBadge.tsx",
+            "sha": "ad374370c50f1cab65648eebf1cce6a9b7845a3a"
+          },
+          {
+            "path": "frontend/components/RankedTable.tsx",
+            "sha": "980b9c9d4be328e916922cbc7af752b6632e7c51"
+          },
+          {
+            "path": "frontend/components/ScenarioSimulator.tsx",
+            "sha": "7989c5c5647cf10108877890f4c81e3f71bec2bb"
+          },
+          {
+            "path": "frontend/components/ScoreBreakdown.tsx",
+            "sha": "5312eb8b5eb496cf22d4fdcc88f387c9c66725ef"
+          },
+          {
+            "path": "frontend/components/SiteFooter.tsx",
+            "sha": "75e894b8ed8da4aa1be3e2ec74f693bc979ce67f"
+          },
+          {
+            "path": "frontend/components/SiteHeader.tsx",
+            "sha": "2cb25aa18fbeeafc1d52a6aa1812458873428427"
+          },
+          {
+            "path": "frontend/components/States.tsx",
+            "sha": "eebfb829b4fa6105f3ba957ceb02b1878e260ed4"
+          },
+          {
+            "path": "frontend/eslint.config.mjs",
+            "sha": "e7c58747d81e401392761b7c68f042ad2ccaf77c"
+          },
+          {
+            "path": "frontend/lib/api.ts",
+            "sha": "a39238ab3a5f8de252d542b9fcefcf3baff43f1e"
+          },
+          {
+            "path": "frontend/lib/format.ts",
+            "sha": "180023fda3e958ac90b12dc6bc031efa243d43d5"
+          },
+          {
+            "path": "frontend/next.config.mjs",
+            "sha": "4e45555debe29f2c4a594793d0c19a4057ecd4e2"
+          },
+          {
+            "path": "frontend/postcss.config.mjs",
+            "sha": "2ef30fcf4272e19cf6a23d07b0544027954f9627"
+          },
+          {
+            "path": "frontend/tailwind.config.ts",
+            "sha": "9b2d18bd2f9948b9aea3a94e6be6af72abebb5b5"
+          },
+          {
+            "path": "scripts/_bootstrap.py",
+            "sha": "d91aed2e3f9998c576695d6f062a32a8db4ae042"
+          },
+          {
+            "path": "scripts/build_warehouse.py",
+            "sha": "9308e810c31498e7026cc69ff3b6534c0c3f539c"
+          },
+          {
+            "path": "scripts/download_data.py",
+            "sha": "69446f3e4b275561962234da544659d1e92ac01c"
+          },
+          {
+            "path": "scripts/materialise_warehouse.py",
+            "sha": "70bb442fdf10918fb016210a05907d20ddf70ef5"
+          },
+          {
+            "path": "scripts/seed_demo.py",
+            "sha": "c5c299e2695ffca0a828ef0c9401095dc328fcbe"
+          },
+          {
+            "path": "scripts/validate_data.py",
+            "sha": "82145e5cf13df40b7e50919b3a77160b0be323c5"
           }
         ],
         "skills": {
@@ -1036,7 +1352,7 @@
               "visibility": "public",
               "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
               "path": "backend/agents/judge_agent.py",
-              "sha": "03d2dca9d3a0983275cc6334cd0db0745e160ed4",
+              "sha": "f28315008653ea442f8b965dddfff014915be6bd",
               "kind": "source"
             },
             {
