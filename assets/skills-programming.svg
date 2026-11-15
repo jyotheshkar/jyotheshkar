@@ -2,24 +2,24 @@
 <title>Programming Languages</title>
 <desc>Repository evidence shown as segmented doughnuts. Names and unnumbered bars appear below each circle in two columns. Coverage is not a proficiency score. Transparent background.</desc>
 <style>text{font-family:Arial,Helvetica,sans-serif}</style>
-<g data-skill-circle="languages" data-total="34" data-center-x="220" data-center-y="214" aria-label="Programming Languages">
+<g data-skill-circle="languages" data-total="38" data-center-x="220" data-center-y="214" aria-label="Programming Languages">
 <rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
 <text x="220" y="48" fill="#f0f6fc" font-size="28" font-weight="600" text-anchor="middle">Programming Languages</text>
 <circle cx="220" cy="214" r="100" fill="none" stroke="#30363d" stroke-width="40"/>
-<circle data-segment="Python" data-value="16" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="295.67930857 332.63922214" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Python</title></circle>
-<circle data-segment="JavaScript" data-value="9" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="166.31961107 461.99891965" stroke-dashoffset="-295.67930857" transform="rotate(-90 220 214)"><title>JavaScript</title></circle>
-<circle data-segment="SQL" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="55.43987036 572.87866036" stroke-dashoffset="-461.99891965" transform="rotate(-90 220 214)"><title>SQL</title></circle>
-<circle data-segment="TypeScript" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="55.43987036 572.87866036" stroke-dashoffset="-517.43879000" transform="rotate(-90 220 214)"><title>TypeScript</title></circle>
-<circle data-segment="JSP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="18.47995679 609.83857393" stroke-dashoffset="-572.87866036" transform="rotate(-90 220 214)"><title>JSP</title></circle>
-<circle data-segment="PHP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="18.47995679 609.83857393" stroke-dashoffset="-591.35861715" transform="rotate(-90 220 214)"><title>PHP</title></circle>
-<circle data-segment="Shell" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="18.47995679 609.83857393" stroke-dashoffset="-609.83857393" transform="rotate(-90 220 214)"><title>Shell</title></circle>
+<circle data-segment="Python" data-value="19" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="314.15926536 314.15926536" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Python</title></circle>
+<circle data-segment="JavaScript" data-value="10" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="165.34698177 462.97154895" stroke-dashoffset="-314.15926536" transform="rotate(-90 220 214)"><title>JavaScript</title></circle>
+<circle data-segment="SQL" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="49.60409453 578.71443619" stroke-dashoffset="-479.50624713" transform="rotate(-90 220 214)"><title>SQL</title></circle>
+<circle data-segment="TypeScript" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="49.60409453 578.71443619" stroke-dashoffset="-529.11034166" transform="rotate(-90 220 214)"><title>TypeScript</title></circle>
+<circle data-segment="JSP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="16.53469818 611.78383254" stroke-dashoffset="-578.71443619" transform="rotate(-90 220 214)"><title>JSP</title></circle>
+<circle data-segment="PHP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="16.53469818 611.78383254" stroke-dashoffset="-595.24913436" transform="rotate(-90 220 214)"><title>PHP</title></circle>
+<circle data-segment="Shell" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="16.53469818 611.78383254" stroke-dashoffset="-611.78383254" transform="rotate(-90 220 214)"><title>Shell</title></circle>
 <path d="M220.000 135.000L220.000 93.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M234.516 291.655L242.234 332.940" stroke="#0d1117" stroke-width="3"/>
-<path d="M141.337 221.289L99.516 225.164" stroke="#0d1117" stroke-width="3"/>
-<path d="M149.282 178.787L111.685 160.066" stroke="#0d1117" stroke-width="3"/>
-<path d="M178.412 146.833L156.302 111.124" stroke="#0d1117" stroke-width="3"/>
-<path d="M191.462 140.335L176.290 101.171" stroke="#0d1117" stroke-width="3"/>
-<path d="M205.484 136.345L197.766 95.060" stroke="#0d1117" stroke-width="3"/>
+<path d="M220.000 293.000L220.000 335.000" stroke="#0d1117" stroke-width="3"/>
+<path d="M141.270 207.476L99.413 204.008" stroke="#0d1117" stroke-width="3"/>
+<path d="M153.864 170.791L118.703 147.819" stroke="#0d1117" stroke-width="3"/>
+<path d="M182.400 144.522L162.410 107.584" stroke="#0d1117" stroke-width="3"/>
+<path d="M194.349 139.280L180.711 99.556" stroke="#0d1117" stroke-width="3"/>
+<path d="M206.997 136.077L200.084 94.650" stroke="#0d1117" stroke-width="3"/>
 <text x="220" y="224" fill="#f0f6fc" font-size="34" font-weight="600" text-anchor="middle">Code</text>
 <g data-skill-legend="Python">
 <circle cx="31" cy="376" r="3.5" fill="#58a6ff"/>
@@ -31,37 +31,37 @@
 <circle cx="246" cy="376" r="3.5" fill="#d2a8ff"/>
 <text x="257" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">JavaScript</text>
 <rect x="257" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="JavaScript" x="257" y="391" width="99.000000" height="3.5" rx="1.75" fill="#d2a8ff"/>
+<rect data-evidence-bar="JavaScript" x="257" y="391" width="92.631579" height="3.5" rx="1.75" fill="#d2a8ff"/>
 </g>
 <g data-skill-legend="SQL">
 <circle cx="31" cy="418" r="3.5" fill="#7ee787"/>
 <text x="42" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">SQL</text>
 <rect x="42" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="SQL" x="42" y="433" width="33.000000" height="3.5" rx="1.75" fill="#7ee787"/>
+<rect data-evidence-bar="SQL" x="42" y="433" width="27.789474" height="3.5" rx="1.75" fill="#7ee787"/>
 </g>
 <g data-skill-legend="TypeScript">
 <circle cx="246" cy="418" r="3.5" fill="#ffa657"/>
 <text x="257" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">TypeScript</text>
 <rect x="257" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="TypeScript" x="257" y="433" width="33.000000" height="3.5" rx="1.75" fill="#ffa657"/>
+<rect data-evidence-bar="TypeScript" x="257" y="433" width="27.789474" height="3.5" rx="1.75" fill="#ffa657"/>
 </g>
 <g data-skill-legend="JSP">
 <circle cx="31" cy="460" r="3.5" fill="#f778ba"/>
 <text x="42" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">JSP</text>
 <rect x="42" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="JSP" x="42" y="475" width="11.000000" height="3.5" rx="1.75" fill="#f778ba"/>
+<rect data-evidence-bar="JSP" x="42" y="475" width="9.263158" height="3.5" rx="1.75" fill="#f778ba"/>
 </g>
 <g data-skill-legend="PHP">
 <circle cx="246" cy="460" r="3.5" fill="#39c5cf"/>
 <text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">PHP</text>
 <rect x="257" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="PHP" x="257" y="475" width="11.000000" height="3.5" rx="1.75" fill="#39c5cf"/>
+<rect data-evidence-bar="PHP" x="257" y="475" width="9.263158" height="3.5" rx="1.75" fill="#39c5cf"/>
 </g>
 <g data-skill-legend="Shell">
 <circle cx="31" cy="502" r="3.5" fill="#e3b341"/>
 <text x="42" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Shell</text>
 <rect x="42" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Shell" x="42" y="517" width="11.000000" height="3.5" rx="1.75" fill="#e3b341"/>
+<rect data-evidence-bar="Shell" x="42" y="517" width="9.263158" height="3.5" rx="1.75" fill="#e3b341"/>
 </g>
 </g>
 </svg>

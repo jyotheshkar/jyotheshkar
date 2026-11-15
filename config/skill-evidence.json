@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "captured_at": "2026-11-15T09:29:37+00:00",
+  "captured_at": "2026-11-15T09:32:34+00:00",
   "public_snapshot": {
-    "captured_at": "2026-11-15T09:29:37+00:00",
+    "captured_at": "2026-11-15T09:32:34+00:00",
     "sources": [
       {
         "source_id": "5b770aa2d866d420",
@@ -1710,8 +1710,43 @@
     ]
   },
   "private_snapshot": {
-    "captured_at": "2026-11-15T09:28:02+00:00",
+    "captured_at": "2026-11-15T09:32:34+00:00",
     "sources": [
+      {
+        "source_id": "b8046dba1fbe37a0",
+        "visibility": "private",
+        "skills": {
+          "languages": {
+            "Python": {
+              "kind": "verified source"
+            }
+          },
+          "aiml": {},
+          "agentic": {
+            "Agent evaluation": {
+              "kind": "verified source"
+            },
+            "Workflow orchestration": {
+              "kind": "verified source"
+            },
+            "Tool execution": {
+              "kind": "verified source"
+            },
+            "Retrieval": {
+              "kind": "verified source"
+            },
+            "State and memory": {
+              "kind": "verified source"
+            },
+            "Human approval": {
+              "kind": "verified source"
+            },
+            "Guardrails": {
+              "kind": "verified source"
+            }
+          }
+        }
+      },
       {
         "source_id": "0642b293da263416",
         "visibility": "private",
@@ -1764,6 +1799,35 @@
         }
       },
       {
+        "source_id": "c8efd093f295ccfc",
+        "visibility": "private",
+        "skills": {
+          "languages": {
+            "Python": {
+              "kind": "verified source"
+            }
+          },
+          "aiml": {},
+          "agentic": {}
+        }
+      },
+      {
+        "source_id": "db6196397de6cbb8",
+        "visibility": "private",
+        "skills": {
+          "languages": {
+            "JavaScript": {
+              "kind": "verified source"
+            },
+            "Python": {
+              "kind": "verified source"
+            }
+          },
+          "aiml": {},
+          "agentic": {}
+        }
+      },
+      {
         "source_id": "a6d9f8bbb48d543e",
         "visibility": "private",
         "skills": {
@@ -1804,7 +1868,7 @@
       "items": [
         {
           "label": "Python",
-          "value": 16,
+          "value": 19,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -1919,7 +1983,19 @@
               "kind": "source"
             },
             {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
               "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
               "visibility": "private"
             },
             {
@@ -1930,7 +2006,7 @@
         },
         {
           "label": "JavaScript",
-          "value": 9,
+          "value": 10,
           "evidence": [
             {
               "source_id": "7db9375e9c0276f4",
@@ -1994,6 +2070,10 @@
             },
             {
               "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
               "visibility": "private"
             }
           ]
@@ -2328,7 +2408,7 @@
       "items": [
         {
           "label": "Agent evaluation",
-          "value": 2,
+          "value": 3,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -2339,6 +2419,10 @@
               "kind": "implementation"
             },
             {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
               "source_id": "8688d4d019b119b4",
               "visibility": "private"
             }
@@ -2346,7 +2430,7 @@
         },
         {
           "label": "Guardrails",
-          "value": 2,
+          "value": 3,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -2355,6 +2439,38 @@
               "path": "scripts/import-runtime-sources/import_sources.py",
               "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
               "kind": "implementation"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Retrieval",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "State and memory",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
             },
             {
               "source_id": "8688d4d019b119b4",
@@ -2381,28 +2497,8 @@
           ]
         },
         {
-          "label": "Retrieval",
-          "value": 1,
-          "evidence": [
-            {
-              "source_id": "8688d4d019b119b4",
-              "visibility": "private"
-            }
-          ]
-        },
-        {
-          "label": "State and memory",
-          "value": 1,
-          "evidence": [
-            {
-              "source_id": "8688d4d019b119b4",
-              "visibility": "private"
-            }
-          ]
-        },
-        {
           "label": "Workflow orchestration",
-          "value": 1,
+          "value": 2,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -2411,6 +2507,30 @@
               "path": "plugins/moa/scripts/moa_core.py",
               "sha": "c1f9e139048e49fe7d4919ab568b49a75b2044de",
               "kind": "implementation"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Human approval",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Tool execution",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
             }
           ]
         }
