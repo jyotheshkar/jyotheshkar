@@ -45,7 +45,95 @@ AGENTIC = [
     ('Agent evaluation', r'\b(?:def\s+(?:run_adversarial|evaluate\w*|run_batch|score_response)|class\s+\w*(?:Evaluator|EvaluationPipeline)|evaluation_results\s*[=:])'),
     ('Task routing', r'\b(?:def\s+(?:route_task|route_request|select_agent)|class\s+\w*(?:Router|Planner)|routing_decision\s*[:=])'),
 ]
-TITLES = {'languages':'Programming Languages', 'aiml':'AI/ML Engineering', 'agentic':'Agentic AI Engineering'}
+TITLES = {'languages':'Languages', 'libraries':'Libraries and Frameworks',
+          'aiml':'AI/ML Engineering', 'agentic':'Agentic AI Engineering'}
+LIBRARIES = {
+    'numpy':'NumPy', 'pandas':'pandas', 'sklearn':'scikit-learn', 'torch':'PyTorch',
+    'tensorflow':'TensorFlow', 'keras':'Keras', 'matplotlib':'Matplotlib',
+    'seaborn':'Seaborn', 'scipy':'SciPy', 'statsmodels':'statsmodels',
+    'pydantic':'Pydantic', 'fastapi':'FastAPI', 'flask':'Flask',
+    'streamlit':'Streamlit', 'requests':'Requests', 'httpx':'HTTPX',
+    'anthropic':'Anthropic SDK', 'openai':'OpenAI SDK', 'faiss':'FAISS',
+    'sentence_transformers':'Sentence Transformers', 'transformers':'Transformers',
+    'tiktoken':'tiktoken', 'langchain':'LangChain', 'langgraph':'LangGraph',
+    'boto3':'Boto3', 'reportlab':'ReportLab', 'pygame':'Pygame', 'cv2':'OpenCV',
+    'xgboost':'XGBoost', 'econml':'EconML', 'qdrant_client':'Qdrant',
+    'fastembed':'FastEmbed', 'PIL':'Pillow', 'sympy':'SymPy',
+    'react':'React', 'next':'Next.js', 'recharts':'Recharts', 'zod':'Zod',
+    'lucide-react':'Lucide', 'framer-motion':'Motion', 'express':'Express',
+    'pmdarima':'pmdarima', 'fuzzywuzzy':'FuzzyWuzzy', 'spacy':'spaCy',
+    'speech_recognition':'SpeechRecognition', 'pyttsx3':'pyttsx3',
+    'pyautogui':'PyAutoGUI', 'face_recognition':'face_recognition',
+    'cryptography':'cryptography', 'dotenv':'python-dotenv',
+    'psycopg':'Psycopg',
+    'joblib':'joblib', 'lightgbm':'LightGBM',
+}
+
+
+def library_usage(body, path):
+    """Require an imported external library and an executable use of its binding.
+
+    Dependency manifests, comments, strings and unused imports are not evidence.
+    Notebook callers pass code cells, never markdown or saved outputs.
+    """
+    if path.endswith(('.py', '.ipynb')):
+        try:
+            # Notebook shell/magic commands do not establish Python library use.
+            body = '\n'.join(line for line in body.splitlines() if not line.lstrip().startswith(('%', '!')))
+            tree = ast.parse(body)
+        except SyntaxError:
+            return set()
+        imported = {}
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                for alias in node.names:
+                    root = alias.name.split('.')[0]
+                    if root in LIBRARIES:
+                        imported[alias.asname or root] = LIBRARIES[root]
+            elif isinstance(node, ast.ImportFrom) and node.level == 0 and node.module:
+                root = node.module.split('.')[0]
+                if root in LIBRARIES:
+                    for alias in node.names:
+                        if alias.name != '*':
+                            imported[alias.asname or alias.name] = LIBRARIES[root]
+        used = set()
+        for node in ast.walk(tree):
+            values = []
+            if isinstance(node, ast.Call):
+                values.append(node.func)
+                values.extend(node.args)
+                values.extend(keyword.value for keyword in node.keywords)
+            elif isinstance(node, ast.ClassDef):
+                values.extend(node.bases)
+            elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
+                values.extend(node.decorator_list)
+            for value in values:
+                for child in ast.walk(value):
+                    if isinstance(child, ast.Name) and child.id in imported:
+                        used.add(imported[child.id])
+        return used
+    if not path.endswith(('.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs')):
+        return set()
+    code = re.sub(r'/\*.*?\*/|//[^\n]*', '', body, flags=re.S)
+    used = set()
+    pattern = re.compile(r'^[ \t]*import\s+(?!type\b)(.*?)\s+from\s+[\x27\"]([^\x27\"]+)[\x27\"]\s*;?', re.S | re.M)
+    declarations = list(pattern.finditer(code))
+    executable = pattern.sub('', code)
+    for match in declarations:
+        root = match[2].split('/')[0]
+        if root not in LIBRARIES:
+            continue
+        names = []
+        for binding in match[1].replace('{', '').replace('}', '').split(','):
+            binding = binding.strip()
+            if not binding or binding.startswith('type '):
+                continue
+            name = re.split(r'\s+as\s+', binding)[-1].strip()
+            if re.fullmatch(r'[A-Za-z_$][\w$]*', name):
+                names.append(name)
+        if any(re.search(r'(?:\b'+re.escape(name)+r'\s*(?:\(|\.)|<'+re.escape(name)+r'\b)', executable) for name in names):
+            used.add(LIBRARIES[root])
+    return used
 
 
 class API:
@@ -126,7 +214,7 @@ def assemble(public, private, captured_at):
     groups = {key:defaultdict(list) for key in TITLES}
     for source in public['sources'] + private['sources']:
         for key in TITLES:
-            for label, proof in source['skills'][key].items():
+            for label, proof in source['skills'].get(key, {}).items():
                 item = {'source_id':source['source_id'], 'visibility':source['visibility']}
                 if source['visibility'] == 'public':
                     item.update({'repo':source['repo'], **proof})
@@ -136,15 +224,16 @@ def assemble(public, private, captured_at):
                         for label,proof in sorted(groups[key].items(), key=lambda item:(-len(item[1]), item[0].lower()))]}
               for key,title in TITLES.items()]
     return {
-        'schema_version':2, 'captured_at':captured_at,
+        'schema_version':3, 'captured_at':captured_at,
         'public_snapshot':public, 'private_snapshot':private,
         'methodology':{
             'measure':'One repository per evidenced language or engineering domain. Counts describe source presence, never proficiency or authorship.',
             'languages':'Complete source trees plus inspected notebook code cells. PHP and JSP included. Java requires .java or Processing implementation; a Maven WAR or pure-HTML JSP does not establish Java source. HTML/CSS styling and dependencies/builds are excluded.',
+            'libraries':'External libraries/frameworks imported and used in inspected implementation or notebook code cells. Dependency manifests, unused imports, prose and standard-library modules do not qualify. Each repository contributes once per library; this is source coverage, not execution verification.',
             'aiml':'Executable implementations of learning domains; dependencies and README claims do not qualify. Notebook markdown/outputs and unimplemented Python stubs are excluded.',
             'agentic':'Only Agentic Core family repositories and linkedin-agent-development-lab. Source implementation symbols, not other web apps or architecture prose.',
             'privacy':'Private evidence publishes only opaque per-repository IDs and skill names. No private names, filenames, snippets, blob hashes, URLs or notebook contents are published.',
-            'refresh':'Public snapshot can refresh through GitHub Actions. Full authenticated connector audits refresh private aggregates. Public-only refresh preserves the private baseline and its separate capture date.',
+            'refresh':'Evidence is captured on demand. A public-only capture preserves the sanitized private baseline and its separate capture date; a full authenticated audit can update both partitions.',
         },
         'charts':charts,
     }
@@ -191,7 +280,8 @@ def main():
         if tree.get('truncated'):
             raise RuntimeError('Truncated repository tree: '+name)
         prior = prior_public.get(rid)
-        if api.cache is None and prior and not repo.get('private') and prior['tree_sha'] == tree['sha']:
+        if (api.cache is None and prior and not repo.get('private')
+                and prior['tree_sha'] == tree['sha'] and set(prior['skills']) == set(TITLES)):
             sources.append({**prior, 'repo':name})
             continue
         files = [f for f in tree['tree'] if f['type']=='blob' and not EXCLUDE.search(f['path'])]
@@ -229,6 +319,8 @@ def main():
                 if body.strip() and language and language.lower() in ('python','python3'):
                     skills['languages'].setdefault('Python', proof(file,'notebook code cells'))
             code = implementation(body)
+            for label in library_usage(body, path):
+                skills['libraries'].setdefault(label, proof(file, 'import and usage'))
             for label,pattern in AIML:
                 if re.search(pattern,code,re.I):
                     skills['aiml'].setdefault(label,proof(file))
@@ -259,3 +351,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

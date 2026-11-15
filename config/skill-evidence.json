@@ -1,6 +1,6 @@
 {
-  "schema_version": 2,
-  "captured_at": "2026-11-15T09:32:34+00:00",
+  "schema_version": 3,
+  "captured_at": "2026-11-15T09:39:55+00:00",
   "public_snapshot": {
     "captured_at": "2026-11-15T09:32:34+00:00",
     "sources": [
@@ -85,7 +85,8 @@
               "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
               "kind": "implementation"
             }
-          }
+          },
+          "libraries": {}
         }
       },
       {
@@ -237,6 +238,18 @@
           {
             "path": "scripts/validate_demo_artifacts.py",
             "sha": "cb675709406a44c309c6327cbfa16cae411253c6"
+          },
+          {
+            "path": "backend/src/primelift/causal/causal_forest.py",
+            "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd"
+          },
+          {
+            "path": "frontend/src/components/app-header.tsx",
+            "sha": "e4c51b39e6b691fe069a4fafdeb977c042c0d085"
+          },
+          {
+            "path": "backend/src/primelift/data/generator.py",
+            "sha": "eaeaba8e130a354a0d37a4bc99f262e0b3d2d80a"
           }
         ],
         "skills": {
@@ -258,7 +271,49 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "React": {
+              "path": "frontend/src/components/dataset-models-live-dashboard.tsx",
+              "sha": "0b6d52259a5791c7114e54d3140f4c68f94bbb63",
+              "kind": "import and usage"
+            },
+            "Pydantic": {
+              "path": "backend/src/primelift/uplift/model_based_analysis.py",
+              "sha": "e369eaad222a56edbf111e09cb2604b1fab34b2f",
+              "kind": "import and usage"
+            },
+            "pandas": {
+              "path": "backend/src/primelift/uplift/model_based_analysis.py",
+              "sha": "e369eaad222a56edbf111e09cb2604b1fab34b2f",
+              "kind": "import and usage"
+            },
+            "EconML": {
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            },
+            "NumPy": {
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            },
+            "joblib": {
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            },
+            "LightGBM": {
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            },
+            "Next.js": {
+              "path": "frontend/src/components/app-header.tsx",
+              "sha": "e4c51b39e6b691fe069a4fafdeb977c042c0d085",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -437,7 +492,59 @@
               "kind": "implementation"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "FastAPI": {
+              "path": "backend/main.py",
+              "sha": "8573c56c1dffd7cde884865333516b73f2262132",
+              "kind": "import and usage"
+            },
+            "Next.js": {
+              "path": "frontend/app/layout.tsx",
+              "sha": "b441b87072d47d361aa22753a3123e3ee1ed30e1",
+              "kind": "import and usage"
+            },
+            "Recharts": {
+              "path": "frontend/components/ScoreTrendChart.tsx",
+              "sha": "aba7af102c65329c1384507a92abdbbf664008a7",
+              "kind": "import and usage"
+            },
+            "python-dotenv": {
+              "path": "backend/agents/rufus_agent.py",
+              "sha": "199d84d990806624edea1e4474548ba881cf6222",
+              "kind": "import and usage"
+            },
+            "Anthropic SDK": {
+              "path": "backend/agents/rufus_agent.py",
+              "sha": "199d84d990806624edea1e4474548ba881cf6222",
+              "kind": "import and usage"
+            },
+            "FAISS": {
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "kind": "import and usage"
+            },
+            "NumPy": {
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "kind": "import and usage"
+            },
+            "Sentence Transformers": {
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "kind": "import and usage"
+            },
+            "React": {
+              "path": "frontend/app/page.tsx",
+              "sha": "f305a280aced39981e357a43e1805b5a4f308452",
+              "kind": "import and usage"
+            },
+            "Pydantic": {
+              "path": "backend/models.py",
+              "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -449,7 +556,8 @@
         "skills": {
           "languages": {},
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -461,7 +569,8 @@
         "skills": {
           "languages": {},
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -579,7 +688,14 @@
               "kind": "implementation"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "PyTorch": {
+              "path": "src/gpt_scratch_lab/training.py",
+              "sha": "9fb00030f05ec7c559045043b3069c4aa2d58a31",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -602,7 +718,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -645,7 +762,29 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "Pillow": {
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            },
+            "OpenCV": {
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            },
+            "ReportLab": {
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            },
+            "FuzzyWuzzy": {
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -806,7 +945,39 @@
               "kind": "implementation"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "pandas": {
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "import and usage"
+            },
+            "scikit-learn": {
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "import and usage"
+            },
+            "Matplotlib": {
+              "path": "Data Analysis/dataAnalysis.py",
+              "sha": "a1b2a3c971e23efc52a5cd28e519baf7c26ac982",
+              "kind": "import and usage"
+            },
+            "statsmodels": {
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "import and usage"
+            },
+            "NumPy": {
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "import and usage"
+            },
+            "pmdarima": {
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -953,7 +1124,49 @@
               "kind": "implementation"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "pandas": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "NumPy": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "scikit-learn": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "TensorFlow": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "Matplotlib": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "Seaborn": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "statsmodels": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            "pmdarima": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -976,7 +1189,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1007,7 +1221,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1151,7 +1366,54 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "NumPy": {
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            },
+            "OpenCV": {
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            },
+            "Pillow": {
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            },
+            "face_recognition": {
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            },
+            "cryptography": {
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            },
+            "spaCy": {
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "kind": "import and usage"
+            },
+            "SpeechRecognition": {
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "kind": "import and usage"
+            },
+            "pyttsx3": {
+              "path": "Nova Software/voice.py",
+              "sha": "e489d3b880fd378d6545d1a64309ae8090a8df44",
+              "kind": "import and usage"
+            },
+            "PyAutoGUI": {
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -1194,7 +1456,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1388,7 +1651,39 @@
               "kind": "implementation"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "NumPy": {
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            "pandas": {
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            "scikit-learn": {
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            "Keras": {
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            "TensorFlow": {
+              "path": "Codes/Generic_Activity_Model.py",
+              "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5",
+              "kind": "import and usage"
+            },
+            "Matplotlib": {
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -1476,7 +1771,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1654,7 +1950,34 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "NumPy": {
+              "path": "backend/app/forecasting/engine.py",
+              "sha": "436a8d74158fa32576cc4ae5a3214f2f2c59ee5d",
+              "kind": "import and usage"
+            },
+            "pandas": {
+              "path": "backend/app/ingestion/pipeline.py",
+              "sha": "12ce6e4d8d458fdfed1507c846817d8ef96c9c19",
+              "kind": "import and usage"
+            },
+            "FastAPI": {
+              "path": "backend/app/main.py",
+              "sha": "7096b57cc99f2a3376fbd58879da76ff023a729f",
+              "kind": "import and usage"
+            },
+            "React": {
+              "path": "frontend/components/AppShell.tsx",
+              "sha": "3b7ee0d8e1e8afd3a243cb5e9d159b06970c06c3",
+              "kind": "import and usage"
+            },
+            "Next.js": {
+              "path": "frontend/app/layout.tsx",
+              "sha": "0a9ade8447832fd71dcf0bf3d7cf8483c72e645a",
+              "kind": "import and usage"
+            }
+          }
         }
       },
       {
@@ -1704,7 +2027,24 @@
               "kind": "implementation"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "NumPy": {
+              "path": "ai.py",
+              "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
+              "kind": "import and usage"
+            },
+            "PyTorch": {
+              "path": "ai.py",
+              "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
+              "kind": "import and usage"
+            },
+            "Pygame": {
+              "path": "ai.py",
+              "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
+              "kind": "import and usage"
+            }
+          }
         }
       }
     ]
@@ -1744,7 +2084,8 @@
             "Guardrails": {
               "kind": "verified source"
             }
-          }
+          },
+          "libraries": {}
         }
       },
       {
@@ -1757,7 +2098,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1795,6 +2137,23 @@
             "Agent evaluation": {
               "kind": "verified source"
             }
+          },
+          "libraries": {
+            "Qdrant": {
+              "kind": "verified source"
+            },
+            "FastEmbed": {
+              "kind": "verified source"
+            },
+            "Pydantic": {
+              "kind": "verified source"
+            },
+            "OpenAI SDK": {
+              "kind": "verified source"
+            },
+            "FastAPI": {
+              "kind": "verified source"
+            }
           }
         }
       },
@@ -1808,7 +2167,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1824,7 +2184,8 @@
             }
           },
           "aiml": {},
-          "agentic": {}
+          "agentic": {},
+          "libraries": {}
         }
       },
       {
@@ -1847,7 +2208,18 @@
               "kind": "verified source"
             }
           },
-          "agentic": {}
+          "agentic": {},
+          "libraries": {
+            "PyTorch": {
+              "kind": "verified source"
+            },
+            "NumPy": {
+              "kind": "verified source"
+            },
+            "Matplotlib": {
+              "kind": "verified source"
+            }
+          }
         }
       }
     ]
@@ -1855,15 +2227,16 @@
   "methodology": {
     "measure": "One repository per evidenced language or engineering domain. Counts describe source presence, never proficiency or authorship.",
     "languages": "Complete source trees plus inspected notebook code cells. PHP and JSP included. Java requires .java or Processing implementation; a Maven WAR or pure-HTML JSP does not establish Java source. HTML/CSS styling and dependencies/builds are excluded.",
+    "libraries": "External libraries/frameworks imported and used in inspected implementation or notebook code cells. Dependency manifests, unused imports, prose and standard-library modules do not qualify. Each repository contributes once per library; this is source coverage, not execution verification.",
     "aiml": "Executable implementations of learning domains; dependencies and README claims do not qualify. Notebook markdown/outputs and unimplemented Python stubs are excluded.",
     "agentic": "Only Agentic Core family repositories and linkedin-agent-development-lab. Source implementation symbols, not other web apps or architecture prose.",
     "privacy": "Private evidence publishes only opaque per-repository IDs and skill names. No private names, filenames, snippets, blob hashes, URLs or notebook contents are published.",
-    "refresh": "Public snapshot can refresh through GitHub Actions. Full authenticated connector audits refresh private aggregates. Public-only refresh preserves the private baseline and its separate capture date."
+    "refresh": "Evidence is captured on demand. A public-only capture preserves the sanitized private baseline and its separate capture date; a full authenticated audit can update both partitions."
   },
   "charts": [
     {
       "key": "languages",
-      "title": "Programming Languages",
+      "title": "Languages",
       "unit": "repositories",
       "items": [
         {
@@ -2169,6 +2542,741 @@
             {
               "source_id": "8688d4d019b119b4",
               "visibility": "private"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "libraries",
+      "title": "Libraries and Frameworks",
+      "unit": "repositories",
+      "items": [
+        {
+          "label": "NumPy",
+          "value": 9,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "2a019076db1771ec",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/forecasting/engine.py",
+              "sha": "436a8d74158fa32576cc4ae5a3214f2f2c59ee5d",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a2eaa58fe4a6142f",
+              "visibility": "public",
+              "repo": "jyotheshkar/Zombie-Hunter-DQN-2025",
+              "path": "ai.py",
+              "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a6d9f8bbb48d543e",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "pandas",
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/uplift/model_based_analysis.py",
+              "sha": "e369eaad222a56edbf111e09cb2604b1fab34b2f",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "2a019076db1771ec",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/ingestion/pipeline.py",
+              "sha": "12ce6e4d8d458fdfed1507c846817d8ef96c9c19",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Matplotlib",
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Data Analysis/dataAnalysis.py",
+              "sha": "a1b2a3c971e23efc52a5cd28e519baf7c26ac982",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "2a019076db1771ec",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a6d9f8bbb48d543e",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "FastAPI",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/main.py",
+              "sha": "8573c56c1dffd7cde884865333516b73f2262132",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "backend/app/main.py",
+              "sha": "7096b57cc99f2a3376fbd58879da76ff023a729f",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Next.js",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/app-header.tsx",
+              "sha": "e4c51b39e6b691fe069a4fafdeb977c042c0d085",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/layout.tsx",
+              "sha": "b441b87072d47d361aa22753a3123e3ee1ed30e1",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/app/layout.tsx",
+              "sha": "0a9ade8447832fd71dcf0bf3d7cf8483c72e645a",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Pydantic",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/uplift/model_based_analysis.py",
+              "sha": "e369eaad222a56edbf111e09cb2604b1fab34b2f",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/models.py",
+              "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "PyTorch",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "c782f3566503ce6b",
+              "visibility": "public",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
+              "path": "src/gpt_scratch_lab/training.py",
+              "sha": "9fb00030f05ec7c559045043b3069c4aa2d58a31",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a2eaa58fe4a6142f",
+              "visibility": "public",
+              "repo": "jyotheshkar/Zombie-Hunter-DQN-2025",
+              "path": "ai.py",
+              "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a6d9f8bbb48d543e",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "React",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/src/components/dataset-models-live-dashboard.tsx",
+              "sha": "0b6d52259a5791c7114e54d3140f4c68f94bbb63",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/app/page.tsx",
+              "sha": "f305a280aced39981e357a43e1805b5a4f308452",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/components/AppShell.tsx",
+              "sha": "3b7ee0d8e1e8afd3a243cb5e9d159b06970c06c3",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "scikit-learn",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "2a019076db1771ec",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "OpenCV",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "97eddf44993f8152",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Advanced-Programming-in-Python-Keele-University-2024",
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Pillow",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "97eddf44993f8152",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Advanced-Programming-in-Python-Keele-University-2024",
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "pmdarima",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "statsmodels",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "TensorFlow",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            },
+            {
+              "source_id": "2a019076db1771ec",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/Generic_Activity_Model.py",
+              "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Anthropic SDK",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/agents/rufus_agent.py",
+              "sha": "199d84d990806624edea1e4474548ba881cf6222",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "cryptography",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "EconML",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "face_recognition",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Authentication/face_auth.py",
+              "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "FAISS",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "FastEmbed",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "FuzzyWuzzy",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "97eddf44993f8152",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Advanced-Programming-in-Python-Keele-University-2024",
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "joblib",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Keras",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "2a019076db1771ec",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/BeSpoke_Activity_model.py",
+              "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "LightGBM",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "backend/src/primelift/causal/causal_forest.py",
+              "sha": "ed6446cc481d6edd0056ea81842fb29f30375bcd",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "OpenAI SDK",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "PyAutoGUI",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Pygame",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a2eaa58fe4a6142f",
+              "visibility": "public",
+              "repo": "jyotheshkar/Zombie-Hunter-DQN-2025",
+              "path": "ai.py",
+              "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "python-dotenv",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/agents/rufus_agent.py",
+              "sha": "199d84d990806624edea1e4474548ba881cf6222",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "pyttsx3",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Software/voice.py",
+              "sha": "e489d3b880fd378d6545d1a64309ae8090a8df44",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Qdrant",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Recharts",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/components/ScoreTrendChart.tsx",
+              "sha": "aba7af102c65329c1384507a92abdbbf664008a7",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "ReportLab",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "97eddf44993f8152",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Advanced-Programming-in-Python-Keele-University-2024",
+              "path": "advancepython.py",
+              "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Seaborn",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "Sentence Transformers",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "backend/retrieval/faiss_retriever.py",
+              "sha": "7ac89d9cd89f5621a38fce37008f056d3177dc76",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "spaCy",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "kind": "import and usage"
+            }
+          ]
+        },
+        {
+          "label": "SpeechRecognition",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Software/main.py",
+              "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
+              "kind": "import and usage"
             }
           ]
         }
@@ -2536,5 +3644,14 @@
         }
       ]
     }
-  ]
+  ],
+  "library_audit": {
+    "captured_at": "2026-11-15T09:39:55+00:00",
+    "scope": "All 24 accessible original repositories are represented. External library evidence uses a bounded inspection of current implementation and notebook code; absent detections are not proof of absence.",
+    "public_repositories": 18,
+    "private_repositories": 6,
+    "inspected_public_files": 49,
+    "inspected_private_files": 13,
+    "measure": "One repository per verified imported and used external library. Standard-library modules and dependency manifests excluded."
+  }
 }

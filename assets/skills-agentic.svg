@@ -1,75 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="580" viewBox="0 0 440 580" role="img" aria-label="Agentic AI Engineering">
-<title>Agentic AI Engineering</title>
-<desc>Repository evidence shown as segmented doughnuts. Names and unnumbered bars appear below each circle in two columns. Coverage is not a proficiency score. Transparent background.</desc>
-<style>text{font-family:Arial,Helvetica,sans-serif}</style>
-<g data-skill-circle="agentic" data-total="16" data-center-x="220" data-center-y="214" aria-label="Agentic AI Engineering">
-<rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
-<text x="220" y="48" fill="#f0f6fc" font-size="28" font-weight="600" text-anchor="middle">Agentic AI Engineering</text>
-<circle cx="220" cy="214" r="100" fill="none" stroke="#30363d" stroke-width="40"/>
-<circle data-segment="Agent evaluation" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="117.80972451 510.50880621" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Agent evaluation</title></circle>
-<circle data-segment="Guardrails" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="117.80972451 510.50880621" stroke-dashoffset="-117.80972451" transform="rotate(-90 220 214)"><title>Guardrails</title></circle>
-<circle data-segment="Retrieval" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-235.61944902" transform="rotate(-90 220 214)"><title>Retrieval</title></circle>
-<circle data-segment="State and memory" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-314.15926536" transform="rotate(-90 220 214)"><title>State and memory</title></circle>
-<circle data-segment="Task routing" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-392.69908170" transform="rotate(-90 220 214)"><title>Task routing</title></circle>
-<circle data-segment="Workflow orchestration" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-471.23889804" transform="rotate(-90 220 214)"><title>Workflow orchestration</title></circle>
-<circle data-segment="Human approval" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="39.26990817 589.04862255" stroke-dashoffset="-549.77871438" transform="rotate(-90 220 214)"><title>Human approval</title></circle>
-<circle data-segment="Tool execution" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#9ca8ff" stroke-width="40" stroke-dasharray="39.26990817 589.04862255" stroke-dashoffset="-589.04862255" transform="rotate(-90 220 214)"><title>Tool execution</title></circle>
-<path d="M220.000 135.000L220.000 93.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M292.986 183.768L331.789 167.695" stroke="#0d1117" stroke-width="3"/>
-<path d="M275.861 269.861L305.560 299.560" stroke="#0d1117" stroke-width="3"/>
-<path d="M220.000 293.000L220.000 335.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M164.139 269.861L134.440 299.560" stroke="#0d1117" stroke-width="3"/>
-<path d="M141.000 214.000L99.000 214.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M164.139 158.139L134.440 128.440" stroke="#0d1117" stroke-width="3"/>
-<path d="M189.768 141.014L173.695 102.211" stroke="#0d1117" stroke-width="3"/>
-<text x="220" y="224" fill="#f0f6fc" font-size="34" font-weight="600" text-anchor="middle">Agents</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="356" viewBox="0 0 660 356" role="img" aria-labelledby="skills-title"><title id="skills-title">Agentic AI Engineering</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories.</desc><rect width="660" height="356" fill="#0d1117"/><g transform="translate(32 28)"><g data-skill-section="agentic" data-total="16" aria-label="Agentic AI Engineering">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Agentic AI Engineering</text>
+<clipPath id="bar-agentic"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-agentic)">
+<rect data-segment="Agent evaluation" data-value="3" x="0.00000000" y="60" width="111.75000000" height="14" fill="#3572a5"><title>Agent evaluation</title></rect>
+<rect data-segment="Guardrails" data-value="3" x="111.75000000" y="60" width="111.75000000" height="14" fill="#3178c6"><title>Guardrails</title></rect>
+<path d="M111.75000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Retrieval" data-value="2" x="223.50000000" y="60" width="74.50000000" height="14" fill="#e34c26"><title>Retrieval</title></rect>
+<path d="M223.50000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="State and memory" data-value="2" x="298.00000000" y="60" width="74.50000000" height="14" fill="#f1e05a"><title>State and memory</title></rect>
+<path d="M298.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Task routing" data-value="2" x="372.50000000" y="60" width="74.50000000" height="14" fill="#563d7c"><title>Task routing</title></rect>
+<path d="M372.50000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Workflow orchestration" data-value="2" x="447.00000000" y="60" width="74.50000000" height="14" fill="#89e051"><title>Workflow orchestration</title></rect>
+<path d="M447.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Human approval" data-value="1" x="521.50000000" y="60" width="37.25000000" height="14" fill="#da5b0b"><title>Human approval</title></rect>
+<path d="M521.50000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Tool execution" data-value="1" x="558.75000000" y="60" width="37.25000000" height="14" fill="#4f5d95"><title>Tool execution</title></rect>
+<path d="M558.75000000 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
 <g data-skill-legend="Agent evaluation">
-<circle cx="31" cy="376" r="3.5" fill="#58a6ff"/>
-<text x="42" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Agent evaluation</text>
-<rect x="42" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Agent evaluation" x="42" y="391" width="176.000000" height="3.5" rx="1.75" fill="#58a6ff"/>
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Agent evaluation</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.8%</tspan></text>
 </g>
 <g data-skill-legend="Guardrails">
-<circle cx="246" cy="376" r="3.5" fill="#d2a8ff"/>
-<text x="257" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Guardrails</text>
-<rect x="257" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Guardrails" x="257" y="391" width="176.000000" height="3.5" rx="1.75" fill="#d2a8ff"/>
+<circle cx="313.38" cy="109" r="6" fill="#3178c6"/>
+<text x="327.38" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Guardrails</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.8%</tspan></text>
 </g>
 <g data-skill-legend="Retrieval">
-<circle cx="31" cy="418" r="3.5" fill="#7ee787"/>
-<text x="42" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Retrieval</text>
-<rect x="42" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Retrieval" x="42" y="433" width="117.333333" height="3.5" rx="1.75" fill="#7ee787"/>
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Retrieval</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
 </g>
 <g data-skill-legend="State and memory">
-<circle cx="246" cy="418" r="3.5" fill="#ffa657"/>
-<text x="257" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">State and memory</text>
-<rect x="257" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="State and memory" x="257" y="433" width="117.333333" height="3.5" rx="1.75" fill="#ffa657"/>
+<circle cx="226.68" cy="147" r="6" fill="#f1e05a"/>
+<text x="240.68" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>State and memory</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
 </g>
 <g data-skill-legend="Task routing">
-<circle cx="31" cy="460" r="3.5" fill="#f778ba"/>
-<text x="42" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Task routing</text>
-<rect x="42" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Task routing" x="42" y="475" width="117.333333" height="3.5" rx="1.75" fill="#f778ba"/>
+<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Task routing</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
 </g>
 <g data-skill-legend="Workflow orchestration">
-<circle cx="246" cy="460" r="3.5" fill="#39c5cf"/>
-<text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Workflow orchestration</text>
-<rect x="257" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Workflow orchestration" x="257" y="475" width="117.333333" height="3.5" rx="1.75" fill="#39c5cf"/>
+<circle cx="6.00" cy="223" r="6" fill="#89e051"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Workflow orchestration</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
 </g>
 <g data-skill-legend="Human approval">
-<circle cx="31" cy="502" r="3.5" fill="#e3b341"/>
-<text x="42" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Human approval</text>
-<rect x="42" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Human approval" x="42" y="517" width="58.666667" height="3.5" rx="1.75" fill="#e3b341"/>
+<circle cx="6.00" cy="261" r="6" fill="#da5b0b"/>
+<text x="20.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Human approval</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">6.2%</tspan></text>
 </g>
 <g data-skill-legend="Tool execution">
-<circle cx="246" cy="502" r="3.5" fill="#9ca8ff"/>
-<text x="257" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Tool execution</text>
-<rect x="257" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Tool execution" x="257" y="517" width="58.666667" height="3.5" rx="1.75" fill="#9ca8ff"/>
+<circle cx="296.96" cy="261" r="6" fill="#4f5d95"/>
+<text x="310.96" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Tool execution</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">6.2%</tspan></text>
 </g>
-</g>
-</svg>
+</g></g></svg>

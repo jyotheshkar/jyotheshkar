@@ -1,89 +1,161 @@
 #!/usr/bin/env python3
-"""Render three equally sized transparent skill cards from verified evidence."""
+"""Render one GitHub-style skills panel with four evidence-backed sections."""
 from html import escape
 from pathlib import Path
 import json
-import math
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-PALETTE = ['#58a6ff','#d2a8ff','#7ee787','#ffa657','#f778ba','#39c5cf','#e3b341','#9ca8ff',
-           '#68c8a0','#d8b99b','#a9c4d8','#c8a8c7']
-FILES = {'languages':'skills-programming.svg','aiml':'skills-aiml.svg','agentic':'skills-agentic.svg'}
+KEYS = ['languages', 'libraries', 'aiml', 'agentic']
+TITLES = {'languages': 'Languages', 'libraries': 'Libraries and Frameworks',
+          'aiml': 'AI/ML Engineering', 'agentic': 'Agentic AI Engineering'}
+FILES = {'languages': 'skills-programming.svg', 'libraries': 'skills-libraries.svg',
+         'aiml': 'skills-aiml.svg', 'agentic': 'skills-agentic.svg'}
+PALETTE = ['#3572a5', '#3178c6', '#e34c26', '#f1e05a', '#563d7c', '#89e051',
+           '#da5b0b', '#4f5d95', '#b07219', '#2b7489', '#e16737', '#c6538c',
+           '#178600', '#00add8', '#dea584', '#a9b8c9']
+LANGUAGE_COLORS = {'Python': '#3572a5', 'TypeScript': '#3178c6', 'JavaScript': '#f1e05a',
+                   'HTML': '#e34c26', 'CSS': '#563d7c', 'Shell': '#89e051',
+                   'PHP': '#4f5d95', 'Java': '#b07219', 'Java (Processing)': '#0096d8',
+                   'JSP': '#2a6277', 'SQL': '#e38c00', 'C': '#555555', 'C++': '#f34b7d',
+                   'Other': '#8b949e'}
+BAR_WIDTH = 596
 
 
-def text(x,y,label,size=18,fill='#c9d1d9',weight=400,anchor='start'):
-    return f'<text x="{x}" y="{y}" fill="{fill}" font-size="{size}" font-weight="{weight}" text-anchor="{anchor}">{escape(str(label))}</text>'
+def display_chart(chart):
+    """Keep the native-style legend compact; retain every signal in Other."""
+    if len(chart['items']) <= 10:
+        return chart
+    tail = chart['items'][9:]
+    other = {'label': 'Other', 'value': sum(i['value'] for i in tail),
+             'evidence': [proof for i in tail for proof in i['evidence']]}
+    return {**chart, 'items': chart['items'][:9] + [other]}
 
 
-def card(chart,height):
-    cx,cy,radius = 220,214,100
-    total = sum(item['value'] for item in chart['items'])
-    assert total > 0 and all(item['value'] > 0 and item['evidence'] for item in chart['items'])
-    out = [f'<g data-skill-circle="{chart["key"]}" data-total="{total}" data-center-x="{cx}" data-center-y="{cy}" aria-label="{escape(chart["title"])}">',
-           f'<rect x="1" y="1" width="438" height="{height-2}" rx="20" fill="none" stroke="#30363d"/>',
-           text(220,48,chart['title'],28,'#f0f6fc',600,'middle'),
-           f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="#30363d" stroke-width="40"/>']
-    circumference,offset = 2*math.pi*radius,0
-    separators=[]
-    for n,item in enumerate(chart['items']):
-        color = PALETTE[n%len(PALETTE)]
-        length = circumference*item['value']/total
-        out.append(f'<circle data-segment="{escape(item["label"])}" data-value="{item["value"]}" cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{color}" stroke-width="40" stroke-dasharray="{length:.8f} {circumference-length:.8f}" stroke-dashoffset="{-offset:.8f}" transform="rotate(-90 {cx} {cy})"><title>{escape(item["label"])}</title></circle>')
-        angle = offset/circumference*2*math.pi-math.pi/2
-        x1,y1 = cx+79*math.cos(angle),cy+79*math.sin(angle)
-        x2,y2 = cx+121*math.cos(angle),cy+121*math.sin(angle)
-        separators.append(f'<path d="M{x1:.3f} {y1:.3f}L{x2:.3f} {y2:.3f}" stroke="#0d1117" stroke-width="3"/>')
-        offset += length
-    out += separators
-    out.append(text(cx,cy+10,{'languages':'Code','aiml':'AI/ML','agentic':'Agents'}[chart['key']],34,'#f0f6fc',600,'middle'))
-    for n,item in enumerate(chart['items']):
-        color=PALETTE[n%len(PALETTE)]
-        col,row = n%2,n//2
-        x,y = 31+col*215,382+row*42
-        width=176
+def text(x, y, label, size=22, fill='#f0f6fc', weight=400, mono=False):
+    family = 'Consolas,monospace' if mono else 'Arial,Helvetica,sans-serif'
+    return (f'<text x="{x}" y="{y}" fill="{fill}" font-family="{family}" '
+            f'font-size="{size}" font-weight="{weight}">{escape(str(label))}</text>')
+
+
+def text_width(label, size=21):
+    # Conservative Arial widths used only to wrap the native-style inline legend.
+    widths = {'i': .23, 'l': .23, 'I': .28, 'j': .23, 't': .3, 'f': .31,
+              'r': .36, 'm': .86, 'w': .8, 'M': .86, 'W': .95, ' ': .29}
+    return sum(widths.get(c, .66 if c.isupper() else .56) for c in label) * size
+
+
+def legend_layout(chart):
+    total = sum(i['value'] for i in chart['items'])
+    result, x, row = [], 0, 0
+    for n, item in enumerate(chart['items']):
+        percent = f"{100 * item['value'] / total:.1f}%"
+        label_width = text_width(item['label']) * 1.15
+        width = 20 + label_width + 12 + text_width(percent, 20) * 1.1 + 30
+        if x and x + width > BAR_WIDTH:
+            x, row = 0, row + 1
+        if width > BAR_WIDTH:
+            raise ValueError('Skill label exceeds the section width: ' + item['label'])
+        result.append((n, item, percent, x, row, label_width))
+        x += width
+    return result, row + 1
+
+
+def section(chart):
+    key, items = chart['key'], chart['items']
+    total = sum(i['value'] for i in items)
+    assert total > 0 and all(i['value'] > 0 and i['evidence'] for i in items)
+    out = [f'<g data-skill-section="{key}" data-total="{total}" aria-label="{escape(TITLES[key])}">',
+           text(0, 30, TITLES[key], 30, weight=700),
+           f'<clipPath id="bar-{key}"><rect y="60" width="{BAR_WIDTH}" height="14" rx="7"/></clipPath>',
+           f'<g clip-path="url(#bar-{key})">']
+    offset = 0
+    for n, item in enumerate(items):
+        color = LANGUAGE_COLORS.get(item['label'], PALETTE[n % len(PALETTE)])
+        width = BAR_WIDTH * item['value'] / total
+        out.append(f'<rect data-segment="{escape(item["label"])}" data-value="{item["value"]}" '
+                   f'x="{offset:.8f}" y="60" width="{width:.8f}" height="14" fill="{color}">'
+                   f'<title>{escape(item["label"])}</title></rect>')
+        if n:
+            out.append(f'<path d="M{offset:.8f} 60v14" stroke="#0d1117" stroke-width="2"/>')
+        offset += width
+    out.append('</g>')
+    layout, rows = legend_layout(chart)
+    for n, item, percent, x, row, label_width in layout:
+        color = LANGUAGE_COLORS.get(item['label'], PALETTE[n % len(PALETTE)])
+        y = 116 + row * 38
         out += [f'<g data-skill-legend="{escape(item["label"])}">',
-                f'<circle cx="{x}" cy="{y-6}" r="3.5" fill="{color}"/>',
-                text(x+11,y,item['label'],16.5,'#d1d9e0'),
-                f'<rect x="{x+11}" y="{y+9}" width="{width}" height="3.5" rx="1.75" fill="#30363d"/>',
-                f'<rect data-evidence-bar="{escape(item["label"])}" x="{x+11}" y="{y+9}" width="{width*item["value"]/max(i["value"] for i in chart["items"]):.6f}" height="3.5" rx="1.75" fill="{color}"/>',
-                '</g>']
-    return '\n'.join(out+['</g>'])
+                f'<circle cx="{x+6:.2f}" cy="{y-7}" r="6" fill="{color}"/>',
+                f'<text x="{x+20:.2f}" y="{y}" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600">'
+                f'<tspan>{escape(item["label"])}</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">{percent}</tspan></text>', '</g>']
+    return '\n'.join(out + ['</g>']), 116 + (rows-1)*38 + 32
 
 
-def document(width,height,title,contents):
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title)}">
-<title>{escape(title)}</title>
-<desc>Repository evidence shown as segmented doughnuts. Names and unnumbered bars appear below each circle in two columns. Coverage is not a proficiency score. Transparent background.</desc>
-<style>text{{font-family:Arial,Helvetica,sans-serif}}</style>
-{contents}
-</svg>
-'''
+def document(width, height, title, contents):
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+           f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="skills-title">'
+           f'<title id="skills-title">{escape(title)}</title>'
+           '<desc>Combined repository evidence. Each stacked bar and percentage shows a category share '
+           'of verified repository evidence, not language byte totals or proficiency. '
+           'One repository can support several categories.</desc>' + contents + '</svg>\n')
+    ET.fromstring(svg)
+    return svg
+
+
+def shell(width, height, mobile=False):
+    size = 44 if mobile else 48
+    return ('<defs><pattern id="skills-dots" width="25" height="25" patternUnits="userSpaceOnUse">'
+            '<circle cx="1" cy="1" r=".7" fill="#3d444d" opacity=".45"/></pattern>'
+            '<linearGradient id="skills-rule"><stop stop-color="#4493f8" stop-opacity=".8"/>'
+            '<stop offset="1" stop-color="#4493f8" stop-opacity=".05"/></linearGradient></defs>'
+            f'<rect width="{width}" height="{height}" fill="#0d1117"/>'
+            f'<rect width="{width}" height="{height}" fill="url(#skills-dots)"/>'
+            + text(40, 49, 'REPOSITORY ENGINEERING', 18, '#91a9c3', mono=True)
+            + text(40, 110, 'Professional Skills', size, weight=700)
+            + text(40, 150, 'Combined evidence across all repositories.', 23, '#a9b8c9')
+            + f'<path d="M40 178H{width-40}" stroke="url(#skills-rule)"/>')
 
 
 def build():
-    evidence=json.loads((ROOT/'config/skill-evidence.json').read_text(encoding='utf-8'))
-    charts=evidence['charts']
-    assert [c['key'] for c in charts]==['languages','aiml','agentic']
-    height=max(580,382+math.ceil(max(len(c['items']) for c in charts)/2)*42+30)
-    fragments=[card(chart,height) for chart in charts]
-    assets=ROOT/'assets'
-    for chart,fragment in zip(charts,fragments):
-        svg=document(440,height,chart['title'],fragment)
-        ET.fromstring(svg)
-        (assets/FILES[chart['key']]).write_text(svg,encoding='utf-8',newline='\n')
-    combined=text(25,54,'Professional Skills',38,'#f0f6fc',700)
-    for n,fragment in enumerate(fragments):
-        combined+=f'<g transform="translate({20+n*460} 90)">{fragment}</g>'
-    (assets/'skill-circles.svg').write_text(document(1400,height+110,'Professional Skills',combined),encoding='utf-8',newline='\n')
-    scale=1.5
-    mobile=text(20,57,'Professional Skills',40,'#f0f6fc',700)
-    for n,fragment in enumerate(fragments):
-        mobile+=f'<g transform="translate(20 {90+n*(height*scale+25)}) scale({scale})">{fragment}</g>'
-    (assets/'skills-mobile.svg').write_text(document(700,math.ceil(110+3*height*scale+50),'Professional Skills',mobile),encoding='utf-8',newline='\n')
-    print('Built three equal transparent cards, a desktop row, and a stacked mobile view.')
+    evidence = json.loads((ROOT/'config/skill-evidence.json').read_text(encoding='utf-8'))
+    charts = {c['key']: display_chart(c) for c in evidence['charts']}
+    assert set(charts) == set(KEYS)
+    sections = {k: section(charts[k]) for k in KEYS}
+    row_heights = [max(sections[k][1] for k in KEYS[i:i+2]) + 52 for i in (0, 2)]
+    panel_y, row_y = 218, 250
+    height = panel_y + sum(row_heights) + 64
+    desktop = shell(1400, height)
+    desktop += f'<rect data-skills-panel="true" x="24" y="{panel_y}" width="1352" height="{sum(row_heights)}" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/>'
+    desktop += f'<path d="M700 {panel_y+28}V{panel_y+sum(row_heights)-28}" stroke="#30363d"/>'
+    desktop += f'<path d="M56 {panel_y+row_heights[0]}H1344" stroke="#30363d"/>'
+    for n, key in enumerate(KEYS):
+        x = 56 if n % 2 == 0 else 748
+        y = row_y if n < 2 else row_y + row_heights[0]
+        desktop += f'<g data-position="{key}" transform="translate({x} {y})">{sections[key][0]}</g>'
+    desktop += text(40, height-25, 'Percentages show repository evidence share within each section.', 18, '#7d92aa')
+    assets = ROOT/'assets'
+    (assets/'skills.svg').write_text(document(1400, height, 'Professional Skills', desktop), encoding='utf-8', newline='\n')
+    mobile_height = 218 + sum(sections[k][1]+52 for k in KEYS) + 84
+    mobile = shell(700, mobile_height, True)
+    mobile += f'<rect data-skills-panel="true" x="24" y="218" width="652" height="{mobile_height-302}" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/>'
+    y = 250
+    for n, key in enumerate(KEYS):
+        mobile += f'<g data-position="{key}" transform="translate(52 {y})">{sections[key][0]}</g>'
+        y += sections[key][1]+52
+        if n < 3:
+            mobile += f'<path d="M52 {y-32}H648" stroke="#30363d"/>'
+    mobile += text(40, mobile_height-45, 'Percentages show repository evidence share', 20, '#7d92aa')
+    mobile += text(40, mobile_height-17, 'within each section.', 20, '#7d92aa')
+    (assets/'skills-mobile.svg').write_text(document(700, mobile_height, 'Professional Skills', mobile), encoding='utf-8', newline='\n')
+    for key in KEYS:
+        fragment, section_height = sections[key]
+        body = f'<rect width="660" height="{section_height+56}" fill="#0d1117"/><g transform="translate(32 28)">{fragment}</g>'
+        (assets/FILES[key]).write_text(document(660, section_height+56, TITLES[key], body), encoding='utf-8', newline='\n')
+    # Retain the historical asset URL as an alias, with no old circle UI.
+    (assets/'skill-circles.svg').write_bytes((assets/'skills.svg').read_bytes())
+    print('Built one GitHub-style panel with four sections and a stacked mobile view.')
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     build()
 

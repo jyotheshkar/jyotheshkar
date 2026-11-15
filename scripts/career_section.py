@@ -33,17 +33,19 @@ def render_career(icons):
         'Red teaming on Amazon Nova multimodal research models. Quality '
         'and verification for red-teaming workflows across London, Cambridge, Boston, '
         'and Amsterdam. MSc Computer Science with Distinction and Best Performance '
-        'Award. MSc-CS Thesis: DHMS, Dairy Herd Monitoring System.</desc>',
+        'Award. THESIS: DHMS, Dairy Herd Monitoring System.</desc>',
     ]
     for x in (24, 714):
         out += [
-            f'<rect x="{x}" y="24" width="662" height="612" rx="18" '
-            'fill="none" stroke="#3d444d" stroke-opacity=".82"/>',
+            f'<rect x="{x}" y="24" width="662" height="612" rx="15" '
+            'fill="#111820" stroke="#334253" stroke-width="1.35"/>',
+            f'<path d="M{x+20} 24h42" stroke="#4493f8" stroke-width="2" opacity=".8"/>',
         ]
 
-    # Transparent original marks sit left of each institution's heading.
+    # Original Amazon artwork sits on an opaque light plate for readable contrast.
     out += [
-        _brand(icons, "amazon", 56, 55, 92, 100),
+        '<rect x="50" y="55" width="104" height="100" rx="12" fill="#ffffff"/>',
+        _brand(icons, "amazon", 58, 89, 88, 32),
         _text(170, 83, "Amazon AGI Data Services", 27, weight=700),
         _text(170, 122, "Machine Learning Data Associate II", 22, weight=600),
         _text(170, 157, "JUN 2025 — PRESENT  /  LONDON", 17, "#9198a1", mono=True),
@@ -79,10 +81,11 @@ def render_career(icons):
         _text(900, 123, "MSc Computer Science", 27, weight=600),
         _text(900, 157, "SEP 2023 — SEP 2024", 17, "#9198a1", mono=True),
         _text(746, 218, "Awarded Distinction", 29, "#79c0ff", 600),
-        _text(746, 274, "Best Performance Award", 25, weight=700),
-        _text(746, 312, "School of Mathematics and Computer Science", 21, "#c9d1d9"),
+        _text(746, 267, "Received Best Performance Award", 27, weight=700),
+        _text(746, 309, "Keele University Department of", 21, "#c9d1d9"),
+        _text(746, 338, "Mathematics and Computer Science", 21, "#c9d1d9"),
         '<path d="M746 374H1344" stroke="#3d444d" stroke-opacity=".65"/>',
-        _text(746, 420, "MSc-CS Thesis", 18, "#9198a1", mono=True, tracking=1.2),
+        _text(746, 420, "THESIS", 18, "#91a9c3", mono=True, tracking=1.2),
         _text(746, 464, "DHMS: Dairy Herd Monitoring System", 26, weight=600),
         _text(746, 512, "Time-series neural networks", 22, "#c9d1d9"),
         _text(746, 550, "LSTM regression and classification", 21, "#c9d1d9"),
@@ -106,3 +109,4 @@ def render_career_mobile(icons):
         '<svg x="0" y="660" width="700" height="660" viewBox="690 0 700 660" '
         'overflow="hidden"><use href="#career-mobile-layout"/></svg>'
     )
+

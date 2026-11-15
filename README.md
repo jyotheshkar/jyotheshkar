@@ -5,12 +5,13 @@
 
 <picture>
   <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/career-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/career.svg" width="100%" alt="Experience / Education. Amazon AGI Data Services: model evaluation on Alexa and Nova research models; red teaming on Amazon Nova multimodal research models; quality and verification across London, Cambridge, Boston and Amsterdam. Keele University MSc Computer Science, Awarded Distinction and Best Performance Award. MSc-CS Thesis: DHMS — Dairy Herd Monitoring System." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/career.svg" width="100%" alt="Experience / Education. Amazon AGI Data Services: model evaluation on Alexa and Nova research models; red teaming on Amazon Nova multimodal research models; quality and verification across London, Cambridge, Boston and Amsterdam. Keele University MSc Computer Science, Awarded Distinction and Received Best Performance Award. Keele University Department of Mathematics and Computer Science. THESIS: DHMS — Dairy Herd Monitoring System." />
 </picture>
 
 <picture>
   <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skill-circles.svg" width="100%" alt="Professional Skills. Programming Languages, AI/ML Engineering and Agentic AI Engineering. Three equal transparent cards with centred doughnut graphs and two-column skill bars underneath. Shapes reflect verified repository evidence, not proficiency scores. Automatically refreshed without numeric labels." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills.svg" width="100%" alt="Professional Skills. One GitHub-style box with four sections: Languages at top left, Libraries and Frameworks at top right, AI/ML Engineering at bottom left, and Agentic AI Engineering at bottom right. Stacked bars and dot legends show combined repository evidence shares." />
 </picture>
 
 [Skills evidence](docs/skill-circles.md) · [LinkedIn architecture](docs/linkedin-architecture.md)
+

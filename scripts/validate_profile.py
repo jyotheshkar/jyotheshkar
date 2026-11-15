@@ -3,13 +3,12 @@
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import json
-import math
 import re
 import sys
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
-CHART_FILES={'skills-programming.svg':'languages','skills-aiml.svg':'aiml','skills-agentic.svg':'agentic'}
+CHART_FILES={'skills-programming.svg':'languages','skills-libraries.svg':'libraries','skills-aiml.svg':'aiml','skills-agentic.svg':'agentic'}
 
 
 def main():
@@ -50,8 +49,8 @@ def main():
 
     metrics=json.loads((ROOT/'config/skill-evidence.json').read_text(encoding='utf-8'))
     charts={chart['key']:chart for chart in metrics['charts']}
-    if set(charts)!={'languages','aiml','agentic'}:
-        errors.append('Skill evidence must have the three requested categories')
+    if set(charts)!={'languages','libraries','aiml','agentic'}:
+        errors.append('Skill evidence must have the four requested categories')
     public=metrics['public_snapshot']['sources']
     private=metrics['private_snapshot']['sources']
     sources=public+private
@@ -62,7 +61,7 @@ def main():
     for source in private:
         if set(source)!={'source_id','visibility','skills'} or source['visibility']!='private' or not re.fullmatch(r'[0-9a-f]{16}',source['source_id']):
             errors.append('Private source has an unexpected field or identifier')
-        if set(source['skills'])!={'languages','aiml','agentic'}:
+        if set(source['skills'])!={'languages','libraries','aiml','agentic'}:
             errors.append('Private source has an unexpected skills group')
         for skills in source['skills'].values():
             if any(proof!={'kind':'verified source'} for proof in skills.values()):
@@ -85,39 +84,57 @@ def main():
                 if proof['visibility']=='private' and set(proof)!={'source_id','visibility'}:
                     errors.append('Private chart evidence has a disallowed field')
 
+    display_charts={}
+    for key,chart in charts.items():
+        items=chart['items']
+        if len(items)>10:
+            tail=items[9:]
+            items=items[:9]+[{'label':'Other','value':sum(i['value'] for i in tail)}]
+        display_charts[key]={**chart,'items':items}
     canonical={}
-    sizes=set()
     for filename,key in CHART_FILES.items():
-        if filename not in documents:
-            errors.append(filename+': missing individual card')
+        doc=documents.get(filename)
+        if doc is None:
+            errors.append(filename+': missing skill section')
             continue
-        doc=documents[filename]
-        sizes.add((doc.get('width'),doc.get('height'),doc.get('viewBox')))
-        groups=[e for e in doc.iter() if e.get('data-skill-circle')]
-        if len(groups)!=1 or groups[0].get('data-skill-circle')!=key:
+        groups=[e for e in doc.iter() if e.get('data-skill-section')]
+        if len(groups)!=1 or groups[0].get('data-skill-section')!=key:
             errors.append(filename+': unexpected skill group')
             continue
         canonical[key]=ET.tostring(groups[0]).strip()
-    if len(sizes)!=1:
-        errors.append('The individual skill cards must have identical dimensions')
-    expected_files={**CHART_FILES,'skill-circles.svg':None,'skills-mobile.svg':None}
+    expected_files={**CHART_FILES,'skills.svg':None,'skill-circles.svg':None,'skills-mobile.svg':None}
     for filename,key in expected_files.items():
-        if filename not in documents:
+        doc=documents.get(filename)
+        if doc is None:
             errors.append(filename+': missing skill artwork')
             continue
-        doc=documents[filename]
-        groups=[e for e in doc.iter() if e.get('data-skill-circle')]
+        groups=[e for e in doc.iter() if e.get('data-skill-section')]
         required={key} if key else set(charts)
-        if {e.get('data-skill-circle') for e in groups}!=required or len(groups)!=len(required):
+        if {e.get('data-skill-section') for e in groups}!=required or len(groups)!=len(required):
             errors.append(filename+': incorrect group coverage')
-        labels=[e.text or '' for e in doc.iter() if e.tag.split('}')[-1] in ('text','title')]
-        if any(re.search(r'\d',label) for label in labels):
-            errors.append(filename+': numeric display label')
+        if any(e.get('data-skill-circle') or e.get('data-evidence-bar') for e in doc.iter()):
+            errors.append(filename+': retired circle UI remains')
+        if key is None:
+            if len([e for e in doc.iter() if e.get('data-skills-panel')])!=1:
+                errors.append(filename+': expected one shared panel')
+            positions={e.get('data-position'):e.get('transform') for e in doc.iter() if e.get('data-position')}
+            coords={}
+            for category,transform in positions.items():
+                match=re.fullmatch(r'translate\((\d+) (\d+)\)',transform or '')
+                if match:
+                    coords[category]=tuple(map(int,match.groups()))
+            if set(coords)!=set(charts):
+                errors.append(filename+': missing section positions')
+            elif filename=='skills-mobile.svg':
+                if len({x for x,y in coords.values()})!=1 or not (coords['languages'][1]<coords['libraries'][1]<coords['aiml'][1]<coords['agentic'][1]):
+                    errors.append(filename+': mobile sections must stack in reading order')
+            elif not (coords['languages'][0]==coords['aiml'][0]<coords['libraries'][0]==coords['agentic'][0] and coords['languages'][1]==coords['libraries'][1]<coords['aiml'][1]==coords['agentic'][1]):
+                errors.append(filename+': expected requested two-by-two arrangement')
         for group in groups:
-            group_key=group.get('data-skill-circle')
+            group_key=group.get('data-skill-section')
             if ET.tostring(group).strip()!=canonical.get(group_key):
-                errors.append(filename+': card diverges from its individual artwork')
-            values={i['label']:i['value'] for i in charts[group_key]['items']}
+                errors.append(filename+': section diverges from its individual artwork')
+            values={i['label']:i['value'] for i in display_charts[group_key]['items']}
             total=sum(values.values())
             if int(group.get('data-total'))!=total:
                 errors.append(filename+': incorrect total')
@@ -125,24 +142,20 @@ def main():
             if {e.get('data-skill-legend') for e in legends}!=set(values):
                 errors.append(filename+': missing name legend')
             for legend in legends:
-                texts=[e for e in legend if e.tag.split('}')[-1]=='text']
-                if any(float(t.get('y'))<=334 for t in texts):
-                    errors.append(filename+': legend is not below the circle')
+                label=legend.get('data-skill-legend')
+                percentages=[e.text for e in legend.iter() if e.tag.split('}')[-1]=='tspan' and (e.text or '').endswith('%')]
+                if percentages!=[f"{100*values[label]/total:.1f}%"]:
+                    errors.append(filename+': incorrect displayed share')
             segments=[e for e in group.iter() if e.get('data-segment')]
             if {e.get('data-segment') for e in segments}!=set(values):
-                errors.append(filename+': missing segments')
+                errors.append(filename+': missing stacked segments')
+            offset=0
             for segment in segments:
                 value=values[segment.get('data-segment')]
-                actual=float(segment.get('stroke-dasharray').split()[0])
-                correct=2*math.pi*float(segment.get('r'))*value/total
-                if int(segment.get('data-value'))!=value or abs(actual-correct)>1e-6:
-                    errors.append(filename+': non-proportional segment')
-            bars=[e for e in group.iter() if e.get('data-evidence-bar')]
-            if {e.get('data-evidence-bar') for e in bars}!=set(values):
-                errors.append(filename+': missing bars')
-            for bar in bars:
-                if abs(float(bar.get('width'))-176*values[bar.get('data-evidence-bar')]/max(values.values()))>1e-5:
-                    errors.append(filename+': non-proportional bar')
+                correct=596*value/total
+                if int(segment.get('data-value'))!=value or abs(float(segment.get('width'))-correct)>1e-6 or abs(float(segment.get('x'))-offset)>1e-6:
+                    errors.append(filename+': non-proportional stacked segment')
+                offset+=correct
 
     readme=ROOT/'README.md'
     if not readme.exists():
@@ -165,9 +178,10 @@ def main():
     if errors:
         print('\n'.join(errors),file=sys.stderr)
         raise SystemExit(1)
-    print(f'Validated {len(documents)} SVGs, all skill proportions, private-data boundaries and README references.')
+    print(f'Validated {len(documents)} SVGs, four-section layout and evidence proportions, private-data boundaries and README references.')
 
 
 if __name__=='__main__':
     main()
+
 

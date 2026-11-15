@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1062" viewBox="0 0 1400 1062" role="img" aria-labelledby="skills-title"><title id="skills-title">Professional Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories.</desc><defs><pattern id="skills-dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#3d444d" opacity=".45"/></pattern><linearGradient id="skills-rule"><stop stop-color="#4493f8" stop-opacity=".8"/><stop offset="1" stop-color="#4493f8" stop-opacity=".05"/></linearGradient></defs><rect width="1400" height="1062" fill="#0d1117"/><rect width="1400" height="1062" fill="url(#skills-dots)"/><text x="40" y="49" fill="#91a9c3" font-family="Consolas,monospace" font-size="18" font-weight="400">REPOSITORY ENGINEERING</text><text x="40" y="110" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">Professional Skills</text><text x="40" y="150" fill="#a9b8c9" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400">Combined evidence across all repositories.</text><path d="M40 178H1360" stroke="url(#skills-rule)"/><rect data-skills-panel="true" x="24" y="218" width="1352" height="780" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/><path d="M700 246V970" stroke="#30363d"/><path d="M56 570H1344" stroke="#30363d"/><g data-position="languages" transform="translate(56 250)"><g data-skill-section="languages" data-total="38" aria-label="Languages">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Languages</text>
+<clipPath id="bar-languages"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-languages)">
+<rect data-segment="Python" data-value="19" x="0.00000000" y="60" width="298.00000000" height="14" fill="#3572a5"><title>Python</title></rect>
+<rect data-segment="JavaScript" data-value="10" x="298.00000000" y="60" width="156.84210526" height="14" fill="#f1e05a"><title>JavaScript</title></rect>
+<path d="M298.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="SQL" data-value="3" x="454.84210526" y="60" width="47.05263158" height="14" fill="#e38c00"><title>SQL</title></rect>
+<path d="M454.84210526 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="TypeScript" data-value="3" x="501.89473684" y="60" width="47.05263158" height="14" fill="#3178c6"><title>TypeScript</title></rect>
+<path d="M501.89473684 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="JSP" data-value="1" x="548.94736842" y="60" width="15.68421053" height="14" fill="#2a6277"><title>JSP</title></rect>
+<path d="M548.94736842 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="PHP" data-value="1" x="564.63157895" y="60" width="15.68421053" height="14" fill="#4f5d95"><title>PHP</title></rect>
+<path d="M564.63157895 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Shell" data-value="1" x="580.31578947" y="60" width="15.68421053" height="14" fill="#89e051"><title>Shell</title></rect>
+<path d="M580.31578947 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
+<g data-skill-legend="Python">
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Python</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">50.0%</tspan></text>
+</g>
+<g data-skill-legend="JavaScript">
+<circle cx="206.88" cy="109" r="6" fill="#f1e05a"/>
+<text x="220.88" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>JavaScript</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">26.3%</tspan></text>
+</g>
+<g data-skill-legend="SQL">
+<circle cx="6.00" cy="147" r="6" fill="#e38c00"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>SQL</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">7.9%</tspan></text>
+</g>
+<g data-skill-legend="TypeScript">
+<circle cx="165.10" cy="147" r="6" fill="#3178c6"/>
+<text x="179.10" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>TypeScript</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">7.9%</tspan></text>
+</g>
+<g data-skill-legend="JSP">
+<circle cx="397.37" cy="147" r="6" fill="#2a6277"/>
+<text x="411.37" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>JSP</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.6%</tspan></text>
+</g>
+<g data-skill-legend="PHP">
+<circle cx="6.00" cy="185" r="6" fill="#4f5d95"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>PHP</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.6%</tspan></text>
+</g>
+<g data-skill-legend="Shell">
+<circle cx="165.10" cy="185" r="6" fill="#89e051"/>
+<text x="179.10" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Shell</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.6%</tspan></text>
+</g>
+</g></g><g data-position="libraries" transform="translate(748 250)"><g data-skill-section="libraries" data-total="68" aria-label="Libraries and Frameworks">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Libraries and Frameworks</text>
+<clipPath id="bar-libraries"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-libraries)">
+<rect data-segment="NumPy" data-value="9" x="0.00000000" y="60" width="78.88235294" height="14" fill="#3572a5"><title>NumPy</title></rect>
+<rect data-segment="pandas" data-value="5" x="78.88235294" y="60" width="43.82352941" height="14" fill="#3178c6"><title>pandas</title></rect>
+<path d="M78.88235294 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Matplotlib" data-value="4" x="122.70588235" y="60" width="35.05882353" height="14" fill="#e34c26"><title>Matplotlib</title></rect>
+<path d="M122.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="FastAPI" data-value="3" x="157.76470588" y="60" width="26.29411765" height="14" fill="#f1e05a"><title>FastAPI</title></rect>
+<path d="M157.76470588 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Next.js" data-value="3" x="184.05882353" y="60" width="26.29411765" height="14" fill="#563d7c"><title>Next.js</title></rect>
+<path d="M184.05882353 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Pydantic" data-value="3" x="210.35294118" y="60" width="26.29411765" height="14" fill="#89e051"><title>Pydantic</title></rect>
+<path d="M210.35294118 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="PyTorch" data-value="3" x="236.64705882" y="60" width="26.29411765" height="14" fill="#da5b0b"><title>PyTorch</title></rect>
+<path d="M236.64705882 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="React" data-value="3" x="262.94117647" y="60" width="26.29411765" height="14" fill="#4f5d95"><title>React</title></rect>
+<path d="M262.94117647 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="scikit-learn" data-value="3" x="289.23529412" y="60" width="26.29411765" height="14" fill="#b07219"><title>scikit-learn</title></rect>
+<path d="M289.23529412 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Other" data-value="32" x="315.52941176" y="60" width="280.47058824" height="14" fill="#8b949e"><title>Other</title></rect>
+<path d="M315.52941176 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
+<g data-skill-legend="NumPy">
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>NumPy</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">13.2%</tspan></text>
+</g>
+<g data-skill-legend="pandas">
+<circle cx="209.30" cy="109" r="6" fill="#3178c6"/>
+<text x="223.30" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>pandas</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">7.4%</tspan></text>
+</g>
+<g data-skill-legend="Matplotlib">
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Matplotlib</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">5.9%</tspan></text>
+</g>
+<g data-skill-legend="FastAPI">
+<circle cx="223.30" cy="147" r="6" fill="#f1e05a"/>
+<text x="237.30" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>FastAPI</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="Next.js">
+<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Next.js</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="Pydantic">
+<circle cx="200.11" cy="185" r="6" fill="#89e051"/>
+<text x="214.11" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Pydantic</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="PyTorch">
+<circle cx="6.00" cy="223" r="6" fill="#da5b0b"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>PyTorch</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="React">
+<circle cx="211.95" cy="223" r="6" fill="#4f5d95"/>
+<text x="225.95" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>React</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="scikit-learn">
+<circle cx="6.00" cy="261" r="6" fill="#b07219"/>
+<text x="20.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>scikit-learn</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="Other">
+<circle cx="244.55" cy="261" r="6" fill="#8b949e"/>
+<text x="258.55" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Other</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">47.1%</tspan></text>
+</g>
+</g></g><g data-position="aiml" transform="translate(56 602)"><g data-skill-section="aiml" data-total="23" aria-label="AI/ML Engineering">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">AI/ML Engineering</text>
+<clipPath id="bar-aiml"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-aiml)">
+<rect data-segment="Deep learning" data-value="5" x="0.00000000" y="60" width="129.56521739" height="14" fill="#3572a5"><title>Deep learning</title></rect>
+<rect data-segment="Model evaluation" data-value="4" x="129.56521739" y="60" width="103.65217391" height="14" fill="#3178c6"><title>Model evaluation</title></rect>
+<path d="M129.56521739 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Data preparation" data-value="3" x="233.21739130" y="60" width="77.73913043" height="14" fill="#e34c26"><title>Data preparation</title></rect>
+<path d="M233.21739130 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Supervised learning" data-value="3" x="310.95652174" y="60" width="77.73913043" height="14" fill="#f1e05a"><title>Supervised learning</title></rect>
+<path d="M310.95652174 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Time-series modelling" data-value="3" x="388.69565217" y="60" width="77.73913043" height="14" fill="#563d7c"><title>Time-series modelling</title></rect>
+<path d="M388.69565217 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Reinforcement learning" data-value="2" x="466.43478261" y="60" width="51.82608696" height="14" fill="#89e051"><title>Reinforcement learning</title></rect>
+<path d="M466.43478261 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Unsupervised learning" data-value="2" x="518.26086957" y="60" width="51.82608696" height="14" fill="#da5b0b"><title>Unsupervised learning</title></rect>
+<path d="M518.26086957 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="NLP and transformers" data-value="1" x="570.08695652" y="60" width="25.91304348" height="14" fill="#4f5d95"><title>NLP and transformers</title></rect>
+<path d="M570.08695652 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
+<g data-skill-legend="Deep learning">
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Deep learning</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">21.7%</tspan></text>
+</g>
+<g data-skill-legend="Model evaluation">
+<circle cx="280.54" cy="109" r="6" fill="#3178c6"/>
+<text x="294.54" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Model evaluation</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">17.4%</tspan></text>
+</g>
+<g data-skill-legend="Data preparation">
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Data preparation</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">13.0%</tspan></text>
+</g>
+<g data-skill-legend="Supervised learning">
+<circle cx="6.00" cy="185" r="6" fill="#f1e05a"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Supervised learning</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">13.0%</tspan></text>
+</g>
+<g data-skill-legend="Time-series modelling">
+<circle cx="6.00" cy="223" r="6" fill="#563d7c"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Time-series modelling</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">13.0%</tspan></text>
+</g>
+<g data-skill-legend="Reinforcement learning">
+<circle cx="6.00" cy="261" r="6" fill="#89e051"/>
+<text x="20.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Reinforcement learning</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">8.7%</tspan></text>
+</g>
+<g data-skill-legend="Unsupervised learning">
+<circle cx="6.00" cy="299" r="6" fill="#da5b0b"/>
+<text x="20.00" y="306" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Unsupervised learning</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">8.7%</tspan></text>
+</g>
+<g data-skill-legend="NLP and transformers">
+<circle cx="6.00" cy="337" r="6" fill="#4f5d95"/>
+<text x="20.00" y="344" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>NLP and transformers</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.3%</tspan></text>
+</g>
+</g></g><g data-position="agentic" transform="translate(748 602)"><g data-skill-section="agentic" data-total="16" aria-label="Agentic AI Engineering">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Agentic AI Engineering</text>
+<clipPath id="bar-agentic"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-agentic)">
+<rect data-segment="Agent evaluation" data-value="3" x="0.00000000" y="60" width="111.75000000" height="14" fill="#3572a5"><title>Agent evaluation</title></rect>
+<rect data-segment="Guardrails" data-value="3" x="111.75000000" y="60" width="111.75000000" height="14" fill="#3178c6"><title>Guardrails</title></rect>
+<path d="M111.75000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Retrieval" data-value="2" x="223.50000000" y="60" width="74.50000000" height="14" fill="#e34c26"><title>Retrieval</title></rect>
+<path d="M223.50000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="State and memory" data-value="2" x="298.00000000" y="60" width="74.50000000" height="14" fill="#f1e05a"><title>State and memory</title></rect>
+<path d="M298.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Task routing" data-value="2" x="372.50000000" y="60" width="74.50000000" height="14" fill="#563d7c"><title>Task routing</title></rect>
+<path d="M372.50000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Workflow orchestration" data-value="2" x="447.00000000" y="60" width="74.50000000" height="14" fill="#89e051"><title>Workflow orchestration</title></rect>
+<path d="M447.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Human approval" data-value="1" x="521.50000000" y="60" width="37.25000000" height="14" fill="#da5b0b"><title>Human approval</title></rect>
+<path d="M521.50000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Tool execution" data-value="1" x="558.75000000" y="60" width="37.25000000" height="14" fill="#4f5d95"><title>Tool execution</title></rect>
+<path d="M558.75000000 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
+<g data-skill-legend="Agent evaluation">
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Agent evaluation</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.8%</tspan></text>
+</g>
+<g data-skill-legend="Guardrails">
+<circle cx="313.38" cy="109" r="6" fill="#3178c6"/>
+<text x="327.38" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Guardrails</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.8%</tspan></text>
+</g>
+<g data-skill-legend="Retrieval">
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Retrieval</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
+</g>
+<g data-skill-legend="State and memory">
+<circle cx="226.68" cy="147" r="6" fill="#f1e05a"/>
+<text x="240.68" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>State and memory</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
+</g>
+<g data-skill-legend="Task routing">
+<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Task routing</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
+</g>
+<g data-skill-legend="Workflow orchestration">
+<circle cx="6.00" cy="223" r="6" fill="#89e051"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Workflow orchestration</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">12.5%</tspan></text>
+</g>
+<g data-skill-legend="Human approval">
+<circle cx="6.00" cy="261" r="6" fill="#da5b0b"/>
+<text x="20.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Human approval</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">6.2%</tspan></text>
+</g>
+<g data-skill-legend="Tool execution">
+<circle cx="296.96" cy="261" r="6" fill="#4f5d95"/>
+<text x="310.96" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Tool execution</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">6.2%</tspan></text>
+</g>
+</g></g><text x="40" y="1037" fill="#7d92aa" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400">Percentages show repository evidence share within each section.</text></svg>

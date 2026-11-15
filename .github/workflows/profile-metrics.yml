@@ -1,9 +1,7 @@
-name: Refresh and validate GitHub profile
+name: Validate GitHub profile
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '7,22,37,52 * * * *'
   pull_request:
     paths:
       - 'README.md'
@@ -42,33 +40,4 @@ jobs:
       - name: Validate profile assets and links
         run: python3 scripts/validate_profile.py
 
-  refresh:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    needs: validate
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
-        with:
-          ref: main
-      - name: Refresh public repository evidence
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python3 scripts/refresh_skill_evidence.py --scope public
-          python3 scripts/build_skill_circles.py
-          python3 scripts/validate_profile.py
-      - name: Publish changed evidence and chart
-        run: |
-          git add config/skill-evidence.json assets/skill-circles.svg assets/skills-mobile.svg assets/skills-programming.svg assets/skills-aiml.svg assets/skills-agentic.svg
-          if git diff --cached --quiet; then
-            echo "Repository evidence is unchanged."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh professional skills from repository evidence"
-          git push
 
