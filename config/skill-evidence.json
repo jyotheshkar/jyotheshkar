@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "captured_at": "2026-11-15",
+  "captured_at": "2026-11-15T08:02:42+00:00",
   "scope": "Current public, owned, nonfork, unarchived repositories; profile excluded.",
   "repositories": [
     {
@@ -13,12 +13,24 @@
           "sha": "a0b555448dfd6cadcd308df8df0fa14229e5e365"
         },
         {
+          "path": "core/broker/build_shared_library_v1.py",
+          "sha": "10f95c2e5210f915bbd52dfbc324ba7db6f19b16"
+        },
+        {
+          "path": "core/validation/validate_shared_library_v1.py",
+          "sha": "3727e9e98961665d4176f6d712383038b6601b6e"
+        },
+        {
           "path": "plugins/forge/scripts/route_forge.py",
           "sha": "85d5c56a7312ce884f35787ede46b4fe46bf0c98"
         },
         {
           "path": "plugins/forge/scripts/verify_gate.py",
           "sha": "58a07b5fe443bbddec3c70a9212b5907baf812fd"
+        },
+        {
+          "path": "plugins/legacy/devil/scripts/validate_behavior.py",
+          "sha": "bc468a964a11dbced2c3d77ded1dc33269717aab"
         },
         {
           "path": "plugins/minister/scripts/route_minister.py",
@@ -31,6 +43,14 @@
         {
           "path": "plugins/scout/scripts/scout_core.py",
           "sha": "d91a1b5b59867d31c190b2f7414ce9a5eb1807e4"
+        },
+        {
+          "path": "scripts/import-runtime-sources/import_sources.py",
+          "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84"
+        },
+        {
+          "path": "scripts/validate-repository.py",
+          "sha": "fd365c98e7b796d2393e1d0ba90f0087a0dfd21f"
         }
       ]
     },
@@ -39,6 +59,10 @@
       "default_branch": "main",
       "tree_sha": "3d0b0287362f09fcc5abb7f4b5c9918ff6b7a50b",
       "scanned_files": [
+        {
+          "path": "runtime/core/__init__.py",
+          "sha": "04d75095a48c899ab038c3c1c150d194a56310ac"
+        },
         {
           "path": "runtime/core/algorithms.py",
           "sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132"
@@ -66,6 +90,18 @@
       "default_branch": "main",
       "tree_sha": "1d84af9b04c5701585de2b6f376fe8ffb679348f",
       "scanned_files": [
+        {
+          "path": "backend/scripts/prepare_model_data.py",
+          "sha": "2a9e568f5ed71146853ea5ff5acc3542096fa02f"
+        },
+        {
+          "path": "backend/scripts/run_model_based_rollups.py",
+          "sha": "3889af36f5aa36113873e223e8db85e59bccf740"
+        },
+        {
+          "path": "backend/scripts/run_model_based_uplift_deciles.py",
+          "sha": "fbf7d167a436dbcf57ec62a3162d0a59241c9eec"
+        },
         {
           "path": "backend/src/primelift/api/analysis.py",
           "sha": "2ab448d7cffcf92c4a44755c51bbd46616677222"
@@ -97,6 +133,10 @@
         {
           "path": "frontend/package.json",
           "sha": "5807a4b0373103e4a8a754702f91bda47f336d00"
+        },
+        {
+          "path": "frontend/src/app/dataset-models/page.tsx",
+          "sha": "881c259e1419de0ab4fd74176eb1dcf5ccccd64d"
         },
         {
           "path": "frontend/src/components/ui/tooltip.tsx",
@@ -138,6 +178,10 @@
           "sha": "5cd0c42c50e225df90cb835a97fee597b8ccb319"
         },
         {
+          "path": "backend/models.py",
+          "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3"
+        },
+        {
           "path": "backend/requirements.txt",
           "sha": "23e77930142bbd1c31fe95ba9863d23e8b74b5e0"
         },
@@ -148,6 +192,18 @@
         {
           "path": "backend/routes/evals.py",
           "sha": "7263e2f738ba01164d9810833a1d7022a0fc0f72"
+        },
+        {
+          "path": "frontend/app/adversarial/page.tsx",
+          "sha": "8660179209563f93c8ce04fdca892a7f53a44d03"
+        },
+        {
+          "path": "frontend/app/layout.tsx",
+          "sha": "b441b87072d47d361aa22753a3123e3ee1ed30e1"
+        },
+        {
+          "path": "frontend/app/page.tsx",
+          "sha": "f305a280aced39981e357a43e1805b5a4f308452"
         },
         {
           "path": "frontend/package.json",
@@ -168,10 +224,38 @@
       "scanned_files": []
     },
     {
-      "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+      "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
       "default_branch": "main",
       "tree_sha": "8079c407dbe6c8aec95115ac33bb0c8d6b874931",
       "scanned_files": [
+        {
+          "path": "packaging/build_desktop.py",
+          "sha": "8077af6c4d9a3a37f160766875e97c39ac5fdb8e"
+        },
+        {
+          "path": "packaging/build_python.py",
+          "sha": "9d24abcc370b639097d9f5ec953ae649f45fb485"
+        },
+        {
+          "path": "packaging/desktop_entry.py",
+          "sha": "972c63cd0fbb836d57f48f00f82d1e195dee5207"
+        },
+        {
+          "path": "packaging/install_wheel.py",
+          "sha": "0f7c0595110ff818e8e6674fb0e7911610d4806a"
+        },
+        {
+          "path": "packaging/publish_release.py",
+          "sha": "b29161e32bd81a060064e3b2c9ac7cbe8dc60556"
+        },
+        {
+          "path": "packaging/release_common.py",
+          "sha": "f8cf07334eef78844270b76a943c7948436494a1"
+        },
+        {
+          "path": "packaging/release_gate.py",
+          "sha": "14dcda7dd20e5c56f1723183b084c12940815e88"
+        },
         {
           "path": "packaging/requirements-build.txt",
           "sha": "01e453b9bbd509bd519b2f5fb64b5e9410ada6b5"
@@ -181,26 +265,32 @@
           "sha": "448d4fabed108dcb3bdd45f0f36abe2b31e69f1b"
         },
         {
-          "path": "src/gpt_scratch_lab/checkpoint.py",
-          "sha": "d722a6a062b96a38501fbac308d37d8bdec76583"
+          "path": "scripts/notebook_smoke.py",
+          "sha": "57130c7595726057bdb1bdb19c2772165ad4a999"
         },
         {
-          "path": "src/gpt_scratch_lab/config.py",
-          "sha": "05846ec15c6dbce024ab9c7d64bfe8e30bd2586b"
+          "path": "src/gpt_scratch_lab/__init__.py",
+          "sha": "284bec59877469d0c89109282744dd3eaef0a22a"
+        },
+        {
+          "path": "src/gpt_scratch_lab/__main__.py",
+          "sha": "bfdcd0c1158dff4fcc25157b317419f0a89dd33f"
         },
         {
           "path": "src/gpt_scratch_lab/model.py",
           "sha": "36eb1451f892c5c9c7148db10675d366d44331e3"
         },
         {
-          "path": "src/gpt_scratch_lab/tokenizer.py",
-          "sha": "4c4e2e4a792ca9de1e258a2bf3c06cbbe54b6a8c"
-        },
-        {
           "path": "src/gpt_scratch_lab/training.py",
           "sha": "9fb00030f05ec7c559045043b3069c4aa2d58a31"
         }
       ]
+    },
+    {
+      "repo": "jyotheshkar/Java-JSP-Web-Application-2025",
+      "default_branch": "master",
+      "tree_sha": "5302090cd20426433ed0797f49c22fba756bd37c",
+      "scanned_files": []
     },
     {
       "repo": "jyotheshkar/MSc-CS-Advanced-Programming-in-Python-Keele-University-2024",
@@ -258,6 +348,14 @@
           "sha": "ebcb0d10afcd5a2ba80c8a82c80e28e539b387d5"
         },
         {
+          "path": "scripts/verify_repository.py",
+          "sha": "e4a1fedf8e764326aeb24ae9d5718fe74ed14b92"
+        },
+        {
+          "path": "src/__init__.py",
+          "sha": "95a3a711b2c89be1f75eaaa8a0b135db0a65a373"
+        },
+        {
           "path": "src/workbench.py",
           "sha": "c58b6b5288bffc3d02a131c971c9a1f0e34b9091"
         }
@@ -312,6 +410,18 @@
           "sha": "a7b6bc94a702ecbd47a27e031131fc3b752b07e2"
         },
         {
+          "path": "Codes/Generic_Activity_Model.py",
+          "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5"
+        },
+        {
+          "path": "Codes/Generic_Multi_Model.py",
+          "sha": "4d40368754b49601288b3f279b32904c9ef4aa34"
+        },
+        {
+          "path": "Codes/Generic_Temp_Model.py",
+          "sha": "b6bf2f17b9b4013afcc2caf9d600b7e12ea41f8e"
+        },
+        {
           "path": "Codes/activity.py",
           "sha": "b6fee2d35245e8ab10ab3897d7e5c225a75d4719"
         },
@@ -328,6 +438,10 @@
           "sha": "10ef03ab1aeb9c5456631746b1b498e031f46b23"
         },
         {
+          "path": "Codes/multimodel.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
           "path": "Codes/requirements.txt",
           "sha": "cf4e73354758e073b3dedb754e0a51ec05d3cf4d"
         },
@@ -338,17 +452,10 @@
         {
           "path": "desktop/requirements-build.txt",
           "sha": "4b1d9c98a9b6886b43fab66fa5b98173f55abd12"
-        }
-      ]
-    },
-    {
-      "repo": "jyotheshkar/nextwork-web-project-2025",
-      "default_branch": "master",
-      "tree_sha": "5302090cd20426433ed0797f49c22fba756bd37c",
-      "scanned_files": [
+        },
         {
-          "path": "pom.xml",
-          "sha": "19cb34e255c9249485c8afbaeff25e1f525eb94c"
+          "path": "original-work/Dairy-Herd-Monitoring/requirements-sequences.txt",
+          "sha": "f6fc6e3788496fafeb3f9af7a482e564fef82460"
         }
       ]
     },
@@ -382,6 +489,22 @@
           "sha": "6afd556666d0ef21f019c58cf9c1a21f5182bee6"
         },
         {
+          "path": "backend/app/forecasting/engine.py",
+          "sha": "436a8d74158fa32576cc4ae5a3214f2f2c59ee5d"
+        },
+        {
+          "path": "backend/app/forecasting/models.py",
+          "sha": "42ada54d613487e22b2c60acbee976e4588fe57e"
+        },
+        {
+          "path": "backend/app/ingestion/pipeline.py",
+          "sha": "12ce6e4d8d458fdfed1507c846817d8ef96c9c19"
+        },
+        {
+          "path": "backend/app/models/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
           "path": "backend/pyproject.toml",
           "sha": "b7fc6bd059e825f0ec872a7e624e16238a6a5283"
         },
@@ -407,7 +530,12 @@
       "repo": "jyotheshkar/system-architecture-workspace-data-2026",
       "default_branch": "main",
       "tree_sha": "fad0a22694fd8aad83e598d78bf40e324f22b03d",
-      "scanned_files": []
+      "scanned_files": [
+        {
+          "path": "scripts/validate_workspace.py",
+          "sha": "2c68a89feaad2767dc242731214071481faeef7f"
+        }
+      ]
     },
     {
       "repo": "jyotheshkar/System-Design-Architecture-Concept-Prototype-2026",
@@ -449,6 +577,18 @@
         {
           "path": "app/tools/qa/enterprise-independent-checks.py",
           "sha": "8e5d222865646c63d086cd4b104a06c44074cc2c"
+        },
+        {
+          "path": "app/tools/rebuild_enterprise.py",
+          "sha": "db3fab141e434d79ed4aadba61c748c15d65568b"
+        },
+        {
+          "path": "app/tools/render-case-diagrams.py",
+          "sha": "d5caa1992e3d2c0d4c8a324f5a489630c3844248"
+        },
+        {
+          "path": "scripts/validate_design_export.py",
+          "sha": "3d20f52c49ed1acbb471cbfb0e5e31a328b24191"
         }
       ]
     },
@@ -462,12 +602,28 @@
           "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6"
         },
         {
+          "path": "legacy/baseline-2026-11-14/ai.py",
+          "sha": "027cbc97094b073ef609e4f61c5492d122990c3a"
+        },
+        {
+          "path": "packaging/build_desktop.py",
+          "sha": "6aed32dcbb4d3d678bac7287a680bba00398e87e"
+        },
+        {
+          "path": "packaging/publish_release.py",
+          "sha": "485e21ee4f3f3f729c2daeff93f27bde34243a75"
+        },
+        {
           "path": "packaging/requirements-build.txt",
           "sha": "6855b1533329a3f94760350f980ebbfbd48c716a"
         },
         {
           "path": "requirements.txt",
           "sha": "43229212f78c9df1cc9abfbed0d6c5c982f65fe6"
+        },
+        {
+          "path": "scripts/runtime_smoke.py",
+          "sha": "3d1bbfb6832182981fc950427e632da262f74896"
         }
       ]
     }
@@ -1371,139 +1527,139 @@
               "size": 3116
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/build_desktop.py",
               "sha": "8077af6c4d9a3a37f160766875e97c39ac5fdb8e",
               "size": 13111
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/build_python.py",
               "sha": "9d24abcc370b639097d9f5ec953ae649f45fb485",
               "size": 4958
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/desktop_entry.py",
               "sha": "972c63cd0fbb836d57f48f00f82d1e195dee5207",
               "size": 152
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/install_wheel.py",
               "sha": "0f7c0595110ff818e8e6674fb0e7911610d4806a",
               "size": 1263
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/publish_release.py",
               "sha": "b29161e32bd81a060064e3b2c9ac7cbe8dc60556",
               "size": 6296
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/release_common.py",
               "sha": "f8cf07334eef78844270b76a943c7948436494a1",
               "size": 4917
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/release_gate.py",
               "sha": "14dcda7dd20e5c56f1723183b084c12940815e88",
               "size": 5111
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/test_release_safety.py",
               "sha": "ff218d0e82da5b584fbe3b861ce8bb88b32a2d11",
               "size": 8845
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "scripts/notebook_smoke.py",
               "sha": "57130c7595726057bdb1bdb19c2772165ad4a999",
               "size": 3751
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/__init__.py",
               "sha": "284bec59877469d0c89109282744dd3eaef0a22a",
               "size": 360
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/__main__.py",
               "sha": "bfdcd0c1158dff4fcc25157b317419f0a89dd33f",
               "size": 79
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/checkpoint.py",
               "sha": "d722a6a062b96a38501fbac308d37d8bdec76583",
               "size": 9517
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/cli.py",
               "sha": "34be9feedf1d0809bb7e2d3bbc4c2ce8d6d53a9b",
               "size": 6167
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/config.py",
               "sha": "05846ec15c6dbce024ab9c7d64bfe8e30bd2586b",
               "size": 2708
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/gui.py",
               "sha": "849f23d3e8a41ca14bf190c61f212800abe1ca1f",
               "size": 37825
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/model.py",
               "sha": "36eb1451f892c5c9c7148db10675d366d44331e3",
               "size": 5019
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/smoke.py",
               "sha": "2f824eba72e23e78b962b3ed8a33cc1059edc824",
               "size": 3820
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/tokenizer.py",
               "sha": "4c4e2e4a792ca9de1e258a2bf3c06cbbe54b6a8c",
               "size": 2039
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "src/gpt_scratch_lab/training.py",
               "sha": "9fb00030f05ec7c559045043b3069c4aa2d58a31",
               "size": 8666
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "tests/test_checkpoint.py",
               "sha": "89cd54f392320a0888cef88a97277f4aeff6cb3c",
               "size": 6454
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "tests/test_config_tokenizer.py",
               "sha": "ac3c05889c1bd722de649e2d6af18c1938110d67",
               "size": 2212
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "tests/test_core.py",
               "sha": "62032ba986a937acf1c6c55c05528cd995504499",
               "size": 5440
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "tests/test_gui_state.py",
               "sha": "052b885036e74d51c3a27b92fa11a84d572c8a93",
               "size": 5996
@@ -3046,7 +3202,7 @@
               "excerpt": "numpy==1.26.4"
             },
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "packaging/requirements-build.txt",
               "sha": "01e453b9bbd509bd519b2f5fb64b5e9410ada6b5",
               "excerpt": "numpy==2.4.6"
@@ -3107,9 +3263,9 @@
             },
             {
               "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "frontend/package.json",
-              "sha": "b3d2191d54f239881a63f073e478d8aaa5410e05",
-              "excerpt": "next"
+              "path": "frontend/app/layout.tsx",
+              "sha": "b441b87072d47d361aa22753a3123e3ee1ed30e1",
+              "excerpt": "import type { Metadata } from 'next'"
             },
             {
               "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
@@ -3155,9 +3311,9 @@
             },
             {
               "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "backend/requirements.txt",
-              "sha": "23e77930142bbd1c31fe95ba9863d23e8b74b5e0",
-              "excerpt": "pydantic==2.6.0"
+              "path": "backend/models.py",
+              "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3",
+              "excerpt": "from pydantic import BaseModel, Field"
             },
             {
               "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
@@ -3179,9 +3335,9 @@
             },
             {
               "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "frontend/package.json",
-              "sha": "b3d2191d54f239881a63f073e478d8aaa5410e05",
-              "excerpt": "react"
+              "path": "frontend/app/adversarial/page.tsx",
+              "sha": "8660179209563f93c8ce04fdca892a7f53a44d03",
+              "excerpt": "import { useState, useEffect } from 'react'"
             },
             {
               "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
@@ -3220,7 +3376,7 @@
           "value": 2,
           "evidence": [
             {
-              "repo": "jyotheshkar/Creating-a-Large-Language-Model-from-Scratch-2025",
+              "repo": "jyotheshkar/Building-a-GPT-2-Inspired-Model-from-Scratch-2025",
               "path": "pyproject.toml",
               "sha": "448d4fabed108dcb3bdd45f0f36abe2b31e69f1b",
               "excerpt": "dependencies = [\"torch==2.15.0\", \"numpy==2.4.6\"]"
@@ -3286,6 +3442,18 @@
               "excerpt": "import matplotlib.pyplot as plt"
             }
           ]
+        },
+        {
+          "label": "TensorFlow",
+          "value": 1,
+          "evidence": [
+            {
+              "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
+              "path": "Codes/Generic_Activity_Model.py",
+              "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5",
+              "excerpt": "from tensorflow.keras.models import Sequential, load_model"
+            }
+          ]
         }
       ]
     },
@@ -3318,6 +3486,26 @@
               "sha": "5cd0c42c50e225df90cb835a97fee597b8ccb319",
               "line": 96,
               "excerpt": "async def run_batch("
+            }
+          ]
+        },
+        {
+          "label": "Guardrails",
+          "value": 2,
+          "evidence": [
+            {
+              "repo": "jyotheshkar/Agentic-Core-Concept-Prototype-2026",
+              "path": "scripts/import-runtime-sources/import_sources.py",
+              "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
+              "line": 100,
+              "excerpt": "def redact(value):"
+            },
+            {
+              "repo": "jyotheshkar/agentic-core-evidence-2026",
+              "path": "runtime/core/safety.py",
+              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
+              "line": 20,
+              "excerpt": "def redact(value):"
             }
           ]
         },
@@ -3358,19 +3546,6 @@
               "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
               "line": 120,
               "excerpt": "def compile_workflow(workflow_id: str, version: str, requirement: dict, tasks: list[dict], *, skills: dict | None = None, plugins: dict | None = None, policy: list[dict] | None = None) -> dict:"
-            }
-          ]
-        },
-        {
-          "label": "Guardrails",
-          "value": 1,
-          "evidence": [
-            {
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/safety.py",
-              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
-              "line": 20,
-              "excerpt": "def redact(value):"
             }
           ]
         },
