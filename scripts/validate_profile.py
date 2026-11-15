@@ -57,13 +57,27 @@ def main():
             errors.append(f"profile.svg: {concept} concept requires eight tool nodes, found {len(nodes)}")
     circles = ET.parse(ROOT / "assets/skill-circles.svg").getroot()
     groups = [e for e in circles.iter() if e.get("data-skill-circle")]
-    if {e.get("data-skill-circle") for e in groups} != {"languages", "engineering", "ai", "agentic"} or len(groups) != 4:
-        errors.append("skill-circles.svg: expected four named circles")
+    if {e.get("data-skill-circle") for e in groups} != {"languages", "ai", "agentic"} or len(groups) != 3:
+        errors.append("skill-circles.svg: expected three named circles")
+    if len({e.get("data-center-y") for e in groups}) != 1 or len({e.get("data-center-x") for e in groups}) != 3:
+        errors.append("skill-circles.svg: circles must occupy one horizontal row")
+    labels = [e.text or "" for e in circles.iter() if e.tag.split("}")[-1] in ("text", "title")]
+    if any(re.search(r"\d(?:\.\d+)?\s*%", label) for label in labels):
+        errors.append("skill-circles.svg: percentage label present")
     metrics = json.loads((ROOT / "config/portfolio-metrics.json").read_text(encoding="utf-8"))
+    source_charts = {chart["key"]: chart for chart in metrics["charts"]}
     for group in groups:
-        chart = next(c for c in metrics["charts"] if c["key"] == group.get("data-skill-circle"))
-        expected = {i["label"]: i["value"] for i in chart["items"]}
+        key = group.get("data-skill-circle")
+        chart = source_charts[key]
+        items = list(chart["items"])
+        if key == "agentic":
+            items += source_charts["engineering"]["items"]
+        expected = {i["label"]: i["value"] for i in items}
+        if len(expected) != len(items):
+            errors.append("skill-circles.svg: combined categories must remain distinct")
         if {e.get("data-skill-node") for e in group.iter() if e.get("data-skill-node")} != set(expected):
+            errors.append("skill-circles.svg: orbital nodes do not match source data")
+        if {e.get("data-skill-legend") for e in group.iter() if e.get("data-skill-legend")} != set(expected):
             errors.append("skill-circles.svg: legend does not match source data")
         segments = [e for e in group.iter() if e.get("data-segment")]
         total = sum(expected.values())
