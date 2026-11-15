@@ -8,7 +8,29 @@ import sys
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
-CHART_FILES={'skills-programming.svg':'languages','skills-libraries.svg':'libraries','skills-aiml.svg':'aiml','skills-agentic.svg':'agentic'}
+SOURCE_KEYS={'languages','libraries','cloud','aiml','agentic'}
+DISPLAY_KEYS={'technology','cloud','aiml','agentic'}
+CHART_FILES={'skills-programming.svg':'technology','skills-cloud.svg':'cloud',
+             'skills-aiml.svg':'aiml','skills-agentic.svg':'agentic'}
+PREFERRED_LIBRARIES=['NumPy','pandas','scikit-learn','PyTorch','TensorFlow',
+                     'React','Next.js','FastAPI']
+
+
+def display_charts(charts):
+    """Independently derive the merged technology display from raw evidence."""
+    language_values={}
+    for item in charts['languages']['items']:
+        label='Java' if item['label']=='JSP' else item['label']
+        language_values[label]=language_values.get(label,0)+item['value']
+    items=[{'label':label,'value':value} for label,value in language_values.items()]
+    libraries={item['label']:item for item in charts['libraries']['items']}
+    items += [libraries[label] for label in PREFERRED_LIBRARIES if label in libraries]
+    remainder=sum(item['value'] for item in charts['libraries']['items']
+                  if item['label'] not in PREFERRED_LIBRARIES)
+    if remainder:
+        items.append({'label':'Others','value':remainder})
+    return {'technology':{'key':'technology','items':items},
+            **{key:charts[key] for key in ('cloud','aiml','agentic')}}
 
 
 def main():
@@ -49,8 +71,8 @@ def main():
 
     metrics=json.loads((ROOT/'config/skill-evidence.json').read_text(encoding='utf-8'))
     charts={chart['key']:chart for chart in metrics['charts']}
-    if set(charts)!={'languages','libraries','aiml','agentic'}:
-        errors.append('Skill evidence must have the four requested categories')
+    if set(charts)!=SOURCE_KEYS or len(metrics['charts'])!=len(SOURCE_KEYS):
+        errors.append('Skill evidence must have exactly the five source categories')
     public=metrics['public_snapshot']['sources']
     private=metrics['private_snapshot']['sources']
     sources=public+private
@@ -61,12 +83,14 @@ def main():
     for source in private:
         if set(source)!={'source_id','visibility','skills'} or source['visibility']!='private' or not re.fullmatch(r'[0-9a-f]{16}',source['source_id']):
             errors.append('Private source has an unexpected field or identifier')
-        if set(source['skills'])!={'languages','libraries','aiml','agentic'}:
+        if set(source['skills'])!=SOURCE_KEYS:
             errors.append('Private source has an unexpected skills group')
         for skills in source['skills'].values():
             if any(proof!={'kind':'verified source'} for proof in skills.values()):
                 errors.append('Private source contains more than an aggregate skill')
     for source in public:
+        if set(source['skills'])!=SOURCE_KEYS:
+            errors.append('Public source has an unexpected skills group')
         if source['skills']['agentic'] and not (re.search(r'agentic[-_ ]core',source['repo'],re.I) or source['repo'].endswith('/linkedin-agent-development-lab')):
             errors.append('Agentic evidence includes an unrelated repository')
     for key,chart in charts.items():
@@ -84,12 +108,7 @@ def main():
                 if proof['visibility']=='private' and set(proof)!={'source_id','visibility'}:
                     errors.append('Private chart evidence has a disallowed field')
 
-    display_charts={}
-    for key,chart in charts.items():
-        items=chart['items']
-        if key=='languages':
-            items=[{**i,'label':'Java' if i['label']=='JSP' else i['label']} for i in items]
-        display_charts[key]={**chart,'items':items}
+    rendered_charts=display_charts(charts)
     canonical={}
     for filename,key in CHART_FILES.items():
         doc=documents.get(filename)
@@ -102,13 +121,16 @@ def main():
             continue
         canonical[key]=ET.tostring(groups[0]).strip()
     expected_files={**CHART_FILES,'skills.svg':None,'skill-circles.svg':None,'skills-mobile.svg':None}
+    # The former libraries asset may be retained as an alias of the merged section.
+    if 'skills-libraries.svg' in documents:
+        expected_files['skills-libraries.svg']='technology'
     for filename,key in expected_files.items():
         doc=documents.get(filename)
         if doc is None:
             errors.append(filename+': missing skill artwork')
             continue
         groups=[e for e in doc.iter() if e.get('data-skill-section')]
-        required={key} if key else set(charts)
+        required={key} if key else DISPLAY_KEYS
         if {e.get('data-skill-section') for e in groups}!=required or len(groups)!=len(required):
             errors.append(filename+': incorrect group coverage')
         if any(e.get('data-skill-circle') or e.get('data-evidence-bar') for e in doc.iter()):
@@ -122,23 +144,26 @@ def main():
                 match=re.fullmatch(r'translate\((\d+) (\d+)\)',transform or '')
                 if match:
                     coords[category]=tuple(map(int,match.groups()))
-            if set(coords)!=set(charts):
+            if set(coords)!=DISPLAY_KEYS:
                 errors.append(filename+': missing section positions')
             elif filename=='skills-mobile.svg':
-                if len({x for x,y in coords.values()})!=1 or not (coords['languages'][1]<coords['libraries'][1]<coords['aiml'][1]<coords['agentic'][1]):
+                if len({x for x,y in coords.values()})!=1 or not (coords['technology'][1]<coords['cloud'][1]<coords['aiml'][1]<coords['agentic'][1]):
                     errors.append(filename+': mobile sections must stack in reading order')
-            elif not (coords['languages'][0]==coords['aiml'][0]<coords['libraries'][0]==coords['agentic'][0] and coords['languages'][1]==coords['libraries'][1]<coords['aiml'][1]==coords['agentic'][1]):
+            elif not (coords['technology'][0]==coords['aiml'][0]<coords['cloud'][0]==coords['agentic'][0] and coords['technology'][1]==coords['cloud'][1]<coords['aiml'][1]==coords['agentic'][1]):
                 errors.append(filename+': expected requested two-by-two arrangement')
         for group in groups:
             group_key=group.get('data-skill-section')
             if ET.tostring(group).strip()!=canonical.get(group_key):
                 errors.append(filename+': section diverges from its individual artwork')
-            values={i['label']:i['value'] for i in display_charts[group_key]['items']}
+            if group_key not in rendered_charts:
+                errors.append(filename+': unexpected rendered section '+str(group_key))
+                continue
+            values={i['label']:i['value'] for i in rendered_charts[group_key]['items']}
             total=sum(values.values())
             if int(group.get('data-total'))!=total:
                 errors.append(filename+': incorrect total')
             legends=[e for e in group.iter() if e.get('data-skill-legend')]
-            if {e.get('data-skill-legend') for e in legends}!=set(values):
+            if {e.get('data-skill-legend') for e in legends}!=set(values) or len(legends)!=len(values):
                 errors.append(filename+': missing name legend')
             for legend in legends:
                 label=legend.get('data-skill-legend')
@@ -146,7 +171,7 @@ def main():
                 if percentages!=[f"{100*values[label]/total:.1f}%"]:
                     errors.append(filename+': incorrect displayed share')
             segments=[e for e in group.iter() if e.get('data-segment')]
-            if {e.get('data-segment') for e in segments}!=set(values):
+            if {e.get('data-segment') for e in segments}!=set(values) or len(segments)!=len(values):
                 errors.append(filename+': missing stacked segments')
             offset=0
             for segment in segments:

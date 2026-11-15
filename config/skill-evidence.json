@@ -1,6 +1,6 @@
 {
-  "schema_version": 3,
-  "captured_at": "2026-11-15T09:39:55+00:00",
+  "schema_version": 4,
+  "captured_at": "2026-11-15T10:14:11+00:00",
   "public_snapshot": {
     "captured_at": "2026-11-15T09:32:34+00:00",
     "sources": [
@@ -86,7 +86,8 @@
               "kind": "implementation"
             }
           },
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -312,6 +313,20 @@
               "path": "frontend/src/components/app-header.tsx",
               "sha": "e4c51b39e6b691fe069a4fafdeb977c042c0d085",
               "kind": "import and usage"
+            }
+          },
+          "cloud": {
+            "Docker": {
+              "kind": "deployment configuration",
+              "path": "Dockerfile",
+              "sha": "9dadbbd51d045d55125510b8c33b9e58396b74e6",
+              "tree_sha": "96ccddc24380190574580993c41e7f5034a927ee"
+            },
+            "Fly.io": {
+              "kind": "deployment configuration",
+              "path": "fly.toml",
+              "sha": "97ee30c8d897e663864a0cbc51cc63fb473a0343",
+              "tree_sha": "96ccddc24380190574580993c41e7f5034a927ee"
             }
           }
         }
@@ -544,6 +559,20 @@
               "sha": "10d44c298873b9753c4e8982bc5e57a0b577fab3",
               "kind": "import and usage"
             }
+          },
+          "cloud": {
+            "Render": {
+              "kind": "deployment configuration",
+              "path": "render.yaml",
+              "sha": "0ff69f47d42814b5b4aae4fbcbc99c4947b56405",
+              "tree_sha": "27d48e4f10282355017a93ba16b046b76cfcc4cb"
+            },
+            "Nixpacks": {
+              "kind": "deployment configuration",
+              "path": "backend/nixpacks.toml",
+              "sha": "3d02207cdbc49d5ef013f09bf4dfa84d12f6fd20",
+              "tree_sha": "27d48e4f10282355017a93ba16b046b76cfcc4cb"
+            }
           }
         }
       },
@@ -557,7 +586,8 @@
           "languages": {},
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -570,7 +600,8 @@
           "languages": {},
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -695,7 +726,8 @@
               "sha": "9fb00030f05ec7c559045043b3069c4aa2d58a31",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       },
       {
@@ -719,7 +751,15 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {
+            "AWS CodeBuild": {
+              "path": "buildspec.yml",
+              "sha": "29f950ae778b1a477220c6ad3578f89c228ea445",
+              "kind": "runnable buildspec configuration",
+              "tree_sha": "5302090cd20426433ed0797f49c22fba756bd37c"
+            }
+          }
         }
       },
       {
@@ -784,7 +824,8 @@
               "sha": "01d53d82c95d7b0266b0e1b3386f361112a1589d",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       },
       {
@@ -977,7 +1018,8 @@
               "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       },
       {
@@ -1166,7 +1208,8 @@
               "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       },
       {
@@ -1190,7 +1233,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -1222,7 +1266,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -1413,7 +1458,8 @@
               "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       },
       {
@@ -1457,7 +1503,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -1683,7 +1730,8 @@
               "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       },
       {
@@ -1772,7 +1820,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -1977,6 +2026,32 @@
               "sha": "0a9ade8447832fd71dcf0bf3d7cf8483c72e645a",
               "kind": "import and usage"
             }
+          },
+          "cloud": {
+            "Docker": {
+              "kind": "deployment configuration",
+              "path": "backend/Dockerfile",
+              "sha": "3c2b0aa03b327aad23cdf6ed2543b744a2b90c49",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            },
+            "Docker Compose": {
+              "kind": "deployment configuration",
+              "path": "docker-compose.yml",
+              "sha": "192cfcfcb63af89eb6c38c73f50e8b93cec331a7",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            },
+            "Vercel": {
+              "kind": "deployment configuration",
+              "path": "frontend/vercel.json",
+              "sha": "1b2299994335c9530520083faf982e30b437f7a0",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            },
+            "Render": {
+              "kind": "deployment configuration",
+              "path": "render.yaml",
+              "sha": "5e7c8df0cdd7b8678bbb0d89c253d49882dbc128",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            }
           }
         }
       },
@@ -2044,7 +2119,8 @@
               "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
               "kind": "import and usage"
             }
-          }
+          },
+          "cloud": {}
         }
       }
     ]
@@ -2085,7 +2161,8 @@
               "kind": "verified source"
             }
           },
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -2099,7 +2176,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -2154,6 +2232,14 @@
             "FastAPI": {
               "kind": "verified source"
             }
+          },
+          "cloud": {
+            "Docker": {
+              "kind": "verified source"
+            },
+            "Vercel": {
+              "kind": "verified source"
+            }
           }
         }
       },
@@ -2168,7 +2254,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -2185,7 +2272,8 @@
           },
           "aiml": {},
           "agentic": {},
-          "libraries": {}
+          "libraries": {},
+          "cloud": {}
         }
       },
       {
@@ -2219,7 +2307,8 @@
             "Matplotlib": {
               "kind": "verified source"
             }
-          }
+          },
+          "cloud": {}
         }
       }
     ]
@@ -2231,7 +2320,8 @@
     "aiml": "Executable implementations of learning domains; dependencies and README claims do not qualify. Notebook markdown/outputs and unimplemented Python stubs are excluded.",
     "agentic": "Only Agentic Core family repositories and linkedin-agent-development-lab. Source implementation symbols, not other web apps or architecture prose.",
     "privacy": "Private evidence publishes only opaque per-repository IDs and skill names. No private names, filenames, snippets, blob hashes, URLs or notebook contents are published.",
-    "refresh": "Evidence is captured on demand. A public-only capture preserves the sanitized private baseline and its separate capture date; a full authenticated audit can update both partitions."
+    "refresh": "Evidence is captured on demand. A public-only capture preserves the sanitized private baseline and its separate capture date; a full authenticated audit can update both partitions.",
+    "cloud": "Concrete provider integration or checked deployment/build manifests. Docker and Compose are container tooling; provider configurations are not proof of live production deployment. Cloud proofs retain their separately audited exact tree/blob revisions for public sources; private sources retain only opaque IDs and labels."
   },
   "charts": [
     {
@@ -3283,6 +3373,144 @@
       ]
     },
     {
+      "key": "cloud",
+      "title": "Cloud Skills",
+      "unit": "repositories",
+      "items": [
+        {
+          "label": "Docker",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "Dockerfile",
+              "sha": "9dadbbd51d045d55125510b8c33b9e58396b74e6",
+              "tree_sha": "96ccddc24380190574580993c41e7f5034a927ee"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "backend/Dockerfile",
+              "sha": "3c2b0aa03b327aad23cdf6ed2543b744a2b90c49",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            },
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Render",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "render.yaml",
+              "sha": "0ff69f47d42814b5b4aae4fbcbc99c4947b56405",
+              "tree_sha": "27d48e4f10282355017a93ba16b046b76cfcc4cb"
+            },
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "render.yaml",
+              "sha": "5e7c8df0cdd7b8678bbb0d89c253d49882dbc128",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            }
+          ]
+        },
+        {
+          "label": "Vercel",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "frontend/vercel.json",
+              "sha": "1b2299994335c9530520083faf982e30b437f7a0",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            },
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS CodeBuild",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "5f05a694b44ea77f",
+              "visibility": "public",
+              "repo": "jyotheshkar/Java-JSP-Web-Application-2025",
+              "path": "buildspec.yml",
+              "sha": "29f950ae778b1a477220c6ad3578f89c228ea445",
+              "kind": "runnable buildspec configuration",
+              "tree_sha": "5302090cd20426433ed0797f49c22fba756bd37c"
+            }
+          ]
+        },
+        {
+          "label": "Docker Compose",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "6c0542a157bf4163",
+              "visibility": "public",
+              "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "docker-compose.yml",
+              "sha": "192cfcfcb63af89eb6c38c73f50e8b93cec331a7",
+              "tree_sha": "45dc37a1be7fbd450ad19a59feb20372f3b29739"
+            }
+          ]
+        },
+        {
+          "label": "Fly.io",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "7db9375e9c0276f4",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "fly.toml",
+              "sha": "97ee30c8d897e663864a0cbc51cc63fb473a0343",
+              "tree_sha": "96ccddc24380190574580993c41e7f5034a927ee"
+            }
+          ]
+        },
+        {
+          "label": "Nixpacks",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "311e3f8a01256a53",
+              "visibility": "public",
+              "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "kind": "deployment configuration",
+              "path": "backend/nixpacks.toml",
+              "sha": "3d02207cdbc49d5ef013f09bf4dfa84d12f6fd20",
+              "tree_sha": "27d48e4f10282355017a93ba16b046b76cfcc4cb"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "key": "aiml",
       "title": "AI/ML Engineering",
       "unit": "repositories",
@@ -3653,5 +3881,16 @@
     "inspected_public_files": 49,
     "inspected_private_files": 13,
     "measure": "One repository per verified imported and used external library. Standard-library modules and dependency manifests excluded."
+  },
+  "cloud_audit": {
+    "captured_at": "2026-11-15T10:14:11+00:00",
+    "public_repositories": 18,
+    "private_repositories": 6,
+    "original_repositories": 24,
+    "complete_trees_inspected": 24,
+    "measure": "One repository per evidenced cloud deployment platform or container tooling configuration. Percentages represent the share of repository-skill signals, not proficiency or usage time.",
+    "qualification": "Actual deployment/build manifests inspected at exact file SHAs. Docker includes container packaging used for a cloud-targeted application; Docker Compose includes multi-service deployment configuration. CI-only workflows, README claims, dependencies, provider logos and project names do not qualify.",
+    "deployment_status": "Configuration presence is not proof of successful provisioning, publication, production operation or current live deployment.",
+    "excluded": "Uninspected binary documents, README claims, dependencies and CI-only workflows do not establish cloud evidence."
   }
 }

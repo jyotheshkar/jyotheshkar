@@ -6,11 +6,13 @@ import json
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-KEYS = ['languages', 'libraries', 'aiml', 'agentic']
-TITLES = {'languages': 'Languages', 'libraries': 'Libraries and Frameworks',
+KEYS = ['technology', 'cloud', 'aiml', 'agentic']
+TITLES = {'technology': 'Languages, Libraries and Frameworks', 'cloud': 'Cloud Skills',
           'aiml': 'AI/ML Engineering', 'agentic': 'Agentic AI Engineering'}
-FILES = {'languages': 'skills-programming.svg', 'libraries': 'skills-libraries.svg',
+FILES = {'technology': 'skills-programming.svg', 'cloud': 'skills-cloud.svg',
          'aiml': 'skills-aiml.svg', 'agentic': 'skills-agentic.svg'}
+FEATURED_LIBRARIES = ['NumPy', 'pandas', 'scikit-learn', 'PyTorch',
+                      'TensorFlow', 'React', 'Next.js', 'FastAPI']
 PALETTE = ['#3572a5', '#3178c6', '#e34c26', '#f1e05a', '#563d7c', '#89e051',
            '#da5b0b', '#4f5d95', '#b07219', '#2b7489', '#e16737', '#c6538c',
            '#178600', '#00add8', '#dea584', '#a9b8c9']
@@ -18,18 +20,33 @@ LANGUAGE_COLORS = {'Python': '#3572a5', 'TypeScript': '#3178c6', 'JavaScript': '
                    'HTML': '#e34c26', 'CSS': '#563d7c', 'Shell': '#89e051',
                    'PHP': '#4f5d95', 'Java': '#b07219', 'Java (Processing)': '#0096d8',
                    'JSP': '#2a6277', 'SQL': '#e38c00', 'C': '#555555', 'C++': '#f34b7d',
-                   'Other': '#8b949e'}
+                   'Others': '#8b949e'}
 BAR_WIDTH = 596
 
 
-def display_chart(chart):
-    """Show all evidence; group the JSP template signal under owner label Java."""
-    items = [dict(item) for item in chart['items']]
-    if chart['key'] == 'languages':
-        for item in items:
-            if item['label'] == 'JSP':
-                item.update(label='Java', source_label='JSP')
-    return {**chart, 'items': items}
+def display_charts(evidence):
+    """Combine language and curated library evidence; preserve all tail signals."""
+    raw = {chart['key']: chart for chart in evidence['charts']}
+    languages = {}
+    for source in raw['languages']['items']:
+        item = dict(source)
+        if item['label'] == 'JSP':
+            item.update(label='Java', source_label='JSP')
+        if item['label'] in languages:
+            languages[item['label']]['value'] += item['value']
+            languages[item['label']]['evidence'] += item['evidence']
+        else:
+            item['evidence'] = list(item['evidence'])
+            languages[item['label']] = item
+    library_items = {item['label']: item for item in raw['libraries']['items']}
+    featured = [dict(library_items[label]) for label in FEATURED_LIBRARIES if label in library_items]
+    tail = [item for item in raw['libraries']['items'] if item['label'] not in FEATURED_LIBRARIES]
+    items = list(languages.values()) + featured
+    if tail:
+        items.append({'label': 'Others', 'value': sum(item['value'] for item in tail),
+                      'evidence': [proof for item in tail for proof in item['evidence']]})
+    technology = {'key': 'technology', 'title': TITLES['technology'], 'items': items}
+    return {'technology': technology, **{key: raw[key] for key in KEYS[1:]}}
 
 
 def text(x, y, label, size=22, fill='#f0f6fc', weight=400, mono=False):
@@ -50,7 +67,7 @@ def legend_layout(chart):
     result, x, row = [], 0, 0
     for n, item in enumerate(chart['items']):
         percent = f"{100 * item['value'] / total:.1f}%"
-        if chart['key'] == 'libraries':
+        if chart['key'] == 'technology':
             result.append((n, item, percent, (n % 2) * 300, n // 2, 0))
             row = n // 2
             continue
@@ -87,16 +104,16 @@ def section(chart):
     layout, rows = legend_layout(chart)
     for n, item, percent, x, row, label_width in layout:
         color = LANGUAGE_COLORS.get(item['label'], PALETTE[n % len(PALETTE)])
-        y = 116 + row * (34 if key == 'libraries' else 38)
-        label_size = 19 if key == 'libraries' else 21
-        percent_size = 18 if key == 'libraries' else 20
+        y = 116 + row * 38
+        label_size = 21
+        percent_size = 20
         detail = 'JSP template evidence grouped under Java.' if item.get('source_label') == 'JSP' else item['label']
         out += [f'<g data-skill-legend="{escape(item["label"])}">',
                 f'<title>{escape(detail)}</title>',
                 f'<circle cx="{x+6:.2f}" cy="{y-7}" r="6" fill="{color}"/>',
                 f'<text x="{x+20:.2f}" y="{y}" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="{label_size}" font-weight="600">'
                 f'<tspan>{escape(item["label"])}</tspan><tspan dx="10" fill="#9198a1" font-size="{percent_size}" font-weight="400">{percent}</tspan></text>', '</g>']
-    return '\n'.join(out + ['</g>']), 116 + (rows-1)*(34 if key == 'libraries' else 38) + 32
+    return '\n'.join(out + ['</g>']), 116 + (rows-1)*38 + 32
 
 
 def document(width, height, title, contents):
@@ -105,7 +122,8 @@ def document(width, height, title, contents):
            f'<title id="skills-title">{escape(title)}</title>'
            '<desc>Combined repository evidence. Each stacked bar and percentage shows a category share '
            'of verified repository evidence, not language byte totals or proficiency. '
-           'One repository can support several categories. Java includes JSP template evidence.</desc>' + contents + '</svg>\n')
+           'One repository can support several categories. Cloud skills reflect project deployment '
+           'configuration, not proof of live production services. Java includes JSP template evidence.</desc>' + contents + '</svg>\n')
     ET.fromstring(svg)
     return svg
 
@@ -126,7 +144,7 @@ def shell(width, height, mobile=False):
 
 def build():
     evidence = json.loads((ROOT/'config/skill-evidence.json').read_text(encoding='utf-8'))
-    charts = {c['key']: display_chart(c) for c in evidence['charts']}
+    charts = display_charts(evidence)
     assert set(charts) == set(KEYS)
     sections = {k: section(charts[k]) for k in KEYS}
     row_heights = [max(sections[k][1] for k in KEYS[i:i+2]) + 52 for i in (0, 2)]
@@ -140,7 +158,7 @@ def build():
         x = 56 if n % 2 == 0 else 748
         y = row_y if n < 2 else row_y + row_heights[0]
         desktop += f'<g data-position="{key}" transform="translate({x} {y})">{sections[key][0]}</g>'
-    desktop += text(40, height-25, 'Percentages show repository evidence share within each section. Java includes JSP templates.', 18, '#7d92aa')
+    desktop += text(40, height-25, 'Percentages show repository evidence share. Cloud reflects deployment configuration. Java includes JSP templates.', 18, '#7d92aa')
     assets = ROOT/'assets'
     (assets/'skills.svg').write_text(document(1400, height, 'Professional Skills', desktop), encoding='utf-8', newline='\n')
     mobile_height = 218 + sum(sections[k][1]+52 for k in KEYS) + 84
@@ -152,13 +170,15 @@ def build():
         y += sections[key][1]+52
         if n < 3:
             mobile += f'<path d="M52 {y-32}H648" stroke="#30363d"/>'
-    mobile += text(40, mobile_height-45, 'Percentages show repository evidence share', 20, '#7d92aa')
-    mobile += text(40, mobile_height-17, 'within each section. Java includes JSP templates.', 20, '#7d92aa')
+    mobile += text(40, mobile_height-45, 'Evidence shares; cloud is deployment configuration.', 20, '#7d92aa')
+    mobile += text(40, mobile_height-17, 'Java includes JSP templates.', 20, '#7d92aa')
     (assets/'skills-mobile.svg').write_text(document(700, mobile_height, 'Professional Skills', mobile), encoding='utf-8', newline='\n')
     for key in KEYS:
         fragment, section_height = sections[key]
         body = f'<rect width="660" height="{section_height+56}" fill="#0d1117"/><g transform="translate(32 28)">{fragment}</g>'
         (assets/FILES[key]).write_text(document(660, section_height+56, TITLES[key], body), encoding='utf-8', newline='\n')
+    # The former libraries URL now resolves to the merged technology section.
+    (assets/'skills-libraries.svg').write_bytes((assets/'skills-programming.svg').read_bytes())
     # Retain the historical asset URL as an alias, with no old circle UI.
     (assets/'skill-circles.svg').write_bytes((assets/'skills.svg').read_bytes())
     print('Built one GitHub-style panel with four sections and a stacked mobile view.')

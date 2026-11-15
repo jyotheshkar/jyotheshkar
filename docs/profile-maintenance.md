@@ -17,7 +17,7 @@ All rendering uses Python's standard library and local assets. The profile build
 
 The [LinkedIn architecture](linkedin-architecture.md) maps the installed ChatGPT-coordinated plugin: connected source reads, evidence-based preparation, exact Drive artifacts, separate application/outreach paths, canonical Atlas records, dashboard delivery and recovery. Blue packet animation illustrates topology, not real-time execution.
 
-The [skills methodology](skill-circles.md) explains Languages, Libraries and Frameworks, AI/ML Engineering and Agentic AI Engineering evidence across accessible repositories. Automatic monitoring is disabled at the owner's request. Evidence collection is available for explicit manual audits. GitHub Actions only rebuild and validate the committed snapshot on pushes, pull requests or manual runs. Private code, names and file paths are never published by the collector.
+The [skills methodology](skill-circles.md) explains the combined Languages, Libraries and Frameworks section, Cloud Skills, AI/ML Engineering and Agentic AI Engineering. The technology section highlights eight key libraries and groups the rest under grey Others; cloud entries come from checked project integration or deployment configuration. Automatic monitoring is disabled at the owner's request. Evidence collection is available for explicit manual audits. GitHub Actions only rebuild and validate the committed snapshot on pushes, pull requests or manual runs. Private code, names and file paths are never published by the collector.
 
 README images follow the main branch. GitHub may cache images briefly after a commit.
 

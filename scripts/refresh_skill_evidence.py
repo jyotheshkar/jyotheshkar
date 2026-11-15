@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import tomllib
 
 ROOT = Path(__file__).resolve().parents[1]
 OWNER = 'jyotheshkar'
@@ -45,7 +46,7 @@ AGENTIC = [
     ('Agent evaluation', r'\b(?:def\s+(?:run_adversarial|evaluate\w*|run_batch|score_response)|class\s+\w*(?:Evaluator|EvaluationPipeline)|evaluation_results\s*[=:])'),
     ('Task routing', r'\b(?:def\s+(?:route_task|route_request|select_agent)|class\s+\w*(?:Router|Planner)|routing_decision\s*[:=])'),
 ]
-TITLES = {'languages':'Languages', 'libraries':'Libraries and Frameworks',
+TITLES = {'languages':'Languages', 'libraries':'Libraries and Frameworks', 'cloud':'Cloud Skills',
           'aiml':'AI/ML Engineering', 'agentic':'Agentic AI Engineering'}
 LIBRARIES = {
     'numpy':'NumPy', 'pandas':'pandas', 'sklearn':'scikit-learn', 'torch':'PyTorch',
@@ -136,6 +137,252 @@ def library_usage(body, path):
     return used
 
 
+
+# Cloud coverage describes implemented integrations and deployment configuration,
+# never a claim that a service is live or that deployment has succeeded.
+AWS_SERVICES = {
+    's3':'Amazon S3', 'ec2':'Amazon EC2', 'rds':'Amazon RDS',
+    'lambda':'AWS Lambda', 'dynamodb':'Amazon DynamoDB',
+    'bedrock':'Amazon Bedrock', 'bedrock-runtime':'Amazon Bedrock',
+    'bedrock-agent':'Amazon Bedrock', 'bedrock-agent-runtime':'Amazon Bedrock',
+    'cloudwatch':'Amazon CloudWatch', 'logs':'Amazon CloudWatch',
+    'ecs':'Amazon ECS', 'ecr':'Amazon ECR', 'sqs':'Amazon SQS',
+    'sns':'Amazon SNS', 'secretsmanager':'AWS Secrets Manager',
+    'sts':'AWS STS', 'iam':'AWS IAM',
+}
+CLOUD_RESOURCES = {
+    'aws_s3_bucket':'Amazon S3', 'aws_instance':'Amazon EC2',
+    'aws_db_instance':'Amazon RDS', 'aws_lambda_function':'AWS Lambda',
+    'aws_dynamodb_table':'Amazon DynamoDB', 'aws_ecs_service':'Amazon ECS',
+    'aws_ecs_cluster':'Amazon ECS', 'aws_ecr_repository':'Amazon ECR',
+    'aws_cloudwatch_log_group':'Amazon CloudWatch',
+    'aws_bedrockagent_agent':'Amazon Bedrock',
+    'AWS::S3::Bucket':'Amazon S3', 'AWS::EC2::Instance':'Amazon EC2',
+    'AWS::RDS::DBInstance':'Amazon RDS', 'AWS::Lambda::Function':'AWS Lambda',
+    'AWS::DynamoDB::Table':'Amazon DynamoDB', 'AWS::ECS::Service':'Amazon ECS',
+    'AWS::ECR::Repository':'Amazon ECR', 'AWS::Logs::LogGroup':'Amazon CloudWatch',
+    'AWS::Bedrock::Agent':'Amazon Bedrock',
+    'google_storage_bucket':'Google Cloud Storage',
+    'google_cloud_run_v2_service':'Google Cloud Run',
+    'google_bigquery_dataset':'Google BigQuery',
+    'azurerm_storage_account':'Azure Storage',
+    'azurerm_linux_web_app':'Azure App Service',
+    'azurerm_container_app':'Azure Container Apps',
+}
+CLOUD_EXCLUDE = re.compile(
+    r'(^|/)(examples?|samples?|tests?|fixtures?|docs?)(/|$)|'
+    r'(^|/)[^/]*(?:[.-](?:example|sample|template))[.-]', re.I)
+
+
+def cloud_config_candidate(path):
+    """Only actual, conventionally named deployment files enter this sample."""
+    if CLOUD_EXCLUDE.search(path) or SOURCE_EXCLUDE.search(path):
+        return False
+    name = Path(path).name.lower()
+    return (name in {'dockerfile', 'vercel.json', 'render.yaml', 'render.yml',
+                     'fly.toml', 'nixpacks.toml', 'serverless.yml', 'serverless.yaml',
+                     'buildspec.yml', 'buildspec.yaml',
+                     'template.yml', 'template.yaml', 'cloudformation.json',
+                     'cloudformation.yml', 'cloudformation.yaml',
+                     'compose.yml', 'compose.yaml', 'docker-compose.yml',
+                     'docker-compose.yaml'}
+            or name.startswith('dockerfile.') or name.endswith('.tf'))
+
+
+def _python_cloud_usage(body):
+    """Require imported SDK bindings, client construction and a client method."""
+    try:
+        body = '\n'.join(line for line in body.splitlines()
+                         if not line.lstrip().startswith(('%', '!')))
+        tree = ast.parse(body)
+    except SyntaxError:
+        return set()
+    sdk_modules, constructors = set(), {}
+    class_services = {
+        ('azure.storage.blob', 'BlobServiceClient'):'Azure Blob Storage',
+        ('azure.storage.blob', 'ContainerClient'):'Azure Blob Storage',
+        ('azure.cosmos', 'CosmosClient'):'Azure Cosmos DB',
+        ('azure.keyvault.secrets', 'SecretClient'):'Azure Key Vault',
+        ('google.cloud', 'storage'):'Google Cloud Storage',
+        ('google.cloud', 'bigquery'):'Google BigQuery',
+        ('google.cloud', 'pubsub_v1'):'Google Cloud Pub/Sub',
+        ('google.cloud.storage', 'Client'):'Google Cloud Storage',
+        ('google.cloud.bigquery', 'Client'):'Google BigQuery',
+        ('google.cloud.pubsub_v1', 'PublisherClient'):'Google Cloud Pub/Sub',
+        ('google.cloud.pubsub_v1', 'SubscriberClient'):'Google Cloud Pub/Sub',
+    }
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            for alias in node.names:
+                if alias.name == 'boto3':
+                    sdk_modules.add(alias.asname or 'boto3')
+        elif isinstance(node, ast.ImportFrom) and node.level == 0:
+            for alias in node.names:
+                label = class_services.get((node.module, alias.name))
+                if label:
+                    constructors[alias.asname or alias.name] = label
+    sessions, clients = set(), {}
+    def root_name(value):
+        while isinstance(value, ast.Attribute):
+            value = value.value
+        return value.id if isinstance(value, ast.Name) else None
+    def service_of(call):
+        if not isinstance(call, ast.Call):
+            return None
+        fn = call.func
+        if isinstance(fn, ast.Attribute) and fn.attr in ('client', 'resource'):
+            owner = root_name(fn.value)
+            if owner in sdk_modules or owner in sessions:
+                service = call.args[0] if call.args else next(
+                    (k.value for k in call.keywords if k.arg == 'service_name'), None)
+                if isinstance(service, ast.Constant) and isinstance(service.value, str):
+                    return AWS_SERVICES.get(service.value)
+        owner = root_name(fn)
+        if owner in constructors:
+            return constructors[owner]
+        return None
+    # In normal source the SDK binding precedes the operation. A few passes also
+    # handle function definitions whose AST walk ordering differs from line order.
+    for _ in range(3):
+        for node in ast.walk(tree):
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            value = node.value
+            targets = node.targets if isinstance(node, ast.Assign) else [node.target]
+            names = [target.id for target in targets if isinstance(target, ast.Name)]
+            if isinstance(value, ast.Call) and isinstance(value.func, ast.Attribute):
+                if value.func.attr == 'Session' and root_name(value.func.value) in sdk_modules:
+                    sessions.update(names)
+            label = service_of(value)
+            if label:
+                clients.update({name:label for name in names})
+    found = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
+            owner = root_name(node.func.value)
+            if owner in clients and node.func.attr not in ('client', 'resource'):
+                found.add(clients[owner])
+            direct = service_of(node.func.value)
+            if direct:
+                found.add(direct)
+    return found
+
+
+def cloud_usage(body, path):
+    """Recognise explicit SDK calls and valid deployment/resource declarations.
+
+    This intentionally misses unrecognised providers and indirect wrappers.
+    Manifests or credentials alone never establish a cloud skill.
+    """
+    if CLOUD_EXCLUDE.search(path) or SOURCE_EXCLUDE.search(path):
+        return set()
+    suffix, name = Path(path).suffix.lower(), Path(path).name.lower()
+    if suffix in ('.py', '.ipynb'):
+        return _python_cloud_usage(body)
+    found = set()
+    if suffix in ('.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs'):
+        # Provider packages must be imported and their constructed binding used.
+        code = re.sub(r'/\*.*?\*/|//[^\n]*', '', body, flags=re.S | re.M)
+        executable = re.sub(r'"(?:\\.|[^"\\])*"|\x27(?:\\.|[^\x27\\])*\x27|`(?:\\.|[^`\\])*`',
+                            '""', code, flags=re.S)
+        providers = {
+            '@aws-sdk/client-s3':('S3Client', 'Amazon S3'),
+            '@aws-sdk/client-ec2':('EC2Client', 'Amazon EC2'),
+            '@aws-sdk/client-bedrock-runtime':('BedrockRuntimeClient', 'Amazon Bedrock'),
+            '@aws-sdk/client-lambda':('LambdaClient', 'AWS Lambda'),
+            '@aws-sdk/client-dynamodb':('DynamoDBClient', 'Amazon DynamoDB'),
+            '@azure/storage-blob':('BlobServiceClient', 'Azure Blob Storage'),
+            '@azure/cosmos':('CosmosClient', 'Azure Cosmos DB'),
+            '@google-cloud/storage':('Storage', 'Google Cloud Storage'),
+            '@google-cloud/bigquery':('BigQuery', 'Google BigQuery'),
+        }
+        for package, (klass, label) in providers.items():
+            match = re.search(r'import\s*\{([^}]+)\}\s*from\s*[\x27"]'
+                              + re.escape(package) + r'[\x27"]', code)
+            if not match:
+                continue
+            binding = re.search(r'\b'+klass+r'(?:\s+as\s+(\w+))?\b', match[1])
+            if not binding:
+                continue
+            alias = binding[1] or klass
+            assigned = re.search(r'\b(?:const|let|var)\s+(\w+)\s*=\s*new\s+'
+                                 + re.escape(alias) + r'\s*\(', executable)
+            if assigned and re.search(r'\b'+re.escape(assigned[1])+r'\.\w+\s*\(', executable):
+                found.add(label)
+        return found
+    if not cloud_config_candidate(path):
+        return found
+    code = '\n'.join(line for line in body.splitlines()
+                     if not line.lstrip().startswith(('#', '//')))
+    code = re.sub(r'/\*.*?\*/', '', code, flags=re.S)
+    if suffix == '.tf':
+        code = re.sub(r'<<-?([A-Za-z_]\w*)[^\n]*\n.*?^\s*\1\s*$',
+                      '', code, flags=re.S | re.M)
+    if name.startswith('dockerfile'):
+        if (re.search(r'^\s*FROM\s+(?:--platform=\S+\s+)?[A-Za-z0-9_$][^\s]*',
+                      code, re.I | re.M)
+                and re.search(r'^\s*(?:COPY|ADD|RUN)\s+\S', code, re.I | re.M)
+                and re.search(r'^\s*(?:CMD|ENTRYPOINT|EXPOSE)\s+\S', code, re.I | re.M)):
+            found.add('Docker')
+    elif name == 'vercel.json':
+        try:
+            config = json.loads(body)
+            meaningful = {'framework','buildCommand','outputDirectory','functions',
+                          'rewrites','routes','builds','headers','redirects'}
+            if isinstance(config, dict) and any(config.get(key) for key in meaningful):
+                found.add('Vercel')
+        except (ValueError, TypeError):
+            pass
+    elif name in ('fly.toml', 'nixpacks.toml'):
+        try:
+            config = tomllib.loads(body)
+            if (name == 'fly.toml' and isinstance(config.get('app'), str)
+                    and any(config.get(key) for key in ('http_service', 'services', 'build'))):
+                found.add('Fly.io')
+            if name == 'nixpacks.toml' and any(config.get(key) for key in ('phases', 'start')):
+                found.add('Nixpacks')
+        except (tomllib.TOMLDecodeError, TypeError):
+            pass
+    elif name in ('render.yaml', 'render.yml'):
+        if (re.search(r'^services:\s*$', code, re.M)
+                and re.search(r'^\s*-\s*type:\s*(?:web|worker|cron|pserv|redis)\s*$', code, re.M)
+                and re.search(r'^\s*(?:startCommand|dockerfilePath|runtime|env):\s*\S', code, re.M)):
+            found.add('Render')
+    elif name in ('compose.yml','compose.yaml','docker-compose.yml','docker-compose.yaml'):
+        if (re.search(r'^services:\s*$', code, re.M)
+                and re.search(r'^\s{2,}[\w.-]+:\s*$', code, re.M)
+                and re.search(r'^\s+(?:image|build):\s*\S', code, re.M)):
+            found.add('Docker Compose')
+    elif name in ('buildspec.yml', 'buildspec.yaml'):
+        if (re.search(r'^version:\s*[\x27\"]?0\.[12][\x27\"]?\s*$', code, re.M)
+                and re.search(r'^phases:\s*$', code, re.M)
+                and re.search(r'^\s+(?:build|install|pre_build|post_build):\s*$', code, re.M)
+                and re.search(r'^\s+commands:\s*$', code, re.M)
+                and re.search(r'^\s+-\s+\S', code, re.M)):
+            found.add('AWS CodeBuild')
+    # Declarations count only in provider resource blocks, never variables,
+    # installed providers or a list of service names.
+    if suffix == '.tf':
+        for resource in re.findall(r'^\s*resource\s+"([^"]+)"\s+"[^"]+"\s*\{', code, re.M):
+            if resource in CLOUD_RESOURCES:
+                found.add(CLOUD_RESOURCES[resource])
+    elif suffix == '.json':
+        try:
+            config = json.loads(body)
+            resources = config.get('Resources', config.get('resources', {}).get('Resources', {}))
+            if isinstance(resources, dict):
+                for resource in resources.values():
+                    if isinstance(resource, dict) and resource.get('Type') in CLOUD_RESOURCES:
+                        found.add(CLOUD_RESOURCES[resource['Type']])
+        except (ValueError, TypeError, AttributeError):
+            pass
+    elif suffix in ('.yaml', '.yml') and re.search(r'^\s*Resources:\s*$', code, re.M):
+        for resource in re.findall(r'^\s*["\x27]?Type["\x27]?\s*:\s*["\x27]?([A-Za-z0-9:]+)', code, re.M):
+            if resource in CLOUD_RESOURCES:
+                found.add(CLOUD_RESOURCES[resource])
+    return found
+
+
 class API:
     def __init__(self, cache=None):
         self.cache = json.loads(Path(cache).read_text(encoding='utf-8-sig')) if cache else None
@@ -204,7 +451,9 @@ def select_sources(files):
         score = sum(term in path for term in ('engine', 'agent', 'runtime', 'safety', 'contract',
                     'retriev', 'evaluat', 'routing', 'pipeline', 'model', 'train', 'notebook', 'dqn'))
         return (not path.endswith('.ipynb'), -score, path.count('/'), path)
-    return sorted(candidates, key=priority)[:36]
+    deployment = sorted([f for f in files if cloud_config_candidate(f['path'])
+                         and f.get('size', 0) <= 250_000], key=lambda f:f['path'])[:20]
+    return sorted(candidates, key=priority)[:36] + deployment
 
 
 def assemble(public, private, captured_at):
@@ -224,12 +473,13 @@ def assemble(public, private, captured_at):
                         for label,proof in sorted(groups[key].items(), key=lambda item:(-len(item[1]), item[0].lower()))]}
               for key,title in TITLES.items()]
     return {
-        'schema_version':3, 'captured_at':captured_at,
+        'schema_version':4, 'captured_at':captured_at,
         'public_snapshot':public, 'private_snapshot':private,
         'methodology':{
             'measure':'One repository per evidenced language or engineering domain. Counts describe source presence, never proficiency or authorship.',
             'languages':'Complete source trees plus inspected notebook code cells. PHP and JSP included. Java requires .java or Processing implementation; a Maven WAR or pure-HTML JSP does not establish Java source. HTML/CSS styling and dependencies/builds are excluded.',
             'libraries':'External libraries/frameworks imported and used in inspected implementation or notebook code cells. Dependency manifests, unused imports, prose and standard-library modules do not qualify. Each repository contributes once per library; this is source coverage, not execution verification.',
+            'cloud':'Explicit provider SDK client operations or recognised infrastructure/deployment configuration. Docker and Docker Compose describe container build/deployment tooling. Vercel, Render, Fly.io, Nixpacks and AWS CodeBuild describe configured targets/builds, not verified live infrastructure. Prose, PDFs, credentials, dependency lists and unused client imports do not qualify. The bounded detector can miss indirect wrappers and unrecognised services.',
             'aiml':'Executable implementations of learning domains; dependencies and README claims do not qualify. Notebook markdown/outputs and unimplemented Python stubs are excluded.',
             'agentic':'Only Agentic Core family repositories and linkedin-agent-development-lab. Source implementation symbols, not other web apps or architecture prose.',
             'privacy':'Private evidence publishes only opaque per-repository IDs and skill names. No private names, filenames, snippets, blob hashes, URLs or notebook contents are published.',
@@ -297,7 +547,8 @@ def main():
             selected = {}
             for file in files:
                 path = file['path']
-                if SOURCE_EXCLUDE.search(path) or (Path(path).suffix.lower() not in EXTENSIONS and not path.endswith('.ipynb')):
+                if SOURCE_EXCLUDE.search(path) or (Path(path).suffix.lower() not in EXTENSIONS
+                        and not path.endswith('.ipynb') and not cloud_config_candidate(path)):
                     continue
                 keys = [prefix+'/contents/'+quote(path, safe='/')+'?ref='+quote(branch,safe=''),
                         prefix+'/contents/'+path+'?ref='+branch]
@@ -318,6 +569,11 @@ def main():
                 body, language = notebook_code(body)
                 if body.strip() and language and language.lower() in ('python','python3'):
                     skills['languages'].setdefault('Python', proof(file,'notebook code cells'))
+            for label in cloud_usage(body, path):
+                kind = 'deployment configuration' if cloud_config_candidate(path) else 'SDK client operation'
+                skills['cloud'].setdefault(label, proof(file, kind))
+            if cloud_config_candidate(path):
+                continue
             code = implementation(body)
             for label in library_usage(body, path):
                 skills['libraries'].setdefault(label, proof(file, 'import and usage'))

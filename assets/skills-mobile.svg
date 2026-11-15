@@ -1,313 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="2136" viewBox="0 0 700 2136" role="img" aria-labelledby="skills-title"><title id="skills-title">Professional Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories. Java includes JSP template evidence.</desc><defs><pattern id="skills-dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#3d444d" opacity=".45"/></pattern><linearGradient id="skills-rule"><stop stop-color="#4493f8" stop-opacity=".8"/><stop offset="1" stop-color="#4493f8" stop-opacity=".05"/></linearGradient></defs><rect width="700" height="2136" fill="#0d1117"/><rect width="700" height="2136" fill="url(#skills-dots)"/><text x="40" y="49" fill="#91a9c3" font-family="Consolas,monospace" font-size="18" font-weight="400">REPOSITORY ENGINEERING</text><text x="40" y="110" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="700">Professional Skills</text><text x="40" y="150" fill="#a9b8c9" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400">Combined evidence across all repositories.</text><path d="M40 178H660" stroke="url(#skills-rule)"/><rect data-skills-panel="true" x="24" y="218" width="652" height="1834" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/><g data-position="languages" transform="translate(52 250)"><g data-skill-section="languages" data-total="38" aria-label="Languages">
-<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Languages</text>
-<clipPath id="bar-languages"><rect y="60" width="596" height="14" rx="7"/></clipPath>
-<g clip-path="url(#bar-languages)">
-<rect data-segment="Python" data-value="19" x="0.00000000" y="60" width="298.00000000" height="14" fill="#3572a5"><title>Python</title></rect>
-<rect data-segment="JavaScript" data-value="10" x="298.00000000" y="60" width="156.84210526" height="14" fill="#f1e05a"><title>JavaScript</title></rect>
-<path d="M298.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="SQL" data-value="3" x="454.84210526" y="60" width="47.05263158" height="14" fill="#e38c00"><title>SQL</title></rect>
-<path d="M454.84210526 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="TypeScript" data-value="3" x="501.89473684" y="60" width="47.05263158" height="14" fill="#3178c6"><title>TypeScript</title></rect>
-<path d="M501.89473684 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Java" data-value="1" x="548.94736842" y="60" width="15.68421053" height="14" fill="#b07219"><title>Java</title></rect>
-<path d="M548.94736842 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="PHP" data-value="1" x="564.63157895" y="60" width="15.68421053" height="14" fill="#4f5d95"><title>PHP</title></rect>
-<path d="M564.63157895 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Shell" data-value="1" x="580.31578947" y="60" width="15.68421053" height="14" fill="#89e051"><title>Shell</title></rect>
-<path d="M580.31578947 60v14" stroke="#0d1117" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="1862" viewBox="0 0 700 1862" role="img" aria-labelledby="skills-title"><title id="skills-title">Professional Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories. Cloud skills reflect project deployment configuration, not proof of live production services. Java includes JSP template evidence.</desc><defs><pattern id="skills-dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#3d444d" opacity=".45"/></pattern><linearGradient id="skills-rule"><stop stop-color="#4493f8" stop-opacity=".8"/><stop offset="1" stop-color="#4493f8" stop-opacity=".05"/></linearGradient></defs><rect width="700" height="1862" fill="#0d1117"/><rect width="700" height="1862" fill="url(#skills-dots)"/><text x="40" y="49" fill="#91a9c3" font-family="Consolas,monospace" font-size="18" font-weight="400">REPOSITORY ENGINEERING</text><text x="40" y="110" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="700">Professional Skills</text><text x="40" y="150" fill="#a9b8c9" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400">Combined evidence across all repositories.</text><path d="M40 178H660" stroke="url(#skills-rule)"/><rect data-skills-panel="true" x="24" y="218" width="652" height="1560" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/><g data-position="technology" transform="translate(52 250)"><g data-skill-section="technology" data-total="106" aria-label="Languages, Libraries and Frameworks">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Languages, Libraries and Frameworks</text>
+<clipPath id="bar-technology"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-technology)">
+<rect data-segment="Python" data-value="19" x="0.00000000" y="60" width="106.83018868" height="14" fill="#3572a5"><title>Python</title></rect>
+<rect data-segment="JavaScript" data-value="10" x="106.83018868" y="60" width="56.22641509" height="14" fill="#f1e05a"><title>JavaScript</title></rect>
+<path d="M106.83018868 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="SQL" data-value="3" x="163.05660377" y="60" width="16.86792453" height="14" fill="#e38c00"><title>SQL</title></rect>
+<path d="M163.05660377 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="TypeScript" data-value="3" x="179.92452830" y="60" width="16.86792453" height="14" fill="#3178c6"><title>TypeScript</title></rect>
+<path d="M179.92452830 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Java" data-value="1" x="196.79245283" y="60" width="5.62264151" height="14" fill="#b07219"><title>Java</title></rect>
+<path d="M196.79245283 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="PHP" data-value="1" x="202.41509434" y="60" width="5.62264151" height="14" fill="#4f5d95"><title>PHP</title></rect>
+<path d="M202.41509434 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Shell" data-value="1" x="208.03773585" y="60" width="5.62264151" height="14" fill="#89e051"><title>Shell</title></rect>
+<path d="M208.03773585 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="NumPy" data-value="9" x="213.66037736" y="60" width="50.60377358" height="14" fill="#4f5d95"><title>NumPy</title></rect>
+<path d="M213.66037736 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="pandas" data-value="5" x="264.26415094" y="60" width="28.11320755" height="14" fill="#b07219"><title>pandas</title></rect>
+<path d="M264.26415094 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="scikit-learn" data-value="3" x="292.37735849" y="60" width="16.86792453" height="14" fill="#2b7489"><title>scikit-learn</title></rect>
+<path d="M292.37735849 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="PyTorch" data-value="3" x="309.24528302" y="60" width="16.86792453" height="14" fill="#e16737"><title>PyTorch</title></rect>
+<path d="M309.24528302 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="TensorFlow" data-value="2" x="326.11320755" y="60" width="11.24528302" height="14" fill="#c6538c"><title>TensorFlow</title></rect>
+<path d="M326.11320755 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="React" data-value="3" x="337.35849057" y="60" width="16.86792453" height="14" fill="#178600"><title>React</title></rect>
+<path d="M337.35849057 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Next.js" data-value="3" x="354.22641509" y="60" width="16.86792453" height="14" fill="#00add8"><title>Next.js</title></rect>
+<path d="M354.22641509 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="FastAPI" data-value="3" x="371.09433962" y="60" width="16.86792453" height="14" fill="#dea584"><title>FastAPI</title></rect>
+<path d="M371.09433962 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Others" data-value="37" x="387.96226415" y="60" width="208.03773585" height="14" fill="#8b949e"><title>Others</title></rect>
+<path d="M387.96226415 60v14" stroke="#0d1117" stroke-width="2"/>
 </g>
 <g data-skill-legend="Python">
 <title>Python</title>
 <circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
-<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Python</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">50.0%</tspan></text>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Python</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">17.9%</tspan></text>
 </g>
 <g data-skill-legend="JavaScript">
 <title>JavaScript</title>
-<circle cx="206.88" cy="109" r="6" fill="#f1e05a"/>
-<text x="220.88" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>JavaScript</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">26.3%</tspan></text>
+<circle cx="306.00" cy="109" r="6" fill="#f1e05a"/>
+<text x="320.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>JavaScript</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.4%</tspan></text>
 </g>
 <g data-skill-legend="SQL">
 <title>SQL</title>
 <circle cx="6.00" cy="147" r="6" fill="#e38c00"/>
-<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>SQL</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">7.9%</tspan></text>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>SQL</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
 <g data-skill-legend="TypeScript">
 <title>TypeScript</title>
-<circle cx="165.10" cy="147" r="6" fill="#3178c6"/>
-<text x="179.10" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>TypeScript</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">7.9%</tspan></text>
+<circle cx="306.00" cy="147" r="6" fill="#3178c6"/>
+<text x="320.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>TypeScript</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
 <g data-skill-legend="Java">
 <title>JSP template evidence grouped under Java.</title>
-<circle cx="397.37" cy="147" r="6" fill="#b07219"/>
-<text x="411.37" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Java</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.6%</tspan></text>
+<circle cx="6.00" cy="185" r="6" fill="#b07219"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Java</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">0.9%</tspan></text>
 </g>
 <g data-skill-legend="PHP">
 <title>PHP</title>
-<circle cx="6.00" cy="185" r="6" fill="#4f5d95"/>
-<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>PHP</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.6%</tspan></text>
+<circle cx="306.00" cy="185" r="6" fill="#4f5d95"/>
+<text x="320.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>PHP</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">0.9%</tspan></text>
 </g>
 <g data-skill-legend="Shell">
 <title>Shell</title>
-<circle cx="165.10" cy="185" r="6" fill="#89e051"/>
-<text x="179.10" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Shell</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.6%</tspan></text>
-</g>
-</g></g><path d="M52 494H648" stroke="#30363d"/><g data-position="libraries" transform="translate(52 526)"><g data-skill-section="libraries" data-total="68" aria-label="Libraries and Frameworks">
-<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Libraries and Frameworks</text>
-<clipPath id="bar-libraries"><rect y="60" width="596" height="14" rx="7"/></clipPath>
-<g clip-path="url(#bar-libraries)">
-<rect data-segment="NumPy" data-value="9" x="0.00000000" y="60" width="78.88235294" height="14" fill="#3572a5"><title>NumPy</title></rect>
-<rect data-segment="pandas" data-value="5" x="78.88235294" y="60" width="43.82352941" height="14" fill="#3178c6"><title>pandas</title></rect>
-<path d="M78.88235294 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Matplotlib" data-value="4" x="122.70588235" y="60" width="35.05882353" height="14" fill="#e34c26"><title>Matplotlib</title></rect>
-<path d="M122.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="FastAPI" data-value="3" x="157.76470588" y="60" width="26.29411765" height="14" fill="#f1e05a"><title>FastAPI</title></rect>
-<path d="M157.76470588 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Next.js" data-value="3" x="184.05882353" y="60" width="26.29411765" height="14" fill="#563d7c"><title>Next.js</title></rect>
-<path d="M184.05882353 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Pydantic" data-value="3" x="210.35294118" y="60" width="26.29411765" height="14" fill="#89e051"><title>Pydantic</title></rect>
-<path d="M210.35294118 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="PyTorch" data-value="3" x="236.64705882" y="60" width="26.29411765" height="14" fill="#da5b0b"><title>PyTorch</title></rect>
-<path d="M236.64705882 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="React" data-value="3" x="262.94117647" y="60" width="26.29411765" height="14" fill="#4f5d95"><title>React</title></rect>
-<path d="M262.94117647 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="scikit-learn" data-value="3" x="289.23529412" y="60" width="26.29411765" height="14" fill="#b07219"><title>scikit-learn</title></rect>
-<path d="M289.23529412 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="OpenCV" data-value="2" x="315.52941176" y="60" width="17.52941176" height="14" fill="#2b7489"><title>OpenCV</title></rect>
-<path d="M315.52941176 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Pillow" data-value="2" x="333.05882353" y="60" width="17.52941176" height="14" fill="#e16737"><title>Pillow</title></rect>
-<path d="M333.05882353 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="pmdarima" data-value="2" x="350.58823529" y="60" width="17.52941176" height="14" fill="#c6538c"><title>pmdarima</title></rect>
-<path d="M350.58823529 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="statsmodels" data-value="2" x="368.11764706" y="60" width="17.52941176" height="14" fill="#178600"><title>statsmodels</title></rect>
-<path d="M368.11764706 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="TensorFlow" data-value="2" x="385.64705882" y="60" width="17.52941176" height="14" fill="#00add8"><title>TensorFlow</title></rect>
-<path d="M385.64705882 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Anthropic SDK" data-value="1" x="403.17647059" y="60" width="8.76470588" height="14" fill="#dea584"><title>Anthropic SDK</title></rect>
-<path d="M403.17647059 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="cryptography" data-value="1" x="411.94117647" y="60" width="8.76470588" height="14" fill="#a9b8c9"><title>cryptography</title></rect>
-<path d="M411.94117647 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="EconML" data-value="1" x="420.70588235" y="60" width="8.76470588" height="14" fill="#3572a5"><title>EconML</title></rect>
-<path d="M420.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="face_recognition" data-value="1" x="429.47058824" y="60" width="8.76470588" height="14" fill="#3178c6"><title>face_recognition</title></rect>
-<path d="M429.47058824 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="FAISS" data-value="1" x="438.23529412" y="60" width="8.76470588" height="14" fill="#e34c26"><title>FAISS</title></rect>
-<path d="M438.23529412 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="FastEmbed" data-value="1" x="447.00000000" y="60" width="8.76470588" height="14" fill="#f1e05a"><title>FastEmbed</title></rect>
-<path d="M447.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="FuzzyWuzzy" data-value="1" x="455.76470588" y="60" width="8.76470588" height="14" fill="#563d7c"><title>FuzzyWuzzy</title></rect>
-<path d="M455.76470588 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="joblib" data-value="1" x="464.52941176" y="60" width="8.76470588" height="14" fill="#89e051"><title>joblib</title></rect>
-<path d="M464.52941176 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Keras" data-value="1" x="473.29411765" y="60" width="8.76470588" height="14" fill="#da5b0b"><title>Keras</title></rect>
-<path d="M473.29411765 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="LightGBM" data-value="1" x="482.05882353" y="60" width="8.76470588" height="14" fill="#4f5d95"><title>LightGBM</title></rect>
-<path d="M482.05882353 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="OpenAI SDK" data-value="1" x="490.82352941" y="60" width="8.76470588" height="14" fill="#b07219"><title>OpenAI SDK</title></rect>
-<path d="M490.82352941 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="PyAutoGUI" data-value="1" x="499.58823529" y="60" width="8.76470588" height="14" fill="#2b7489"><title>PyAutoGUI</title></rect>
-<path d="M499.58823529 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Pygame" data-value="1" x="508.35294118" y="60" width="8.76470588" height="14" fill="#e16737"><title>Pygame</title></rect>
-<path d="M508.35294118 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="python-dotenv" data-value="1" x="517.11764706" y="60" width="8.76470588" height="14" fill="#c6538c"><title>python-dotenv</title></rect>
-<path d="M517.11764706 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="pyttsx3" data-value="1" x="525.88235294" y="60" width="8.76470588" height="14" fill="#178600"><title>pyttsx3</title></rect>
-<path d="M525.88235294 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Qdrant" data-value="1" x="534.64705882" y="60" width="8.76470588" height="14" fill="#00add8"><title>Qdrant</title></rect>
-<path d="M534.64705882 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Recharts" data-value="1" x="543.41176471" y="60" width="8.76470588" height="14" fill="#dea584"><title>Recharts</title></rect>
-<path d="M543.41176471 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="ReportLab" data-value="1" x="552.17647059" y="60" width="8.76470588" height="14" fill="#a9b8c9"><title>ReportLab</title></rect>
-<path d="M552.17647059 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Seaborn" data-value="1" x="560.94117647" y="60" width="8.76470588" height="14" fill="#3572a5"><title>Seaborn</title></rect>
-<path d="M560.94117647 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Sentence Transformers" data-value="1" x="569.70588235" y="60" width="8.76470588" height="14" fill="#3178c6"><title>Sentence Transformers</title></rect>
-<path d="M569.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="spaCy" data-value="1" x="578.47058824" y="60" width="8.76470588" height="14" fill="#e34c26"><title>spaCy</title></rect>
-<path d="M578.47058824 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="SpeechRecognition" data-value="1" x="587.23529412" y="60" width="8.76470588" height="14" fill="#f1e05a"><title>SpeechRecognition</title></rect>
-<path d="M587.23529412 60v14" stroke="#0d1117" stroke-width="2"/>
+<circle cx="6.00" cy="223" r="6" fill="#89e051"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Shell</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">0.9%</tspan></text>
 </g>
 <g data-skill-legend="NumPy">
 <title>NumPy</title>
-<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
-<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>NumPy</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">13.2%</tspan></text>
+<circle cx="306.00" cy="223" r="6" fill="#4f5d95"/>
+<text x="320.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>NumPy</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">8.5%</tspan></text>
 </g>
 <g data-skill-legend="pandas">
 <title>pandas</title>
-<circle cx="306.00" cy="109" r="6" fill="#3178c6"/>
-<text x="320.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>pandas</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">7.4%</tspan></text>
-</g>
-<g data-skill-legend="Matplotlib">
-<title>Matplotlib</title>
-<circle cx="6.00" cy="143" r="6" fill="#e34c26"/>
-<text x="20.00" y="150" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Matplotlib</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">5.9%</tspan></text>
-</g>
-<g data-skill-legend="FastAPI">
-<title>FastAPI</title>
-<circle cx="306.00" cy="143" r="6" fill="#f1e05a"/>
-<text x="320.00" y="150" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>FastAPI</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
-</g>
-<g data-skill-legend="Next.js">
-<title>Next.js</title>
-<circle cx="6.00" cy="177" r="6" fill="#563d7c"/>
-<text x="20.00" y="184" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Next.js</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
-</g>
-<g data-skill-legend="Pydantic">
-<title>Pydantic</title>
-<circle cx="306.00" cy="177" r="6" fill="#89e051"/>
-<text x="320.00" y="184" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Pydantic</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
-</g>
-<g data-skill-legend="PyTorch">
-<title>PyTorch</title>
-<circle cx="6.00" cy="211" r="6" fill="#da5b0b"/>
-<text x="20.00" y="218" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>PyTorch</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
-</g>
-<g data-skill-legend="React">
-<title>React</title>
-<circle cx="306.00" cy="211" r="6" fill="#4f5d95"/>
-<text x="320.00" y="218" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>React</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
+<circle cx="6.00" cy="261" r="6" fill="#b07219"/>
+<text x="20.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>pandas</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.7%</tspan></text>
 </g>
 <g data-skill-legend="scikit-learn">
 <title>scikit-learn</title>
-<circle cx="6.00" cy="245" r="6" fill="#b07219"/>
-<text x="20.00" y="252" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>scikit-learn</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
+<circle cx="306.00" cy="261" r="6" fill="#2b7489"/>
+<text x="320.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>scikit-learn</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
-<g data-skill-legend="OpenCV">
-<title>OpenCV</title>
-<circle cx="306.00" cy="245" r="6" fill="#2b7489"/>
-<text x="320.00" y="252" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>OpenCV</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
-</g>
-<g data-skill-legend="Pillow">
-<title>Pillow</title>
-<circle cx="6.00" cy="279" r="6" fill="#e16737"/>
-<text x="20.00" y="286" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Pillow</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
-</g>
-<g data-skill-legend="pmdarima">
-<title>pmdarima</title>
-<circle cx="306.00" cy="279" r="6" fill="#c6538c"/>
-<text x="320.00" y="286" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>pmdarima</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
-</g>
-<g data-skill-legend="statsmodels">
-<title>statsmodels</title>
-<circle cx="6.00" cy="313" r="6" fill="#178600"/>
-<text x="20.00" y="320" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>statsmodels</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+<g data-skill-legend="PyTorch">
+<title>PyTorch</title>
+<circle cx="6.00" cy="299" r="6" fill="#e16737"/>
+<text x="20.00" y="306" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>PyTorch</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
 <g data-skill-legend="TensorFlow">
 <title>TensorFlow</title>
-<circle cx="306.00" cy="313" r="6" fill="#00add8"/>
-<text x="320.00" y="320" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>TensorFlow</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+<circle cx="306.00" cy="299" r="6" fill="#c6538c"/>
+<text x="320.00" y="306" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>TensorFlow</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">1.9%</tspan></text>
 </g>
-<g data-skill-legend="Anthropic SDK">
-<title>Anthropic SDK</title>
-<circle cx="6.00" cy="347" r="6" fill="#dea584"/>
-<text x="20.00" y="354" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Anthropic SDK</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="React">
+<title>React</title>
+<circle cx="6.00" cy="337" r="6" fill="#178600"/>
+<text x="20.00" y="344" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>React</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
-<g data-skill-legend="cryptography">
-<title>cryptography</title>
-<circle cx="306.00" cy="347" r="6" fill="#a9b8c9"/>
-<text x="320.00" y="354" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>cryptography</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Next.js">
+<title>Next.js</title>
+<circle cx="306.00" cy="337" r="6" fill="#00add8"/>
+<text x="320.00" y="344" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Next.js</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
-<g data-skill-legend="EconML">
-<title>EconML</title>
-<circle cx="6.00" cy="381" r="6" fill="#3572a5"/>
-<text x="20.00" y="388" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>EconML</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="FastAPI">
+<title>FastAPI</title>
+<circle cx="6.00" cy="375" r="6" fill="#dea584"/>
+<text x="20.00" y="382" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>FastAPI</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">2.8%</tspan></text>
 </g>
-<g data-skill-legend="face_recognition">
-<title>face_recognition</title>
-<circle cx="306.00" cy="381" r="6" fill="#3178c6"/>
-<text x="320.00" y="388" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>face_recognition</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Others">
+<title>Others</title>
+<circle cx="306.00" cy="375" r="6" fill="#8b949e"/>
+<text x="320.00" y="382" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Others</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">34.9%</tspan></text>
 </g>
-<g data-skill-legend="FAISS">
-<title>FAISS</title>
-<circle cx="6.00" cy="415" r="6" fill="#e34c26"/>
-<text x="20.00" y="422" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>FAISS</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+</g></g><path d="M52 684H648" stroke="#30363d"/><g data-position="cloud" transform="translate(52 716)"><g data-skill-section="cloud" data-total="11" aria-label="Cloud Skills">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Cloud Skills</text>
+<clipPath id="bar-cloud"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-cloud)">
+<rect data-segment="Docker" data-value="3" x="0.00000000" y="60" width="162.54545455" height="14" fill="#3572a5"><title>Docker</title></rect>
+<rect data-segment="Render" data-value="2" x="162.54545455" y="60" width="108.36363636" height="14" fill="#3178c6"><title>Render</title></rect>
+<path d="M162.54545455 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Vercel" data-value="2" x="270.90909091" y="60" width="108.36363636" height="14" fill="#e34c26"><title>Vercel</title></rect>
+<path d="M270.90909091 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS CodeBuild" data-value="1" x="379.27272727" y="60" width="54.18181818" height="14" fill="#f1e05a"><title>AWS CodeBuild</title></rect>
+<path d="M379.27272727 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Docker Compose" data-value="1" x="433.45454545" y="60" width="54.18181818" height="14" fill="#563d7c"><title>Docker Compose</title></rect>
+<path d="M433.45454545 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Fly.io" data-value="1" x="487.63636364" y="60" width="54.18181818" height="14" fill="#89e051"><title>Fly.io</title></rect>
+<path d="M487.63636364 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Nixpacks" data-value="1" x="541.81818182" y="60" width="54.18181818" height="14" fill="#da5b0b"><title>Nixpacks</title></rect>
+<path d="M541.81818182 60v14" stroke="#0d1117" stroke-width="2"/>
 </g>
-<g data-skill-legend="FastEmbed">
-<title>FastEmbed</title>
-<circle cx="306.00" cy="415" r="6" fill="#f1e05a"/>
-<text x="320.00" y="422" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>FastEmbed</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Docker">
+<title>Docker</title>
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Docker</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">27.3%</tspan></text>
 </g>
-<g data-skill-legend="FuzzyWuzzy">
-<title>FuzzyWuzzy</title>
-<circle cx="6.00" cy="449" r="6" fill="#563d7c"/>
-<text x="20.00" y="456" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>FuzzyWuzzy</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Render">
+<title>Render</title>
+<circle cx="208.33" cy="109" r="6" fill="#3178c6"/>
+<text x="222.33" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Render</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.2%</tspan></text>
 </g>
-<g data-skill-legend="joblib">
-<title>joblib</title>
-<circle cx="306.00" cy="449" r="6" fill="#89e051"/>
-<text x="320.00" y="456" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>joblib</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Vercel">
+<title>Vercel</title>
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Vercel</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.2%</tspan></text>
 </g>
-<g data-skill-legend="Keras">
-<title>Keras</title>
-<circle cx="6.00" cy="483" r="6" fill="#da5b0b"/>
-<text x="20.00" y="490" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Keras</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="AWS CodeBuild">
+<title>AWS CodeBuild</title>
+<circle cx="200.36" cy="147" r="6" fill="#f1e05a"/>
+<text x="214.36" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>AWS CodeBuild</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
 </g>
-<g data-skill-legend="LightGBM">
-<title>LightGBM</title>
-<circle cx="306.00" cy="483" r="6" fill="#4f5d95"/>
-<text x="320.00" y="490" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>LightGBM</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Docker Compose">
+<title>Docker Compose</title>
+<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Docker Compose</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
 </g>
-<g data-skill-legend="OpenAI SDK">
-<title>OpenAI SDK</title>
-<circle cx="6.00" cy="517" r="6" fill="#b07219"/>
-<text x="20.00" y="524" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>OpenAI SDK</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Fly.io">
+<title>Fly.io</title>
+<circle cx="307.34" cy="185" r="6" fill="#89e051"/>
+<text x="321.34" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Fly.io</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
 </g>
-<g data-skill-legend="PyAutoGUI">
-<title>PyAutoGUI</title>
-<circle cx="306.00" cy="517" r="6" fill="#2b7489"/>
-<text x="320.00" y="524" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>PyAutoGUI</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+<g data-skill-legend="Nixpacks">
+<title>Nixpacks</title>
+<circle cx="6.00" cy="223" r="6" fill="#da5b0b"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Nixpacks</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
 </g>
-<g data-skill-legend="Pygame">
-<title>Pygame</title>
-<circle cx="6.00" cy="551" r="6" fill="#e16737"/>
-<text x="20.00" y="558" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Pygame</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="python-dotenv">
-<title>python-dotenv</title>
-<circle cx="306.00" cy="551" r="6" fill="#c6538c"/>
-<text x="320.00" y="558" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>python-dotenv</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="pyttsx3">
-<title>pyttsx3</title>
-<circle cx="6.00" cy="585" r="6" fill="#178600"/>
-<text x="20.00" y="592" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>pyttsx3</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="Qdrant">
-<title>Qdrant</title>
-<circle cx="306.00" cy="585" r="6" fill="#00add8"/>
-<text x="320.00" y="592" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Qdrant</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="Recharts">
-<title>Recharts</title>
-<circle cx="6.00" cy="619" r="6" fill="#dea584"/>
-<text x="20.00" y="626" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Recharts</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="ReportLab">
-<title>ReportLab</title>
-<circle cx="306.00" cy="619" r="6" fill="#a9b8c9"/>
-<text x="320.00" y="626" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>ReportLab</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="Seaborn">
-<title>Seaborn</title>
-<circle cx="6.00" cy="653" r="6" fill="#3572a5"/>
-<text x="20.00" y="660" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Seaborn</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="Sentence Transformers">
-<title>Sentence Transformers</title>
-<circle cx="306.00" cy="653" r="6" fill="#3178c6"/>
-<text x="320.00" y="660" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Sentence Transformers</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="spaCy">
-<title>spaCy</title>
-<circle cx="6.00" cy="687" r="6" fill="#e34c26"/>
-<text x="20.00" y="694" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>spaCy</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-<g data-skill-legend="SpeechRecognition">
-<title>SpeechRecognition</title>
-<circle cx="306.00" cy="687" r="6" fill="#f1e05a"/>
-<text x="320.00" y="694" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>SpeechRecognition</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
-</g>
-</g></g><path d="M52 1272H648" stroke="#30363d"/><g data-position="aiml" transform="translate(52 1304)"><g data-skill-section="aiml" data-total="23" aria-label="AI/ML Engineering">
+</g></g><path d="M52 998H648" stroke="#30363d"/><g data-position="aiml" transform="translate(52 1030)"><g data-skill-section="aiml" data-total="23" aria-label="AI/ML Engineering">
 <text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">AI/ML Engineering</text>
 <clipPath id="bar-aiml"><rect y="60" width="596" height="14" rx="7"/></clipPath>
 <g clip-path="url(#bar-aiml)">
@@ -367,7 +227,7 @@
 <circle cx="6.00" cy="337" r="6" fill="#4f5d95"/>
 <text x="20.00" y="344" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>NLP and transformers</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">4.3%</tspan></text>
 </g>
-</g></g><path d="M52 1700H648" stroke="#30363d"/><g data-position="agentic" transform="translate(52 1732)"><g data-skill-section="agentic" data-total="16" aria-label="Agentic AI Engineering">
+</g></g><path d="M52 1426H648" stroke="#30363d"/><g data-position="agentic" transform="translate(52 1458)"><g data-skill-section="agentic" data-total="16" aria-label="Agentic AI Engineering">
 <text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Agentic AI Engineering</text>
 <clipPath id="bar-agentic"><rect y="60" width="596" height="14" rx="7"/></clipPath>
 <g clip-path="url(#bar-agentic)">
@@ -427,4 +287,4 @@
 <circle cx="296.96" cy="261" r="6" fill="#4f5d95"/>
 <text x="310.96" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Tool execution</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">6.2%</tspan></text>
 </g>
-</g></g><text x="40" y="2091" fill="#7d92aa" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400">Percentages show repository evidence share</text><text x="40" y="2119" fill="#7d92aa" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400">within each section. Java includes JSP templates.</text></svg>
+</g></g><text x="40" y="1817" fill="#7d92aa" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400">Evidence shares; cloud is deployment configuration.</text><text x="40" y="1845" fill="#7d92aa" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400">Java includes JSP templates.</text></svg>

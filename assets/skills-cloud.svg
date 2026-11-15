@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="318" viewBox="0 0 660 318" role="img" aria-labelledby="skills-title"><title id="skills-title">Cloud Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories. Cloud skills reflect project deployment configuration, not proof of live production services. Java includes JSP template evidence.</desc><rect width="660" height="318" fill="#0d1117"/><g transform="translate(32 28)"><g data-skill-section="cloud" data-total="11" aria-label="Cloud Skills">
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Cloud Skills</text>
+<clipPath id="bar-cloud"><rect y="60" width="596" height="14" rx="7"/></clipPath>
+<g clip-path="url(#bar-cloud)">
+<rect data-segment="Docker" data-value="3" x="0.00000000" y="60" width="162.54545455" height="14" fill="#3572a5"><title>Docker</title></rect>
+<rect data-segment="Render" data-value="2" x="162.54545455" y="60" width="108.36363636" height="14" fill="#3178c6"><title>Render</title></rect>
+<path d="M162.54545455 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Vercel" data-value="2" x="270.90909091" y="60" width="108.36363636" height="14" fill="#e34c26"><title>Vercel</title></rect>
+<path d="M270.90909091 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS CodeBuild" data-value="1" x="379.27272727" y="60" width="54.18181818" height="14" fill="#f1e05a"><title>AWS CodeBuild</title></rect>
+<path d="M379.27272727 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Docker Compose" data-value="1" x="433.45454545" y="60" width="54.18181818" height="14" fill="#563d7c"><title>Docker Compose</title></rect>
+<path d="M433.45454545 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Fly.io" data-value="1" x="487.63636364" y="60" width="54.18181818" height="14" fill="#89e051"><title>Fly.io</title></rect>
+<path d="M487.63636364 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Nixpacks" data-value="1" x="541.81818182" y="60" width="54.18181818" height="14" fill="#da5b0b"><title>Nixpacks</title></rect>
+<path d="M541.81818182 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
+<g data-skill-legend="Docker">
+<title>Docker</title>
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Docker</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">27.3%</tspan></text>
+</g>
+<g data-skill-legend="Render">
+<title>Render</title>
+<circle cx="208.33" cy="109" r="6" fill="#3178c6"/>
+<text x="222.33" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Render</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.2%</tspan></text>
+</g>
+<g data-skill-legend="Vercel">
+<title>Vercel</title>
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Vercel</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.2%</tspan></text>
+</g>
+<g data-skill-legend="AWS CodeBuild">
+<title>AWS CodeBuild</title>
+<circle cx="200.36" cy="147" r="6" fill="#f1e05a"/>
+<text x="214.36" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>AWS CodeBuild</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+</g>
+<g data-skill-legend="Docker Compose">
+<title>Docker Compose</title>
+<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Docker Compose</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+</g>
+<g data-skill-legend="Fly.io">
+<title>Fly.io</title>
+<circle cx="307.34" cy="185" r="6" fill="#89e051"/>
+<text x="321.34" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Fly.io</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+</g>
+<g data-skill-legend="Nixpacks">
+<title>Nixpacks</title>
+<circle cx="6.00" cy="223" r="6" fill="#da5b0b"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Nixpacks</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+</g>
+</g></g></svg>

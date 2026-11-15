@@ -10,7 +10,7 @@
 
 <picture>
   <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills.svg" width="100%" alt="Professional Skills. One GitHub-style box with four sections: Languages at top left, Libraries and Frameworks at top right, AI/ML Engineering at bottom left, and Agentic AI Engineering at bottom right. Stacked bars and dot legends show combined repository evidence shares." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills.svg" width="100%" alt="Professional Skills. One GitHub-style box with four sections: Languages, Libraries and Frameworks at top left, Cloud Skills at top right, AI/ML Engineering at bottom left, and Agentic AI Engineering at bottom right. The first section features eight key libraries and a grey Others entry. Stacked bars and dot legends show combined repository evidence shares; cloud entries reflect project deployment configuration." />
 </picture>
 
 [Skills evidence](docs/skill-circles.md) · [LinkedIn architecture](docs/linkedin-architecture.md)
