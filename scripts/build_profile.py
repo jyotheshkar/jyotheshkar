@@ -61,7 +61,7 @@ def build():
         'color_treatment': 'GitHub dark palette for workflow nodes; authentic institution logo colors retained.',
         'source_rebuild': 'python scripts/import_brand_icons.py (offline); python scripts/build_profile.py',
     }
-    (ROOT / 'assets/profile-icon-sources.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (ROOT / 'assets/profile-icon-sources.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     for key, label in [('linkedin','Connect on LinkedIn'),('projects','Explore GitHub projects'),('email','Email Jyothesh')]:
         button = f'''<svg xmlns="http://www.w3.org/2000/svg" width="330" height="64" viewBox="0 0 330 64" role="img" aria-label="{label}"><rect x=".5" y=".5" width="329" height="63" rx="10" fill="#151b23" fill-opacity=".45" stroke="#3d444d"/><text x="22" y="39" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600">{label}</text><path d="M294 39l13-13m-12 0h12v12" fill="none" stroke="#4493f8" stroke-width="1.8"/></svg>'''
         (ROOT / f'assets/{key}-link.svg').write_text(button,encoding='utf-8',newline='\n')
