@@ -1,134 +1,250 @@
-"""LinkedIn Agent architecture grounded in the inspected local-learning MVP."""
+"""Installed LinkedIn plugin architecture; source-grounded SVG workflow views.
+
+These paths describe the coordinator and real provider boundaries, not an
+execution-status feed. All animated packets are illustrative.
+"""
 from html import escape
 
+WIDTH, HEIGHT = 1400, 1290
+MOBILE_WIDTH, MOBILE_HEIGHT = 700, 1910
+SOURCE_VERSION = "1.3.19"
 PROJECTS = ({
-    "key": "linkedin", "icon": "python", "title": "LinkedIn Agent",
-    "tools": (("python", "Python", "Application and workflow orchestration"),
-              ("openai", "OpenAI", "Optional structured model adapter")),
+    "key": "linkedin", "icon": "linkedin", "title": "LinkedIn Agent",
+    "tools": (
+        ("openai", "ChatGPT", "Workflow coordinator"),
+        ("linkedin", "LinkedIn", "Vacancy discovery"),
+        ("github", "GitHub", "Repository evidence"),
+        ("gmail", "Gmail", "History, outreach and receipts"),
+        ("googledrive", "Google Drive", "Exact versioned CV artifact"),
+        ("googlesheets", "Google Sheets", "Atlas canonical records"),
+    ),
 },)
-SOURCE_COMMIT = "65b2638d0bd094b5a7dd3b2885b175f3b01934c6"
+
+NODES = {
+    "request": ("Owner request", ["Goals, scope and authority"], None, "user"),
+    "coordinator": ("ChatGPT coordinator", ["LinkedIn workflow + tool routing"], "openai", "agent"),
+    "policy": ("Policy + review", ["Owner-approved decisions"], None, "shield"),
+    "linkedin": ("LinkedIn", ["Discover roles", "Verify employer / ATS"], "linkedin", None),
+    "github": ("GitHub", ["Read repository evidence", "Ground project claims"], "github", None),
+    "atlas": ("Atlas", ["Approved facts + history", "CV versions + action intents"], None, "database"),
+    "history": ("Gmail", ["Relevant threads + receipts", "Check prior approaches"], "gmail", None),
+    "prepare": ("Match + prepare", ["Qualify · deduplicate · checkpoint", "Source claims before creating materials"], None, "branch"),
+    "cv": ("Tailored CV", ["ReportLab + PDF checks", "Evidence + exact byte hash"], None, "document"),
+    "drive": ("Google Drive", ["Save immutable CV version", "Read back file + byte hash"], "googledrive", None),
+    "apply": ("Application", ["Accepted employer route", "Submit + receipt readback"], None, "browser"),
+    "outreach": ("Gmail outreach", ["Distinct relevant outreach", "Same CV + provider receipt"], "gmail", None),
+    "canonical": ("Atlas + Google Sheets", ["Stage → native write → exact readback → commit", "Approved records · versions · provenance"], "googlesheets", None),
+    "dashboard": ("Dashboard", ["Approved Atlas projection", "Signed delivery + readback"], None, "dashboard"),
+    "learning": ("Learn + recover", ["Lessons + checkpoints", "Resume the missing stage"], None, "loop"),
+}
 
 
 def _text(x, y, text, size=20, color="#f0f6fc", weight=400, anchor="start", mono=False):
     family = "Consolas,monospace" if mono else "Arial,Helvetica,sans-serif"
     return (f'<text x="{x}" y="{y}" font-family="{family}" font-size="{size}" '
-            f'font-weight="{weight}" fill="{color}" text-anchor="{anchor}">'
-            f'{escape(text)}</text>')
+            f'font-weight="{weight}" fill="{color}" text-anchor="{anchor}">{escape(text)}</text>')
 
 
-def _glyph(kind, x, y, color="#79c0ff"):
+def _glyph(kind, x, y, scale=1):
     shapes = {
-        "input": '<path d="M7 3h14l6 6v22H7zM21 3v7h6M12 16h10M12 21h10M12 26h6"/>',
-        "search": '<circle cx="14" cy="14" r="9"/><path d="m21 21 9 9M9 14h10M14 9v10"/>',
-        "agent": '<rect x="4" y="9" width="26" height="21" rx="6"/><path d="M17 3v6M1 16h3M30 16h3M11 23h12"/><circle cx="11" cy="16" r="1.3"/><circle cx="23" cy="16" r="1.3"/>',
-        "review": '<circle cx="13" cy="10" r="6"/><path d="M3 30v-4a10 10 0 0 1 20 0M22 17l4 4 7-8"/>',
-        "action": '<path d="m5 4 24 13L5 30zM5 17h14"/>',
-        "store": '<ellipse cx="17" cy="7" rx="13" ry="5"/><path d="M4 7v20c0 7 26 7 26 0V7M4 17c0 7 26 7 26 0"/>',
-        "ledger": '<rect x="5" y="3" width="24" height="29" rx="4"/><path d="m10 11 2 2 4-4M19 11h5m-14 9 2 2 4-4M19 20h5M10 27h14"/>',
+        "user": '<circle cx="20" cy="12" r="7"/><path d="M6 36v-4a14 14 0 0 1 28 0v4"/>',
+        "agent": '<rect x="5" y="10" width="30" height="25" rx="7"/><path d="M20 3v7M12 26h16"/><circle cx="13" cy="18" r="2"/><circle cx="27" cy="18" r="2"/>',
+        "shield": '<path d="M20 3 35 9v12c0 9-15 16-15 16S5 30 5 21V9zM12 20l6 6 11-12"/>',
+        "database": '<ellipse cx="20" cy="8" rx="15" ry="6"/><path d="M5 8v23c0 8 30 8 30 0V8M5 19c0 8 30 8 30 0"/>',
+        "branch": '<path d="M5 20h10c11 0 7-13 18-13M15 20c11 0 7 13 18 13M27 3l7 4-7 4M27 29l7 4-7 4"/>',
+        "document": '<path d="M8 3h16l8 8v26H8zM24 3v9h8M13 18h13M13 24h13M13 30h9"/>',
+        "browser": '<rect x="3" y="5" width="34" height="30" rx="5"/><path d="M3 14h34M10 9h1M16 9h1m-3 16 5 5 10-11"/>',
+        "dashboard": '<rect x="3" y="4" width="34" height="31" rx="5"/><path d="M3 13h34M11 29v-7M20 29V18M29 29V16"/>',
+        "loop": '<path d="M7 15a14 14 0 0 1 26-2M33 25A14 14 0 0 1 7 27M7 6v9h9M33 34v-9h-9"/>',
     }
-    return (f'<g transform="translate({x} {y})" fill="none" stroke="{color}" '
-            f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
-            f'{shapes[kind]}</g>')
+    return (f'<g transform="translate({x} {y}) scale({scale})" fill="none" stroke="#79c0ff" '
+            f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{shapes[kind]}</g>')
+
+
+def _defs():
+    return '''<defs>
+<pattern id="nw-dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#3d444d" opacity=".45"/></pattern>
+<linearGradient id="nw-focus" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#132c47"/><stop offset="1" stop-color="#111820"/></linearGradient>
+<linearGradient id="nw-rule"><stop stop-color="#4493f8" stop-opacity=".8"/><stop offset="1" stop-color="#4493f8" stop-opacity=".05"/></linearGradient>
+<radialGradient id="nw-aura"><stop stop-color="#4493f8" stop-opacity=".07"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></radialGradient>
+<filter id="nw-packet-glow" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="2"/></filter>
+<style>.nw-packet{fill:#79c0ff}.nw-soft{fill:#4493f8;opacity:.65}
+@media(prefers-reduced-motion:reduce){.nw-packet,.nw-soft{display:none}}</style>
+</defs>'''
+
+
+def _route(path, delay=0, secondary=False, period=9):
+    stroke = "#395a7c" if secondary else "#4b7097"
+    dash = ' stroke-dasharray="5 7"' if secondary else ""
+    # Shared start times on fan-out paths make one packet become several; equal
+    # arrival timings at merge paths make the parallel branches converge.
+    parts = [f'<path d="{path}" fill="none" stroke="{stroke}" stroke-width="1.6"{dash}/>']
+    for extra in (0, period/2):
+        for cls, radius, filter_attr in (("nw-soft", 5, ' filter="url(#nw-packet-glow)"'), ("nw-packet", 3, "")):
+            parts.append(f'<circle class="{cls}" r="{radius}"{filter_attr}><animateMotion dur="{period}s" '
+                         f'begin="{delay-extra-period}s" repeatCount="indefinite" calcMode="linear" path="{path}"/></circle>')
+    return "".join(parts)
+
+
+def _port(x, y):
+    return f'<circle cx="{x}" cy="{y}" r="4.5" fill="#0d1117" stroke="#6c92b9" stroke-width="1.7"/>'
+
+
+def _node(key, x, y, w, h, icons, compact=False, mobile=False):
+    title, lines, brand, glyph = NODES[key]
+    primary = key in {"coordinator", "prepare", "canonical"}
+    fill = "url(#nw-focus)" if primary else "#111820"
+    stroke = "#3b6f9f" if primary else "#334253"
+    title_size = 26 if mobile else 23
+    line_size = 20 if mobile else 18
+    parts = [f'<g id="linkedin-{key}"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="15" fill="{fill}" stroke="{stroke}" stroke-width="1.35"/>',
+             f'<path d="M{x+20} {y}h42" stroke="#4493f8" stroke-width="2" opacity=".8"/>']
+    if compact:
+        ix, iy = x+19, y+23
+        tx, ty = x+77, y+40
+    else:
+        ix, iy = x+19, y+20
+        tx, ty = x+76, y+47
+    if brand and brand in icons:
+        parts.append(f'<use href="#brand-{brand}" x="{ix}" y="{iy}" width="38" height="38"/>')
+    else:
+        parts.append(_glyph(glyph or "agent", ix, iy))
+    if key == "canonical" and mobile:
+        parts.append(_text(tx, ty, title, 27, weight=600))
+    else:
+        parts.append(_text(tx, ty, title, title_size, weight=600))
+    for i, line in enumerate(lines):
+        ly = y+72+i*25 if compact else y+83+i*26
+        parts.append(_text(x+20, ly, line, line_size, "#a9b8c9"))
+    parts.append("</g>")
+    return "".join(parts)
+
+
+def _shell(width, height, mobile=False):
+    parts = ['<g id="linkedin-architecture" aria-labelledby="linkedin-architecture-title">',
+        '<title id="linkedin-architecture-title">LinkedIn Agent — Agentic AI System Engineering</title>',
+        '<desc>The installed private LinkedIn workflow coordinates ChatGPT, LinkedIn vacancy research, GitHub project evidence, Gmail history and outreach, Google Drive CV storage, and canonical Atlas records in Google Sheets. Verified receipts converge in Atlas; Atlas alone delivers the approved dashboard projection. Blue packet animation illustrates the architecture, not live activity.</desc>',
+        _defs(),
+        f'<rect width="{width}" height="{height}" fill="#0d1117"/>',
+        f'<rect width="{width}" height="{height}" fill="url(#nw-dots)"/>',
+        f'<ellipse cx="{width/2}" cy="{height/2}" rx="{width*.55}" ry="{height*.48}" fill="url(#nw-aura)"/>']
+    if mobile:
+        parts += [_text(36, 48, "AGENTIC AI SYSTEM ENGINEERING", 21, "#91a9c3", mono=True),
+                  _text(36, 106, "LinkedIn Agent", 44, weight=700),
+                  _text(36, 145, "One workflow. Connected evidence.", 25, "#a9b8c9"),
+                  _text(36, 179, "Source-verified architecture · v"+SOURCE_VERSION, 20, "#7d92aa"),
+                  '<path d="M36 209H664" stroke="url(#nw-rule)"/>']
+    else:
+        parts += [_text(40, 49, "AGENTIC AI SYSTEM ENGINEERING", 18, "#91a9c3", mono=True),
+                  _text(40, 110, "LinkedIn Agent", 48, weight=700),
+                  _text(40, 150, "One workflow. Connected evidence. Verified outcomes.", 25, "#a9b8c9"),
+                  _text(1360, 53, "INSTALLED WORKFLOW  /  v"+SOURCE_VERSION, 16, "#7d92aa", anchor="end", mono=True),
+                  '<path d="M40 178H1360" stroke="url(#nw-rule)"/>']
+    return parts
 
 
 def render_network(icons):
-    """Return a workflow-editor canvas within x=24..1376, y=215..1052."""
-    out = ['''<g id="linkedin-architecture" aria-labelledby="linkedin-architecture-title">
-<title id="linkedin-architecture-title">LinkedIn Agent — Agentic AI System Engineering</title>
-<desc>A local learning system: job and goal input, evidence retrieval, bounded planning and drafting,
-exact-material human approval, and simulated application and outreach. Versioned Atlas Lab knowledge,
-an optional OpenAI model adapter, and durable SQLite receipts support the workflow.
-The diagram shows implemented code structure, not live LinkedIn integrations.</desc>
-<defs>
-<pattern id="nw-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#3d444d" opacity=".44"/></pattern>
-<linearGradient id="nw-focus" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142941"/><stop offset="1" stop-color="#151b23"/></linearGradient>
-<marker id="nw-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="m1 1 4 2.5L1 6" fill="none" stroke="#79c0ff" stroke-width="1.2"/></marker>
-<style>.nw-flow{stroke-dasharray:2 12;animation:nw-travel 16s linear infinite}
-@keyframes nw-travel{to{stroke-dashoffset:-140}}
-@media(prefers-reduced-motion:reduce){.nw-flow{animation:none}}</style>
-</defs>''']
+    """Desktop view, origin 0,0; embedded by build_profile.py."""
+    out = _shell(WIDTH, HEIGHT)
+    # Request + policy connect to the coordinator, whose read branches split.
+    out += [_route("M340 269H510", 0),
+            _route("M1060 269H890", 0, True),
+            _route("M700 310V359", 1),
+            _route("M700 359H225Q205 359 205 379V420", 2),
+            _route("M700 359H555Q535 359 535 379V420", 2),
+            _route("M700 359H845Q865 359 865 379V420", 2),
+            _route("M700 359H1175Q1195 359 1195 379V420", 2)]
+    # Independent source responses converge before drafting or action.
+    for x in (205, 535, 865, 1195):
+        bend = "680" if x < 700 else "720"
+        out.append(_route(f"M{x} 550V565Q{x} 585 {x+20 if x<700 else x-20} 585H{bend}Q700 585 700 605V625", 3))
     out += [
-        _text(40, 231, "AGENTIC AI SYSTEM ENGINEERING", 17, "#9198a1", mono=True),
-        _text(40, 291, "LinkedIn Agent", 43, weight=700),
-        _text(40, 327, "Evidence-led workflows. Human-reviewed actions. Recoverable execution.", 22, "#9198a1"),
-        '<circle cx="1120" cy="280" r="4" fill="#59c3c3"/>',
-        _text(1135, 286, "LOCAL LEARNING LAB", 16, "#a3c7d9", mono=True),
-        '<rect x="24" y="359" width="1352" height="686" rx="18" fill="#0d1117" stroke="#3d444d"/>',
-        '<rect x="25" y="360" width="1350" height="684" rx="17" fill="url(#nw-dots)"/>',
-        '<path d="M24 415H1376" stroke="#3d444d" stroke-opacity=".65"/>',
-        '<circle cx="50" cy="387" r="4" fill="#4493f8"/>',
-        _text(65, 394, "linkedin-agent / application workflow", 17, "#c9d1d9", mono=True),
-        _text(1346, 394, "Python · FastAPI · LangGraph", 17, "#9198a1", anchor="end"),
+        _route("M700 755V757Q700 777 680 777H225Q205 777 205 797V820", 4),
+        _route("M340 877H400", 5),
+        _route("M670 877H730", 6),
+        _route("M670 877H686Q706 877 706 857V795Q706 775 726 775H1175Q1195 775 1195 795V820", 6),
+        _route("M535 950V976Q535 996 555 996H680Q700 996 700 1016V1035", 7),
+        _route("M865 950V976Q865 996 845 996H720Q700 996 700 1016V1035", 7),
+        _route("M1195 950V976Q1195 996 1175 996H720Q700 996 700 1016V1035", 7),
+        _route("M1000 1098H1060", 8),
+        _route("M400 1098H340", 8, True),
     ]
+    for x,y in ((700,359),(700,585),(706,877),(700,996)):
+        out.append(f'<circle cx="{x}" cy="{y}" r="4" fill="#79c0ff"/>')
+    for key,x,y,w,h,compact in [
+        ("request",70,220,270,90,True),("coordinator",510,220,380,90,True),
+        ("policy",1060,220,270,90,True),
+        ("linkedin",70,420,270,130,False),("github",400,420,270,130,False),
+        ("atlas",730,420,270,130,False),("history",1060,420,270,130,False),
+        ("prepare",510,625,380,130,False),
+        ("cv",70,820,270,130,False),("drive",400,820,270,130,False),
+        ("apply",730,820,270,130,False),("outreach",1060,820,270,130,False),
+        ("learning",70,1035,270,130,False),("canonical",400,1035,600,130,False),
+        ("dashboard",1060,1035,270,130,False),
+    ]:
+        out.append(_node(key,x,y,w,h,icons,compact))
+    for x,y in [(340,269),(510,269),(890,269),(1060,269),(700,310),
+                (700,625),(700,755),(340,877),(400,877),(670,877),(730,877),
+                (1195,820),(205,820),(700,1035),(400,1098),(340,1098),(1000,1098),(1060,1098)]:
+        out.append(_port(x,y))
+    for x in (205,535,865,1195):
+        for y in (420,550):
+            out.append(_port(x,y))
+    for x in (535,865,1195):
+        out.append(_port(x,950))
+    out += [_text(40, 394, "PARALLEL SOURCE READS", 15, "#7188a0", mono=True),
+            _text(40, 798, "MATERIALS + AUTHORISED ACTIONS", 15, "#7188a0", mono=True),
+            '<path d="M40 1208H1360" stroke="#3d444d" stroke-opacity=".7"/>',
+            _text(40,1243,"Stable identities · exact artifacts · provider receipts · recoverable checkpoints",19,"#91a9c3"),
+            _text(1360,1271,"Architecture animation · source-verified workflow",14,"#7188a0",anchor="end"),
+            "</g>"]
+    return "\n".join(out)
 
-    def route(path, support=False, animated=False):
-        dash = ' stroke-dasharray="5 7"' if support else ""
-        color = "#4c657e" if support else "#79c0ff"
-        out.append(f'<path d="{path}" fill="none" stroke="{color}" stroke-width="1.8"{dash} marker-end="url(#nw-arrow)"/>')
-        if animated:
-            out.append(f'<path class="nw-flow" d="{path}" fill="none" stroke="#b6dcff" stroke-width="2.4" opacity=".6"/>')
 
-    # Solid connections carry workflow; dashed connections are dependencies.
-    for path in ("M284 565H323", "M544 565H583", "M816 565H855", "M1076 565H1115"):
-        route(path, animated=True)
-    route("M966 492V461Q966 443 948 443H718Q700 443 700 461V492", support=True)
-    out.append(_text(833, 436, "Revise", 16, "#9198a1", anchor="middle"))
-    route("M434 796V638", support=True)
-    route("M700 796V638", support=True)
-    route("M1226 638V796")
-    out.append(_text(1095, 481, "Approve", 14, "#9198a1", anchor="middle"))
-
-    def port(x, y, accent=False):
-        color = "#79c0ff" if accent else "#64788e"
-        out.append(f'<circle cx="{x}" cy="{y}" r="5" fill="#0d1117" stroke="{color}" stroke-width="1.8"/>')
-
-    def card(key, x, y, w, title, subtitle, module, glyph, accent=False):
-        fill = "url(#nw-focus)" if accent else "#151b23"
-        stroke = "#4493f8" if accent else "#3d444d"
-        out.append(f'<g id="linkedin-node-{key}"><rect x="{x}" y="{y}" width="{w}" height="142" rx="14" fill="{fill}" stroke="{stroke}" stroke-width="1.5"/>')
-        out.append(f'<rect x="{x+16}" y="{y+16}" width="44" height="44" rx="11" fill="#0d1117" stroke="#3d444d"/>')
-        out.append(_glyph(glyph, x+21, y+21))
-        number = "0" + str(["input", "retrieval", "agent", "review", "effects"].index(key)+1)
-        out.append(_text(x+w-16, y+43, number, 16, "#64788e", anchor="end", mono=True))
-        out.extend([_text(x+16, y+84, title, 22, weight=600),
-                    _text(x+16, y+110, subtitle, 17, "#a4b2c2"),
-                    _text(x+16, y+131, module, 14, "#7d8b9b", mono=True),
-                    "</g>"])
-        if key != "input":
-            port(x, y+71, accent)
-        if key != "effects":
-            port(x+w, y+71, accent)
-
-    card("input", 64, 494, 220, "Job + goal", "FastAPI / CLI", "contracts.py", "input")
-    card("retrieval", 324, 494, 220, "Retrieve evidence", "Qdrant + FastEmbed", "retrieval.py", "search")
-    card("agent", 584, 494, 232, "Plan + draft", "Bounded tool execution", "workflow.py", "agent", True)
-    card("review", 856, 494, 220, "Human review", "Exact plan + draft hash", "materials.py", "review")
-    card("effects", 1116, 494, 220, "Simulate actions", "Application + outreach", "provider.py", "action")
-    for x, y in ((966, 494), (700, 494), (434, 636), (700, 636), (1226, 636)):
-        port(x, y, x == 700)
-
-    def support(key, x, w, title, sub, footer, glyph=None, brand=None):
-        y = 798
-        out.append(f'<g id="linkedin-support-{key}"><rect x="{x}" y="{y}" width="{w}" height="134" rx="14" fill="#111820" stroke="#344354"/>')
-        if brand and brand in icons:
-            out.append(f'<use href="#brand-{brand}" x="{x+18}" y="{y+18}" width="30" height="30"/>')
-        else:
-            out.append(_glyph(glyph, x+16, y+16))
-        out.extend([_text(x+62, y+39, title, 20, weight=600),
-                    _text(x+18, y+78, sub, 17, "#a4b2c2"),
-                    _text(x+18, y+105, footer, 15, "#7d8b9b"), "</g>"])
-        port(x+w/2, y)
-
-    support("knowledge", 314, 240, "Atlas knowledge", "Versioned local snapshots", "knowledge.py / atlas_lab.py", "store")
-    support("model", 580, 240, "Model adapter", "Offline / optional OpenAI", "Structured plan + generation", brand="openai")
-    support("state", 1090, 270, "Durable evidence", "SQLite · artifacts · receipts", "Resume / reconcile / project", "ledger")
-    out.append('<path d="M64 975H1336" stroke="#3d444d" stroke-opacity=".65"/>')
-    out += [
-        _text(64, 1008, "OpenTelemetry traces", 17, "#a4b2c2"),
-        _text(419, 1008, "Grounding + evaluation", 17, "#a4b2c2"),
-        _text(792, 1008, "Effects remain simulated", 17, "#a4b2c2"),
-        _text(1336, 1008, "MVP", 17, "#79c0ff", anchor="end", mono=True),
-        "</g>",
+def render_network_mobile(icons):
+    """Mobile art direction retains all major nodes with larger type."""
+    out = _shell(MOBILE_WIDTH, MOBILE_HEIGHT, True)
+    # Mobile routes form a readable top-down sequence with two-column branches.
+    out += [_route("M185 330V355Q185 375 205 375H330Q350 375 350 395V410",0),
+            _route("M515 330V355Q515 375 495 375H370Q350 375 350 395V410",0,True),
+            _route("M350 510V550",1),
+            _route("M350 550H205Q185 550 185 570V590",2),
+            _route("M350 550H495Q515 550 515 570V590",2),
+            _route("M350 550V740H205Q185 740 185 760V780",2),
+            _route("M350 550V740H495Q515 740 515 760V780",2),
+            _route("M185 720H20V945Q20 965 40 965H330Q350 965 350 985V1005",3),
+            _route("M515 720H680V945Q680 965 660 965H370Q350 965 350 985V1005",3),
+            _route("M185 910V945Q185 965 205 965H330Q350 965 350 985V1005",3),
+            _route("M515 910V945Q515 965 495 965H370Q350 965 350 985V1005",3),
+            _route("M350 1125V1145Q350 1165 330 1165H205Q185 1165 185 1185V1205",4),
+            _route("M330 1270H370",5),
+            _route("M515 1335V1370H205Q185 1370 185 1390V1410",6),
+            _route("M515 1335V1410",6),
+            _route("M185 1540V1560Q185 1580 205 1580H330Q350 1580 350 1600V1620",7),
+            _route("M515 1540V1560Q515 1580 495 1580H370Q350 1580 350 1600V1620",7),
+            _route("M350 1740V1765H205Q185 1765 185 1785V1800",8,True),
+            _route("M350 1740V1765H495Q515 1765 515 1785V1800",8)]
+    layouts = [
+        ("request",40,240,290,90,True),("policy",370,240,290,90,True),
+        ("coordinator",160,410,380,100,True),
+        ("linkedin",40,590,290,130,False),("github",370,590,290,130,False),
+        ("atlas",40,780,290,130,False),("history",370,780,290,130,False),
+        ("prepare",140,1005,420,120,False),
+        ("cv",40,1205,290,130,False),("drive",370,1205,290,130,False),
+        ("apply",40,1410,290,130,False),("outreach",370,1410,290,130,False),
+        ("canonical",40,1620,620,120,False),
     ]
+    for key,x,y,w,h,compact in layouts:
+        out.append(_node(key,x,y,w,h,icons,compact,mobile=True))
+    # Footer outcomes use two concise cards to stay within the mobile viewport.
+    for key,x in (("learning",40),("dashboard",370)):
+        title, lines, brand, glyph=NODES[key]
+        out.append(f'<rect x="{x}" y="1800" width="290" height="90" rx="15" fill="#111820" stroke="#334253"/>')
+        out.append(_glyph(glyph,x+16,1821))
+        out.append(_text(x+69,1837,title,24,weight=600))
+        out.append(_text(x+18,1869, "Saved checkpoints" if key=="learning" else "Signed Atlas projection",20,"#a9b8c9"))
+    for x,y in ((350,550),(350,965),(515,1370),(350,1580),(350,1765)):
+        out.append(f'<circle cx="{x}" cy="{y}" r="4" fill="#79c0ff"/>')
+    out.append("</g>")
     return "\n".join(out)
 
