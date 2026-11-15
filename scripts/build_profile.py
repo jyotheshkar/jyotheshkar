@@ -6,7 +6,7 @@ from html import escape
 import base64
 import json
 import xml.etree.ElementTree as ET
-from network_section import PROJECTS, render_network
+from network_section import PROJECTS, SOURCE_COMMIT, render_network
 from career_section import render_career
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,16 +14,20 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def build():
     icons = json.loads((ROOT / 'assets/brands/icons.json').read_text(encoding='utf-8'))
-    keele = ROOT / 'assets/brands/keele-white.png'
-    if keele.exists():
-        encoded = base64.b64encode(keele.read_bytes()).decode('ascii')
-        icons['keele'] = {'viewBox': '0 0 3260 1656', 'inner': f'<image width="3260" height="1656" href="data:image/png;base64,{encoded}"/>'}
+    # Institution marks are embedded in their original colours and transparency.
+    keele = ET.parse(ROOT / 'assets/brands/keele-original.svg').getroot()
+    icons['keele'] = {'viewBox': keele.get('viewBox'),
+                      'inner': ''.join(ET.tostring(child, encoding='unicode') for child in keele)}
+    amazon = ROOT / 'assets/brands/amazon-original.png'
+    encoded = base64.b64encode(amazon.read_bytes()).decode('ascii')
+    icons['amazon'] = {'viewBox': '0 0 6110 2047',
+                       'inner': f'<image width="6110" height="2047" href="data:image/png;base64,{encoded}"/>'}
     symbols = []
     for key, icon in icons.items():
         symbols.append(f'<symbol id="brand-{escape(key)}" viewBox="{escape(icon["viewBox"])}">{icon["inner"]}</symbol>')
     svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1780" viewBox="0 0 1400 1780" role="img" aria-labelledby="profile-title profile-desc" color="#f0f6fc">
 <title id="profile-title">Jyothesh Karnam - Developing Agentic AI systems</title>
-<desc id="profile-desc">Current Agentic AI Projects I Am Working On: YouTube Agent Concept and Crypto Agent Concept, each with eight proposed tool nodes. Original brand-colored logos identify the Google ecosystem, development tools and crypto research services. Animated routes are illustrative and human review remains in the loop. Below: verified Amazon and earlier experience; MSc Computer Science with Distinction and Best Performance Award at Keele University. No live account connections or automated trading are asserted.</desc>
+<desc id="profile-desc">LinkedIn Agent: Agentic AI System Engineering. A repository-grounded local workflow with retrieval, planning, human approval, simulated actions and durable receipts. Experience evaluating Alexa and Nova research models at Amazon, including multimodal red teaming and quality verification. MSc Computer Science with Distinction, Best Performance Award and Dairy Herd Monitoring System research at Keele University.</desc>
 <defs>
   <pattern id="page-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3d444d" stroke-opacity=".22" stroke-width=".65"/></pattern>
   <radialGradient id="network-aura"><stop stop-color="#4493f8" stop-opacity=".055"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></radialGradient>
@@ -49,14 +53,15 @@ def build():
     (ROOT / 'assets/profile.svg').write_text(svg, encoding='utf-8', newline='\n')
     used_keys = {'openai'} | {p['icon'] for p in PROJECTS} | {t[0] for p in PROJECTS for t in p['tools']}
     manifest = {
-        'purpose': 'Current portfolio concept graph; original brand colors and local embedded SVG resources.',
+        'purpose': 'LinkedIn Agent local learning architecture; repository-grounded nodes and local brand assets.',
+        'architecture_source_commit': SOURCE_COMMIT,
         'node_counts': {p['key']: len(p['tools']) for p in PROJECTS},
-        'concept_tools': {p['title']: [t[1] for t in p['tools']] for p in PROJECTS},
+        'model_and_runtime': {p['title']: [t[1] for t in p['tools']] for p in PROJECTS},
         'icon_sources': [{'icon': key, **{k: v for k, v in icons[key].items() if k not in ('inner', 'viewBox')}} for key in sorted(used_keys)],
-        'color_treatment': 'Upstream multicolor fills and gradients retained. OpenAI, GitHub and AI Studio use their white dark-background marks. Binance uses official gold #F0B90B.',
+        'color_treatment': 'GitHub dark palette for workflow nodes; authentic institution logo colors retained.',
         'source_rebuild': 'python scripts/import_brand_icons.py (offline); python scripts/build_profile.py',
     }
-    (ROOT / 'assets/profile-icon-sources.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (ROOT / 'assets/profile-icon-sources.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     for key, label in [('linkedin','Connect on LinkedIn'),('projects','Explore GitHub projects'),('email','Email Jyothesh')]:
         button = f'''<svg xmlns="http://www.w3.org/2000/svg" width="330" height="64" viewBox="0 0 330 64" role="img" aria-label="{label}"><rect x=".5" y=".5" width="329" height="63" rx="10" fill="#151b23" fill-opacity=".45" stroke="#3d444d"/><text x="22" y="39" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600">{label}</text><path d="M294 39l13-13m-12 0h12v12" fill="none" stroke="#4493f8" stroke-width="1.8"/></svg>'''
         (ROOT / f'assets/{key}-link.svg').write_text(button,encoding='utf-8',newline='\n')
@@ -65,3 +70,4 @@ def build():
 
 if __name__ == '__main__':
     build()
+

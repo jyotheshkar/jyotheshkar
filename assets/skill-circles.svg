@@ -1,338 +1,230 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="930" viewBox="0 0 1400 930" role="img" aria-labelledby="skills-title skills-desc" color="#f0f6fc">
-<title id="skills-title">Three connected worlds: languages, AI and Agentic AI Engineering</title>
-<desc id="skills-desc">Three horizontal orbital charts with measured source-byte and repository-topic arcs. Labels show raw bytes or repository counts, without percentage labels. Engineering stack and agentic workflow categories are combined, retaining all sixteen topics. Counts describe documented portfolio evidence, not proficiency. Source capture: 14 November 2026; curated: 15 November 2026. Orbit highlights and dotted routes are decorative; reduced motion is supported.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="685" viewBox="0 0 1400 685" role="img" aria-labelledby="skills-title skills-desc">
+<title id="skills-title">Professional Skills</title>
+<desc id="skills-desc">Programming Languages, Libraries and Frameworks, and Agentic AI Engineering. Segments and bars show repository evidence coverage, not proficiency. Skill names appear to the right of each circle, with no numeric labels. Evidence is automatically refreshed from public repositories.</desc>
 <defs>
-<pattern id="circle-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3d444d" stroke-opacity=".16" stroke-width=".65"/></pattern>
-<radialGradient id="circle-aura"><stop stop-color="#4493f8" stop-opacity=".16"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></radialGradient>
-<radialGradient id="circle-hub"><stop stop-color="#1b2b42"/><stop offset="1" stop-color="#101720"/></radialGradient>
-<linearGradient id="circle-trail"><stop stop-color="#4493f8" stop-opacity=".06"/><stop offset="1" stop-color="#a5d6ff"/></linearGradient>
-<style>
-text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace}
-.orbit{animation:orbit 32s linear infinite;transform-box:fill-box;transform-origin:center}.reverse{animation-direction:reverse;animation-duration:44s}
-.route{stroke-dasharray:3 13;animation:flow 9s linear infinite}.pulse{animation:pulse 6s ease-in-out infinite}
-@keyframes orbit{to{transform:rotate(360deg)}}@keyframes flow{to{stroke-dashoffset:-96}}@keyframes pulse{50%{opacity:.4}}
-@media(prefers-reduced-motion:reduce){.orbit,.route,.pulse{animation:none!important}}
-</style>
-<symbol id="circle-brand-docker" viewBox="0 0 128 128"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M73.8 50.8h11.3v11.5h5.7c2.6 0 5.3-.5 7.8-1.3 1.2-.4 2.6-1 3.8-1.7-1.6-2.1-2.4-4.7-2.6-7.3-.3-3.5.4-8.1 2.8-10.8l1.2-1.4 1.4 1.1c3.6 2.9 6.5 6.8 7.1 11.4 4.3-1.3 9.3-1 13.1 1.2l1.5.9-.8 1.6c-3.2 6.2-9.9 8.2-16.4 7.8-9.8 24.3-31 35.8-56.8 35.8-13.3 0-25.5-5-32.5-16.8l-.1-.2-1-2.1c-2.4-5.2-3.1-10.9-2.6-16.6l.2-1.7h9.6V50.8h11.3V39.6h22.5V28.3h13.5v22.5z"/><path fill="#00AADA" d="M110.4 55.1c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7H18.6c-.6 6.2.5 11.9 3 16.8l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5 1.1-8.3 1.3h-.6c-1.3.1-2.7.1-4.2.1-1.6 0-3.1 0-4.9-.1 6 6.8 15.4 10.8 27.2 10.8 25 0 46.2-11.1 55.5-35.9 6.7.7 13.1-1 16-6.7-4.5-2.7-10.5-1.8-13.9-.1z"/><path fill="#28B8EB" d="M110.4 55.1c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7h-68c-.3 9.5 3.2 16.7 9.5 21 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4l-.1-.1c8.5 4.4 20.8 4.3 35-1.1 15.8-6.1 30.6-17.7 40.9-30.9-.2.1-.4.1-.5.2z"/><path fill="#028BB8" d="M18.7 71.8c.4 3.3 1.4 6.4 2.9 9.3l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4h-.4c-1.3.1-2.7.1-4.1.1-1.6 0-3.2 0-4.9-.1 6 6.8 15.5 10.8 27.3 10.8 21.4 0 40-8.1 50.8-26H18.7v-.1z"/><path fill="#019BC6" d="M23.5 71.8c1.3 5.8 4.3 10.4 8.8 13.5 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.6 1.4 8.5 4.4 20.8 4.3 34.9-1.1 8.5-3.3 16.8-8.2 24.2-14.1H23.5z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M28.4 52.7h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm3-12h9.8v9.8h-9.8v-9.8zm.9.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M39.6 52.7h9.8v9.8h-9.8v-9.8zm.9.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M50.9 52.7h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M50.9 41.5h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm3.1 10.4H72v9.8h-9.8v-9.8zm.8.8h.8v8.1H63v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M62.2 41.5H72v9.8h-9.8v-9.8zm.8.8h.8v8.1H63v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M62.2 30.2H72V40h-9.8v-9.8zm.8.8h.8v8.1H63V31zm1.5 0h.8v8.1h-.8V31zm1.4 0h.8v8.1h-.8V31zm1.5 0h.8v8.1h-.8V31zm1.5 0h.8v8.1h-.8V31zm1.5 0h.8v8.1h-.8V31z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M73.5 52.7h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#D4EEF1" d="M48.8 78.3c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.7 2.7-2.7"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M48.8 79.1c.2 0 .5 0 .7.1-.2.1-.4.4-.4.7 0 .4.4.8.8.8.3 0 .6-.2.7-.4.1.2.1.5.1.7 0 1.1-.9 1.9-1.9 1.9-1.1 0-1.9-.9-1.9-1.9 0-1 .8-1.9 1.9-1.9M1.1 72.8h125.4c-2.7-.7-8.6-1.6-7.7-5.2-5 5.7-16.9 4-20 1.2-3.4 4.9-23 3-24.3-.8-4.2 5-17.3 5-21.5 0-1.4 3.8-21 5.7-24.3.8-3 2.8-15 4.5-20-1.2 1.1 3.5-4.9 4.5-7.6 5.2"/><path fill="#BFDBE0" d="M56 97.8c-6.7-3.2-10.3-7.5-12.4-12.2-2.5.7-5.5 1.2-8.9 1.4-1.3.1-2.7.1-4.1.1-1.7 0-3.4 0-5.2-.1 6 6 13.6 10.7 27.5 10.8H56z"/><path fill="#D4EEF1" d="M46.1 89.9c-.9-1.3-1.8-2.8-2.5-4.3-2.5.7-5.5 1.2-8.9 1.4 2.3 1.2 5.7 2.4 11.4 2.9z"/></symbol><symbol id="circle-brand-github" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="nonzero"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></g></symbol><symbol id="circle-brand-javascript" viewBox="0 0 128 128"><path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"/></symbol><symbol id="circle-brand-nodejs" viewBox="0 0 128 128"><path fill="url(#circle-nodejs-a)" d="M66.958.825a6.07 6.07 0 0 0-6.035 0L11.103 29.76c-1.895 1.072-2.96 3.095-2.96 5.24v57.988c0 2.143 1.183 4.167 2.958 5.24l49.82 28.934a6.07 6.07 0 0 0 6.036 0l49.82-28.935c1.894-1.072 2.958-3.096 2.958-5.24V35c0-2.144-1.183-4.167-2.958-5.24z"/><path fill="url(#circle-nodejs-b)" d="M116.897 29.76 66.841.825A8.161 8.161 0 0 0 65.302.23L9.21 96.798a6.251 6.251 0 0 0 1.657 1.43l50.057 28.934c1.42.833 3.076 1.072 4.615.595l52.66-96.925a3.702 3.702 0 0 0-1.302-1.072z"/><path fill="url(#circle-nodejs-c)" d="M116.898 98.225c1.42-.833 2.485-2.262 2.958-3.81L65.066.108c-1.42-.238-2.959-.119-4.26.715L11.104 29.639l53.606 98.355c.71-.12 1.54-.358 2.25-.715z"/><defs><linearGradient id="circle-nodejs-a" x1="34.513" x2="27.157" y1="15.535" y2="30.448" gradientTransform="translate(-129.242 -73.715) scale(6.18523)" gradientUnits="userSpaceOnUse"><stop stop-color="#3F873F"/><stop offset=".33" stop-color="#3F8B3D"/><stop offset=".637" stop-color="#3E9638"/><stop offset=".934" stop-color="#3DA92E"/><stop offset="1" stop-color="#3DAE2B"/></linearGradient><linearGradient id="circle-nodejs-b" x1="30.009" x2="50.533" y1="23.359" y2="8.288" gradientTransform="translate(-129.242 -73.715) scale(6.18523)" gradientUnits="userSpaceOnUse"><stop offset=".138" stop-color="#3F873F"/><stop offset=".402" stop-color="#52A044"/><stop offset=".713" stop-color="#64B749"/><stop offset=".908" stop-color="#6ABF4B"/></linearGradient><linearGradient id="circle-nodejs-c" x1="21.917" x2="40.555" y1="22.261" y2="22.261" gradientTransform="translate(-129.242 -73.715) scale(6.18523)" gradientUnits="userSpaceOnUse"><stop offset=".092" stop-color="#6ABF4B"/><stop offset=".287" stop-color="#64B749"/><stop offset=".598" stop-color="#52A044"/><stop offset=".862" stop-color="#3F873F"/></linearGradient></defs></symbol><symbol id="circle-brand-postgresql" viewBox="0 0 128 128"><g><path d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.209 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985" /><path d="M75.458 125.256c-4.367 0-7.211-1.689-8.938-3.32-2.607-2.46-3.641-5.629-4.259-7.522l-.267-.79c-1.244-3.358-1.666-8.193-1.916-14.419-.038-.935-.064-1.898-.093-2.919-.021-.747-.047-1.684-.085-2.664a18.8 18.8 0 01-4.962 1.568c-3.079.526-6.389.356-9.84-.507-2.435-.609-4.965-1.871-6.407-3.82-4.203 3.681-8.212 3.182-10.396 2.453-3.853-1.285-7.301-4.896-10.542-11.037-2.309-4.375-4.542-10.075-6.638-16.943-3.65-11.96-5.969-24.557-6.175-28.693C4.292 23.698 7.777 14.44 15.296 9.129 27.157.751 45.128 5.678 51.68 7.915c4.402-2.653 9.581-3.944 15.433-3.851 3.143.051 6.136.327 8.916.823 2.9-.912 8.628-2.221 15.185-2.139 12.081.144 22.092 4.852 28.949 13.615 4.894 6.252 2.474 19.381.597 26.651-2.642 10.226-7.271 21.102-12.957 30.57 1.544.011 3.781-.174 6.961-.831 6.274-1.295 8.109 2.069 8.607 3.575 1.995 6.042-6.677 10.608-9.382 11.864-3.466 1.609-9.117 2.589-13.745 2.377l-.202-.013-1.216-.107-.12 1.014-.116.991c-.311 11.999-2.025 19.598-5.552 24.619-3.697 5.264-8.835 6.739-13.361 7.709-1.544.33-2.947.474-4.219.474zm-9.19-43.671c2.819 2.256 3.066 6.501 3.287 14.434.028.99.054 1.927.089 2.802.106 2.65.355 8.855 1.327 11.477.137.371.26.747.39 1.146 1.083 3.316 1.626 4.979 6.309 3.978 3.931-.843 5.952-1.599 7.534-3.851 2.299-3.274 3.585-9.86 3.821-19.575l4.783.116-4.75-.57.14-1.186c.455-3.91.783-6.734 3.396-8.602 2.097-1.498 4.486-1.353 6.389-1.01-2.091-1.58-2.669-3.433-2.823-4.193l-.399-1.965 1.121-1.663c6.457-9.58 11.781-21.354 14.609-32.304 2.906-11.251 2.02-17.226 1.134-18.356-11.729-14.987-32.068-8.799-34.192-8.097l-.359.194-1.8.335-.922-.191c-2.542-.528-5.366-.82-8.393-.869-4.756-.08-8.593 1.044-11.739 3.431l-2.183 1.655-2.533-1.043c-5.412-2.213-21.308-6.662-29.696-.721-4.656 3.298-6.777 9.76-6.305 19.207.156 3.119 2.275 14.926 5.771 26.377 4.831 15.825 9.221 21.082 11.054 21.693.32.108 1.15-.537 1.976-1.529a270.708 270.708 0 0110.694-12.07l2.77-2.915 3.349 2.225c1.35.897 2.839 1.406 4.368 1.502l7.987-6.812-1.157 11.808c-.026.265-.039.626.065 1.296l.348 2.238-1.51 1.688-.174.196 4.388 2.025 1.836-2.301z" /><path fill="#336791" d="M115.731 77.44c-13.925 2.873-14.882-1.842-14.882-1.842 14.703-21.816 20.849-49.51 15.545-56.287C101.924.823 76.875 9.566 76.457 9.793l-.135.024c-2.751-.571-5.83-.911-9.291-.967-6.301-.103-11.08 1.652-14.707 4.402 0 0-44.684-18.408-42.606 23.151.442 8.842 12.672 66.899 27.26 49.363 5.332-6.412 10.483-11.834 10.483-11.834 2.559 1.699 5.622 2.567 8.833 2.255l.25-.212c-.078.796-.042 1.575.1 2.497-3.758 4.199-2.654 4.936-10.167 6.482-7.602 1.566-3.136 4.355-.22 5.084 3.534.884 11.712 2.136 17.237-5.598l-.221.882c1.473 1.18 2.507 7.672 2.334 13.557-.174 5.885-.29 9.926.871 13.082 1.16 3.156 2.316 10.256 12.192 8.14 8.252-1.768 12.528-6.351 13.124-13.995.422-5.435 1.377-4.631 1.438-9.49l.767-2.3c.884-7.367.14-9.743 5.225-8.638l1.235.108c3.742.17 8.639-.602 11.514-1.938 6.19-2.871 9.861-7.667 3.758-6.408z" /><path fill="#fff" d="M75.957 122.307c-8.232 0-10.84-6.519-11.907-9.185-1.562-3.907-1.899-19.069-1.551-31.503a1.59 1.59 0 011.64-1.55 1.594 1.594 0 011.55 1.639c-.401 14.341.168 27.337 1.324 30.229 1.804 4.509 4.54 8.453 12.275 6.796 7.343-1.575 10.093-4.359 11.318-11.46.94-5.449 2.799-20.951 3.028-24.01a1.593 1.593 0 011.71-1.472 1.597 1.597 0 011.472 1.71c-.239 3.185-2.089 18.657-3.065 24.315-1.446 8.387-5.185 12.191-13.794 14.037-1.463.313-2.792.453-4 .454zM31.321 90.466a6.71 6.71 0 01-2.116-.35c-5.347-1.784-10.44-10.492-15.138-25.885-3.576-11.717-5.842-23.947-6.041-27.922-.589-11.784 2.445-20.121 9.02-24.778 13.007-9.216 34.888-.44 35.813-.062a1.596 1.596 0 01-1.207 2.955c-.211-.086-21.193-8.492-32.768-.285-5.622 3.986-8.203 11.392-7.672 22.011.167 3.349 2.284 15.285 5.906 27.149 4.194 13.742 8.967 22.413 13.096 23.79.648.216 2.62.873 5.439-2.517A245.272 245.272 0 0145.88 73.046a1.596 1.596 0 012.304 2.208c-.048.05-4.847 5.067-10.077 11.359-2.477 2.979-4.851 3.853-6.786 3.853zm69.429-13.445a1.596 1.596 0 01-1.322-2.487c14.863-22.055 20.08-48.704 15.612-54.414-5.624-7.186-13.565-10.939-23.604-11.156-7.433-.16-13.341 1.738-14.307 2.069l-.243.099c-.971.305-1.716-.227-1.997-.849a1.6 1.6 0 01.631-2.025c.046-.027.192-.089.429-.176l-.021.006.021-.007c1.641-.601 7.639-2.4 15.068-2.315 11.108.118 20.284 4.401 26.534 12.388 2.957 3.779 2.964 12.485.019 23.887-3.002 11.625-8.651 24.118-15.497 34.277-.306.457-.81.703-1.323.703zm.76 10.21c-2.538 0-4.813-.358-6.175-1.174-1.4-.839-1.667-1.979-1.702-2.584-.382-6.71 3.32-7.878 5.208-8.411-.263-.398-.637-.866-1.024-1.349-1.101-1.376-2.609-3.26-3.771-6.078-.182-.44-.752-1.463-1.412-2.648-3.579-6.418-11.026-19.773-6.242-26.612 2.214-3.165 6.623-4.411 13.119-3.716C97.6 28.837 88.5 10.625 66.907 10.271c-6.494-.108-11.82 1.889-15.822 5.93-8.96 9.049-8.636 25.422-8.631 25.586a1.595 1.595 0 11-3.19.084c-.02-.727-.354-17.909 9.554-27.916C53.455 9.272 59.559 6.96 66.96 7.081c13.814.227 22.706 7.25 27.732 13.101 5.479 6.377 8.165 13.411 8.386 15.759.165 1.746-1.088 2.095-1.341 2.147l-.576.013c-6.375-1.021-10.465-.312-12.156 2.104-3.639 5.201 3.406 17.834 6.414 23.229.768 1.376 1.322 2.371 1.576 2.985.988 2.396 2.277 4.006 3.312 5.3.911 1.138 1.7 2.125 1.982 3.283.131.23 1.99 2.98 13.021.703 2.765-.57 4.423-.083 4.93 1.45.997 3.015-4.597 6.532-7.694 7.97-2.775 1.29-7.204 2.106-11.036 2.106zm-4.696-4.021c.35.353 2.101.962 5.727.806 3.224-.138 6.624-.839 8.664-1.786 2.609-1.212 4.351-2.567 5.253-3.492l-.5.092c-7.053 1.456-12.042 1.262-14.828-.577a6.162 6.162 0 01-.54-.401c-.302.119-.581.197-.78.253-1.58.443-3.214.902-2.996 5.105zm-45.562 8.915c-1.752 0-3.596-.239-5.479-.71-1.951-.488-5.24-1.957-5.19-4.37.057-2.707 3.994-3.519 5.476-3.824 5.354-1.103 5.703-1.545 7.376-3.67.488-.619 1.095-1.39 1.923-2.314 1.229-1.376 2.572-2.073 3.992-2.073.989 0 1.8.335 2.336.558 1.708.708 3.133 2.42 3.719 4.467.529 1.847.276 3.625-.71 5.006-3.237 4.533-7.886 6.93-13.443 6.93zm-7.222-4.943c.481.372 1.445.869 2.518 1.137 1.631.408 3.213.615 4.705.615 4.546 0 8.196-1.882 10.847-5.594.553-.774.387-1.757.239-2.274-.31-1.083-1.08-2.068-1.873-2.397-.43-.178-.787-.314-1.115-.314-.176 0-.712 0-1.614 1.009a41.146 41.146 0 00-1.794 2.162c-2.084 2.646-3.039 3.544-9.239 4.821-1.513.31-2.289.626-2.674.835zm12.269-7.36a1.596 1.596 0 01-1.575-1.354 8.218 8.218 0 01-.08-.799c-4.064-.076-7.985-1.82-10.962-4.926-3.764-3.927-5.477-9.368-4.699-14.927.845-6.037.529-11.366.359-14.229-.047-.796-.081-1.371-.079-1.769.003-.505.013-1.844 4.489-4.113 1.592-.807 4.784-2.215 8.271-2.576 5.777-.597 9.585 1.976 10.725 7.246 3.077 14.228.244 20.521-1.825 25.117-.385.856-.749 1.664-1.04 2.447l-.257.69c-1.093 2.931-2.038 5.463-1.748 7.354a1.595 1.595 0 01-1.335 1.819l-.244.02zM42.464 42.26l.062 1.139c.176 2.974.504 8.508-.384 14.86-.641 4.585.759 9.06 3.843 12.276 2.437 2.542 5.644 3.945 8.94 3.945h.068c.369-1.555.982-3.197 1.642-4.966l.255-.686c.329-.884.714-1.74 1.122-2.646 1.991-4.424 4.47-9.931 1.615-23.132-.565-2.615-1.936-4.128-4.189-4.627-4.628-1.022-11.525 2.459-12.974 3.837zm9.63-.677c-.08.564 1.033 2.07 2.485 2.271 1.449.203 2.689-.975 2.768-1.539.079-.564-1.033-1.186-2.485-1.388-1.451-.202-2.691.092-2.768.656zm2.818 2.826l-.407-.028c-.9-.125-1.81-.692-2.433-1.518-.219-.29-.576-.852-.505-1.354.101-.736.999-1.177 2.4-1.177.313 0 .639.023.967.069.766.106 1.477.327 2.002.62.91.508.977 1.075.936 1.368-.112.813-1.405 2.02-2.96 2.02zm-2.289-2.732c.045.348.907 1.496 2.029 1.651l.261.018c1.036 0 1.81-.815 1.901-1.082-.096-.182-.762-.634-2.025-.81a5.823 5.823 0 00-.821-.059c-.812 0-1.243.183-1.345.282zm43.605-1.245c.079.564-1.033 2.07-2.484 2.272-1.45.202-2.691-.975-2.771-1.539-.076-.564 1.036-1.187 2.486-1.388 1.45-.203 2.689.092 2.769.655zm-2.819 2.56c-1.396 0-2.601-1.086-2.7-1.791-.115-.846 1.278-1.489 2.712-1.688.316-.044.629-.066.93-.066 1.238 0 2.058.363 2.14.949.053.379-.238.964-.739 1.492-.331.347-1.026.948-1.973 1.079l-.37.025zm.943-3.013c-.276 0-.564.021-.856.061-1.441.201-2.301.779-2.259 1.089.048.341.968 1.332 2.173 1.332l.297-.021c.787-.109 1.378-.623 1.66-.919.443-.465.619-.903.598-1.052-.028-.198-.56-.49-1.613-.49zm3.965 32.843a1.594 1.594 0 01-1.324-2.483c3.398-5.075 2.776-10.25 2.175-15.255-.257-2.132-.521-4.337-.453-6.453.07-2.177.347-3.973.614-5.71.317-2.058.617-4.002.493-6.31a1.595 1.595 0 113.186-.172c.142 2.638-.197 4.838-.525 6.967-.253 1.643-.515 3.342-.578 5.327-.061 1.874.178 3.864.431 5.97.64 5.322 1.365 11.354-2.691 17.411a1.596 1.596 0 01-1.328.708z" /></g></symbol><symbol id="circle-brand-python" viewBox="0 0 128 128"><g><linearGradient id="brand-python-python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4" /><stop offset="1" stop-color="#306998" /></linearGradient><linearGradient id="brand-python-python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B" /><stop offset="1" stop-color="#FFE873" /></linearGradient><path fill="url(#brand-python-python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)" /><path fill="url(#brand-python-python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)" /><radialGradient id="brand-python-python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498" /><stop offset="1" stop-color="#7F7F7F" stop-opacity="0" /></radialGradient><path opacity=".444" fill="url(#brand-python-python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z" /></g></symbol><symbol id="circle-brand-pytorch" viewBox="0 0 128 128"><path fill="#EE4C2C" d="M100.1 38.3l-9.2 9.2c15.1 15.1 15.1 39.4 0 54.3-15.1 15.1-39.4 15.1-54.3 0-15.1-15.1-15.1-39.4 0-54.3l24-24 3.4-3.4V2L27.8 38.2C7.7 58.3 7.7 90.8 27.8 111s52.6 20.1 72.4 0c20.1-20.2 20.1-52.5-.1-72.7z"/><circle fill="#EE4C2C" transform="rotate(-88.939 82.069 29.398) scale(.99997)" cx="82.1" cy="29.4" r="6.7"/></symbol><symbol id="circle-brand-react" viewBox="0 0 128 128"><g fill="#61DAFB"><circle cx="64" cy="64" r="11.4"/><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"/></g></symbol><symbol id="circle-brand-tensorflow" viewBox="0 0 128 128">
-  <path d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z" fill="#ff6f00" />
-</symbol><symbol id="circle-brand-typescript" viewBox="0 0 128 128"><path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"/><path data-name="original" fill="#007acc" d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"/></symbol></defs>
-<rect width="1400" height="930" fill="#0d1117"/><rect width="1400" height="930" fill="url(#circle-grid)"/>
+<pattern id="skill-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3d444d" stroke-opacity=".16" stroke-width=".65"/></pattern>
+<radialGradient id="skill-center"><stop stop-color="#172a40"/><stop offset="1" stop-color="#101720"/></radialGradient>
+<style>text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace}</style>
+</defs>
+<rect width="1400" height="685" fill="#0d1117"/><rect width="1400" height="685" fill="url(#skill-grid)"/>
 
-<text x="30" y="32" fill="#9198a1" font-size="14" text-anchor="start" font-weight="400" class="mono" letter-spacing="2.5">ENGINEERING CONSTELLATION</text>
-<text x="30" y="80" fill="#f0f6fc" font-size="36" text-anchor="start" font-weight="700" >Three connected worlds.</text>
-<text x="1370" y="77" fill="#9198a1" font-size="17" text-anchor="end" font-weight="400" >22 snapshots / 14 NOV 2026</text>
-<path d="M467 115V870M933 115V870" stroke="#3d444d" stroke-opacity=".28"/>
-<g data-skill-circle="languages" data-total="2857215" data-center-x="235" data-center-y="355" aria-label="Languages">
-<text x="235" y="124" fill="#f0f6fc" font-size="26" text-anchor="middle" font-weight="600" >Languages</text>
-<text x="235" y="147" fill="#9198a1" font-size="17" text-anchor="middle" font-weight="400" >Unique source-file bytes</text>
-<circle cx="235" cy="355" r="208" fill="url(#circle-aura)"/>
-<circle cx="235" cy="355" r="132" fill="none" stroke="#4493f8" stroke-opacity=".2"/>
-<circle cx="235" cy="355" r="170" fill="none" stroke="#4493f8" stroke-opacity=".2"/>
-<circle data-segment="Python" data-value="2310492" cx="235" cy="355" r="110" fill="none" stroke="#79b8ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="558.89998917 132.25039462" stroke-dashoffset="0.00000000" transform="rotate(-90 235 355)"><title>Python: 2,310,492 bytes</title></circle>
-<path d="M235.00 234.00L235.00 208.00" stroke="#3d444d"/><path class="route" d="M235.00 234.00L235.00 208.00" stroke="#79b8ff" stroke-opacity=".6" style="animation-delay:-0s"/>
-<g data-skill-node="Python"><title>Python: 2,310,492 bytes</title><circle cx="235.00" cy="185.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-python" x="221.00" y="171.00" width="28" height="28"/>
+<text x="38" y="57" fill="#f0f6fc" font-size="37" font-weight="700" text-anchor="start" >Professional Skills</text>
+<text x="40" y="92" fill="#9198a1" font-size="19" font-weight="400" text-anchor="start" >Built through projects. Grounded in repository evidence.</text>
+<g data-skill-circle="languages" data-total="3087770" data-center-x="130" data-center-y="327" aria-label="Programming Languages">
+<rect x="24" y="123" width="448" height="525" rx="18" fill="#151b23" fill-opacity=".48" stroke="#30363d"/>
+<text x="46" y="164" fill="#f0f6fc" font-size="22" font-weight="600" text-anchor="start" >Programming Languages</text>
+<circle cx="130" cy="327" r="82" fill="none" stroke="#263241" stroke-width="34"/>
+<circle data-segment="Python" data-value="2533705" cx="130" cy="327" r="82" fill="none" stroke="#79c0ff" stroke-width="34" stroke-dasharray="422.77064624 92.45054894" stroke-dashoffset="0.00000000" transform="rotate(-90 130 327)"><title>Python</title></circle>
+<path d="M130.000 263.000L130.000 227.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Python">
+<circle cx="242" cy="202" r="3.5" fill="#79c0ff"/>
+<text x="253" y="208" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Python</text>
+<rect x="253" y="215" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Python" x="253" y="215" width="185.00000" height="3" rx="1.5" fill="#79c0ff"/>
 </g>
-<circle data-segment="TypeScript" data-value="401827" cx="235" cy="355" r="110" fill="none" stroke="#3178c6" stroke-opacity=".9" stroke-width="11" stroke-dasharray="97.20055553 593.94982826" stroke-dashoffset="-558.89998917" transform="rotate(-90 235 355)"><title>TypeScript: 401,827 bytes</title></circle>
-<path d="M339.79 294.50L362.31 281.50" stroke="#3d444d"/><path class="route" d="M339.79 294.50L362.31 281.50" stroke="#3178c6" stroke-opacity=".6" style="animation-delay:-1s"/>
-<g data-skill-node="TypeScript"><title>TypeScript: 401,827 bytes</title><circle cx="382.22" cy="270.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-typescript" x="368.22" y="256.00" width="28" height="28"/>
+<circle data-segment="TypeScript" data-value="401827" cx="130" cy="327" r="82" fill="none" stroke="#58a6ff" stroke-width="34" stroke-dasharray="67.04831875 448.17287643" stroke-dashoffset="-422.77064624" transform="rotate(-90 130 327)"><title>TypeScript</title></circle>
+<path d="M72.188 299.546L39.668 284.103" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="TypeScript">
+<circle cx="242" cy="239" r="3.5" fill="#58a6ff"/>
+<text x="253" y="245" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >TypeScript</text>
+<rect x="253" y="252" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="TypeScript" x="253" y="252" width="29.33964" height="3" rx="1.5" fill="#58a6ff"/>
 </g>
-<circle data-segment="HTML" data-value="98695" cx="235" cy="355" r="110" fill="none" stroke="#e34f26" stroke-opacity=".9" stroke-width="11" stroke-dasharray="23.87397768 667.27640611" stroke-dashoffset="-656.10054469" transform="rotate(-90 235 355)"><title>HTML: 98,695 bytes</title></circle>
-<path d="M339.79 415.50L362.31 428.50" stroke="#3d444d"/><path class="route" d="M339.79 415.50L362.31 428.50" stroke="#e34f26" stroke-opacity=".6" style="animation-delay:-2s"/>
-<g data-skill-node="HTML"><title>HTML: 98,695 bytes</title><circle cx="382.22" cy="440.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(370.22 428.00) scale(.75)" fill="none" stroke="#e34f26" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-6 7 6 7m16-14 6 7-6 7M19 3l-6 18"/></g>
+<circle data-segment="JavaScript" data-value="145848" cx="130" cy="327" r="82" fill="none" stroke="#388bfd" stroke-width="34" stroke-dasharray="24.33600329 490.88519190" stroke-dashoffset="-489.81896500" transform="rotate(-90 130 327)"><title>JavaScript</title></circle>
+<path d="M110.489 266.046L99.515 231.760" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="JavaScript">
+<circle cx="242" cy="276" r="3.5" fill="#388bfd"/>
+<text x="253" y="282" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >JavaScript</text>
+<rect x="253" y="289" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="JavaScript" x="253" y="289" width="10.64918" height="3" rx="1.5" fill="#388bfd"/>
 </g>
-<circle data-segment="CSS" data-value="24315" cx="235" cy="355" r="110" fill="none" stroke="#a5a0ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="5.88171404 685.26866975" stroke-dashoffset="-679.97452237" transform="rotate(-90 235 355)"><title>CSS: 24,315 bytes</title></circle>
-<path d="M235.00 476.00L235.00 502.00" stroke="#3d444d"/><path class="route" d="M235.00 476.00L235.00 502.00" stroke="#a5a0ff" stroke-opacity=".6" style="animation-delay:-3s"/>
-<g data-skill-node="CSS"><title>CSS: 24,315 bytes</title><circle cx="235.00" cy="525.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(223.00 513.00) scale(.75)" fill="none" stroke="#a5a0ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m16 2 14 7-14 7L2 9Zm-14 13 14 7 14-7M2 21l14 7 14-7"/></g>
+<circle data-segment="SQL" data-value="6390" cx="130" cy="327" r="82" fill="none" stroke="#65d6ce" stroke-width="34" stroke-dasharray="1.06622690 514.15496829" stroke-dashoffset="-514.15496829" transform="rotate(-90 130 327)"><title>SQL</title></circle>
+<path d="M129.168 263.005L128.700 227.008" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="SQL">
+<circle cx="242" cy="313" r="3.5" fill="#65d6ce"/>
+<text x="253" y="319" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >SQL</text>
+<rect x="253" y="326" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="SQL" x="253" y="326" width="0.46657" height="3" rx="1.5" fill="#65d6ce"/>
 </g>
-<circle data-segment="JavaScript" data-value="15496" cx="235" cy="355" r="110" fill="none" stroke="#f0db4f" stroke-opacity=".9" stroke-width="11" stroke-dasharray="3.74842857 687.40195522" stroke-dashoffset="-685.85623641" transform="rotate(-90 235 355)"><title>JavaScript: 15,496 bytes</title></circle>
-<path d="M130.21 415.50L107.69 428.50" stroke="#3d444d"/><path class="route" d="M130.21 415.50L107.69 428.50" stroke="#f0db4f" stroke-opacity=".6" style="animation-delay:-4s"/>
-<g data-skill-node="JavaScript"><title>JavaScript: 15,496 bytes</title><circle cx="87.78" cy="440.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-javascript" x="73.78" y="426.00" width="28" height="28"/>
+<circle cx="130" cy="327" r="61" fill="url(#skill-center)" stroke="#303f51"/>
+<text x="130" y="328" fill="#f0f6fc" font-size="26" font-weight="600" text-anchor="middle" >Code</text>
+<text x="130" y="351" fill="#8ea9c6" font-size="10" font-weight="400" text-anchor="middle" class="mono" letter-spacing="1.2">LANGUAGES</text>
 </g>
-<circle data-segment="SQL" data-value="6390" cx="235" cy="355" r="110" fill="none" stroke="#65d6ce" stroke-opacity=".9" stroke-width="11" stroke-dasharray="1.54571880 689.60466499" stroke-dashoffset="-689.60466499" transform="rotate(-90 235 355)"><title>SQL: 6,390 bytes</title></circle>
-<path d="M130.21 294.50L107.69 281.50" stroke="#3d444d"/><path class="route" d="M130.21 294.50L107.69 281.50" stroke="#65d6ce" stroke-opacity=".6" style="animation-delay:-5s"/>
-<g data-skill-node="SQL"><title>SQL: 6,390 bytes</title><circle cx="87.78" cy="270.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(75.78 258.00) scale(.75)" fill="none" stroke="#65d6ce" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="5" rx="12" ry="4"/><path d="M4 5v17c0 6 24 6 24 0V5M4 13c0 6 24 6 24 0"/></g>
+<g data-skill-circle="libraries" data-total="31" data-center-x="594" data-center-y="327" aria-label="Libraries and Frameworks">
+<rect x="488" y="123" width="448" height="525" rx="18" fill="#151b23" fill-opacity=".48" stroke="#30363d"/>
+<text x="510" y="164" fill="#f0f6fc" font-size="22" font-weight="600" text-anchor="start" >Libraries and Frameworks</text>
+<circle cx="594" cy="327" r="82" fill="none" stroke="#263241" stroke-width="34"/>
+<circle data-segment="NumPy" data-value="6" cx="594" cy="327" r="82" fill="none" stroke="#79c0ff" stroke-width="34" stroke-dasharray="99.72023133 415.50096386" stroke-dashoffset="0.00000000" transform="rotate(-90 594 327)"><title>NumPy</title></circle>
+<path d="M594.000 263.000L594.000 227.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="NumPy">
+<circle cx="706" cy="202" r="3.5" fill="#79c0ff"/>
+<text x="717" y="208" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >NumPy</text>
+<rect x="717" y="215" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="NumPy" x="717" y="215" width="185.00000" height="3" rx="1.5" fill="#79c0ff"/>
 </g>
-<g transform="translate(235 355)"><g class="orbit "><circle r="132" fill="none" stroke="transparent"/><circle r="132" fill="none" stroke="url(#circle-trail)" stroke-width="1.8" stroke-dasharray="95 734.38046"/><circle cx="132" cy="0" r="3" fill="#a5d6ff"/></g></g>
-<circle cx="235" cy="355" r="91" fill="url(#circle-hub)" stroke="#4493f8" stroke-opacity=".65"/>
-<circle cx="235" cy="355" r="85" fill="none" stroke="#79c0ff" stroke-opacity=".09"/>
-<text x="235" y="320" fill="#79c0ff" font-size="13" text-anchor="middle" font-weight="400" class="mono" letter-spacing="3">01</text>
-<text x="235" y="370" fill="#f0f6fc" font-size="46" text-anchor="middle" font-weight="600" >2.86</text>
-<text x="235" y="397" fill="#9198a1" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1">MB OF SOURCE</text>
-<text x="35" y="582" fill="#7d8590" font-size="12" text-anchor="start" font-weight="400" class="mono" letter-spacing="1">SOURCE BYTES</text>
-<g data-skill-legend="Python"><circle cx="37" cy="612" r="4" fill="#79b8ff"/>
-<text x="49" y="618" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >Python</text>
-<text x="440" y="618" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >2,310,492</text>
+<circle data-segment="FastAPI" data-value="3" cx="594" cy="327" r="82" fill="none" stroke="#58a6ff" stroke-width="34" stroke-dasharray="49.86011566 465.36107953" stroke-dashoffset="-99.72023133" transform="rotate(-90 594 327)"><title>FastAPI</title></circle>
+<path d="M654.016 304.772L687.775 292.269" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="FastAPI">
+<circle cx="706" cy="239" r="3.5" fill="#58a6ff"/>
+<text x="717" y="245" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >FastAPI</text>
+<rect x="717" y="252" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="FastAPI" x="717" y="252" width="92.50000" height="3" rx="1.5" fill="#58a6ff"/>
 </g>
-<g data-skill-legend="TypeScript"><circle cx="37" cy="646" r="4" fill="#3178c6"/>
-<text x="49" y="652" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >TypeScript</text>
-<text x="440" y="652" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >401,827</text>
+<circle data-segment="Next.js" data-value="3" cx="594" cy="327" r="82" fill="none" stroke="#388bfd" stroke-width="34" stroke-dasharray="49.86011566 465.36107953" stroke-dashoffset="-149.58034699" transform="rotate(-90 594 327)"><title>Next.js</title></circle>
+<path d="M655.957 343.042L690.808 352.065" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Next.js">
+<circle cx="706" cy="276" r="3.5" fill="#388bfd"/>
+<text x="717" y="282" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Next.js</text>
+<rect x="717" y="289" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Next.js" x="717" y="289" width="92.50000" height="3" rx="1.5" fill="#388bfd"/>
 </g>
-<g data-skill-legend="HTML"><circle cx="37" cy="680" r="4" fill="#e34f26"/>
-<text x="49" y="686" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >HTML</text>
-<text x="440" y="686" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >98,695</text>
+<circle data-segment="pandas" data-value="3" cx="594" cy="327" r="82" fill="none" stroke="#65d6ce" stroke-width="34" stroke-dasharray="49.86011566 465.36107953" stroke-dashoffset="-199.44046265" transform="rotate(-90 594 327)"><title>pandas</title></circle>
+<path d="M635.688 375.561L659.137 402.876" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="pandas">
+<circle cx="706" cy="313" r="3.5" fill="#65d6ce"/>
+<text x="717" y="319" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >pandas</text>
+<rect x="717" y="326" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="pandas" x="717" y="326" width="92.50000" height="3" rx="1.5" fill="#65d6ce"/>
 </g>
-<g data-skill-legend="CSS"><circle cx="37" cy="714" r="4" fill="#a5a0ff"/>
-<text x="49" y="720" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >CSS</text>
-<text x="440" y="720" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >24,315</text>
+<circle data-segment="Pydantic" data-value="3" cx="594" cy="327" r="82" fill="none" stroke="#46a6ab" stroke-width="34" stroke-dasharray="49.86011566 465.36107953" stroke-dashoffset="-249.30057832" transform="rotate(-90 594 327)"><title>Pydantic</title></circle>
+<path d="M600.475 390.672L604.117 426.487" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Pydantic">
+<circle cx="706" cy="350" r="3.5" fill="#46a6ab"/>
+<text x="717" y="356" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Pydantic</text>
+<rect x="717" y="363" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Pydantic" x="717" y="363" width="92.50000" height="3" rx="1.5" fill="#46a6ab"/>
 </g>
-<g data-skill-legend="JavaScript"><circle cx="37" cy="748" r="4" fill="#f0db4f"/>
-<text x="49" y="754" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >JavaScript</text>
-<text x="440" y="754" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >15,496</text>
+<circle data-segment="React" data-value="3" cx="594" cy="327" r="82" fill="none" stroke="#9baeff" stroke-width="34" stroke-dasharray="49.86011566 465.36107953" stroke-dashoffset="-299.16069398" transform="rotate(-90 594 327)"><title>React</title></circle>
+<path d="M562.941 382.958L545.470 414.435" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="React">
+<circle cx="706" cy="387" r="3.5" fill="#9baeff"/>
+<text x="717" y="393" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >React</text>
+<rect x="717" y="400" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="React" x="717" y="400" width="92.50000" height="3" rx="1.5" fill="#9baeff"/>
 </g>
-<g data-skill-legend="SQL"><circle cx="37" cy="782" r="4" fill="#65d6ce"/>
-<text x="49" y="788" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >SQL</text>
-<text x="440" y="788" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >6,390</text>
+<circle data-segment="scikit-learn" data-value="3" cx="594" cy="327" r="82" fill="none" stroke="#a5d6ff" stroke-width="34" stroke-dasharray="49.86011566 465.36107953" stroke-dashoffset="-349.02080964" transform="rotate(-90 594 327)"><title>scikit-learn</title></circle>
+<path d="M536.541 355.185L504.220 371.039" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="scikit-learn">
+<circle cx="706" cy="424" r="3.5" fill="#a5d6ff"/>
+<text x="717" y="430" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >scikit-learn</text>
+<rect x="717" y="437" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="scikit-learn" x="717" y="437" width="92.50000" height="3" rx="1.5" fill="#a5d6ff"/>
 </g>
+<circle data-segment="PyTorch" data-value="2" cx="594" cy="327" r="82" fill="none" stroke="#5198b5" stroke-width="34" stroke-dasharray="33.24007711 481.98111808" stroke-dashoffset="-398.88092531" transform="rotate(-90 594 327)"><title>PyTorch</title></circle>
+<path d="M530.738 317.309L495.153 311.857" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="PyTorch">
+<circle cx="706" cy="461" r="3.5" fill="#5198b5"/>
+<text x="717" y="467" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >PyTorch</text>
+<rect x="717" y="474" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="PyTorch" x="717" y="474" width="61.66667" height="3" rx="1.5" fill="#5198b5"/>
 </g>
-<g data-skill-circle="ai" data-total="22" data-center-x="700" data-center-y="355" aria-label="AI &amp; Machine Learning">
-<text x="700" y="124" fill="#f0f6fc" font-size="26" text-anchor="middle" font-weight="600" >AI &amp; Machine Learning</text>
-<text x="700" y="147" fill="#9198a1" font-size="17" text-anchor="middle" font-weight="400" >Documented model and learning topics</text>
-<circle cx="700" cy="355" r="208" fill="url(#circle-aura)"/>
-<circle cx="700" cy="355" r="132" fill="none" stroke="#4493f8" stroke-opacity=".2"/>
-<circle cx="700" cy="355" r="170" fill="none" stroke="#4493f8" stroke-opacity=".2"/>
-<circle data-segment="Model evaluation" data-value="5" cx="700" cy="355" r="110" fill="none" stroke="#79c0ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="157.07963268 534.07075111" stroke-dashoffset="0.00000000" transform="rotate(-90 700 355)"><title>Model evaluation: 5 matches</title></circle>
-<path d="M700.00 234.00L700.00 208.00" stroke="#3d444d"/><path class="route" d="M700.00 234.00L700.00 208.00" stroke="#79c0ff" stroke-opacity=".6" style="animation-delay:-0s"/>
-<g data-skill-node="Model evaluation"><title>Model evaluation: 5 matches</title><circle cx="700.00" cy="185.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(688.00 173.00) scale(.75)" fill="none" stroke="#79c0ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v25h26M8 21l6-8 6 3 8-12m-7 0h7v7"/></g>
+<circle data-segment="SciPy" data-value="2" cx="594" cy="327" r="82" fill="none" stroke="#7795ce" stroke-width="34" stroke-dasharray="33.24007711 481.98111808" stroke-dashoffset="-432.12100242" transform="rotate(-90 594 327)"><title>SciPy</title></circle>
+<path d="M539.687 293.146L509.136 274.104" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="SciPy">
+<circle cx="706" cy="498" r="3.5" fill="#7795ce"/>
+<text x="717" y="504" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >SciPy</text>
+<rect x="717" y="511" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="SciPy" x="717" y="511" width="61.66667" height="3" rx="1.5" fill="#7795ce"/>
 </g>
-<circle data-segment="Scikit-learn" data-value="4" cx="700" cy="355" r="110" fill="none" stroke="#f7931e" stroke-opacity=".9" stroke-width="11" stroke-dasharray="125.66370614 565.48667765" stroke-dashoffset="-157.07963268" transform="rotate(-90 700 355)"><title>Scikit-learn: 4 matches</title></circle>
-<path d="M785.56 269.44L803.94 251.06" stroke="#3d444d"/><path class="route" d="M785.56 269.44L803.94 251.06" stroke="#f7931e" stroke-opacity=".6" style="animation-delay:-1s"/>
-<g data-skill-node="Scikit-learn"><title>Scikit-learn: 4 matches</title><circle cx="820.21" cy="234.79" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(808.21 222.79) scale(.75)" fill="none" stroke="#f7931e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 7 20 9L6 25V7l20 9"/><circle cx="6" cy="7" r="4"/><circle cx="26" cy="16" r="4"/><circle cx="6" cy="25" r="4"/></g>
+<circle data-segment="FAISS" data-value="1" cx="594" cy="327" r="82" fill="none" stroke="#7cc9be" stroke-width="34" stroke-dasharray="16.62003855 498.60115663" stroke-dashoffset="-465.36107953" transform="rotate(-90 594 327)"><title>FAISS</title></circle>
+<path d="M557.439 274.471L536.873 244.924" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="FAISS">
+<circle cx="706" cy="535" r="3.5" fill="#7cc9be"/>
+<text x="717" y="541" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >FAISS</text>
+<rect x="717" y="548" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="FAISS" x="717" y="548" width="30.83333" height="3" rx="1.5" fill="#7cc9be"/>
 </g>
-<circle data-segment="PyTorch" data-value="3" cx="700" cy="355" r="110" fill="none" stroke="#ee4c2c" stroke-opacity=".9" stroke-width="11" stroke-dasharray="94.24777961 596.90260418" stroke-dashoffset="-282.74333882" transform="rotate(-90 700 355)"><title>PyTorch: 3 matches</title></circle>
-<path d="M821.00 355.00L847.00 355.00" stroke="#3d444d"/><path class="route" d="M821.00 355.00L847.00 355.00" stroke="#ee4c2c" stroke-opacity=".6" style="animation-delay:-2s"/>
-<g data-skill-node="PyTorch"><title>PyTorch: 3 matches</title><circle cx="870.00" cy="355.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-pytorch" x="856.00" y="341.00" width="28" height="28"/>
+<circle data-segment="Keras" data-value="1" cx="594" cy="327" r="82" fill="none" stroke="#c4d8ef" stroke-width="34" stroke-dasharray="16.62003855 498.60115663" stroke-dashoffset="-481.98111808" transform="rotate(-90 594 327)"><title>Keras</title></circle>
+<path d="M568.761 268.187L554.564 235.104" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Keras">
+<circle cx="706" cy="572" r="3.5" fill="#c4d8ef"/>
+<text x="717" y="578" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Keras</text>
+<rect x="717" y="585" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Keras" x="717" y="585" width="30.83333" height="3" rx="1.5" fill="#c4d8ef"/>
 </g>
-<circle data-segment="Transformers" data-value="3" cx="700" cy="355" r="110" fill="none" stroke="#65d6ce" stroke-opacity=".9" stroke-width="11" stroke-dasharray="94.24777961 596.90260418" stroke-dashoffset="-376.99111843" transform="rotate(-90 700 355)"><title>Transformers: 3 matches</title></circle>
-<path d="M785.56 440.56L803.94 458.94" stroke="#3d444d"/><path class="route" d="M785.56 440.56L803.94 458.94" stroke="#65d6ce" stroke-opacity=".6" style="animation-delay:-3s"/>
-<g data-skill-node="Transformers"><title>Transformers: 3 matches</title><circle cx="820.21" cy="475.21" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(808.21 463.21) scale(.75)" fill="none" stroke="#65d6ce" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 7 20 9L6 25V7l20 9"/><circle cx="6" cy="7" r="4"/><circle cx="26" cy="16" r="4"/><circle cx="6" cy="25" r="4"/></g>
+<circle data-segment="Matplotlib" data-value="1" cx="594" cy="327" r="82" fill="none" stroke="#56778f" stroke-width="34" stroke-dasharray="16.62003855 498.60115663" stroke-dashoffset="-498.60115663" transform="rotate(-90 594 327)"><title>Matplotlib</title></circle>
+<path d="M581.117 264.310L573.870 229.047" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Matplotlib">
+<circle cx="706" cy="609" r="3.5" fill="#56778f"/>
+<text x="717" y="615" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Matplotlib</text>
+<rect x="717" y="622" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Matplotlib" x="717" y="622" width="30.83333" height="3" rx="1.5" fill="#56778f"/>
 </g>
-<circle data-segment="Embeddings" data-value="3" cx="700" cy="355" r="110" fill="none" stroke="#e3b86c" stroke-opacity=".9" stroke-width="11" stroke-dasharray="94.24777961 596.90260418" stroke-dashoffset="-471.23889804" transform="rotate(-90 700 355)"><title>Embeddings: 3 matches</title></circle>
-<path d="M700.00 476.00L700.00 502.00" stroke="#3d444d"/><path class="route" d="M700.00 476.00L700.00 502.00" stroke="#e3b86c" stroke-opacity=".6" style="animation-delay:-4s"/>
-<g data-skill-node="Embeddings"><title>Embeddings: 3 matches</title><circle cx="700.00" cy="525.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(688.00 513.00) scale(.75)" fill="none" stroke="#e3b86c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m16 2 14 7-14 7L2 9Zm-14 13 14 7 14-7M2 21l14 7 14-7"/></g>
+<circle cx="594" cy="327" r="61" fill="url(#skill-center)" stroke="#303f51"/>
+<text x="594" y="328" fill="#f0f6fc" font-size="26" font-weight="600" text-anchor="middle" >Build</text>
+<text x="594" y="351" fill="#8ea9c6" font-size="10" font-weight="400" text-anchor="middle" class="mono" letter-spacing="1.2">FRAMEWORKS</text>
 </g>
-<circle data-segment="NLP" data-value="2" cx="700" cy="355" r="110" fill="none" stroke="#c995e8" stroke-opacity=".9" stroke-width="11" stroke-dasharray="62.83185307 628.31853072" stroke-dashoffset="-565.48667765" transform="rotate(-90 700 355)"><title>NLP: 2 matches</title></circle>
-<path d="M614.44 440.56L596.06 458.94" stroke="#3d444d"/><path class="route" d="M614.44 440.56L596.06 458.94" stroke="#c995e8" stroke-opacity=".6" style="animation-delay:-5s"/>
-<g data-skill-node="NLP"><title>NLP: 2 matches</title><circle cx="579.79" cy="475.21" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(567.79 463.21) scale(.75)" fill="none" stroke="#c995e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h26M16 4v22M10 26h12M3 4v5m26-5v5"/></g>
+<g data-skill-circle="agentic" data-total="12" data-center-x="1058" data-center-y="327" aria-label="Agentic AI Engineering">
+<rect x="952" y="123" width="448" height="525" rx="18" fill="#151b23" fill-opacity=".48" stroke="#30363d"/>
+<text x="974" y="164" fill="#f0f6fc" font-size="22" font-weight="600" text-anchor="start" >Agentic AI Engineering</text>
+<circle cx="1058" cy="327" r="82" fill="none" stroke="#263241" stroke-width="34"/>
+<circle data-segment="Evaluation" data-value="3" cx="1058" cy="327" r="82" fill="none" stroke="#79c0ff" stroke-width="34" stroke-dasharray="128.80529880 386.41589639" stroke-dashoffset="0.00000000" transform="rotate(-90 1058 327)"><title>Evaluation</title></circle>
+<path d="M1058.000 263.000L1058.000 227.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Evaluation">
+<circle cx="1170" cy="202" r="3.5" fill="#79c0ff"/>
+<text x="1181" y="208" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Evaluation</text>
+<rect x="1181" y="215" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Evaluation" x="1181" y="215" width="185.00000" height="3" rx="1.5" fill="#79c0ff"/>
 </g>
-<circle data-segment="TensorFlow" data-value="1" cx="700" cy="355" r="110" fill="none" stroke="#ff6f00" stroke-opacity=".9" stroke-width="11" stroke-dasharray="31.41592654 659.73445725" stroke-dashoffset="-628.31853072" transform="rotate(-90 700 355)"><title>TensorFlow: 1 matches</title></circle>
-<path d="M579.00 355.00L553.00 355.00" stroke="#3d444d"/><path class="route" d="M579.00 355.00L553.00 355.00" stroke="#ff6f00" stroke-opacity=".6" style="animation-delay:-6s"/>
-<g data-skill-node="TensorFlow"><title>TensorFlow: 1 matches</title><circle cx="530.00" cy="355.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-tensorflow" x="516.00" y="341.00" width="28" height="28"/>
+<circle data-segment="Retrieval" data-value="2" cx="1058" cy="327" r="82" fill="none" stroke="#58a6ff" stroke-width="34" stroke-dasharray="85.87019920 429.35099599" stroke-dashoffset="-128.80529880" transform="rotate(-90 1058 327)"><title>Retrieval</title></circle>
+<path d="M1122.000 327.000L1158.000 327.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Retrieval">
+<circle cx="1170" cy="239" r="3.5" fill="#58a6ff"/>
+<text x="1181" y="245" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Retrieval</text>
+<rect x="1181" y="252" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Retrieval" x="1181" y="252" width="123.33333" height="3" rx="1.5" fill="#58a6ff"/>
 </g>
-<circle data-segment="Reinforcement learning" data-value="1" cx="700" cy="355" r="110" fill="none" stroke="#a1b5ca" stroke-opacity=".9" stroke-width="11" stroke-dasharray="31.41592654 659.73445725" stroke-dashoffset="-659.73445725" transform="rotate(-90 700 355)"><title>Reinforcement learning: 1 matches</title></circle>
-<path d="M614.44 269.44L596.06 251.06" stroke="#3d444d"/><path class="route" d="M614.44 269.44L596.06 251.06" stroke="#a1b5ca" stroke-opacity=".6" style="animation-delay:-7s"/>
-<g data-skill-node="Reinforcement learning"><title>Reinforcement learning: 1 matches</title><circle cx="579.79" cy="234.79" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(567.79 222.79) scale(.75)" fill="none" stroke="#a1b5ca" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M27 12A12 12 0 0 0 6 6l-3 4m0-8v8h8M5 20a12 12 0 0 0 21 6l3-4m0 8v-8h-8"/></g>
+<circle data-segment="Workflow orchestration" data-value="2" cx="1058" cy="327" r="82" fill="none" stroke="#388bfd" stroke-width="34" stroke-dasharray="85.87019920 429.35099599" stroke-dashoffset="-214.67549800" transform="rotate(-90 1058 327)"><title>Workflow orchestration</title></circle>
+<path d="M1090.000 382.426L1108.000 413.603" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Workflow orchestration">
+<circle cx="1170" cy="276" r="3.5" fill="#388bfd"/>
+<text x="1181" y="282" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Workflow orchestration</text>
+<rect x="1181" y="289" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Workflow orchestration" x="1181" y="289" width="123.33333" height="3" rx="1.5" fill="#388bfd"/>
 </g>
-<g transform="translate(700 355)"><g class="orbit reverse"><circle r="132" fill="none" stroke="transparent"/><circle r="132" fill="none" stroke="url(#circle-trail)" stroke-width="1.8" stroke-dasharray="95 734.38046"/><circle cx="132" cy="0" r="3" fill="#a5d6ff"/></g></g>
-<circle cx="700" cy="355" r="91" fill="url(#circle-hub)" stroke="#4493f8" stroke-opacity=".65"/>
-<circle cx="700" cy="355" r="85" fill="none" stroke="#79c0ff" stroke-opacity=".09"/>
-<text x="700" y="320" fill="#79c0ff" font-size="13" text-anchor="middle" font-weight="400" class="mono" letter-spacing="3">02</text>
-<text x="700" y="370" fill="#f0f6fc" font-size="46" text-anchor="middle" font-weight="600" >22</text>
-<text x="700" y="397" fill="#9198a1" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1">TOPIC MATCHES</text>
-<text x="500" y="582" fill="#7d8590" font-size="12" text-anchor="start" font-weight="400" class="mono" letter-spacing="1">REPOSITORIES PER TOPIC</text>
-<g data-skill-legend="Model evaluation"><circle cx="502" cy="612" r="4" fill="#79c0ff"/>
-<text x="514" y="618" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >Model evaluation</text>
-<text x="905" y="618" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >5</text>
+<circle data-segment="Guardrails" data-value="1" cx="1058" cy="327" r="82" fill="none" stroke="#65d6ce" stroke-width="34" stroke-dasharray="42.93509960 472.28609559" stroke-dashoffset="-300.54569719" transform="rotate(-90 1058 327)"><title>Guardrails</title></circle>
+<path d="M1026.000 382.426L1008.000 413.603" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Guardrails">
+<circle cx="1170" cy="313" r="3.5" fill="#65d6ce"/>
+<text x="1181" y="319" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Guardrails</text>
+<rect x="1181" y="326" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Guardrails" x="1181" y="326" width="61.66667" height="3" rx="1.5" fill="#65d6ce"/>
 </g>
-<g data-skill-legend="Scikit-learn"><circle cx="502" cy="646" r="4" fill="#f7931e"/>
-<text x="514" y="652" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >Scikit-learn</text>
-<text x="905" y="652" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >4</text>
+<circle data-segment="Human approval" data-value="1" cx="1058" cy="327" r="82" fill="none" stroke="#46a6ab" stroke-width="34" stroke-dasharray="42.93509960 472.28609559" stroke-dashoffset="-343.48079679" transform="rotate(-90 1058 327)"><title>Human approval</title></circle>
+<path d="M1002.574 359.000L971.397 377.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Human approval">
+<circle cx="1170" cy="350" r="3.5" fill="#46a6ab"/>
+<text x="1181" y="356" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Human approval</text>
+<rect x="1181" y="363" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Human approval" x="1181" y="363" width="61.66667" height="3" rx="1.5" fill="#46a6ab"/>
 </g>
-<g data-skill-legend="PyTorch"><circle cx="502" cy="680" r="4" fill="#ee4c2c"/>
-<text x="514" y="686" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >PyTorch</text>
-<text x="905" y="686" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >3</text>
+<circle data-segment="State and memory" data-value="1" cx="1058" cy="327" r="82" fill="none" stroke="#9baeff" stroke-width="34" stroke-dasharray="42.93509960 472.28609559" stroke-dashoffset="-386.41589639" transform="rotate(-90 1058 327)"><title>State and memory</title></circle>
+<path d="M994.000 327.000L958.000 327.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="State and memory">
+<circle cx="1170" cy="387" r="3.5" fill="#9baeff"/>
+<text x="1181" y="393" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >State and memory</text>
+<rect x="1181" y="400" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="State and memory" x="1181" y="400" width="61.66667" height="3" rx="1.5" fill="#9baeff"/>
 </g>
-<g data-skill-legend="Transformers"><circle cx="502" cy="714" r="4" fill="#65d6ce"/>
-<text x="514" y="720" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >Transformers</text>
-<text x="905" y="720" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >3</text>
+<circle data-segment="Task routing" data-value="1" cx="1058" cy="327" r="82" fill="none" stroke="#a5d6ff" stroke-width="34" stroke-dasharray="42.93509960 472.28609559" stroke-dashoffset="-429.35099599" transform="rotate(-90 1058 327)"><title>Task routing</title></circle>
+<path d="M1002.574 295.000L971.397 277.000" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Task routing">
+<circle cx="1170" cy="424" r="3.5" fill="#a5d6ff"/>
+<text x="1181" y="430" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Task routing</text>
+<rect x="1181" y="437" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Task routing" x="1181" y="437" width="61.66667" height="3" rx="1.5" fill="#a5d6ff"/>
 </g>
-<g data-skill-legend="Embeddings"><circle cx="502" cy="748" r="4" fill="#e3b86c"/>
-<text x="514" y="754" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >Embeddings</text>
-<text x="905" y="754" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >3</text>
+<circle data-segment="Tool execution" data-value="1" cx="1058" cy="327" r="82" fill="none" stroke="#5198b5" stroke-width="34" stroke-dasharray="42.93509960 472.28609559" stroke-dashoffset="-472.28609559" transform="rotate(-90 1058 327)"><title>Tool execution</title></circle>
+<path d="M1026.000 271.574L1008.000 240.397" stroke="#0d1117" stroke-width="2.2"/>
+<g data-skill-legend="Tool execution">
+<circle cx="1170" cy="461" r="3.5" fill="#5198b5"/>
+<text x="1181" y="467" fill="#d1d9e0" font-size="17" font-weight="400" text-anchor="start" >Tool execution</text>
+<rect x="1181" y="474" width="185" height="3" rx="1.5" fill="#25303d"/>
+<rect data-evidence-bar="Tool execution" x="1181" y="474" width="61.66667" height="3" rx="1.5" fill="#5198b5"/>
 </g>
-<g data-skill-legend="NLP"><circle cx="502" cy="782" r="4" fill="#c995e8"/>
-<text x="514" y="788" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >NLP</text>
-<text x="905" y="788" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >2</text>
+<circle cx="1058" cy="327" r="61" fill="url(#skill-center)" stroke="#303f51"/>
+<text x="1058" y="328" fill="#f0f6fc" font-size="26" font-weight="600" text-anchor="middle" >Agentic</text>
+<text x="1058" y="351" fill="#8ea9c6" font-size="10" font-weight="400" text-anchor="middle" class="mono" letter-spacing="1.2">ENGINEERING</text>
 </g>
-<g data-skill-legend="TensorFlow"><circle cx="502" cy="816" r="4" fill="#ff6f00"/>
-<text x="514" y="822" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >TensorFlow</text>
-<text x="905" y="822" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >1</text>
-</g>
-<g data-skill-legend="Reinforcement learning"><circle cx="502" cy="850" r="4" fill="#a1b5ca"/>
-<text x="514" y="856" fill="#d1d9e0" font-size="20" text-anchor="start" font-weight="400" >Reinforcement learning</text>
-<text x="905" y="856" fill="#f0f6fc" font-size="20" text-anchor="end" font-weight="500" >1</text>
-</g>
-</g>
-<g data-skill-circle="agentic" data-total="57" data-center-x="1165" data-center-y="355" aria-label="Agentic AI Engineering">
-<text x="1165" y="124" fill="#f0f6fc" font-size="26" text-anchor="middle" font-weight="600" >Agentic AI Engineering</text>
-<text x="1165" y="147" fill="#9198a1" font-size="17" text-anchor="middle" font-weight="400" >Engineering stack + agent workflows</text>
-<circle cx="1165" cy="355" r="208" fill="url(#circle-aura)"/>
-<circle cx="1165" cy="355" r="132" fill="none" stroke="#4493f8" stroke-opacity=".2"/>
-<circle cx="1165" cy="355" r="170" fill="none" stroke="#4493f8" stroke-opacity=".2"/>
-<circle data-segment="CI / CD" data-value="16" cx="1165" cy="355" r="110" fill="none" stroke="#e6edf3" stroke-opacity=".9" stroke-width="11" stroke-dasharray="194.00712527 497.14325852" stroke-dashoffset="0.00000000" transform="rotate(-90 1165 355)"><title>CI / CD: 16 matches</title></circle>
-<path d="M1165.00 234.00L1165.00 208.00" stroke="#3d444d"/><path class="route" d="M1165.00 234.00L1165.00 208.00" stroke="#e6edf3" stroke-opacity=".6" style="animation-delay:-0s"/>
-<g data-skill-node="CI / CD"><title>CI / CD: 16 matches</title><circle cx="1165.00" cy="185.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-github" x="1151.00" y="171.00" width="28" height="28"/>
-</g>
-<circle data-segment="Testing" data-value="6" cx="1165" cy="355" r="110" fill="none" stroke="#58a6ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="72.75267198 618.39771181" stroke-dashoffset="-194.00712527" transform="rotate(-90 1165 355)"><title>Testing: 6 matches</title></circle>
-<path d="M1211.30 243.21L1221.25 219.19" stroke="#3d444d"/><path class="route" d="M1211.30 243.21L1221.25 219.19" stroke="#58a6ff" stroke-opacity=".6" style="animation-delay:-1s"/>
-<g data-skill-node="Testing"><title>Testing: 6 matches</title><circle cx="1230.06" cy="197.94" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1218.06 185.94) scale(.75)" fill="none" stroke="#58a6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v25h26M8 21l6-8 6 3 8-12m-7 0h7v7"/></g>
-</g>
-<circle data-segment="SQL databases" data-value="5" cx="1165" cy="355" r="110" fill="none" stroke="#a5a0ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="60.62722665 630.52315714" stroke-dashoffset="-266.75979725" transform="rotate(-90 1165 355)"><title>SQL databases: 5 matches</title></circle>
-<path d="M1250.56 269.44L1268.94 251.06" stroke="#3d444d"/><path class="route" d="M1250.56 269.44L1268.94 251.06" stroke="#a5a0ff" stroke-opacity=".6" style="animation-delay:-2s"/>
-<g data-skill-node="SQL databases"><title>SQL databases: 5 matches</title><circle cx="1285.21" cy="234.79" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-postgresql" x="1271.21" y="220.79" width="28" height="28"/>
-</g>
-<circle data-segment="AWS" data-value="4" cx="1165" cy="355" r="110" fill="none" stroke="#ff9900" stroke-opacity=".9" stroke-width="11" stroke-dasharray="48.50178132 642.64860247" stroke-dashoffset="-327.38702390" transform="rotate(-90 1165 355)"><title>AWS: 4 matches</title></circle>
-<path d="M1276.79 308.70L1300.81 298.75" stroke="#3d444d"/><path class="route" d="M1276.79 308.70L1300.81 298.75" stroke="#ff9900" stroke-opacity=".6" style="animation-delay:-3s"/>
-<g data-skill-node="AWS"><title>AWS: 4 matches</title><circle cx="1322.06" cy="289.94" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1310.06 277.94) scale(.75)" fill="none" stroke="#ff9900" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h17a6 6 0 0 0 1-12A10 10 0 0 0 7 10a7 7 0 0 0 1 14Z"/></g>
-</g>
-<circle data-segment="Backend APIs" data-value="4" cx="1165" cy="355" r="110" fill="none" stroke="#e3b86c" stroke-opacity=".9" stroke-width="11" stroke-dasharray="48.50178132 642.64860247" stroke-dashoffset="-375.88880522" transform="rotate(-90 1165 355)"><title>Backend APIs: 4 matches</title></circle>
-<path d="M1286.00 355.00L1312.00 355.00" stroke="#3d444d"/><path class="route" d="M1286.00 355.00L1312.00 355.00" stroke="#e3b86c" stroke-opacity=".6" style="animation-delay:-4s"/>
-<g data-skill-node="Backend APIs"><title>Backend APIs: 4 matches</title><circle cx="1335.00" cy="355.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1323.00 343.00) scale(.75)" fill="none" stroke="#e3b86c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-6 7 6 7m16-14 6 7-6 7M19 3l-6 18"/></g>
-</g>
-<circle data-segment="Node.js / npm" data-value="3" cx="1165" cy="355" r="110" fill="none" stroke="#83cd29" stroke-opacity=".9" stroke-width="11" stroke-dasharray="36.37633599 654.77404780" stroke-dashoffset="-424.39058654" transform="rotate(-90 1165 355)"><title>Node.js / npm: 3 matches</title></circle>
-<path d="M1276.79 401.30L1300.81 411.25" stroke="#3d444d"/><path class="route" d="M1276.79 401.30L1300.81 411.25" stroke="#83cd29" stroke-opacity=".6" style="animation-delay:-5s"/>
-<g data-skill-node="Node.js / npm"><title>Node.js / npm: 3 matches</title><circle cx="1322.06" cy="420.06" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-nodejs" x="1308.06" y="406.06" width="28" height="28"/>
-</g>
-<circle data-segment="React" data-value="3" cx="1165" cy="355" r="110" fill="none" stroke="#61dafb" stroke-opacity=".9" stroke-width="11" stroke-dasharray="36.37633599 654.77404780" stroke-dashoffset="-460.76692253" transform="rotate(-90 1165 355)"><title>React: 3 matches</title></circle>
-<path d="M1250.56 440.56L1268.94 458.94" stroke="#3d444d"/><path class="route" d="M1250.56 440.56L1268.94 458.94" stroke="#61dafb" stroke-opacity=".6" style="animation-delay:-6s"/>
-<g data-skill-node="React"><title>React: 3 matches</title><circle cx="1285.21" cy="475.21" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-react" x="1271.21" y="461.21" width="28" height="28"/>
-</g>
-<circle data-segment="Containers" data-value="3" cx="1165" cy="355" r="110" fill="none" stroke="#2496ed" stroke-opacity=".9" stroke-width="11" stroke-dasharray="36.37633599 654.77404780" stroke-dashoffset="-497.14325852" transform="rotate(-90 1165 355)"><title>Containers: 3 matches</title></circle>
-<path d="M1211.30 466.79L1221.25 490.81" stroke="#3d444d"/><path class="route" d="M1211.30 466.79L1221.25 490.81" stroke="#2496ed" stroke-opacity=".6" style="animation-delay:-7s"/>
-<g data-skill-node="Containers"><title>Containers: 3 matches</title><circle cx="1230.06" cy="512.06" r="23" fill="#151b23" stroke="#3b5574"/>
-<use href="#circle-brand-docker" x="1216.06" y="498.06" width="28" height="28"/>
-</g>
-<circle data-segment="Tracing / evals" data-value="2" cx="1165" cy="355" r="110" fill="none" stroke="#79c0ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="24.25089066 666.89949313" stroke-dashoffset="-533.51959450" transform="rotate(-90 1165 355)"><title>Tracing / evals: 2 matches</title></circle>
-<path d="M1165.00 476.00L1165.00 502.00" stroke="#3d444d"/><path class="route" d="M1165.00 476.00L1165.00 502.00" stroke="#79c0ff" stroke-opacity=".6" style="animation-delay:-8s"/>
-<g data-skill-node="Tracing / evals"><title>Tracing / evals: 2 matches</title><circle cx="1165.00" cy="525.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1153.00 513.00) scale(.75)" fill="none" stroke="#79c0ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v25h26M8 21l6-8 6 3 8-12m-7 0h7v7"/></g>
-</g>
-<circle data-segment="Planning" data-value="2" cx="1165" cy="355" r="110" fill="none" stroke="#58a6ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="24.25089066 666.89949313" stroke-dashoffset="-557.77048516" transform="rotate(-90 1165 355)"><title>Planning: 2 matches</title></circle>
-<path d="M1118.70 466.79L1108.75 490.81" stroke="#3d444d"/><path class="route" d="M1118.70 466.79L1108.75 490.81" stroke="#58a6ff" stroke-opacity=".6" style="animation-delay:-9s"/>
-<g data-skill-node="Planning"><title>Planning: 2 matches</title><circle cx="1099.94" cy="512.06" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1087.94 500.06) scale(.75)" fill="none" stroke="#58a6ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="5" r="3"/><circle cx="27" cy="27" r="3"/><path d="M8 5h12a6 6 0 0 1 0 12h-8a5 5 0 0 0 0 10h12"/></g>
-</g>
-<circle data-segment="Tool use" data-value="2" cx="1165" cy="355" r="110" fill="none" stroke="#a5a0ff" stroke-opacity=".9" stroke-width="11" stroke-dasharray="24.25089066 666.89949313" stroke-dashoffset="-582.02137582" transform="rotate(-90 1165 355)"><title>Tool use: 2 matches</title></circle>
-<path d="M1079.44 440.56L1061.06 458.94" stroke="#3d444d"/><path class="route" d="M1079.44 440.56L1061.06 458.94" stroke="#a5a0ff" stroke-opacity=".6" style="animation-delay:-10s"/>
-<g data-skill-node="Tool use"><title>Tool use: 2 matches</title><circle cx="1044.79" cy="475.21" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1032.79 463.21) scale(.75)" fill="none" stroke="#a5a0ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m11 3-7 8 7 8m10-16 7 8-7 8M18 2l-4 21m-5 5h14"/></g>
-</g>
-<circle data-segment="Memory / state" data-value="2" cx="1165" cy="355" r="110" fill="none" stroke="#65d6ce" stroke-opacity=".9" stroke-width="11" stroke-dasharray="24.25089066 666.89949313" stroke-dashoffset="-606.27226648" transform="rotate(-90 1165 355)"><title>Memory / state: 2 matches</title></circle>
-<path d="M1053.21 401.30L1029.19 411.25" stroke="#3d444d"/><path class="route" d="M1053.21 401.30L1029.19 411.25" stroke="#65d6ce" stroke-opacity=".6" style="animation-delay:-11s"/>
-<g data-skill-node="Memory / state"><title>Memory / state: 2 matches</title><circle cx="1007.94" cy="420.06" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(995.94 408.06) scale(.75)" fill="none" stroke="#65d6ce" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="5" rx="12" ry="4"/><path d="M4 5v17c0 6 24 6 24 0V5M4 13c0 6 24 6 24 0"/></g>
-</g>
-<circle data-segment="Orchestration" data-value="2" cx="1165" cy="355" r="110" fill="none" stroke="#e3b86c" stroke-opacity=".9" stroke-width="11" stroke-dasharray="24.25089066 666.89949313" stroke-dashoffset="-630.52315714" transform="rotate(-90 1165 355)"><title>Orchestration: 2 matches</title></circle>
-<path d="M1044.00 355.00L1018.00 355.00" stroke="#3d444d"/><path class="route" d="M1044.00 355.00L1018.00 355.00" stroke="#e3b86c" stroke-opacity=".6" style="animation-delay:-12s"/>
-<g data-skill-node="Orchestration"><title>Orchestration: 2 matches</title><circle cx="995.00" cy="355.00" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(983.00 343.00) scale(.75)" fill="none" stroke="#e3b86c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 7 20 9L6 25V7l20 9"/><circle cx="6" cy="7" r="4"/><circle cx="26" cy="16" r="4"/><circle cx="6" cy="25" r="4"/></g>
-</g>
-<circle data-segment="Guardrails" data-value="1" cx="1165" cy="355" r="110" fill="none" stroke="#c995e8" stroke-opacity=".9" stroke-width="11" stroke-dasharray="12.12544533 679.02493846" stroke-dashoffset="-654.77404780" transform="rotate(-90 1165 355)"><title>Guardrails: 1 matches</title></circle>
-<path d="M1053.21 308.70L1029.19 298.75" stroke="#3d444d"/><path class="route" d="M1053.21 308.70L1029.19 298.75" stroke="#c995e8" stroke-opacity=".6" style="animation-delay:-13s"/>
-<g data-skill-node="Guardrails"><title>Guardrails: 1 matches</title><circle cx="1007.94" cy="289.94" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(995.94 277.94) scale(.75)" fill="none" stroke="#c995e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 2 29 7v9c0 7-8 12-13 15C11 28 3 23 3 16V7ZM9 15l5 5 10-10"/></g>
-</g>
-<circle data-segment="RAG / retrieval" data-value="1" cx="1165" cy="355" r="110" fill="none" stroke="#8bd49c" stroke-opacity=".9" stroke-width="11" stroke-dasharray="12.12544533 679.02493846" stroke-dashoffset="-666.89949313" transform="rotate(-90 1165 355)"><title>RAG / retrieval: 1 matches</title></circle>
-<path d="M1079.44 269.44L1061.06 251.06" stroke="#3d444d"/><path class="route" d="M1079.44 269.44L1061.06 251.06" stroke="#8bd49c" stroke-opacity=".6" style="animation-delay:-14s"/>
-<g data-skill-node="RAG / retrieval"><title>RAG / retrieval: 1 matches</title><circle cx="1044.79" cy="234.79" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1032.79 222.79) scale(.75)" fill="none" stroke="#8bd49c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="13" r="10"/><path d="m20 20 9 9M8 13h10m-5-5v10"/></g>
-</g>
-<circle data-segment="Human review" data-value="1" cx="1165" cy="355" r="110" fill="none" stroke="#a1b5ca" stroke-opacity=".9" stroke-width="11" stroke-dasharray="12.12544533 679.02493846" stroke-dashoffset="-679.02493846" transform="rotate(-90 1165 355)"><title>Human review: 1 matches</title></circle>
-<path d="M1118.70 243.21L1108.75 219.19" stroke="#3d444d"/><path class="route" d="M1118.70 243.21L1108.75 219.19" stroke="#a1b5ca" stroke-opacity=".6" style="animation-delay:-15s"/>
-<g data-skill-node="Human review"><title>Human review: 1 matches</title><circle cx="1099.94" cy="197.94" r="23" fill="#151b23" stroke="#3b5574"/>
-<g transform="translate(1087.94 185.94) scale(.75)" fill="none" stroke="#a1b5ca" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="8" r="5"/><path d="M5 29v-5a11 11 0 0 1 22 0v5M9 22v7m14-7v7"/></g>
-</g>
-<g transform="translate(1165 355)"><g class="orbit "><circle r="132" fill="none" stroke="transparent"/><circle r="132" fill="none" stroke="url(#circle-trail)" stroke-width="1.8" stroke-dasharray="95 734.38046"/><circle cx="132" cy="0" r="3" fill="#a5d6ff"/></g></g>
-<circle cx="1165" cy="355" r="91" fill="url(#circle-hub)" stroke="#4493f8" stroke-opacity=".65"/>
-<circle cx="1165" cy="355" r="85" fill="none" stroke="#79c0ff" stroke-opacity=".09"/>
-<text x="1165" y="320" fill="#79c0ff" font-size="13" text-anchor="middle" font-weight="400" class="mono" letter-spacing="3">03</text>
-<text x="1165" y="370" fill="#f0f6fc" font-size="46" text-anchor="middle" font-weight="600" >57</text>
-<text x="1165" y="397" fill="#9198a1" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1">TOPIC MATCHES</text>
-<text x="965" y="582" fill="#7d8590" font-size="12" text-anchor="start" font-weight="400" class="mono" letter-spacing="1">REPOSITORIES PER TOPIC</text>
-<g data-skill-legend="CI / CD"><circle cx="967" cy="612" r="4" fill="#e6edf3"/>
-<text x="979" y="618" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >CI / CD</text>
-<text x="1162" y="618" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >16</text>
-</g>
-<g data-skill-legend="Testing"><circle cx="967" cy="646" r="4" fill="#58a6ff"/>
-<text x="979" y="652" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Testing</text>
-<text x="1162" y="652" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >6</text>
-</g>
-<g data-skill-legend="SQL databases"><circle cx="967" cy="680" r="4" fill="#a5a0ff"/>
-<text x="979" y="686" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >SQL databases</text>
-<text x="1162" y="686" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >5</text>
-</g>
-<g data-skill-legend="AWS"><circle cx="967" cy="714" r="4" fill="#ff9900"/>
-<text x="979" y="720" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >AWS</text>
-<text x="1162" y="720" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >4</text>
-</g>
-<g data-skill-legend="Backend APIs"><circle cx="967" cy="748" r="4" fill="#e3b86c"/>
-<text x="979" y="754" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Backend APIs</text>
-<text x="1162" y="754" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >4</text>
-</g>
-<g data-skill-legend="Node.js / npm"><circle cx="967" cy="782" r="4" fill="#83cd29"/>
-<text x="979" y="788" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Node.js / npm</text>
-<text x="1162" y="788" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >3</text>
-</g>
-<g data-skill-legend="React"><circle cx="967" cy="816" r="4" fill="#61dafb"/>
-<text x="979" y="822" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >React</text>
-<text x="1162" y="822" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >3</text>
-</g>
-<g data-skill-legend="Containers"><circle cx="967" cy="850" r="4" fill="#2496ed"/>
-<text x="979" y="856" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Containers</text>
-<text x="1162" y="856" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >3</text>
-</g>
-<g data-skill-legend="Tracing / evals"><circle cx="1179" cy="612" r="4" fill="#79c0ff"/>
-<text x="1191" y="618" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Tracing / evals</text>
-<text x="1374" y="618" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >2</text>
-</g>
-<g data-skill-legend="Planning"><circle cx="1179" cy="646" r="4" fill="#58a6ff"/>
-<text x="1191" y="652" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Planning</text>
-<text x="1374" y="652" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >2</text>
-</g>
-<g data-skill-legend="Tool use"><circle cx="1179" cy="680" r="4" fill="#a5a0ff"/>
-<text x="1191" y="686" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Tool use</text>
-<text x="1374" y="686" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >2</text>
-</g>
-<g data-skill-legend="Memory / state"><circle cx="1179" cy="714" r="4" fill="#65d6ce"/>
-<text x="1191" y="720" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Memory / state</text>
-<text x="1374" y="720" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >2</text>
-</g>
-<g data-skill-legend="Orchestration"><circle cx="1179" cy="748" r="4" fill="#e3b86c"/>
-<text x="1191" y="754" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Orchestration</text>
-<text x="1374" y="754" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >2</text>
-</g>
-<g data-skill-legend="Guardrails"><circle cx="1179" cy="782" r="4" fill="#c995e8"/>
-<text x="1191" y="788" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Guardrails</text>
-<text x="1374" y="788" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >1</text>
-</g>
-<g data-skill-legend="RAG / retrieval"><circle cx="1179" cy="816" r="4" fill="#8bd49c"/>
-<text x="1191" y="822" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >RAG / retrieval</text>
-<text x="1374" y="822" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >1</text>
-</g>
-<g data-skill-legend="Human review"><circle cx="1179" cy="850" r="4" fill="#a1b5ca"/>
-<text x="1191" y="856" fill="#d1d9e0" font-size="16" text-anchor="start" font-weight="400" >Human review</text>
-<text x="1374" y="856" fill="#f0f6fc" font-size="17" text-anchor="end" font-weight="500" >1</text>
-</g>
-</g>
-<text x="30" y="901" fill="#9198a1" font-size="16" text-anchor="start" font-weight="400" >Arcs show source bytes or documented topic matches. A repository can appear in several topics.</text>
+<text x="40" y="673" fill="#7d8590" font-size="15" font-weight="400" text-anchor="start" >Repository evidence · Automatically refreshed</text>
 </svg>
