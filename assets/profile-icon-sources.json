@@ -1,102 +1,16 @@
 {
-  "purpose": "Current portfolio concept graph; original brand colors and local embedded SVG resources.",
+  "purpose": "LinkedIn Agent local learning architecture; repository-grounded nodes and local brand assets.",
+  "architecture_source_commit": "65b2638d0bd094b5a7dd3b2885b175f3b01934c6",
   "node_counts": {
-    "youtube": 8,
-    "crypto": 8
+    "linkedin": 2
   },
-  "concept_tools": {
-    "YouTube Agent Concept": [
-      "Gemini",
-      "Google Search",
-      "Gmail",
-      "Google Drive",
-      "AI Studio",
-      "Google Cloud",
+  "model_and_runtime": {
+    "LinkedIn Agent": [
       "Python",
-      "GitHub"
-    ],
-    "Crypto Agent Concept": [
-      "Binance",
-      "Bitcoin",
-      "Ethereum",
-      "Solana",
-      "Python",
-      "PostgreSQL",
-      "OpenAI",
-      "Redis"
+      "OpenAI"
     ]
   },
   "icon_sources": [
-    {
-      "icon": "binance",
-      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/binance.svg",
-      "source_project": "Simple Icons",
-      "license": "CC0-1.0",
-      "upstream_revision_observed": "cd796c98565fc466923fc1128b962e133fa3c612"
-    },
-    {
-      "icon": "bitcoin",
-      "source": "https://github.com/gilbarbara/logos/blob/main/logos/bitcoin.svg",
-      "source_project": "SVG Logos",
-      "license": "CC0-1.0",
-      "upstream_blob_sha": "bd6ed27dc1cc9d8973ee69fd282c410343ff73c1"
-    },
-    {
-      "icon": "ethereum",
-      "source": "https://github.com/gilbarbara/logos/blob/main/logos/ethereum.svg",
-      "source_project": "SVG Logos",
-      "license": "CC0-1.0",
-      "upstream_blob_sha": "f095d8c07ef861d1fc97c60298d78242aa55f2d6"
-    },
-    {
-      "icon": "gemini",
-      "source": "https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/gemini-color.svg",
-      "source_project": "Lobe Icons",
-      "license": "MIT",
-      "upstream_blob_sha": "62681dfa7cf3db2940b527ed3cbcee7bacbb1b9b"
-    },
-    {
-      "icon": "github",
-      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg",
-      "source_project": "Simple Icons",
-      "license": "CC0-1.0",
-      "upstream_revision_observed": "cd796c98565fc466923fc1128b962e133fa3c612"
-    },
-    {
-      "icon": "gmail",
-      "source": "https://github.com/gilbarbara/logos/blob/main/logos/google-gmail-2020.svg",
-      "source_project": "SVG Logos",
-      "license": "CC0-1.0",
-      "upstream_blob_sha": "7f6de6b2e93d84540f5eec8f63f286e2067057fa"
-    },
-    {
-      "icon": "google",
-      "source": "https://github.com/devicons/devicon/blob/master/icons/google/google-original.svg",
-      "source_project": "Devicon",
-      "license": "MIT",
-      "upstream_blob_sha": "57b9431aa8fe450e29991da3e4b5da817d626395"
-    },
-    {
-      "icon": "googleaistudio",
-      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/aistudio.svg",
-      "source_project": "Lobe Icons",
-      "license": "MIT",
-      "upstream_revision_observed": "a177c1e817204f8ddc0c8993610ca674fc6d9767"
-    },
-    {
-      "icon": "googlecloud",
-      "source": "https://github.com/devicons/devicon/blob/master/icons/googlecloud/googlecloud-original.svg",
-      "source_project": "Devicon",
-      "license": "MIT",
-      "upstream_blob_sha": "e9d755e8fcaf177463ef47441095e2210ae16681"
-    },
-    {
-      "icon": "googledrive",
-      "source": "https://github.com/gilbarbara/logos/blob/main/logos/google-drive-2020.svg",
-      "source_project": "SVG Logos",
-      "license": "CC0-1.0",
-      "upstream_blob_sha": "c49f3a754a40f91833a053a40ec9cc8bf9ff421e"
-    },
     {
       "icon": "openai",
       "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/openai.svg",
@@ -105,41 +19,13 @@
       "upstream_revision_observed": "a177c1e817204f8ddc0c8993610ca674fc6d9767"
     },
     {
-      "icon": "postgresql",
-      "source": "https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg",
-      "source_project": "Devicon",
-      "license": "MIT",
-      "upstream_blob_sha": "4656cb79adde771d6eb3bf58647f4e82e89e083b"
-    },
-    {
       "icon": "python",
       "source": "https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg",
       "source_project": "Devicon",
       "license": "MIT",
       "upstream_blob_sha": "e0e096a24e59fb9f1e501899389e3905c6c27cd7"
-    },
-    {
-      "icon": "redis",
-      "source": "https://github.com/devicons/devicon/blob/master/icons/redis/redis-original.svg",
-      "source_project": "Devicon",
-      "license": "MIT",
-      "upstream_blob_sha": "7aabb0dd08a6560efc2b4fe308c2b2acf25ee438"
-    },
-    {
-      "icon": "solana",
-      "source": "https://github.com/solana-foundation/solana-com/blob/main/apps/web/public/src/img/branding/solanaLogoMark.svg",
-      "source_project": "Solana Foundation",
-      "license": "Respective trademark; official brand asset",
-      "upstream_blob_sha": "ed6f34d95f7e0f951105cbaed72e9bd6587bc509"
-    },
-    {
-      "icon": "youtube",
-      "source": "https://github.com/gilbarbara/logos/blob/main/logos/youtube-icon.svg",
-      "source_project": "SVG Logos",
-      "license": "CC0-1.0",
-      "upstream_blob_sha": "c614d147b209952b913fc50468b4e00a210543fd"
     }
   ],
-  "color_treatment": "Upstream multicolor fills and gradients retained. OpenAI, GitHub and AI Studio use their white dark-background marks. Binance uses official gold #F0B90B.",
+  "color_treatment": "GitHub dark palette for workflow nodes; authentic institution logo colors retained.",
   "source_rebuild": "python scripts/import_brand_icons.py (offline); python scripts/build_profile.py"
 }

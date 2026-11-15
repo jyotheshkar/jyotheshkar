@@ -1,10 +1,8 @@
-# Connected GitHub profile
+# GitHub profile maintenance
 
-The README uses a repository-hosted animated SVG canvas followed by four proportional doughnut charts. The continuous grid, conceptual agent network and translucent career panels are drawn in one image so the page does not depend on README CSS or scripts in Markdown. Contact links are in the GitHub sidebar. The closing slogan, opportunity text, action buttons and repository-year note were removed from the displayed profile.
+The overview keeps its dark GitHub palette and shared grid. A generated SVG holds the LinkedIn Agent workflow and the two career cards. A separate generated SVG displays three Professional Skills doughnuts, with names and small evidence bars to their right.
 
-The main canvas is referenced by its verified commit revision to avoid stale branch-image caching. When changing it, advance the README image revision after the new SVG has been committed and validated.
-
-## Rebuild and validation
+## Rebuild
 
 ```sh
 python scripts/import_brand_icons.py
@@ -13,26 +11,17 @@ python scripts/build_skill_circles.py
 python scripts/validate_profile.py
 ```
 
-The builder uses only Python's standard library and the local brand registry. The network section provides animated tool-routing paths and a reduced-motion fallback. The career section contains ordinary professional facts approved in Atlas: Amazon AGI Data Services and three prior roles, plus the Keele MSc, Distinction, award and dissertation.
+All rendering uses Python's standard library and local assets. The profile builder embeds authentic institution logos; no remote resources or JavaScript are required to view the profile.
 
-## Meaning of the network
+## Architecture and evidence
 
-The heading is "Current Agentic AI Projects I Am Working On". It branches to two concept projects, each with exactly eight tool nodes. The YouTube Agent Concept includes Gemini, Google Search, Gmail, Google Drive, AI Studio, Google Cloud, Python and GitHub. The Crypto Agent Concept includes Binance, Bitcoin, Ethereum, Solana, Python, PostgreSQL, OpenAI and Redis. The Google tools support discovery, planning and review; the crypto tools illustrate research, analysis, model reasoning and evidence storage.
+The [LinkedIn architecture](linkedin-architecture.md) maps the local learning implementation: retrieval, planning, exact-material human approval, simulated effects, and durable receipts. It does not claim live LinkedIn integrations.
 
-Routes are decorative. They do not establish connected accounts, implemented adapters, trading automation, investment holdings or endorsements. Both projects are explicitly labelled concepts, with human review in the loop. The experience and education section remains separate from these independent project ideas.
+The [skills methodology](skill-circles.md) explains public repository language, dependency and code evidence. Run `python scripts/refresh_skill_evidence.py` to collect fresh evidence before rebuilding the skills graphic. The GitHub workflow validates pushed changes and refreshes evidence hourly, on profile pushes, and on manual runs. It commits only changed evidence and chart files.
 
-## Brand provenance
+README images follow the main branch so future refreshes appear. GitHub caches images and schedules can be delayed; this is automatic refresh rather than a real-time browser dashboard.
 
-`assets/brands/color-originals.json` retains the upstream color SVG source and exact Git blob hashes. `scripts/import_brand_icons.py` verifies those hashes offline and regenerates the matching entries in `assets/brands/icons.json`. Internal gradient and mask IDs are prefixed per brand to prevent collisions. Optional `--download` retrieves the exact pinned Git blobs and verifies their hashes before replacing the local originals. Normal builds use no network access.
+## Validation
 
-Upstream multicolor fills and gradients are preserved, including Gmail, Google Drive, Gemini, Python and Solana. OpenAI, GitHub and AI Studio retain their white dark-background variants. Binance uses official gold. A light backing badge makes Ethereum's original gray facets legible. `assets/profile-icon-sources.json` is generated from the current project definitions and records the 8+8 node lists and icon provenance. `docs/brand-sources.json` records attribution and source/license details. Simple Icons, Lobe Icons, Devicon and SVG Logos license files are retained beside the registry. Logos identify ecosystem services; respective owners retain their trademarks.
+Validation parses generated SVGs, rejects external resources and active content, checks local references and unique IDs, confirms the LinkedIn panel, and verifies that all three skills charts and legends match their evidence source proportionally. CI rebuilds outputs and checks they are committed. Institution logo provenance is documented in [logo-sources.md](logo-sources.md).
 
-Validation checks all local SVGs and README links, rejects active or external embedded resources, and checks the live canvas for duplicate IDs, unresolved local symbol/gradient references and exactly eight tool nodes per concept. CI also rebuilds the generated profile assets to detect stale output.
-
-The Keele white logo is the unmodified transparent PNG from the university's official logo ZIP:
-https://www.keele.ac.uk/media/keeleuniversity/brand/logos/keele-logo.zip
-The profile builder embeds it locally; no remote asset is loaded when the profile is viewed.
-
-## Retained history
-
-Earlier orb, diagram, project-gallery, action-button and telemetry assets remain as historical source; the current README does not display them. Automatic repository telemetry refresh is disabled. The profile validation workflow has read-only access; the old contribution refresh workflow has been removed. The measured charts are documented in [skill-circles.md](skill-circles.md). The profile does not claim an Amazon affiliation for independent projects or a production deployment.

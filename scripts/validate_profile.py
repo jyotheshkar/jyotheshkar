@@ -37,8 +37,7 @@ def main():
         except (ET.ParseError, OSError) as exc:
             errors.append(f"{path.relative_to(ROOT)}: {type(exc).__name__}")
     readme = ROOT / "README.md"
-    # The live canvas is self-contained and preserves the requested 8+8 concept
-    # contract. Missing local gradients or symbols can silently hide brand art.
+    # Validate self-contained artwork and evidence-grounded chart geometry.
     profile = ET.parse(ROOT / "assets/profile.svg").getroot()
     ids = [e.get("id") for e in profile.iter() if e.get("id")]
     if len(ids) != len(set(ids)):
@@ -51,32 +50,28 @@ def main():
             for ref in refs:
                 if ref not in ids:
                     errors.append(f"profile.svg: unresolved local reference #{ref}")
-    for concept in ("youtube", "crypto"):
-        nodes = [e for e in profile.iter() if e.get("data-concept") == concept]
-        if len(nodes) != 8:
-            errors.append(f"profile.svg: {concept} concept requires eight tool nodes, found {len(nodes)}")
+    if 'linkedin-architecture' not in ids:
+        errors.append('profile.svg: LinkedIn architecture missing')
+    if any(e.get('data-concept') in ('youtube', 'crypto') for e in profile.iter()):
+        errors.append('profile.svg: retired concepts remain')
     circles = ET.parse(ROOT / "assets/skill-circles.svg").getroot()
     groups = [e for e in circles.iter() if e.get("data-skill-circle")]
-    if {e.get("data-skill-circle") for e in groups} != {"languages", "ai", "agentic"} or len(groups) != 3:
+    if {e.get("data-skill-circle") for e in groups} != {"languages", "libraries", "agentic"} or len(groups) != 3:
         errors.append("skill-circles.svg: expected three named circles")
     if len({e.get("data-center-y") for e in groups}) != 1 or len({e.get("data-center-x") for e in groups}) != 3:
         errors.append("skill-circles.svg: circles must occupy one horizontal row")
     labels = [e.text or "" for e in circles.iter() if e.tag.split("}")[-1] in ("text", "title")]
-    if any(re.search(r"\d(?:\.\d+)?\s*%", label) for label in labels):
-        errors.append("skill-circles.svg: percentage label present")
-    metrics = json.loads((ROOT / "config/portfolio-metrics.json").read_text(encoding="utf-8"))
+    if any(re.search(r"\d", label) for label in labels):
+        errors.append("skill-circles.svg: numeric label present")
+    metrics = json.loads((ROOT / "config/skill-evidence.json").read_text(encoding="utf-8"))
     source_charts = {chart["key"]: chart for chart in metrics["charts"]}
     for group in groups:
         key = group.get("data-skill-circle")
         chart = source_charts[key]
         items = list(chart["items"])
-        if key == "agentic":
-            items += source_charts["engineering"]["items"]
         expected = {i["label"]: i["value"] for i in items}
         if len(expected) != len(items):
             errors.append("skill-circles.svg: combined categories must remain distinct")
-        if {e.get("data-skill-node") for e in group.iter() if e.get("data-skill-node")} != set(expected):
-            errors.append("skill-circles.svg: orbital nodes do not match source data")
         if {e.get("data-skill-legend") for e in group.iter() if e.get("data-skill-legend")} != set(expected):
             errors.append("skill-circles.svg: legend does not match source data")
         segments = [e for e in group.iter() if e.get("data-segment")]
@@ -126,3 +121,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

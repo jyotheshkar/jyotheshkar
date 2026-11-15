@@ -1,128 +1,134 @@
-"""Two illustrative agent projects, with eight tool nodes per concept.
-
-All resources are embedded local SVG symbols. Routes are decorative, with a
-reduced-motion fallback; they do not imply deployed or connected integrations.
-"""
-
+"""LinkedIn Agent architecture grounded in the inspected local-learning MVP."""
 from html import escape
 
+PROJECTS = ({
+    "key": "linkedin", "icon": "python", "title": "LinkedIn Agent",
+    "tools": (("python", "Python", "Application and workflow orchestration"),
+              ("openai", "OpenAI", "Optional structured model adapter")),
+},)
+SOURCE_COMMIT = "65b2638d0bd094b5a7dd3b2885b175f3b01934c6"
 
-PROJECTS = (
-    {
-        'key': 'youtube', 'x': 350, 'icon': 'youtube',
-        'title': 'YouTube Agent Concept', 'line1': 'YouTube Agent',
-        'subtitle': 'Research / plan / review',
-        'tools': (
-            ('gemini', 'Gemini', 'Planning + models'),
-            ('google', 'Google Search', 'Discovery'),
-            ('gmail', 'Gmail', 'Review digests'),
-            ('googledrive', 'Google Drive', 'Knowledge files'),
-            ('googleaistudio', 'AI Studio', 'Prompt experiments'),
-            ('googlecloud', 'Google Cloud', 'Runtime + APIs'),
-            ('python', 'Python', 'Tool adapters'),
-            ('github', 'GitHub', 'Code + evaluation'),
-        ),
-    },
-    {
-        'key': 'crypto', 'x': 1050, 'icon': 'binance',
-        'title': 'Crypto Agent Concept', 'line1': 'Crypto Agent',
-        'subtitle': 'Observe / analyse / review',
-        'tools': (
-            ('binance', 'Binance', 'Market-data API'),
-            ('bitcoin', 'Bitcoin', 'BTC research'),
-            ('ethereum', 'Ethereum', 'ETH research'),
-            ('solana', 'Solana', 'SOL research'),
-            ('python', 'Python', 'Analysis tools'),
-            ('postgresql', 'PostgreSQL', 'Evidence store'),
-            ('openai', 'OpenAI', 'Research + tools'),
-            ('redis', 'Redis', 'Cache + queues'),
-        ),
-    },
-)
 
-# Clockwise pairs around each hub. The 180 x 74 cards fit entirely within their
-# 640-pixel-wide concept region, with clear gutters around the centre surface.
-TOOL_POSITIONS = ((-100, 485), (100, 485), (220, 630), (220, 805),
-                  (100, 950), (-100, 950), (-220, 805), (-220, 630))
+def _text(x, y, text, size=20, color="#f0f6fc", weight=400, anchor="start", mono=False):
+    family = "Consolas,monospace" if mono else "Arial,Helvetica,sans-serif"
+    return (f'<text x="{x}" y="{y}" font-family="{family}" font-size="{size}" '
+            f'font-weight="{weight}" fill="{color}" text-anchor="{anchor}">'
+            f'{escape(text)}</text>')
+
+
+def _glyph(kind, x, y, color="#79c0ff"):
+    shapes = {
+        "input": '<path d="M7 3h14l6 6v22H7zM21 3v7h6M12 16h10M12 21h10M12 26h6"/>',
+        "search": '<circle cx="14" cy="14" r="9"/><path d="m21 21 9 9M9 14h10M14 9v10"/>',
+        "agent": '<rect x="4" y="9" width="26" height="21" rx="6"/><path d="M17 3v6M1 16h3M30 16h3M11 23h12"/><circle cx="11" cy="16" r="1.3"/><circle cx="23" cy="16" r="1.3"/>',
+        "review": '<circle cx="13" cy="10" r="6"/><path d="M3 30v-4a10 10 0 0 1 20 0M22 17l4 4 7-8"/>',
+        "action": '<path d="m5 4 24 13L5 30zM5 17h14"/>',
+        "store": '<ellipse cx="17" cy="7" rx="13" ry="5"/><path d="M4 7v20c0 7 26 7 26 0V7M4 17c0 7 26 7 26 0"/>',
+        "ledger": '<rect x="5" y="3" width="24" height="29" rx="4"/><path d="m10 11 2 2 4-4M19 11h5m-14 9 2 2 4-4M19 20h5M10 27h14"/>',
+    }
+    return (f'<g transform="translate({x} {y})" fill="none" stroke="{color}" '
+            f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+            f'{shapes[kind]}</g>')
 
 
 def render_network(icons):
-    """Return a local-symbol SVG fragment fitting x=0..1400, y=200..1050."""
-    def icon(key, x, y, size=34):
-        if key not in icons:
-            raise KeyError('Missing authentic icon: ' + key)
-        return (f'<use href="#brand-{escape(key)}" x="{x}" y="{y}" '
-                f'width="{size}" height="{size}"/>')
-
-    out = ['''
+    """Return a workflow-editor canvas within x=24..1376, y=215..1052."""
+    out = ['''<g id="linkedin-architecture" aria-labelledby="linkedin-architecture-title">
+<title id="linkedin-architecture-title">LinkedIn Agent — Agentic AI System Engineering</title>
+<desc>A local learning system: job and goal input, evidence retrieval, bounded planning and drafting,
+exact-material human approval, and simulated application and outreach. Versioned Atlas Lab knowledge,
+an optional OpenAI model adapter, and durable SQLite receipts support the workflow.
+The diagram shows implemented code structure, not live LinkedIn integrations.</desc>
 <defs>
-  <linearGradient id="nw-route"><stop stop-color="#4493f8" stop-opacity=".2"/><stop offset=".5" stop-color="#79c0ff" stop-opacity=".7"/><stop offset="1" stop-color="#4493f8" stop-opacity=".2"/></linearGradient>
-  <radialGradient id="nw-core"><stop stop-color="#4493f8" stop-opacity=".1"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></radialGradient>
-  <filter id="nw-glow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
-  <style>
-    .nw-label{font-family:Arial,Helvetica,sans-serif}.nw-mono{font-family:Consolas,"Liberation Mono",monospace}
-    .nw-flow{stroke-dasharray:3 16;animation:nw-flow 7s linear infinite}
-    .nw-phase{animation:nw-phase 8s ease-in-out infinite}.nw-p2{animation-delay:2s}.nw-p3{animation-delay:4s}.nw-p4{animation-delay:6s}
-    @keyframes nw-flow{to{stroke-dashoffset:-114}}
-    @keyframes nw-phase{0%,100%{opacity:.3}20%,35%{opacity:1}}
-    @media(prefers-reduced-motion:reduce){.nw-flow,.nw-phase{animation:none}.nw-packet{display:none}}
-  </style>
-</defs>
-<text x="40" y="228" fill="#9198a1" font-size="16" letter-spacing="2.6" class="nw-mono">CONNECTED INTELLIGENCE</text>
-<text x="1360" y="228" text-anchor="end" fill="#9198a1" font-size="14" class="nw-mono">TOOLS + KNOWLEDGE + HUMAN REVIEW</text>
-<g id="current-agentic-projects" class="nw-label" aria-labelledby="current-projects-title">
-  <title id="current-projects-title">Current Agentic AI Projects I Am Working On</title>
-  <rect x="444" y="256" width="512" height="138" rx="23" fill="none" stroke="#4493f8" stroke-opacity=".15" stroke-width="8" filter="url(#nw-glow)"/>
-  <rect x="450" y="262" width="500" height="126" rx="18" fill="#151b23" stroke="#4493f8" stroke-opacity=".7" stroke-width="1.5"/>
-  <path d="M474 262h52M874 388h52" stroke="#79c0ff" stroke-width="2"/>
-''', icon('openai', 479, 292, 64), '''
-  <text x="570" y="311" fill="#f0f6fc" font-size="24" font-weight="700">Current Agentic AI Projects</text>
-  <text x="570" y="345" fill="#f0f6fc" font-size="24" font-weight="700">I Am Working On</text>
-</g>
-''']
+<pattern id="nw-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#3d444d" opacity=".44"/></pattern>
+<linearGradient id="nw-focus" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142941"/><stop offset="1" stop-color="#151b23"/></linearGradient>
+<marker id="nw-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="m1 1 4 2.5L1 6" fill="none" stroke="#79c0ff" stroke-width="1.2"/></marker>
+<style>.nw-flow{stroke-dasharray:2 12;animation:nw-travel 16s linear infinite}
+@keyframes nw-travel{to{stroke-dashoffset:-140}}
+@media(prefers-reduced-motion:reduce){.nw-flow{animation:none}}</style>
+</defs>''']
+    out += [
+        _text(40, 231, "AGENTIC AI SYSTEM ENGINEERING", 17, "#9198a1", mono=True),
+        _text(40, 291, "LinkedIn Agent", 43, weight=700),
+        _text(40, 327, "Evidence-led workflows. Human-reviewed actions. Recoverable execution.", 22, "#9198a1"),
+        '<circle cx="1120" cy="280" r="4" fill="#59c3c3"/>',
+        _text(1135, 286, "LOCAL LEARNING LAB", 16, "#a3c7d9", mono=True),
+        '<rect x="24" y="359" width="1352" height="686" rx="18" fill="#0d1117" stroke="#3d444d"/>',
+        '<rect x="25" y="360" width="1350" height="684" rx="17" fill="url(#nw-dots)"/>',
+        '<path d="M24 415H1376" stroke="#3d444d" stroke-opacity=".65"/>',
+        '<circle cx="50" cy="387" r="4" fill="#4493f8"/>',
+        _text(65, 394, "linkedin-agent / application workflow", 17, "#c9d1d9", mono=True),
+        _text(1346, 394, "Python · FastAPI · LangGraph", 17, "#9198a1", anchor="end"),
+    ]
 
-    def route(path, index, main=False):
-        out.append(f'<path d="{path}" fill="none" stroke="#3d444d" stroke-width="1.4" stroke-opacity=".8"/>')
-        out.append(f'<path class="nw-flow" d="{path}" fill="none" stroke="url(#nw-route)" stroke-width="1.5" style="animation-delay:-{index % 7}s"/>')
-        if main:
-            out.append(f'<g class="nw-packet"><circle r="3.5" fill="#79c0ff"><animateMotion dur="8s" begin="-{index * 2}s" repeatCount="indefinite" path="{path}"/></circle></g>')
+    def route(path, support=False, animated=False):
+        dash = ' stroke-dasharray="5 7"' if support else ""
+        color = "#4c657e" if support else "#79c0ff"
+        out.append(f'<path d="{path}" fill="none" stroke="{color}" stroke-width="1.8"{dash} marker-end="url(#nw-arrow)"/>')
+        if animated:
+            out.append(f'<path class="nw-flow" d="{path}" fill="none" stroke="#b6dcff" stroke-width="2.4" opacity=".6"/>')
 
-    # One shared heading branches to both concepts; all edges are behind cards.
-    route('M700 388V418C700 550 350 530 350 653', 0, True)
-    route('M700 388V418C700 550 1050 530 1050 653', 1, True)
-    out.append('<circle cx="700" cy="418" r="3.5" fill="#79c0ff"/>')
+    # Solid connections carry workflow; dashed connections are dependencies.
+    for path in ("M284 565H323", "M544 565H583", "M816 565H855", "M1076 565H1115"):
+        route(path, animated=True)
+    route("M966 492V461Q966 443 948 443H718Q700 443 700 461V492", support=True)
+    out.append(_text(833, 436, "Revise", 16, "#9198a1", anchor="middle"))
+    route("M434 796V638", support=True)
+    route("M700 796V638", support=True)
+    route("M1226 638V796")
+    out.append(_text(1095, 481, "Approve", 14, "#9198a1", anchor="middle"))
 
-    for project in PROJECTS:
-        key, cx, cy = project['key'], project['x'], 710
-        out.append(f'<g id="{key}-concept" aria-labelledby="{key}-concept-title">')
-        out.append(f'<title id="{key}-concept-title">{project["title"]}: eight proposed tool integrations</title>')
-        out.append(f'<ellipse cx="{cx}" cy="{cy}" rx="300" ry="285" fill="url(#nw-core)"/>')
-        out.append(f'<ellipse cx="{cx}" cy="{cy}" rx="222" ry="225" fill="none" stroke="#4493f8" stroke-width=".9" stroke-opacity=".12" stroke-dasharray="2 10"/>')
-        for index, ((dx, y), tool) in enumerate(zip(TOOL_POSITIONS, project['tools'])):
-            x = cx + dx
-            if abs(dx) == 220:
-                start_x, start_y = cx + (120 if dx > 0 else -120), cy
-                end_x = x + (-90 if dx > 0 else 90)
-                path = f'M{start_x} {start_y}C{(start_x + end_x)/2} {start_y} {(start_x + end_x)/2} {y} {end_x} {y}'
-            else:
-                start_x, start_y = cx, cy + (57 if y > cy else -57)
-                end_y = y + (-37 if y > cy else 37)
-                path = f'M{start_x} {start_y}C{start_x} {(start_y + end_y)/2} {x} {(start_y + end_y)/2} {x} {end_y}'
-            route(path, index + 2)
-        out.append(f'<g class="nw-label"><rect x="{cx-120}" y="653" width="240" height="114" rx="18" fill="#151b23" stroke="#4493f8" stroke-opacity=".7" stroke-width="1.5"/>')
-        out.append(icon(project['icon'], cx-20, 669, 40))
-        out.append(f'<text x="{cx}" y="734" text-anchor="middle" fill="#f0f6fc" font-size="22" font-weight="700">{project["line1"]}</text>')
-        out.append(f'<text x="{cx}" y="755" text-anchor="middle" fill="#9198a1" font-size="16">Concept</text></g>')
-        for (dx, y), (tool_key, label, sub) in zip(TOOL_POSITIONS, project['tools']):
-            x, left, top = cx + dx, cx + dx - 90, y - 37
-            out.append(f'<g id="{key}-tool-{tool_key}" class="nw-tool nw-label" data-concept="{key}"><title>{escape(label)} / {escape(sub)}</title>')
-            out.append(f'<rect x="{left}" y="{top}" width="180" height="74" rx="12" fill="#151b23" fill-opacity=".9" stroke="#3d444d"/>')
-            out.append(f'<path d="M{left+14} {top}h26" stroke="#4493f8" stroke-opacity=".6"/>')
-            if tool_key == 'ethereum':
-                out.append(f'<circle cx="{left+30}" cy="{y}" r="20" fill="#f0f6fc"/>')
-            out.append(icon(tool_key, left+14, y-16, 32))
-            out.append(f'<text x="{left+52}" y="{y-3}" fill="#f0f6fc" font-size="17" font-weight="600">{escape(label)}</text>')
-            out.append(f'<text x="{left+52}" y="{y+18}" fill="#9198a1" font-size="13">{escape(sub)}</text></g>')
-        out.append(f'<text x="{cx}" y="1009" text-anchor="middle" fill="#9198a1" font-size="15" class="nw-mono">{escape(project["subtitle"])}</text></g>')
-    out.append('''<text x="700" y="1044" text-anchor="middle" fill="#9198a1" font-size="14" class="nw-mono">Concept integrations / human review in the loop / no connected accounts or automated trading implied.</text>''')
-    return '\n'.join(out)
+    def port(x, y, accent=False):
+        color = "#79c0ff" if accent else "#64788e"
+        out.append(f'<circle cx="{x}" cy="{y}" r="5" fill="#0d1117" stroke="{color}" stroke-width="1.8"/>')
+
+    def card(key, x, y, w, title, subtitle, module, glyph, accent=False):
+        fill = "url(#nw-focus)" if accent else "#151b23"
+        stroke = "#4493f8" if accent else "#3d444d"
+        out.append(f'<g id="linkedin-node-{key}"><rect x="{x}" y="{y}" width="{w}" height="142" rx="14" fill="{fill}" stroke="{stroke}" stroke-width="1.5"/>')
+        out.append(f'<rect x="{x+16}" y="{y+16}" width="44" height="44" rx="11" fill="#0d1117" stroke="#3d444d"/>')
+        out.append(_glyph(glyph, x+21, y+21))
+        number = "0" + str(["input", "retrieval", "agent", "review", "effects"].index(key)+1)
+        out.append(_text(x+w-16, y+43, number, 16, "#64788e", anchor="end", mono=True))
+        out.extend([_text(x+16, y+84, title, 22, weight=600),
+                    _text(x+16, y+110, subtitle, 17, "#a4b2c2"),
+                    _text(x+16, y+131, module, 14, "#7d8b9b", mono=True),
+                    "</g>"])
+        if key != "input":
+            port(x, y+71, accent)
+        if key != "effects":
+            port(x+w, y+71, accent)
+
+    card("input", 64, 494, 220, "Job + goal", "FastAPI / CLI", "contracts.py", "input")
+    card("retrieval", 324, 494, 220, "Retrieve evidence", "Qdrant + FastEmbed", "retrieval.py", "search")
+    card("agent", 584, 494, 232, "Plan + draft", "Bounded tool execution", "workflow.py", "agent", True)
+    card("review", 856, 494, 220, "Human review", "Exact plan + draft hash", "materials.py", "review")
+    card("effects", 1116, 494, 220, "Simulate actions", "Application + outreach", "provider.py", "action")
+    for x, y in ((966, 494), (700, 494), (434, 636), (700, 636), (1226, 636)):
+        port(x, y, x == 700)
+
+    def support(key, x, w, title, sub, footer, glyph=None, brand=None):
+        y = 798
+        out.append(f'<g id="linkedin-support-{key}"><rect x="{x}" y="{y}" width="{w}" height="134" rx="14" fill="#111820" stroke="#344354"/>')
+        if brand and brand in icons:
+            out.append(f'<use href="#brand-{brand}" x="{x+18}" y="{y+18}" width="30" height="30"/>')
+        else:
+            out.append(_glyph(glyph, x+16, y+16))
+        out.extend([_text(x+62, y+39, title, 20, weight=600),
+                    _text(x+18, y+78, sub, 17, "#a4b2c2"),
+                    _text(x+18, y+105, footer, 15, "#7d8b9b"), "</g>"])
+        port(x+w/2, y)
+
+    support("knowledge", 314, 240, "Atlas knowledge", "Versioned local snapshots", "knowledge.py / atlas_lab.py", "store")
+    support("model", 580, 240, "Model adapter", "Offline / optional OpenAI", "Structured plan + generation", brand="openai")
+    support("state", 1090, 270, "Durable evidence", "SQLite · artifacts · receipts", "Resume / reconcile / project", "ledger")
+    out.append('<path d="M64 975H1336" stroke="#3d444d" stroke-opacity=".65"/>')
+    out += [
+        _text(64, 1008, "OpenTelemetry traces", 17, "#a4b2c2"),
+        _text(419, 1008, "Grounding + evaluation", 17, "#a4b2c2"),
+        _text(792, 1008, "Effects remain simulated", 17, "#a4b2c2"),
+        _text(1336, 1008, "MVP", 17, "#79c0ff", anchor="end", mono=True),
+        "</g>",
+    ]
+    return "\n".join(out)
+

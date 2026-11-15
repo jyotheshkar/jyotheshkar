@@ -1,72 +1,36 @@
-# Portfolio chart data and methodology
+# Professional Skills: repository evidence
 
-Source capture: **14 November 2026**. Curated: **15 November 2026**. Scope: **22 retained repository snapshots**, captured from public, non-archived projects. Names and visibility describe the capture date, rather than today's GitHub inventory. Private projects and the profile repository are excluded.
+The three charts are **Programming Languages**, **Libraries and Frameworks**, and **Agentic AI Engineering**. Each is a segmented doughnut with skill names and proportional bars to its right. The GitHub dark palette matches the overview. The artwork prints no percentages, counts, calculations or proficiency scores.
 
-The three circles occupy one horizontal row: **Languages**, **AI & Machine Learning**, and **Agentic AI Engineering**. The presentation restores the original [orbital design](https://github.com/jyotheshkar/jyotheshkar/commit/59a6df4e4a41091c96c61f827f84c4efeb45c964): dark grid, blue halos, concentric rings, colored tool nodes and decorative moving routes. Original brand artwork retains its source colors.
+The current evidence, source paths, exact Git blob hashes and scan coverage are in [skill-evidence.json](../config/skill-evidence.json). It replaces the historical portfolio snapshot as the source of the displayed skills.
 
-The measured arcs retain the evidence proportions. Labels and tooltips show raw bytes or repository counts; no percentage labels or proficiency scores are displayed. Nodes and legends remain still; moving orbit highlights and dotted routes are decorative. Reduced motion is supported.
+## What the charts measure
 
-## What the data measures
+- **Programming Languages:** extension-classified source bytes in current public repositories. Identical Git blobs are counted once across repositories. Notebooks, HTML/CSS markup, data/report exports, dependency folders, generated builds and archived snapshots are excluded. This is a repository source footprint, not authorship or ability.
+- **Libraries and Frameworks:** repositories with a verified runtime dependency or implementation import from a selected library catalog. Development dependencies are excluded. Long Python environment freezes are not accepted without implementation imports. A dependency establishes use within a repository, not mastery.
+- **Agentic AI Engineering:** implementation symbols or executable configuration for orchestration, tool execution, retrieval, state, approvals, guardrails, evaluation and routing. Matches are restricted to agent, RAG or Rufus repositories. README claims, documentation and tests do not qualify as implementation evidence. Presence does not imply that a workflow is deployed or operationally reliable.
 
-- **Languages:** source-file bytes classified by extension and deduplicated across repositories by Git blob hash. Notebook/data/report exports, dependencies, build output, historical original-work copies, minified source, TypeScript declarations and an identified HTML revision baseline are excluded. This is source coverage, rather than GitHub Linguist, contribution share or authorship.
-- **AI and engineering topics:** one repository match per selected category based on captured README and dependency evidence. CI/CD and container categories also use workflow/Dockerfile names. A repository can appear in several categories, so the sum counts topic matches rather than distinct repositories. Text may describe study, concepts, limitations or proposed work; a match alone does not establish a deployed capability.
-- **Merged engineering circle:** preserves all eight Engineering Stack categories and all eight Agentic AI categories as sixteen distinct topics. The total is **44 + 13 = 57 topic matches**. Software-stack categories retain their original portfolio-wide scope; they are not relabeled as evidence that every project is an agent.
+A repository can support several skill categories. Doughnut slices divide each group's total evidence. Bars compare each item with the largest item in its group. They are not personal skill ratings. Zero-evidence categories are omitted rather than invented.
 
-The immutable captured values, paths, repository names and Git hashes remain in [portfolio-metrics.json](../config/portfolio-metrics.json). The original four source groups remain intact; the builder combines two only for display. No source evidence was added or recounted for this styling change.
+## Scope and refresh
 
-## Languages
+Every refresh retrieves the current public repository inventory for `jyotheshkar`. Private, forked and archived repositories and the profile repository are excluded. Deleted repositories disappear from the next successful capture.
 
-Total: **2,857,215 bytes**.
+The collector inspects complete recursive trees and a bounded sample of up to six dependency manifests and twelve implementation files per repository. Previously verified source files are retained while they exist; remaining slots prioritize runtime, agent, engine, retrieval, evaluation and model code. The initial connector-assisted capture may include additional verified implementation files. Exact scanned files are recorded. This is a bounded evidence sample, so absence does not prove a skill is missing.
 
-| Category | Source bytes |
-| --- | ---: |
-| Python | 2,310,492 |
-| TypeScript | 401,827 |
-| HTML | 98,695 |
-| CSS | 24,315 |
-| JavaScript | 15,496 |
-| SQL | 6,390 |
+The [profile workflow](../.github/workflows/profile-metrics.yml) refreshes **hourly at minute 17**, on changes to the profile source and through **Run workflow**. GitHub may delay scheduled runs. A repository change is reflected after the next successful scan and GitHub image cache refresh; a README cannot perform real-time browser API requests.
 
-## AI & Machine Learning
+A failed or truncated API response aborts the refresh instead of publishing an incomplete scan. A newly created, zero-size repository returning GitHub's empty-tree response is skipped because it contains no source evidence. Changes made to a repository during capture are detected using blob hashes. The workflow publishes only the chart and its evidence JSON, and creates no new commit when the evidence is unchanged. The evidence timestamp records the last material snapshot; workflow run history records subsequent checks.
 
-Total: **22 topic matches**.
+## Rebuild
 
-| Category | Repositories |
-| --- | ---: |
-| Model evaluation | 5 |
-| Scikit-learn | 4 |
-| PyTorch | 3 |
-| Transformers | 3 |
-| Embeddings | 3 |
-| NLP | 2 |
-| TensorFlow | 1 |
-| Reinforcement learning | 1 |
+```bash
+python scripts/refresh_skill_evidence.py
+python scripts/build_skill_circles.py
+python scripts/validate_profile.py
+```
 
-## Agentic AI Engineering
+Online refresh uses Python's standard library and GitHub's public REST API. `GITHUB_TOKEN` raises the rate limit in GitHub Actions. The same renderer can be rebuilt offline from the checked-in evidence JSON. An optional `--api-cache` argument supports reproducing a captured API response set.
 
-Total: **57 topic matches**.
+README image links follow the current default branch, so updates to the generated chart are visible without changing a commit-pinned image URL.
 
-| Category | Repositories |
-| --- | ---: |
-| CI / CD | 16 |
-| Testing | 6 |
-| SQL databases | 5 |
-| AWS | 4 |
-| Backend APIs | 4 |
-| Node.js / npm | 3 |
-| React | 3 |
-| Containers | 3 |
-| Tracing / evals | 2 |
-| Planning | 2 |
-| Tool use | 2 |
-| Memory / state | 2 |
-| Orchestration | 2 |
-| Guardrails | 1 |
-| RAG / retrieval | 1 |
-| Human review | 1 |
-
-## Build and validation
-
-Run `python scripts/build_skill_circles.py`, then `python scripts/validate_profile.py`. Validation checks the three-circle row, both source groups in the merged circle, legend/node coverage, exact totals, proportional arc lengths, local icon references and absence of numeric percentage labels. CI also checks deterministic SVG output.
-
-The profile README pins the chart SVG to its verified asset commit. The YouTube/Crypto Agent artwork above it is unchanged.
