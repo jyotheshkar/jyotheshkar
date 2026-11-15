@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/48a33d76af8b6fdc75c8fd63bdef785c06f48640/assets/skill-circles.svg" width="100%" alt="Four proportional doughnut charts of portfolio evidence: Language footprint, Engineering stack, AI and machine learning, and Agentic AI focus. Languages measure unique source-file bytes; other charts measure selected documented repository-topic matches. Snapshot: 23 public projects, 14 November 2026. Full values and methodology are linked below." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/66b69d32a80b8e3088311e7c440cd5490a926e04/assets/skill-circles.svg" width="100%" alt="Four proportional doughnut charts of portfolio evidence: Language footprint, Engineering stack, AI and machine learning, and Agentic AI focus. Languages measure unique source-file bytes; other charts measure selected documented repository-topic matches. Source capture: 14 November 2026; curated 15 November 2026. Scope: 22 retained repository snapshots, not a current inventory. Full values and methodology are linked below." />
 </p>
 
 [Chart data and methodology](docs/skill-circles.md)
