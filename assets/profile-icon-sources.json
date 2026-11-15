@@ -1,31 +1,27 @@
 {
-  "purpose": "LinkedIn Agent local learning architecture; repository-grounded nodes and local brand assets.",
-  "architecture_source_commit": "65b2638d0bd094b5a7dd3b2885b175f3b01934c6",
-  "node_counts": {
-    "linkedin": 2
-  },
-  "model_and_runtime": {
-    "LinkedIn Agent": [
-      "Python",
-      "OpenAI"
-    ]
-  },
-  "icon_sources": [
-    {
-      "icon": "openai",
-      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/openai.svg",
-      "source_project": "Lobe Icons",
-      "license": "MIT",
-      "upstream_revision_observed": "a177c1e817204f8ddc0c8993610ca674fc6d9767"
-    },
-    {
-      "icon": "python",
-      "source": "https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg",
-      "source_project": "Devicon",
-      "license": "MIT",
-      "upstream_blob_sha": "e0e096a24e59fb9f1e501899389e3905c6c27cd7"
-    }
+  "purpose": "Installed LinkedIn plugin architecture, with illustrative branch-and-converge motion.",
+  "architecture_source_version": "1.3.19",
+  "providers": [
+    "github",
+    "gmail",
+    "googledrive",
+    "googlesheets",
+    "linkedin",
+    "openai"
   ],
-  "color_treatment": "GitHub dark palette for workflow nodes; authentic institution logo colors retained.",
-  "source_rebuild": "python scripts/import_brand_icons.py (offline); python scripts/build_profile.py"
+  "responsive_assets": [
+    "profile.svg",
+    "profile-mobile.svg",
+    "career.svg",
+    "career-mobile.svg"
+  ],
+  "icon_sources": {
+    "linkedin": "https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg",
+    "googlesheets": "https://github.com/walkxcode/dashboard-icons/blob/main/svg/google-sheets.svg",
+    "keele": "https://keelegreece.gr/wp-content/uploads/2025/08/ICON-NPPE2025-LOGO-KEELE-512x512-1.png",
+    "amazon": "https://assets.aboutamazon.com/2e/d7/ac71f1f344c39f8949f48fc89e71/amazon-logo-squid-ink-smile-orange.png"
+  },
+  "color_treatment": "Original provider logo colours. Transparent career and skill cards. GitHub dark architecture with blue paths.",
+  "motion": "Illustrative SVG motion only; not live execution status. Reduced-motion preference supported.",
+  "source_rebuild": "python scripts/import_brand_icons.py; python scripts/build_profile.py"
 }

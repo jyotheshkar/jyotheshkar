@@ -3,7 +3,7 @@ name: Refresh and validate GitHub profile
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '7,22,37,52 * * * *'
   pull_request:
     paths:
       - 'README.md'
@@ -38,7 +38,7 @@ jobs:
           python3 scripts/import_brand_icons.py
           python3 scripts/build_profile.py
           python3 scripts/build_skill_circles.py
-          git diff --exit-code -- assets/brands/icons.json assets/profile-icon-sources.json assets/profile.svg assets/linkedin-link.svg assets/projects-link.svg assets/email-link.svg assets/skill-circles.svg
+          git diff --exit-code -- assets/brands/icons.json assets/profile-icon-sources.json assets/*.svg
       - name: Validate profile assets and links
         run: python3 scripts/validate_profile.py
 
@@ -57,12 +57,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 scripts/refresh_skill_evidence.py
+          python3 scripts/refresh_skill_evidence.py --scope public
           python3 scripts/build_skill_circles.py
           python3 scripts/validate_profile.py
       - name: Publish changed evidence and chart
         run: |
-          git add config/skill-evidence.json assets/skill-circles.svg
+          git add config/skill-evidence.json assets/skill-circles.svg assets/skills-mobile.svg assets/skills-programming.svg assets/skills-aiml.svg assets/skills-agentic.svg
           if git diff --cached --quiet; then
             echo "Repository evidence is unchanged."
             exit 0

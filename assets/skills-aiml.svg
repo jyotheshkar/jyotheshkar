@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="580" viewBox="0 0 440 580" role="img" aria-label="AI/ML Engineering">
+<title>AI/ML Engineering</title>
+<desc>Repository evidence shown as segmented doughnuts. Names and unnumbered bars appear below each circle in two columns. Coverage is not a proficiency score. Transparent background.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<g data-skill-circle="aiml" data-total="23" data-center-x="220" data-center-y="214" aria-label="AI/ML Engineering">
+<rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
+<text x="220" y="48" fill="#f0f6fc" font-size="28" font-weight="600" text-anchor="middle">AI/ML Engineering</text>
+<circle cx="220" cy="214" r="100" fill="none" stroke="#30363d" stroke-width="40"/>
+<circle data-segment="Deep learning" data-value="5" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="136.59098494 491.72754578" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Deep learning</title></circle>
+<circle data-segment="Model evaluation" data-value="4" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="109.27278795 519.04574277" stroke-dashoffset="-136.59098494" transform="rotate(-90 220 214)"><title>Model evaluation</title></circle>
+<circle data-segment="Data preparation" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="81.95459096 546.36393975" stroke-dashoffset="-245.86377289" transform="rotate(-90 220 214)"><title>Data preparation</title></circle>
+<circle data-segment="Supervised learning" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="81.95459096 546.36393975" stroke-dashoffset="-327.81836385" transform="rotate(-90 220 214)"><title>Supervised learning</title></circle>
+<circle data-segment="Time-series modelling" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="81.95459096 546.36393975" stroke-dashoffset="-409.77295482" transform="rotate(-90 220 214)"><title>Time-series modelling</title></circle>
+<circle data-segment="Reinforcement learning" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="54.63639398 573.68213674" stroke-dashoffset="-491.72754578" transform="rotate(-90 220 214)"><title>Reinforcement learning</title></circle>
+<circle data-segment="Unsupervised learning" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="54.63639398 573.68213674" stroke-dashoffset="-546.36393975" transform="rotate(-90 220 214)"><title>Unsupervised learning</title></circle>
+<circle data-segment="NLP and transformers" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#9ca8ff" stroke-width="40" stroke-dasharray="27.31819699 601.00033373" stroke-dashoffset="-601.00033373" transform="rotate(-90 220 214)"><title>NLP and transformers</title></circle>
+<path d="M220.000 135.000L220.000 93.000" stroke="#0d1117" stroke-width="3"/>
+<path d="M297.348 197.927L338.469 189.382" stroke="#0d1117" stroke-width="3"/>
+<path d="M269.856 275.281L296.362 307.861" stroke="#0d1117" stroke-width="3"/>
+<path d="M209.243 292.264L203.524 333.873" stroke="#0d1117" stroke-width="3"/>
+<path d="M155.459 259.558L121.147 283.778" stroke="#0d1117" stroke-width="3"/>
+<path d="M142.652 197.927L101.531 189.382" stroke="#0d1117" stroke-width="3"/>
+<path d="M162.264 160.078L131.569 131.411" stroke="#0d1117" stroke-width="3"/>
+<path d="M198.686 137.930L187.355 97.487" stroke="#0d1117" stroke-width="3"/>
+<text x="220" y="224" fill="#f0f6fc" font-size="34" font-weight="600" text-anchor="middle">AI/ML</text>
+<g data-skill-legend="Deep learning">
+<circle cx="31" cy="376" r="3.5" fill="#58a6ff"/>
+<text x="42" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Deep learning</text>
+<rect x="42" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Deep learning" x="42" y="391" width="176.000000" height="3.5" rx="1.75" fill="#58a6ff"/>
+</g>
+<g data-skill-legend="Model evaluation">
+<circle cx="246" cy="376" r="3.5" fill="#d2a8ff"/>
+<text x="257" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Model evaluation</text>
+<rect x="257" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Model evaluation" x="257" y="391" width="140.800000" height="3.5" rx="1.75" fill="#d2a8ff"/>
+</g>
+<g data-skill-legend="Data preparation">
+<circle cx="31" cy="418" r="3.5" fill="#7ee787"/>
+<text x="42" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Data preparation</text>
+<rect x="42" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Data preparation" x="42" y="433" width="105.600000" height="3.5" rx="1.75" fill="#7ee787"/>
+</g>
+<g data-skill-legend="Supervised learning">
+<circle cx="246" cy="418" r="3.5" fill="#ffa657"/>
+<text x="257" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Supervised learning</text>
+<rect x="257" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Supervised learning" x="257" y="433" width="105.600000" height="3.5" rx="1.75" fill="#ffa657"/>
+</g>
+<g data-skill-legend="Time-series modelling">
+<circle cx="31" cy="460" r="3.5" fill="#f778ba"/>
+<text x="42" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Time-series modelling</text>
+<rect x="42" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Time-series modelling" x="42" y="475" width="105.600000" height="3.5" rx="1.75" fill="#f778ba"/>
+</g>
+<g data-skill-legend="Reinforcement learning">
+<circle cx="246" cy="460" r="3.5" fill="#39c5cf"/>
+<text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Reinforcement learning</text>
+<rect x="257" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Reinforcement learning" x="257" y="475" width="70.400000" height="3.5" rx="1.75" fill="#39c5cf"/>
+</g>
+<g data-skill-legend="Unsupervised learning">
+<circle cx="31" cy="502" r="3.5" fill="#e3b341"/>
+<text x="42" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Unsupervised learning</text>
+<rect x="42" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Unsupervised learning" x="42" y="517" width="70.400000" height="3.5" rx="1.75" fill="#e3b341"/>
+</g>
+<g data-skill-legend="NLP and transformers">
+<circle cx="246" cy="502" r="3.5" fill="#9ca8ff"/>
+<text x="257" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">NLP and transformers</text>
+<rect x="257" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="NLP and transformers" x="257" y="517" width="35.200000" height="3.5" rx="1.75" fill="#9ca8ff"/>
+</g>
+</g>
+</svg>

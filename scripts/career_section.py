@@ -4,6 +4,8 @@ from html import escape
 
 WIDTH = 1400
 HEIGHT = 660
+MOBILE_WIDTH = 700
+MOBILE_HEIGHT = 1320
 
 
 def _text(x, y, value, size=22, fill="#f0f6fc", weight=400,
@@ -27,48 +29,43 @@ def render_career(icons):
     out = [
         '<g id="career-education" aria-labelledby="career-title">',
         '<title id="career-title">Amazon experience and Keele University education</title>',
-        '<desc>Model evaluation experience on Alexa and Nova research models. '
-        'Red teaming on Amazon Nova multimodal research models. Quality assurance '
+        '<desc>Model evaluation on Alexa and Nova research models. '
+        'Red teaming on Amazon Nova multimodal research models. Quality '
         'and verification for red-teaming workflows across London, Cambridge, Boston, '
         'and Amsterdam. MSc Computer Science with Distinction and Best Performance '
-        'Award. Research: DHMS, Dairy Herd Monitoring System.</desc>',
-        '<defs><linearGradient id="career-topline"><stop stop-color="#4493f8" '
-        'stop-opacity=".7"/><stop offset="1" stop-color="#4493f8" '
-        'stop-opacity="0"/></linearGradient></defs>',
+        'Award. MSc-CS Thesis: DHMS, Dairy Herd Monitoring System.</desc>',
     ]
     for x in (24, 714):
         out += [
             f'<rect x="{x}" y="24" width="662" height="612" rx="18" '
-            'fill="#151b23" fill-opacity=".55" stroke="#3d444d" stroke-opacity=".82"/>',
-            f'<path d="M{x+22} 24H{x+250}" fill="none" '
-            'stroke="url(#career-topline)" stroke-width="1.4"/>',
+            'fill="none" stroke="#3d444d" stroke-opacity=".82"/>',
         ]
 
-    # Pale mounts preserve the original dark wordmarks and their real colours.
+    # Transparent original marks sit left of each institution's heading.
     out += [
-        '<rect x="523" y="49" width="131" height="52" rx="7" fill="#f0f3f6"/>',
-        _brand(icons, "amazon", 536, 59, 105, 33),
-        _text(56, 83, "Amazon AGI Data Services", 27, weight=700),
-        _text(56, 122, "Machine Learning Data Associate II", 23, weight=600),
-        _text(56, 157, "JUN 2025 — PRESENT  /  LONDON", 18, "#9198a1", mono=True),
+        _brand(icons, "amazon", 56, 55, 92, 100),
+        _text(170, 83, "Amazon AGI Data Services", 27, weight=700),
+        _text(170, 122, "Machine Learning Data Associate II", 22, weight=600),
+        _text(170, 157, "JUN 2025 — PRESENT  /  LONDON", 17, "#9198a1", mono=True),
     ]
     bullets = (
-        (203, ("Model evaluation experience on Alexa", "and Nova research models")),
-        (270, ("Red teaming on Amazon Nova", "multimodal research models")),
-        (337, ("Quality assurance and verification for", "red-teaming workflows across London,", "Cambridge, Boston, and Amsterdam")),
+        (218, ("Model evaluation on Alexa and Nova research models",)),
+        (261, ("Red teaming on Amazon Nova multimodal research models",)),
+        (304, ("Quality and verification for red-teaming workflows across",
+               "London, Cambridge, Boston, and Amsterdam")),
     )
     for y, lines in bullets:
         out.append(f'<circle cx="62" cy="{y-7}" r="3" fill="#4493f8"/>')
         for i, line in enumerate(lines):
             out.append(_text(78, y+i*26, line, 21, "#c9d1d9"))
     out += [
-        '<path d="M56 419H654" stroke="#3d444d" stroke-opacity=".65"/>',
-        _text(56, 450, "EARLIER EXPERIENCE", 17, "#9198a1", mono=True, tracking=1.5),
+        '<path d="M56 374H654" stroke="#3d444d" stroke-opacity=".65"/>',
+        _text(56, 420, "EARLIER EXPERIENCE", 17, "#9198a1", mono=True, tracking=1.5),
     ]
     for y, employer, role, date in (
-        (482, "Flione IT", "Associate Web Developer", "OCT 2022 — JUL 2023"),
-        (537, "Thrive and Shine", "Web Developer Intern", "SEP 2024 — DEC 2024"),
-        (592, "Edu Lettings", "Recreational Assistant · part-time", "APR 2024 — JUN 2025"),
+        (464, "Flione IT", "Associate Web Developer", "OCT 2022 — JUL 2023"),
+        (530, "Thrive and Shine", "Web Developer Intern", "SEP 2024 — DEC 2024"),
+        (596, "Edu Lettings", "Recreational Assistant · part-time", "APR 2024 — JUN 2025"),
     ):
         out += [
             _text(56, y, employer, 22, weight=600),
@@ -77,23 +74,35 @@ def render_career(icons):
         ]
 
     out += [
-        _text(746, 83, "Keele University", 32, weight=700),
-        _text(746, 123, "MSc Computer Science", 27, weight=600),
-        _text(746, 157, "SEP 2023 — SEP 2024", 18, "#9198a1", mono=True),
-        '<path d="M746 184V232" stroke="#79c0ff" stroke-width="3"/>',
-        _text(765, 215, "Distinction", 30, "#79c0ff", 600),
-        '<rect x="746" y="270" width="214" height="90" rx="8" fill="#f0f3f6"/>',
-        _brand(icons, "keele", 760, 290, 186, 49),
-        _text(984, 288, "Best Performance Award", 24, weight=700),
-        _text(984, 322, "School of Mathematics", 20, "#c9d1d9"),
-        _text(984, 350, "and Computer Science", 20, "#c9d1d9"),
-        '<path d="M746 400H1344" stroke="#3d444d" stroke-opacity=".65"/>',
-        _text(746, 435, "RESEARCH FOCUS", 17, "#9198a1", mono=True, tracking=1.5),
-        _text(746, 475, "DHMS", 29, weight=700),
-        _text(746, 508, "Dairy Herd Monitoring System", 24, weight=600),
-        _text(746, 548, "Time-series neural networks", 22, "#c9d1d9"),
-        _text(746, 578, "LSTM regression and classification", 20, "#c9d1d9"),
-        _text(746, 607, "Dairy-herd activity and temperature data", 19, "#9198a1"),
+        _brand(icons, "keele", 746, 55, 130, 100),
+        _text(900, 83, "Keele University", 32, weight=700),
+        _text(900, 123, "MSc Computer Science", 27, weight=600),
+        _text(900, 157, "SEP 2023 — SEP 2024", 17, "#9198a1", mono=True),
+        _text(746, 218, "Awarded Distinction", 29, "#79c0ff", 600),
+        _text(746, 274, "Best Performance Award", 25, weight=700),
+        _text(746, 312, "School of Mathematics and Computer Science", 21, "#c9d1d9"),
+        '<path d="M746 374H1344" stroke="#3d444d" stroke-opacity=".65"/>',
+        _text(746, 420, "MSc-CS Thesis", 18, "#9198a1", mono=True, tracking=1.2),
+        _text(746, 464, "DHMS: Dairy Herd Monitoring System", 26, weight=600),
+        _text(746, 512, "Time-series neural networks", 22, "#c9d1d9"),
+        _text(746, 550, "LSTM regression and classification", 21, "#c9d1d9"),
+        _text(746, 588, "Dairy-herd activity and temperature data", 20, "#9198a1"),
         '</g>',
     ]
     return "\n".join(out)
+
+
+def render_career_mobile(icons):
+    """Stack the exact two desktop cards in a 700 by 1320 SVG fragment.
+
+    A shared definition keeps the copy and original-colour symbols identical.
+    Each nested viewport selects one card without reducing the font size.
+    The caller supplies the outer SVG, background, and institution symbols.
+    """
+    return (
+        '<defs><g id="career-mobile-layout">' + render_career(icons) + '</g></defs>'
+        '<svg x="0" y="0" width="700" height="660" viewBox="0 0 700 660" '
+        'overflow="hidden"><use href="#career-mobile-layout"/></svg>'
+        '<svg x="0" y="660" width="700" height="660" viewBox="690 0 700 660" '
+        'overflow="hidden"><use href="#career-mobile-layout"/></svg>'
+    )

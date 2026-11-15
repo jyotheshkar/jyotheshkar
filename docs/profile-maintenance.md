@@ -1,6 +1,6 @@
 # GitHub profile maintenance
 
-The overview keeps its dark GitHub palette and shared grid. A generated SVG holds the LinkedIn Agent workflow and the two career cards. A separate generated SVG displays three Professional Skills doughnuts, with names and small evidence bars to their right.
+The overview opens with the installed LinkedIn Agent workflow in GitHub's dark palette. Separate transparent career and skill sections follow. Each section has desktop and mobile artwork selected by README picture elements. Skills use centred doughnuts with names and evidence bars beneath them in two columns.
 
 ## Rebuild
 
@@ -15,9 +15,9 @@ All rendering uses Python's standard library and local assets. The profile build
 
 ## Architecture and evidence
 
-The [LinkedIn architecture](linkedin-architecture.md) maps the local learning implementation: retrieval, planning, exact-material human approval, simulated effects, and durable receipts. It does not claim live LinkedIn integrations.
+The [LinkedIn architecture](linkedin-architecture.md) maps the installed ChatGPT-coordinated plugin: connected source reads, evidence-based preparation, exact Drive artifacts, separate application/outreach paths, canonical Atlas records, dashboard delivery and recovery. Blue packet animation illustrates topology, not real-time execution.
 
-The [skills methodology](skill-circles.md) explains public repository language, dependency and code evidence. Run `python scripts/refresh_skill_evidence.py` to collect fresh evidence before rebuilding the skills graphic. The GitHub workflow validates pushed changes and refreshes evidence hourly, on profile pushes, and on manual runs. It commits only changed evidence and chart files.
+The [skills methodology](skill-circles.md) explains Programming Languages, AI/ML Engineering and Agentic AI Engineering evidence across accessible repositories. GitHub Actions refresh public evidence every fifteen minutes, on profile pushes, and on manual runs. An owner-authorized hourly connector task refreshes the complete accessible scope, including sanitized private aggregates. It commits only changed evidence and generated chart files. Private code, names and file paths are never published by the collector.
 
 README images follow the main branch so future refreshes appear. GitHub caches images and schedules can be delayed; this is automatic refresh rather than a real-time browser dashboard.
 
