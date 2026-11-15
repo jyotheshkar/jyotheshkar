@@ -138,30 +138,88 @@ def library_usage(body, path):
 
 
 
-# Cloud coverage describes implemented integrations and deployment configuration,
-# never a claim that a service is live or that deployment has succeeded.
+# Cloud coverage describes implementation, configuration and manually reviewed
+# learning/design evidence, never a claim that a service is live.
+
+MANUAL_CLOUD_KINDS = frozenset({'learning architecture', 'documented AWS lab'})
+CLOUD_LABEL_ALIASES = {
+    'Amazon DynamoDB':'DynamoDB', 'Amazon API Gateway':'API Gateway',
+    'AWS Step Functions':'Step Functions',
+    'Amazon OpenSearch Serverless':'OpenSearch Serverless',
+    'Amazon CloudWatch':'CloudWatch', 'Amazon CloudFront':'CloudFront',
+    'EventBridge':'Amazon EventBridge', 'Amazon CloudTrail':'AWS CloudTrail',
+}
+
+
+def retained_cloud_learning(prior, tree_entries):
+    """Retain a prior public manual finding only while its exact blob remains.
+
+    Runtime/config detection cannot re-assess a manually reviewed architecture
+    document or PDF lab. Its source ID is already matched to the current owned
+    repository by the caller; unchanged path + blob SHA keeps that review valid.
+    Changed/deleted blobs drop the finding and require a new explicit audit.
+    Private snapshots contain no paths/SHAs, so they are not reconstructed here.
+    """
+    if not prior or prior.get('visibility') != 'public':
+        return {}
+    current = {entry['path']:entry['sha'] for entry in tree_entries
+               if entry.get('type') == 'blob'}
+    retained = {}
+    for label, proof in prior.get('skills', {}).get('cloud', {}).items():
+        if not isinstance(proof, dict) or proof.get('kind') not in MANUAL_CLOUD_KINDS:
+            continue
+        path, sha = proof.get('path'), proof.get('sha')
+        if path and sha and current.get(path) == sha:
+            canonical = CLOUD_LABEL_ALIASES.get(label, label)
+            retained.setdefault(canonical, {'path':path, 'sha':sha, 'kind':proof['kind']})
+    return retained
+
+
 AWS_SERVICES = {
     's3':'Amazon S3', 'ec2':'Amazon EC2', 'rds':'Amazon RDS',
-    'lambda':'AWS Lambda', 'dynamodb':'Amazon DynamoDB',
+    'lambda':'AWS Lambda', 'dynamodb':'DynamoDB',
     'bedrock':'Amazon Bedrock', 'bedrock-runtime':'Amazon Bedrock',
     'bedrock-agent':'Amazon Bedrock', 'bedrock-agent-runtime':'Amazon Bedrock',
-    'cloudwatch':'Amazon CloudWatch', 'logs':'Amazon CloudWatch',
+    'cloudwatch':'CloudWatch', 'logs':'CloudWatch',
     'ecs':'Amazon ECS', 'ecr':'Amazon ECR', 'sqs':'Amazon SQS',
     'sns':'Amazon SNS', 'secretsmanager':'AWS Secrets Manager',
     'sts':'AWS STS', 'iam':'AWS IAM',
+    'apigateway':'API Gateway', 'apigatewayv2':'API Gateway',
+    'stepfunctions':'Step Functions', 'opensearchserverless':'OpenSearch Serverless',
+    'cloudfront':'CloudFront', 'events':'Amazon EventBridge', 'kms':'AWS KMS',
+    'cognito-idp':'Amazon Cognito', 'cognito-identity':'Amazon Cognito',
+    'appconfig':'AWS AppConfig', 'appconfigdata':'AWS AppConfig',
+    'cloudtrail':'AWS CloudTrail', 'bedrock-agentcore':'Bedrock AgentCore',
+    'bedrock-agentcore-control':'Bedrock AgentCore',
 }
 CLOUD_RESOURCES = {
     'aws_s3_bucket':'Amazon S3', 'aws_instance':'Amazon EC2',
     'aws_db_instance':'Amazon RDS', 'aws_lambda_function':'AWS Lambda',
-    'aws_dynamodb_table':'Amazon DynamoDB', 'aws_ecs_service':'Amazon ECS',
+    'aws_dynamodb_table':'DynamoDB', 'aws_ecs_service':'Amazon ECS',
     'aws_ecs_cluster':'Amazon ECS', 'aws_ecr_repository':'Amazon ECR',
-    'aws_cloudwatch_log_group':'Amazon CloudWatch',
+    'aws_cloudwatch_log_group':'CloudWatch',
     'aws_bedrockagent_agent':'Amazon Bedrock',
     'AWS::S3::Bucket':'Amazon S3', 'AWS::EC2::Instance':'Amazon EC2',
     'AWS::RDS::DBInstance':'Amazon RDS', 'AWS::Lambda::Function':'AWS Lambda',
-    'AWS::DynamoDB::Table':'Amazon DynamoDB', 'AWS::ECS::Service':'Amazon ECS',
-    'AWS::ECR::Repository':'Amazon ECR', 'AWS::Logs::LogGroup':'Amazon CloudWatch',
+    'AWS::DynamoDB::Table':'DynamoDB', 'AWS::ECS::Service':'Amazon ECS',
+    'AWS::ECR::Repository':'Amazon ECR', 'AWS::Logs::LogGroup':'CloudWatch',
     'AWS::Bedrock::Agent':'Amazon Bedrock',
+    'aws_api_gateway_rest_api':'API Gateway', 'aws_apigatewayv2_api':'API Gateway',
+    'aws_sfn_state_machine':'Step Functions',
+    'aws_opensearchserverless_collection':'OpenSearch Serverless',
+    'aws_cloudfront_distribution':'CloudFront', 'aws_vpc':'Amazon VPC',
+    'aws_cloudwatch_event_bus':'Amazon EventBridge', 'aws_kms_key':'AWS KMS',
+    'aws_secretsmanager_secret':'AWS Secrets Manager',
+    'AWS::ApiGateway::RestApi':'API Gateway', 'AWS::ApiGatewayV2::Api':'API Gateway',
+    'AWS::StepFunctions::StateMachine':'Step Functions',
+    'AWS::OpenSearchServerless::Collection':'OpenSearch Serverless',
+    'AWS::CloudFront::Distribution':'CloudFront', 'AWS::EC2::VPC':'Amazon VPC',
+    'AWS::Events::EventBus':'Amazon EventBridge', 'AWS::KMS::Key':'AWS KMS',
+    'AWS::SecretsManager::Secret':'AWS Secrets Manager',
+    'aws_cognito_user_pool':'Amazon Cognito',
+    'aws_appconfig_application':'AWS AppConfig', 'aws_cloudtrail':'AWS CloudTrail',
+    'AWS::Cognito::UserPool':'Amazon Cognito',
+    'AWS::AppConfig::Application':'AWS AppConfig', 'AWS::CloudTrail::Trail':'AWS CloudTrail',
     'google_storage_bucket':'Google Cloud Storage',
     'google_cloud_run_v2_service':'Google Cloud Run',
     'google_bigquery_dataset':'Google BigQuery',
@@ -290,7 +348,7 @@ def cloud_usage(body, path):
             '@aws-sdk/client-ec2':('EC2Client', 'Amazon EC2'),
             '@aws-sdk/client-bedrock-runtime':('BedrockRuntimeClient', 'Amazon Bedrock'),
             '@aws-sdk/client-lambda':('LambdaClient', 'AWS Lambda'),
-            '@aws-sdk/client-dynamodb':('DynamoDBClient', 'Amazon DynamoDB'),
+            '@aws-sdk/client-dynamodb':('DynamoDBClient', 'DynamoDB'),
             '@azure/storage-blob':('BlobServiceClient', 'Azure Blob Storage'),
             '@azure/cosmos':('CosmosClient', 'Azure Cosmos DB'),
             '@google-cloud/storage':('Storage', 'Google Cloud Storage'),
@@ -479,7 +537,7 @@ def assemble(public, private, captured_at):
             'measure':'One repository per evidenced language or engineering domain. Counts describe source presence, never proficiency or authorship.',
             'languages':'Complete source trees plus inspected notebook code cells. PHP and JSP included. Java requires .java or Processing implementation; a Maven WAR or pure-HTML JSP does not establish Java source. HTML/CSS styling and dependencies/builds are excluded.',
             'libraries':'External libraries/frameworks imported and used in inspected implementation or notebook code cells. Dependency manifests, unused imports, prose and standard-library modules do not qualify. Each repository contributes once per library; this is source coverage, not execution verification.',
-            'cloud':'Explicit provider SDK client operations or recognised infrastructure/deployment configuration. Docker and Docker Compose describe container build/deployment tooling. Vercel, Render, Fly.io, Nixpacks and AWS CodeBuild describe configured targets/builds, not verified live infrastructure. Prose, PDFs, credentials, dependency lists and unused client imports do not qualify. The bounded detector can miss indirect wrappers and unrecognised services.',
+            'cloud':'Explicit provider SDK client operations, recognised deployment configuration, or manually reviewed learning/design artifacts. Docker and Docker Compose describe container tooling; provider configurations, documented AWS labs and architecture learning do not establish live infrastructure or production experience. The collector never infers skills from bare service names in prose, PDF filenames, credentials, dependency lists or unused imports. Prior public findings tagged learning architecture or documented AWS lab survive only while the same owned source ID still contains the exact reviewed path and blob SHA; changed/deleted documents need a new manual audit. A public-only capture preserves private aggregates, while a full authenticated code audit cannot revalidate hidden private learning documents from a sanitized aggregate alone. The bounded detector can miss indirect wrappers and unrecognised services.',
             'aiml':'Executable implementations of learning domains; dependencies and README claims do not qualify. Notebook markdown/outputs and unimplemented Python stubs are excluded.',
             'agentic':'Only Agentic Core family repositories and linkedin-agent-development-lab. Source implementation symbols, not other web apps or architecture prose.',
             'privacy':'Private evidence publishes only opaque per-repository IDs and skill names. No private names, filenames, snippets, blob hashes, URLs or notebook contents are published.',
@@ -584,6 +642,14 @@ def main():
                 for label,pattern in AGENTIC:
                     if re.search(pattern,code,re.I):
                         skills['agentic'].setdefault(label,proof(file))
+        if not repo.get('private'):
+            for label, finding in retained_cloud_learning(prior, tree['tree']).items():
+                # Prefer a current executable/config proof if both are present.
+                if label not in skills['cloud']:
+                    skills['cloud'][label] = finding
+                    reference = {'path':finding['path'], 'sha':finding['sha']}
+                    if reference not in scanned:
+                        scanned.append(reference)
         if repo.get('private'):
             sources.append({'source_id':rid,'visibility':'private',
                             'skills':{key:{label:{'kind':'verified source'} for label in matches} for key,matches in skills.items()}})

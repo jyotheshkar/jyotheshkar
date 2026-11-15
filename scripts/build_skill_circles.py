@@ -67,7 +67,7 @@ def legend_layout(chart):
     result, x, row = [], 0, 0
     for n, item in enumerate(chart['items']):
         percent = f"{100 * item['value'] / total:.1f}%"
-        if chart['key'] == 'technology':
+        if chart['key'] in ('technology', 'cloud'):
             result.append((n, item, percent, (n % 2) * 300, n // 2, 0))
             row = n // 2
             continue
@@ -105,8 +105,8 @@ def section(chart):
     for n, item, percent, x, row, label_width in layout:
         color = LANGUAGE_COLORS.get(item['label'], PALETTE[n % len(PALETTE)])
         y = 116 + row * 38
-        label_size = 21
-        percent_size = 20
+        label_size = 19 if key == 'cloud' else 21
+        percent_size = 18 if key == 'cloud' else 20
         detail = 'JSP template evidence grouped under Java.' if item.get('source_label') == 'JSP' else item['label']
         out += [f'<g data-skill-legend="{escape(item["label"])}">',
                 f'<title>{escape(detail)}</title>',
@@ -122,8 +122,9 @@ def document(width, height, title, contents):
            f'<title id="skills-title">{escape(title)}</title>'
            '<desc>Combined repository evidence. Each stacked bar and percentage shows a category share '
            'of verified repository evidence, not language byte totals or proficiency. '
-           'One repository can support several categories. Cloud skills reflect project deployment '
-           'configuration, not proof of live production services. Java includes JSP template evidence.</desc>' + contents + '</svg>\n')
+           'One repository can support several categories. Cloud skills include project configuration '
+           'and reviewed AWS labs and learning architectures, not proof of live production services. '
+           'Java includes JSP template evidence.</desc>' + contents + '</svg>\n')
     ET.fromstring(svg)
     return svg
 
@@ -151,27 +152,27 @@ def build():
     panel_y, row_y = 218, 250
     height = panel_y + sum(row_heights) + 64
     desktop = shell(1400, height)
-    desktop += f'<rect data-skills-panel="true" x="24" y="{panel_y}" width="1352" height="{sum(row_heights)}" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/>'
+    desktop += f'<rect data-skills-panel="true" x="24" y="{panel_y}" width="1352" height="{sum(row_heights)}" rx="15" fill="none" stroke="#334253" stroke-width="1.35"/>'
     desktop += f'<path d="M700 {panel_y+28}V{panel_y+sum(row_heights)-28}" stroke="#30363d"/>'
     desktop += f'<path d="M56 {panel_y+row_heights[0]}H1344" stroke="#30363d"/>'
     for n, key in enumerate(KEYS):
         x = 56 if n % 2 == 0 else 748
         y = row_y if n < 2 else row_y + row_heights[0]
         desktop += f'<g data-position="{key}" transform="translate({x} {y})">{sections[key][0]}</g>'
-    desktop += text(40, height-25, 'Percentages show repository evidence share. Cloud reflects deployment configuration. Java includes JSP templates.', 18, '#7d92aa')
+    desktop += text(40, height-25, 'Percentages show repository evidence share. Cloud includes projects and architecture learning. Java includes JSP templates.', 18, '#7d92aa')
     assets = ROOT/'assets'
     (assets/'skills.svg').write_text(document(1400, height, 'Professional Skills', desktop), encoding='utf-8', newline='\n')
     mobile_height = 218 + sum(sections[k][1]+52 for k in KEYS) + 84
     mobile = shell(700, mobile_height, True)
-    mobile += f'<rect data-skills-panel="true" x="24" y="218" width="652" height="{mobile_height-302}" rx="15" fill="#0d1117" stroke="#334253" stroke-width="1.35"/>'
+    mobile += f'<rect data-skills-panel="true" x="24" y="218" width="652" height="{mobile_height-302}" rx="15" fill="none" stroke="#334253" stroke-width="1.35"/>'
     y = 250
     for n, key in enumerate(KEYS):
         mobile += f'<g data-position="{key}" transform="translate(52 {y})">{sections[key][0]}</g>'
         y += sections[key][1]+52
         if n < 3:
             mobile += f'<path d="M52 {y-32}H648" stroke="#30363d"/>'
-    mobile += text(40, mobile_height-45, 'Evidence shares; cloud is deployment configuration.', 20, '#7d92aa')
-    mobile += text(40, mobile_height-17, 'Java includes JSP templates.', 20, '#7d92aa')
+    mobile += text(40, mobile_height-45, 'Cloud includes projects and architecture learning.', 20, '#7d92aa')
+    mobile += text(40, mobile_height-17, 'Repository evidence shares; Java includes JSP templates.', 20, '#7d92aa')
     (assets/'skills-mobile.svg').write_text(document(700, mobile_height, 'Professional Skills', mobile), encoding='utf-8', newline='\n')
     for key in KEYS:
         fragment, section_height = sections[key]

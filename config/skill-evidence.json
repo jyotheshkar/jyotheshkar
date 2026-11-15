@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "captured_at": "2026-11-15T10:14:11+00:00",
+  "captured_at": "2026-11-15T10:44:46+00:00",
   "public_snapshot": {
     "captured_at": "2026-11-15T09:32:34+00:00",
     "sources": [
@@ -587,7 +587,42 @@
           "aiml": {},
           "agentic": {},
           "libraries": {},
-          "cloud": {}
+          "cloud": {
+            "Amazon Bedrock": {
+              "path": "legendary-ai-rag-bedrock.pdf",
+              "sha": "ed4cb573e6de32cfe0fb8ca7c87a19a943da3d15",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                5,
+                7,
+                8,
+                9,
+                10
+              ],
+              "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
+            },
+            "Amazon S3": {
+              "path": "legendary-ai-rag-bedrock.pdf",
+              "sha": "ed4cb573e6de32cfe0fb8ca7c87a19a943da3d15",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                8
+              ],
+              "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
+            },
+            "OpenSearch Serverless": {
+              "path": "legendary-ai-rag-bedrock.pdf",
+              "sha": "ed4cb573e6de32cfe0fb8ca7c87a19a943da3d15",
+              "kind": "documented AWS lab",
+              "pages": [
+                5,
+                8
+              ],
+              "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
+            }
+          }
         }
       },
       {
@@ -601,7 +636,85 @@
           "aiml": {},
           "agentic": {},
           "libraries": {},
-          "cloud": {}
+          "cloud": {
+            "Amazon S3": {
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                7
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            "CloudFront": {
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                7,
+                9,
+                10
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            "AWS Lambda": {
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                4,
+                6,
+                9
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            "API Gateway": {
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                4,
+                6,
+                9,
+                10
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            "DynamoDB": {
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                4,
+                5,
+                6
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            "AWS IAM": {
+              "path": "legendary-aws-compute-lambda.pdf",
+              "sha": "0b369eafe61be86b920a1d2c0a1acd6ee6d6e68e",
+              "kind": "documented AWS lab",
+              "pages": [
+                5,
+                7,
+                9,
+                10
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            "CloudWatch": {
+              "path": "legendary-aws-compute-lambda.pdf",
+              "sha": "0b369eafe61be86b920a1d2c0a1acd6ee6d6e68e",
+              "kind": "documented AWS lab",
+              "pages": [
+                5
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            }
+          }
         }
       },
       {
@@ -2162,7 +2275,35 @@
             }
           },
           "libraries": {},
-          "cloud": {}
+          "cloud": {
+            "AWS IAM": {
+              "kind": "verified source"
+            },
+            "AWS Lambda": {
+              "kind": "verified source"
+            },
+            "Step Functions": {
+              "kind": "verified source"
+            },
+            "API Gateway": {
+              "kind": "verified source"
+            },
+            "Amazon Bedrock": {
+              "kind": "verified source"
+            },
+            "Amazon Cognito": {
+              "kind": "verified source"
+            },
+            "DynamoDB": {
+              "kind": "verified source"
+            },
+            "Amazon S3": {
+              "kind": "verified source"
+            },
+            "Amazon SQS": {
+              "kind": "verified source"
+            }
+          }
         }
       },
       {
@@ -2255,7 +2396,62 @@
           "aiml": {},
           "agentic": {},
           "libraries": {},
-          "cloud": {}
+          "cloud": {
+            "AWS AppConfig": {
+              "kind": "verified source"
+            },
+            "AWS CloudTrail": {
+              "kind": "verified source"
+            },
+            "AWS Fargate": {
+              "kind": "verified source"
+            },
+            "AWS IAM": {
+              "kind": "verified source"
+            },
+            "AWS KMS": {
+              "kind": "verified source"
+            },
+            "AWS Lambda": {
+              "kind": "verified source"
+            },
+            "Step Functions": {
+              "kind": "verified source"
+            },
+            "API Gateway": {
+              "kind": "verified source"
+            },
+            "Amazon Bedrock": {
+              "kind": "verified source"
+            },
+            "Bedrock AgentCore": {
+              "kind": "verified source"
+            },
+            "CloudWatch": {
+              "kind": "verified source"
+            },
+            "Amazon Cognito": {
+              "kind": "verified source"
+            },
+            "DynamoDB": {
+              "kind": "verified source"
+            },
+            "Amazon ECR": {
+              "kind": "verified source"
+            },
+            "Amazon ECS": {
+              "kind": "verified source"
+            },
+            "Amazon EventBridge": {
+              "kind": "verified source"
+            },
+            "Amazon S3": {
+              "kind": "verified source"
+            },
+            "Amazon SQS": {
+              "kind": "verified source"
+            }
+          }
         }
       },
       {
@@ -2273,7 +2469,68 @@
           "aiml": {},
           "agentic": {},
           "libraries": {},
-          "cloud": {}
+          "cloud": {
+            "AWS AppConfig": {
+              "kind": "verified source"
+            },
+            "AWS CloudTrail": {
+              "kind": "verified source"
+            },
+            "AWS Fargate": {
+              "kind": "verified source"
+            },
+            "AWS IAM": {
+              "kind": "verified source"
+            },
+            "AWS KMS": {
+              "kind": "verified source"
+            },
+            "AWS Lambda": {
+              "kind": "verified source"
+            },
+            "Step Functions": {
+              "kind": "verified source"
+            },
+            "API Gateway": {
+              "kind": "verified source"
+            },
+            "Amazon Bedrock": {
+              "kind": "verified source"
+            },
+            "Bedrock AgentCore": {
+              "kind": "verified source"
+            },
+            "CloudFront": {
+              "kind": "verified source"
+            },
+            "CloudWatch": {
+              "kind": "verified source"
+            },
+            "Amazon Cognito": {
+              "kind": "verified source"
+            },
+            "DynamoDB": {
+              "kind": "verified source"
+            },
+            "Amazon ECR": {
+              "kind": "verified source"
+            },
+            "Amazon ECS": {
+              "kind": "verified source"
+            },
+            "Amazon EventBridge": {
+              "kind": "verified source"
+            },
+            "Amazon S3": {
+              "kind": "verified source"
+            },
+            "Amazon SQS": {
+              "kind": "verified source"
+            },
+            "Amazon VPC": {
+              "kind": "verified source"
+            }
+          }
         }
       },
       {
@@ -2321,7 +2578,7 @@
     "agentic": "Only Agentic Core family repositories and linkedin-agent-development-lab. Source implementation symbols, not other web apps or architecture prose.",
     "privacy": "Private evidence publishes only opaque per-repository IDs and skill names. No private names, filenames, snippets, blob hashes, URLs or notebook contents are published.",
     "refresh": "Evidence is captured on demand. A public-only capture preserves the sanitized private baseline and its separate capture date; a full authenticated audit can update both partitions.",
-    "cloud": "Concrete provider integration or checked deployment/build manifests. Docker and Compose are container tooling; provider configurations are not proof of live production deployment. Cloud proofs retain their separately audited exact tree/blob revisions for public sources; private sources retain only opaque IDs and labels."
+    "cloud": "One repository per evidenced cloud service or deployment/container platform. Counts describe source presence across configuration, documented practical labs and authored learning/reference architecture. Percentages are shares of repository-skill signals, not proficiency, deployment success or usage time. Executable deployment/build manifests, fully read documented AWS practical labs, and substantive selected architecture narratives/service-to-responsibility mappings qualify. README summaries, generic advisory skills, names, installed dependencies, logos and official links alone do not qualify. This chart includes learning as requested. Authored architecture and source configuration do not claim current live infrastructure. The AWS lab reports document historical learning exercises and testing, not a present production service."
   },
   "charts": [
     {
@@ -3378,6 +3635,277 @@
       "unit": "repositories",
       "items": [
         {
+          "label": "Amazon S3",
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "00515d406cdc8571",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "legendary-ai-rag-bedrock.pdf",
+              "sha": "ed4cb573e6de32cfe0fb8ca7c87a19a943da3d15",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                8
+              ],
+              "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
+            },
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                7
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon Bedrock",
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "00515d406cdc8571",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "legendary-ai-rag-bedrock.pdf",
+              "sha": "ed4cb573e6de32cfe0fb8ca7c87a19a943da3d15",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                5,
+                7,
+                8,
+                9,
+                10
+              ],
+              "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "API Gateway",
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                4,
+                6,
+                9,
+                10
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS IAM",
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-lambda.pdf",
+              "sha": "0b369eafe61be86b920a1d2c0a1acd6ee6d6e68e",
+              "kind": "documented AWS lab",
+              "pages": [
+                5,
+                7,
+                9,
+                10
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS Lambda",
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                4,
+                6,
+                9
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "DynamoDB",
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                4,
+                5,
+                6
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon Cognito",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon SQS",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "CloudWatch",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-lambda.pdf",
+              "sha": "0b369eafe61be86b920a1d2c0a1acd6ee6d6e68e",
+              "kind": "documented AWS lab",
+              "pages": [
+                5
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
           "label": "Docker",
           "value": 3,
           "evidence": [
@@ -3401,6 +3929,161 @@
             },
             {
               "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Step Functions",
+          "value": 3,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "b8046dba1fbe37a0",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon ECR",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon ECS",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS AppConfig",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS CloudTrail",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS Fargate",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "AWS KMS",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Bedrock AgentCore",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "CloudFront",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "66d60b92f08441bc",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-Three-Tier-Web-Application-2025",
+              "path": "legendary-aws-compute-threetier.pdf",
+              "sha": "865ee77bc71cfed0340f35cb5b714fb98f010d72",
+              "kind": "documented AWS lab",
+              "pages": [
+                3,
+                7,
+                9,
+                10
+              ],
+              "tree_sha": "ae31d515a48264c93c95708688364a0c45e9a4c2"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon EventBridge",
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "c8efd093f295ccfc",
+              "visibility": "private"
+            },
+            {
+              "source_id": "db6196397de6cbb8",
               "visibility": "private"
             }
           ]
@@ -3444,6 +4127,16 @@
             },
             {
               "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "Amazon VPC",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "db6196397de6cbb8",
               "visibility": "private"
             }
           ]
@@ -3505,6 +4198,25 @@
               "path": "backend/nixpacks.toml",
               "sha": "3d02207cdbc49d5ef013f09bf4dfa84d12f6fd20",
               "tree_sha": "27d48e4f10282355017a93ba16b046b76cfcc4cb"
+            }
+          ]
+        },
+        {
+          "label": "OpenSearch Serverless",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "00515d406cdc8571",
+              "visibility": "public",
+              "repo": "jyotheshkar/AWS-RAG-Chatbot-with-Bedrock-2025",
+              "path": "legendary-ai-rag-bedrock.pdf",
+              "sha": "ed4cb573e6de32cfe0fb8ca7c87a19a943da3d15",
+              "kind": "documented AWS lab",
+              "pages": [
+                5,
+                8
+              ],
+              "tree_sha": "855d03c38d0e560ac10805deff4befd2b87169b3"
             }
           ]
         }
@@ -3883,14 +4595,18 @@
     "measure": "One repository per verified imported and used external library. Standard-library modules and dependency manifests excluded."
   },
   "cloud_audit": {
-    "captured_at": "2026-11-15T10:14:11+00:00",
+    "captured_at": "2026-11-15T10:44:46+00:00",
     "public_repositories": 18,
     "private_repositories": 6,
     "original_repositories": 24,
     "complete_trees_inspected": 24,
-    "measure": "One repository per evidenced cloud deployment platform or container tooling configuration. Percentages represent the share of repository-skill signals, not proficiency or usage time.",
-    "qualification": "Actual deployment/build manifests inspected at exact file SHAs. Docker includes container packaging used for a cloud-targeted application; Docker Compose includes multi-service deployment configuration. CI-only workflows, README claims, dependencies, provider logos and project names do not qualify.",
-    "deployment_status": "Configuration presence is not proof of successful provisioning, publication, production operation or current live deployment.",
-    "excluded": "Uninspected binary documents, README claims, dependencies and CI-only workflows do not establish cloud evidence."
+    "measure": "One repository per evidenced cloud service or deployment/container platform. Counts describe source presence across configuration, documented practical labs and authored learning/reference architecture. Percentages are shares of repository-skill signals, not proficiency, deployment success or usage time.",
+    "qualification": "Executable deployment/build manifests, fully read documented AWS practical labs, and substantive selected architecture narratives/service-to-responsibility mappings qualify. README summaries, generic advisory skills, names, installed dependencies, logos and official links alone do not qualify.",
+    "deployment_status": "This chart includes learning as requested. Authored architecture and source configuration do not claim current live infrastructure. The AWS lab reports document historical learning exercises and testing, not a present production service.",
+    "privacy": "Private sources expose only opaque source IDs and verified skill labels; no private names, paths, hashes, code or URLs.",
+    "excluded": "The fully inspected serverless AWS lab reports do not establish Amazon EC2, Amazon RDS or ALB. None were inferred from the phrase three-tier. Future CloudFormation exports and generic official links are excluded.",
+    "evidence_status": "Public proof kinds distinguish deployment configuration, runnable buildspec configuration and documented AWS lab. New private AWS service evidence is authored learning/reference architecture, with deployment/runtime verification pending; only sanitized verified-source fields are published.",
+    "counting": "A repository contributes once per service. Two private design stores reuse a shared mapping revision; these counts represent repository presence rather than independent implementations.",
+    "pdf_audit": "All five public AWS PDFs were downloaded and fully text-extracted (52 pages). Exact Git blob SHAs were independently recomputed from binary bytes and matched current authenticated GitHub trees. Representative screenshot-only pages were also rendered and visually inspected."
   }
 }

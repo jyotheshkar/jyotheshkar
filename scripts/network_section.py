@@ -57,7 +57,7 @@ def _glyph(kind, x, y, scale=1):
         "dashboard": '<rect x="3" y="4" width="34" height="31" rx="5"/><path d="M3 13h34M11 29v-7M20 29V18M29 29V16"/>',
         "loop": '<path d="M7 15a14 14 0 0 1 26-2M33 25A14 14 0 0 1 7 27M7 6v9h9M33 34v-9h-9"/>',
     }
-    return (f'<g transform="translate({x} {y}) scale({scale})" fill="none" stroke="#79c0ff" '
+    return (f'<g transform="translate({x} {y}) scale({scale})" fill="none" stroke="#f0f6fc" '
             f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{shapes[kind]}</g>')
 
 
@@ -90,32 +90,34 @@ def _port(x, y):
     return f'<circle cx="{x}" cy="{y}" r="4.5" fill="#0d1117" stroke="#6c92b9" stroke-width="1.7"/>'
 
 
-def _node(key, x, y, w, h, icons, compact=False, mobile=False):
+def _node(key, x, y, w, h, icons, compact=False, mobile=False, body_lines=None):
     title, lines, brand, glyph = NODES[key]
+    lines = lines if body_lines is None else body_lines
     primary = key in {"coordinator", "prepare", "canonical"}
     fill = "url(#nw-focus)" if primary else "#111820"
     stroke = "#3b6f9f" if primary else "#334253"
-    title_size = 26 if mobile else 23
-    line_size = 20 if mobile else 18
+    title_size = 24 if mobile else 22
+    line_size = 19 if mobile else 17.5
+    padding, icon_gap = 24, 14
     parts = [f'<g id="linkedin-{key}"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="15" fill="{fill}" stroke="{stroke}" stroke-width="1.35"/>',
              f'<path d="M{x+20} {y}h42" stroke="#4493f8" stroke-width="2" opacity=".8"/>']
     if compact:
-        ix, iy = x+19, y+23
-        tx, ty = x+77, y+40
+        icon_size = 32 if mobile else 30
+        ix, iy = x+padding, y+18
+        tx, ty = ix+icon_size+icon_gap, y+(40 if mobile else 39)
+        body_y, line_height = y+(70 if mobile else 69), 25
     else:
-        ix, iy = x+19, y+20
-        tx, ty = x+76, y+47
+        icon_size = 36 if mobile else 32
+        ix, iy = x+padding, y+20
+        tx, ty = ix+icon_size+icon_gap, y+(45 if mobile else 44)
+        body_y, line_height = (y+76, 25) if h<=120 else (y+82, 27)
     if brand and brand in icons:
-        parts.append(f'<use href="#brand-{brand}" x="{ix}" y="{iy}" width="38" height="38"/>')
+        parts.append(f'<use href="#brand-{brand}" x="{ix}" y="{iy}" width="{icon_size}" height="{icon_size}"/>')
     else:
-        parts.append(_glyph(glyph or "agent", ix, iy))
-    if key == "canonical" and mobile:
-        parts.append(_text(tx, ty, title, 27, weight=600))
-    else:
-        parts.append(_text(tx, ty, title, title_size, weight=600))
+        parts.append(_glyph(glyph or "agent", ix, iy, icon_size/40))
+    parts.append(_text(tx, ty, title, title_size, weight=600))
     for i, line in enumerate(lines):
-        ly = y+72+i*25 if compact else y+83+i*26
-        parts.append(_text(x+20, ly, line, line_size, "#a9b8c9"))
+        parts.append(_text(x+padding, body_y+i*line_height, line, line_size, "#a9b8c9"))
     parts.append("</g>")
     return "".join(parts)
 
@@ -238,11 +240,9 @@ def render_network_mobile(icons):
         out.append(_node(key,x,y,w,h,icons,compact,mobile=True))
     # Footer outcomes use two concise cards to stay within the mobile viewport.
     for key,x in (("learning",40),("dashboard",370)):
-        title, lines, brand, glyph=NODES[key]
-        out.append(f'<rect x="{x}" y="1800" width="290" height="90" rx="15" fill="#111820" stroke="#334253"/>')
-        out.append(_glyph(glyph,x+16,1821))
-        out.append(_text(x+69,1837,title,24,weight=600))
-        out.append(_text(x+18,1869, "Saved checkpoints" if key=="learning" else "Signed Atlas projection",20,"#a9b8c9"))
+        summary = "Saved checkpoints" if key=="learning" else "Signed Atlas projection"
+        out.append(_node(key,x,1800,290,90,icons,compact=True,mobile=True,
+                         body_lines=[summary]))
     for x,y in ((350,550),(350,965),(515,1370),(350,1580),(350,1765)):
         out.append(f'<circle cx="{x}" cy="{y}" r="4" fill="#79c0ff"/>')
     out.append("</g>")

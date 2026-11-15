@@ -1,54 +1,201 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="318" viewBox="0 0 660 318" role="img" aria-labelledby="skills-title"><title id="skills-title">Cloud Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories. Cloud skills reflect project deployment configuration, not proof of live production services. Java includes JSP template evidence.</desc><rect width="660" height="318" fill="#0d1117"/><g transform="translate(32 28)"><g data-skill-section="cloud" data-total="11" aria-label="Cloud Skills">
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="698" viewBox="0 0 660 698" role="img" aria-labelledby="skills-title"><title id="skills-title">Cloud Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories. Cloud skills include project configuration and reviewed AWS labs and learning architectures, not proof of live production services. Java includes JSP template evidence.</desc><rect width="660" height="698" fill="#0d1117"/><g transform="translate(32 28)"><g data-skill-section="cloud" data-total="68" aria-label="Cloud Skills">
 <text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">Cloud Skills</text>
 <clipPath id="bar-cloud"><rect y="60" width="596" height="14" rx="7"/></clipPath>
 <g clip-path="url(#bar-cloud)">
-<rect data-segment="Docker" data-value="3" x="0.00000000" y="60" width="162.54545455" height="14" fill="#3572a5"><title>Docker</title></rect>
-<rect data-segment="Render" data-value="2" x="162.54545455" y="60" width="108.36363636" height="14" fill="#3178c6"><title>Render</title></rect>
-<path d="M162.54545455 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Vercel" data-value="2" x="270.90909091" y="60" width="108.36363636" height="14" fill="#e34c26"><title>Vercel</title></rect>
-<path d="M270.90909091 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="AWS CodeBuild" data-value="1" x="379.27272727" y="60" width="54.18181818" height="14" fill="#f1e05a"><title>AWS CodeBuild</title></rect>
-<path d="M379.27272727 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Docker Compose" data-value="1" x="433.45454545" y="60" width="54.18181818" height="14" fill="#563d7c"><title>Docker Compose</title></rect>
-<path d="M433.45454545 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Fly.io" data-value="1" x="487.63636364" y="60" width="54.18181818" height="14" fill="#89e051"><title>Fly.io</title></rect>
-<path d="M487.63636364 60v14" stroke="#0d1117" stroke-width="2"/>
-<rect data-segment="Nixpacks" data-value="1" x="541.81818182" y="60" width="54.18181818" height="14" fill="#da5b0b"><title>Nixpacks</title></rect>
-<path d="M541.81818182 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon S3" data-value="5" x="0.00000000" y="60" width="43.82352941" height="14" fill="#3572a5"><title>Amazon S3</title></rect>
+<rect data-segment="Amazon Bedrock" data-value="4" x="43.82352941" y="60" width="35.05882353" height="14" fill="#3178c6"><title>Amazon Bedrock</title></rect>
+<path d="M43.82352941 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="API Gateway" data-value="4" x="78.88235294" y="60" width="35.05882353" height="14" fill="#e34c26"><title>API Gateway</title></rect>
+<path d="M78.88235294 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS IAM" data-value="4" x="113.94117647" y="60" width="35.05882353" height="14" fill="#f1e05a"><title>AWS IAM</title></rect>
+<path d="M113.94117647 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS Lambda" data-value="4" x="149.00000000" y="60" width="35.05882353" height="14" fill="#563d7c"><title>AWS Lambda</title></rect>
+<path d="M149.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="DynamoDB" data-value="4" x="184.05882353" y="60" width="35.05882353" height="14" fill="#89e051"><title>DynamoDB</title></rect>
+<path d="M184.05882353 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon Cognito" data-value="3" x="219.11764706" y="60" width="26.29411765" height="14" fill="#da5b0b"><title>Amazon Cognito</title></rect>
+<path d="M219.11764706 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon SQS" data-value="3" x="245.41176471" y="60" width="26.29411765" height="14" fill="#4f5d95"><title>Amazon SQS</title></rect>
+<path d="M245.41176471 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="CloudWatch" data-value="3" x="271.70588235" y="60" width="26.29411765" height="14" fill="#b07219"><title>CloudWatch</title></rect>
+<path d="M271.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Docker" data-value="3" x="298.00000000" y="60" width="26.29411765" height="14" fill="#2b7489"><title>Docker</title></rect>
+<path d="M298.00000000 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Step Functions" data-value="3" x="324.29411765" y="60" width="26.29411765" height="14" fill="#e16737"><title>Step Functions</title></rect>
+<path d="M324.29411765 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon ECR" data-value="2" x="350.58823529" y="60" width="17.52941176" height="14" fill="#c6538c"><title>Amazon ECR</title></rect>
+<path d="M350.58823529 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon ECS" data-value="2" x="368.11764706" y="60" width="17.52941176" height="14" fill="#178600"><title>Amazon ECS</title></rect>
+<path d="M368.11764706 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS AppConfig" data-value="2" x="385.64705882" y="60" width="17.52941176" height="14" fill="#00add8"><title>AWS AppConfig</title></rect>
+<path d="M385.64705882 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS CloudTrail" data-value="2" x="403.17647059" y="60" width="17.52941176" height="14" fill="#dea584"><title>AWS CloudTrail</title></rect>
+<path d="M403.17647059 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS Fargate" data-value="2" x="420.70588235" y="60" width="17.52941176" height="14" fill="#a9b8c9"><title>AWS Fargate</title></rect>
+<path d="M420.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS KMS" data-value="2" x="438.23529412" y="60" width="17.52941176" height="14" fill="#3572a5"><title>AWS KMS</title></rect>
+<path d="M438.23529412 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Bedrock AgentCore" data-value="2" x="455.76470588" y="60" width="17.52941176" height="14" fill="#3178c6"><title>Bedrock AgentCore</title></rect>
+<path d="M455.76470588 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="CloudFront" data-value="2" x="473.29411765" y="60" width="17.52941176" height="14" fill="#e34c26"><title>CloudFront</title></rect>
+<path d="M473.29411765 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon EventBridge" data-value="2" x="490.82352941" y="60" width="17.52941176" height="14" fill="#f1e05a"><title>Amazon EventBridge</title></rect>
+<path d="M490.82352941 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Render" data-value="2" x="508.35294118" y="60" width="17.52941176" height="14" fill="#563d7c"><title>Render</title></rect>
+<path d="M508.35294118 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Vercel" data-value="2" x="525.88235294" y="60" width="17.52941176" height="14" fill="#89e051"><title>Vercel</title></rect>
+<path d="M525.88235294 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Amazon VPC" data-value="1" x="543.41176471" y="60" width="8.76470588" height="14" fill="#da5b0b"><title>Amazon VPC</title></rect>
+<path d="M543.41176471 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="AWS CodeBuild" data-value="1" x="552.17647059" y="60" width="8.76470588" height="14" fill="#4f5d95"><title>AWS CodeBuild</title></rect>
+<path d="M552.17647059 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Docker Compose" data-value="1" x="560.94117647" y="60" width="8.76470588" height="14" fill="#b07219"><title>Docker Compose</title></rect>
+<path d="M560.94117647 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Fly.io" data-value="1" x="569.70588235" y="60" width="8.76470588" height="14" fill="#2b7489"><title>Fly.io</title></rect>
+<path d="M569.70588235 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="Nixpacks" data-value="1" x="578.47058824" y="60" width="8.76470588" height="14" fill="#e16737"><title>Nixpacks</title></rect>
+<path d="M578.47058824 60v14" stroke="#0d1117" stroke-width="2"/>
+<rect data-segment="OpenSearch Serverless" data-value="1" x="587.23529412" y="60" width="8.76470588" height="14" fill="#c6538c"><title>OpenSearch Serverless</title></rect>
+<path d="M587.23529412 60v14" stroke="#0d1117" stroke-width="2"/>
+</g>
+<g data-skill-legend="Amazon S3">
+<title>Amazon S3</title>
+<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
+<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon S3</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">7.4%</tspan></text>
+</g>
+<g data-skill-legend="Amazon Bedrock">
+<title>Amazon Bedrock</title>
+<circle cx="306.00" cy="109" r="6" fill="#3178c6"/>
+<text x="320.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon Bedrock</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">5.9%</tspan></text>
+</g>
+<g data-skill-legend="API Gateway">
+<title>API Gateway</title>
+<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
+<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>API Gateway</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">5.9%</tspan></text>
+</g>
+<g data-skill-legend="AWS IAM">
+<title>AWS IAM</title>
+<circle cx="306.00" cy="147" r="6" fill="#f1e05a"/>
+<text x="320.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS IAM</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">5.9%</tspan></text>
+</g>
+<g data-skill-legend="AWS Lambda">
+<title>AWS Lambda</title>
+<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
+<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS Lambda</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">5.9%</tspan></text>
+</g>
+<g data-skill-legend="DynamoDB">
+<title>DynamoDB</title>
+<circle cx="306.00" cy="185" r="6" fill="#89e051"/>
+<text x="320.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>DynamoDB</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">5.9%</tspan></text>
+</g>
+<g data-skill-legend="Amazon Cognito">
+<title>Amazon Cognito</title>
+<circle cx="6.00" cy="223" r="6" fill="#da5b0b"/>
+<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon Cognito</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="Amazon SQS">
+<title>Amazon SQS</title>
+<circle cx="306.00" cy="223" r="6" fill="#4f5d95"/>
+<text x="320.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon SQS</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="CloudWatch">
+<title>CloudWatch</title>
+<circle cx="6.00" cy="261" r="6" fill="#b07219"/>
+<text x="20.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>CloudWatch</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
 </g>
 <g data-skill-legend="Docker">
 <title>Docker</title>
-<circle cx="6.00" cy="109" r="6" fill="#3572a5"/>
-<text x="20.00" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Docker</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">27.3%</tspan></text>
+<circle cx="306.00" cy="261" r="6" fill="#2b7489"/>
+<text x="320.00" y="268" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Docker</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="Step Functions">
+<title>Step Functions</title>
+<circle cx="6.00" cy="299" r="6" fill="#e16737"/>
+<text x="20.00" y="306" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Step Functions</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">4.4%</tspan></text>
+</g>
+<g data-skill-legend="Amazon ECR">
+<title>Amazon ECR</title>
+<circle cx="306.00" cy="299" r="6" fill="#c6538c"/>
+<text x="320.00" y="306" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon ECR</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="Amazon ECS">
+<title>Amazon ECS</title>
+<circle cx="6.00" cy="337" r="6" fill="#178600"/>
+<text x="20.00" y="344" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon ECS</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="AWS AppConfig">
+<title>AWS AppConfig</title>
+<circle cx="306.00" cy="337" r="6" fill="#00add8"/>
+<text x="320.00" y="344" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS AppConfig</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="AWS CloudTrail">
+<title>AWS CloudTrail</title>
+<circle cx="6.00" cy="375" r="6" fill="#dea584"/>
+<text x="20.00" y="382" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS CloudTrail</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="AWS Fargate">
+<title>AWS Fargate</title>
+<circle cx="306.00" cy="375" r="6" fill="#a9b8c9"/>
+<text x="320.00" y="382" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS Fargate</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="AWS KMS">
+<title>AWS KMS</title>
+<circle cx="6.00" cy="413" r="6" fill="#3572a5"/>
+<text x="20.00" y="420" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS KMS</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="Bedrock AgentCore">
+<title>Bedrock AgentCore</title>
+<circle cx="306.00" cy="413" r="6" fill="#3178c6"/>
+<text x="320.00" y="420" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Bedrock AgentCore</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="CloudFront">
+<title>CloudFront</title>
+<circle cx="6.00" cy="451" r="6" fill="#e34c26"/>
+<text x="20.00" y="458" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>CloudFront</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="Amazon EventBridge">
+<title>Amazon EventBridge</title>
+<circle cx="306.00" cy="451" r="6" fill="#f1e05a"/>
+<text x="320.00" y="458" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon EventBridge</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
 </g>
 <g data-skill-legend="Render">
 <title>Render</title>
-<circle cx="208.33" cy="109" r="6" fill="#3178c6"/>
-<text x="222.33" y="116" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Render</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.2%</tspan></text>
+<circle cx="6.00" cy="489" r="6" fill="#563d7c"/>
+<text x="20.00" y="496" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Render</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
 </g>
 <g data-skill-legend="Vercel">
 <title>Vercel</title>
-<circle cx="6.00" cy="147" r="6" fill="#e34c26"/>
-<text x="20.00" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Vercel</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">18.2%</tspan></text>
+<circle cx="306.00" cy="489" r="6" fill="#89e051"/>
+<text x="320.00" y="496" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Vercel</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">2.9%</tspan></text>
+</g>
+<g data-skill-legend="Amazon VPC">
+<title>Amazon VPC</title>
+<circle cx="6.00" cy="527" r="6" fill="#da5b0b"/>
+<text x="20.00" y="534" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Amazon VPC</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
 </g>
 <g data-skill-legend="AWS CodeBuild">
 <title>AWS CodeBuild</title>
-<circle cx="200.36" cy="147" r="6" fill="#f1e05a"/>
-<text x="214.36" y="154" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>AWS CodeBuild</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+<circle cx="306.00" cy="527" r="6" fill="#4f5d95"/>
+<text x="320.00" y="534" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>AWS CodeBuild</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
 </g>
 <g data-skill-legend="Docker Compose">
 <title>Docker Compose</title>
-<circle cx="6.00" cy="185" r="6" fill="#563d7c"/>
-<text x="20.00" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Docker Compose</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+<circle cx="6.00" cy="565" r="6" fill="#b07219"/>
+<text x="20.00" y="572" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Docker Compose</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
 </g>
 <g data-skill-legend="Fly.io">
 <title>Fly.io</title>
-<circle cx="307.34" cy="185" r="6" fill="#89e051"/>
-<text x="321.34" y="192" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Fly.io</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+<circle cx="306.00" cy="565" r="6" fill="#2b7489"/>
+<text x="320.00" y="572" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Fly.io</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
 </g>
 <g data-skill-legend="Nixpacks">
 <title>Nixpacks</title>
-<circle cx="6.00" cy="223" r="6" fill="#da5b0b"/>
-<text x="20.00" y="230" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600"><tspan>Nixpacks</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">9.1%</tspan></text>
+<circle cx="6.00" cy="603" r="6" fill="#e16737"/>
+<text x="20.00" y="610" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>Nixpacks</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
+</g>
+<g data-skill-legend="OpenSearch Serverless">
+<title>OpenSearch Serverless</title>
+<circle cx="306.00" cy="603" r="6" fill="#c6538c"/>
+<text x="320.00" y="610" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600"><tspan>OpenSearch Serverless</tspan><tspan dx="10" fill="#9198a1" font-size="18" font-weight="400">1.5%</tspan></text>
 </g>
 </g></g></svg>

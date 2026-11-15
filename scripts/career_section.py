@@ -48,7 +48,7 @@ def render_career(icons):
     out += [
         '<rect x="50" y="55" width="104" height="100" rx="12" fill="#ffffff"/>',
         _brand(icons, "amazon", 58, 89, 88, 32),
-        _text(170, 83, "Amazon AGI Data Services", 27, weight=700),
+        _text(170, 83, "Amazon", 27, weight=700),
         _text(170, 122, "Machine Learning Data Associate II", 22, weight=600),
         _text(170, 157, "JUN 2025 - PRESENT  /  LONDON, UNITED KINGDOM", 17, "#9198a1", mono=True),
     ]
