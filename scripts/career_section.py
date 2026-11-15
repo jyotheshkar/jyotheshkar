@@ -38,7 +38,7 @@ def render_career(icons):
     for x in (24, 714):
         out += [
             f'<rect x="{x}" y="24" width="662" height="612" rx="15" '
-            'fill="#111820" stroke="#334253" stroke-width="1.35"/>',
+            'fill="none" stroke="#334253" stroke-width="1.35"/>',
             f'<path d="M{x+20} 24h42" stroke="#4493f8" stroke-width="2" opacity=".8"/>',
         ]
 
@@ -82,8 +82,8 @@ def render_career(icons):
         _text(900, 157, "SEP 2023 — SEP 2024", 17, "#9198a1", mono=True),
         _text(746, 218, "Awarded Distinction", 29, "#79c0ff", 600),
         _text(746, 267, "Received Best Performance Award", 27, weight=700),
-        _text(746, 309, "Keele University Department of", 21, "#c9d1d9"),
-        _text(746, 338, "Mathematics and Computer Science", 21, "#c9d1d9"),
+        _text(746, 309, "From the Department of Mathematics", 21, "#c9d1d9"),
+        _text(746, 338, "and Computer Science at Keele University.", 21, "#c9d1d9"),
         '<path d="M746 374H1344" stroke="#3d444d" stroke-opacity=".65"/>',
         _text(746, 420, "THESIS", 18, "#91a9c3", mono=True, tracking=1.2),
         _text(746, 464, "DHMS: Dairy Herd Monitoring System", 26, weight=600),

@@ -21,7 +21,7 @@
     "keele": "https://keelegreece.gr/wp-content/uploads/2025/08/ICON-NPPE2025-LOGO-KEELE-512x512-1.png",
     "amazon": "https://assets.aboutamazon.com/2e/d7/ac71f1f344c39f8949f48fc89e71/amazon-logo-squid-ink-smile-orange.png"
   },
-  "color_treatment": "Original provider logo colours. Opaque white Amazon logo plate. GitHub dark surfaces, subtle borders and blue accents across all sections.",
+  "color_treatment": "Original provider logo colours. Transparent career and skills card backgrounds with subtle borders and blue accents on a shared dark canvas. Opaque white Amazon logo plate.",
   "motion": "Illustrative SVG motion only; not live execution status. Reduced-motion preference supported.",
   "source_rebuild": "python scripts/import_brand_icons.py; python scripts/build_profile.py"
 }

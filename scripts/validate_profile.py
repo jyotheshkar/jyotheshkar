@@ -87,9 +87,8 @@ def main():
     display_charts={}
     for key,chart in charts.items():
         items=chart['items']
-        if len(items)>10:
-            tail=items[9:]
-            items=items[:9]+[{'label':'Other','value':sum(i['value'] for i in tail)}]
+        if key=='languages':
+            items=[{**i,'label':'Java' if i['label']=='JSP' else i['label']} for i in items]
         display_charts[key]={**chart,'items':items}
     canonical={}
     for filename,key in CHART_FILES.items():

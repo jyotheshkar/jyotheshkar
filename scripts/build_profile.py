@@ -35,10 +35,11 @@ def document(width, height, title, body, icons, keys):
 
 
 def heading(mobile=False):
-    x, y, size = (36, 70, 40) if mobile else (40, 80, 48)
-    end, line_y = (664, 98) if mobile else (1360, 112)
-    return (f'<text x="{x}" y="{y}" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="{size}" font-weight="700">Experience / Education</text>'
-            f'<path d="M{x} {line_y}H{end}" stroke="url(#career-rule)"/>')
+    size, end = (44, 660) if mobile else (48, 1360)
+    return ('<text x="40" y="49" fill="#91a9c3" font-family="Consolas,monospace" font-size="18">EXPERIENCE AND EDUCATION</text>'
+            f'<text x="40" y="110" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="{size}" font-weight="700">Experience / Education</text>'
+            '<text x="40" y="150" fill="#a9b8c9" font-family="Arial,Helvetica,sans-serif" font-size="23">Professional experience. Academic achievement.</text>'
+            f'<path d="M40 178H{end}" stroke="url(#career-rule)"/>')
 
 
 def career_shell(width, height):
@@ -57,8 +58,8 @@ def build():
     outputs = {
         'profile.svg': document(network.WIDTH, network.HEIGHT, 'LinkedIn Agent — Agentic AI System Engineering', network.render_network(icons), icons, network_keys),
         'profile-mobile.svg': document(network.MOBILE_WIDTH, network.MOBILE_HEIGHT, 'LinkedIn Agent — connected workflow architecture', network.render_network_mobile(icons), icons, network_keys),
-        'career.svg': document(career.WIDTH, career.HEIGHT + 118, 'Experience / Education', career_shell(career.WIDTH, career.HEIGHT + 118) + heading() + '<g transform="translate(0 118)">' + career.render_career(icons) + '</g>', icons, {'amazon', 'keele'}),
-        'career-mobile.svg': document(career.MOBILE_WIDTH, career.MOBILE_HEIGHT + 108, 'Experience / Education', career_shell(career.MOBILE_WIDTH, career.MOBILE_HEIGHT + 108) + heading(True) + '<g transform="translate(0 108)">' + career.render_career_mobile(icons) + '</g>', icons, {'amazon', 'keele'}),
+        'career.svg': document(career.WIDTH, career.HEIGHT + 194, 'Experience / Education', career_shell(career.WIDTH, career.HEIGHT + 194) + heading() + '<g transform="translate(0 194)">' + career.render_career(icons) + '</g>', icons, {'amazon', 'keele'}),
+        'career-mobile.svg': document(career.MOBILE_WIDTH, career.MOBILE_HEIGHT + 194, 'Experience / Education', career_shell(career.MOBILE_WIDTH, career.MOBILE_HEIGHT + 194) + heading(True) + '<g transform="translate(0 194)">' + career.render_career_mobile(icons) + '</g>', icons, {'amazon', 'keele'}),
     }
     for name, content in outputs.items():
         (ROOT / 'assets' / name).write_text(content, encoding='utf-8', newline='\n')
@@ -73,7 +74,7 @@ def build():
             'keele': 'https://keelegreece.gr/wp-content/uploads/2025/08/ICON-NPPE2025-LOGO-KEELE-512x512-1.png',
             'amazon': 'https://assets.aboutamazon.com/2e/d7/ac71f1f344c39f8949f48fc89e71/amazon-logo-squid-ink-smile-orange.png',
         },
-        'color_treatment': 'Original provider logo colours. Opaque white Amazon logo plate. GitHub dark surfaces, subtle borders and blue accents across all sections.',
+        'color_treatment': 'Original provider logo colours. Transparent career and skills card backgrounds with subtle borders and blue accents on a shared dark canvas. Opaque white Amazon logo plate.',
         'motion': 'Illustrative SVG motion only; not live execution status. Reduced-motion preference supported.',
         'source_rebuild': 'python scripts/import_brand_icons.py; python scripts/build_profile.py',
     }

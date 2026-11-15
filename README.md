@@ -5,7 +5,7 @@
 
 <picture>
   <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/career-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/career.svg" width="100%" alt="Experience / Education. Amazon AGI Data Services: model evaluation on Alexa and Nova research models; red teaming on Amazon Nova multimodal research models; quality and verification across London, Cambridge, Boston and Amsterdam. Keele University MSc Computer Science, Awarded Distinction and Received Best Performance Award. Keele University Department of Mathematics and Computer Science. THESIS: DHMS — Dairy Herd Monitoring System." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/career.svg" width="100%" alt="Experience / Education. Amazon AGI Data Services: model evaluation on Alexa and Nova research models; red teaming on Amazon Nova multimodal research models; quality and verification across London, Cambridge, Boston and Amsterdam. Keele University MSc Computer Science, Awarded Distinction and Received Best Performance Award. From the Department of Mathematics and Computer Science at Keele University. THESIS: DHMS — Dairy Herd Monitoring System." />
 </picture>
 
 <picture>

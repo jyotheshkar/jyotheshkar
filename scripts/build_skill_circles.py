@@ -23,13 +23,13 @@ BAR_WIDTH = 596
 
 
 def display_chart(chart):
-    """Keep the native-style legend compact; retain every signal in Other."""
-    if len(chart['items']) <= 10:
-        return chart
-    tail = chart['items'][9:]
-    other = {'label': 'Other', 'value': sum(i['value'] for i in tail),
-             'evidence': [proof for i in tail for proof in i['evidence']]}
-    return {**chart, 'items': chart['items'][:9] + [other]}
+    """Show all evidence; group the JSP template signal under owner label Java."""
+    items = [dict(item) for item in chart['items']]
+    if chart['key'] == 'languages':
+        for item in items:
+            if item['label'] == 'JSP':
+                item.update(label='Java', source_label='JSP')
+    return {**chart, 'items': items}
 
 
 def text(x, y, label, size=22, fill='#f0f6fc', weight=400, mono=False):
@@ -50,6 +50,10 @@ def legend_layout(chart):
     result, x, row = [], 0, 0
     for n, item in enumerate(chart['items']):
         percent = f"{100 * item['value'] / total:.1f}%"
+        if chart['key'] == 'libraries':
+            result.append((n, item, percent, (n % 2) * 300, n // 2, 0))
+            row = n // 2
+            continue
         label_width = text_width(item['label']) * 1.15
         width = 20 + label_width + 12 + text_width(percent, 20) * 1.1 + 30
         if x and x + width > BAR_WIDTH:
@@ -83,12 +87,16 @@ def section(chart):
     layout, rows = legend_layout(chart)
     for n, item, percent, x, row, label_width in layout:
         color = LANGUAGE_COLORS.get(item['label'], PALETTE[n % len(PALETTE)])
-        y = 116 + row * 38
+        y = 116 + row * (34 if key == 'libraries' else 38)
+        label_size = 19 if key == 'libraries' else 21
+        percent_size = 18 if key == 'libraries' else 20
+        detail = 'JSP template evidence grouped under Java.' if item.get('source_label') == 'JSP' else item['label']
         out += [f'<g data-skill-legend="{escape(item["label"])}">',
+                f'<title>{escape(detail)}</title>',
                 f'<circle cx="{x+6:.2f}" cy="{y-7}" r="6" fill="{color}"/>',
-                f'<text x="{x+20:.2f}" y="{y}" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600">'
-                f'<tspan>{escape(item["label"])}</tspan><tspan dx="10" fill="#9198a1" font-size="20" font-weight="400">{percent}</tspan></text>', '</g>']
-    return '\n'.join(out + ['</g>']), 116 + (rows-1)*38 + 32
+                f'<text x="{x+20:.2f}" y="{y}" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="{label_size}" font-weight="600">'
+                f'<tspan>{escape(item["label"])}</tspan><tspan dx="10" fill="#9198a1" font-size="{percent_size}" font-weight="400">{percent}</tspan></text>', '</g>']
+    return '\n'.join(out + ['</g>']), 116 + (rows-1)*(34 if key == 'libraries' else 38) + 32
 
 
 def document(width, height, title, contents):
@@ -97,7 +105,7 @@ def document(width, height, title, contents):
            f'<title id="skills-title">{escape(title)}</title>'
            '<desc>Combined repository evidence. Each stacked bar and percentage shows a category share '
            'of verified repository evidence, not language byte totals or proficiency. '
-           'One repository can support several categories.</desc>' + contents + '</svg>\n')
+           'One repository can support several categories. Java includes JSP template evidence.</desc>' + contents + '</svg>\n')
     ET.fromstring(svg)
     return svg
 
@@ -132,7 +140,7 @@ def build():
         x = 56 if n % 2 == 0 else 748
         y = row_y if n < 2 else row_y + row_heights[0]
         desktop += f'<g data-position="{key}" transform="translate({x} {y})">{sections[key][0]}</g>'
-    desktop += text(40, height-25, 'Percentages show repository evidence share within each section.', 18, '#7d92aa')
+    desktop += text(40, height-25, 'Percentages show repository evidence share within each section. Java includes JSP templates.', 18, '#7d92aa')
     assets = ROOT/'assets'
     (assets/'skills.svg').write_text(document(1400, height, 'Professional Skills', desktop), encoding='utf-8', newline='\n')
     mobile_height = 218 + sum(sections[k][1]+52 for k in KEYS) + 84
@@ -145,7 +153,7 @@ def build():
         if n < 3:
             mobile += f'<path d="M52 {y-32}H648" stroke="#30363d"/>'
     mobile += text(40, mobile_height-45, 'Percentages show repository evidence share', 20, '#7d92aa')
-    mobile += text(40, mobile_height-17, 'within each section.', 20, '#7d92aa')
+    mobile += text(40, mobile_height-17, 'within each section. Java includes JSP templates.', 20, '#7d92aa')
     (assets/'skills-mobile.svg').write_text(document(700, mobile_height, 'Professional Skills', mobile), encoding='utf-8', newline='\n')
     for key in KEYS:
         fragment, section_height = sections[key]
