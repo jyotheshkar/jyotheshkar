@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1250" viewBox="0 0 1400 1250" role="img" aria-labelledby="chart-title chart-desc">
 <title id="chart-title">Portfolio composition: languages, engineering stack, AI and Agentic AI</title>
-<desc id="chart-desc">Four proportional doughnut charts with values and legends. Language percentages measure unique source-file bytes. Other percentages measure the share of selected documented repository-topic matches. Repositories can appear in multiple categories. These are evidence counts, not skill scores. Snapshot of 23 public project repositories, 14 November 2026.</desc>
+<desc id="chart-desc">Four proportional doughnut charts with values and legends. Language percentages measure unique source-file bytes. Other percentages measure the share of selected documented repository-topic matches. Repositories can appear in multiple categories. These are evidence counts, not skill scores. Snapshot of 22 retained repository snapshots captured on 14 November 2026 and curated on 15 November 2026. Repository names and visibility describe the capture date.</desc>
 <defs>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3d444d" stroke-opacity=".16" stroke-width=".65"/></pattern>
 <linearGradient id="surface" x2=".9" y2="1"><stop stop-color="#131d2b"/><stop offset="1" stop-color="#0f151d"/></linearGradient>
@@ -16,8 +16,8 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 
 <text x="40" y="45" fill="#9198a1" font-size="15" text-anchor="start" font-weight="400" class="mono" letter-spacing="3">PORTFOLIO / IN FOCUS</text>
 <text x="40" y="96" fill="#f0f6fc" font-size="38" text-anchor="start" font-weight="700" >The shape of my work.</text>
-<text x="1360" y="92" fill="#9198a1" font-size="17" text-anchor="end" font-weight="400" >23 public projects  /  14 NOV 2026</text>
-<g data-skill-circle="languages" data-total="3181753" aria-label="Language footprint">
+<text x="1360" y="92" fill="#9198a1" font-size="17" text-anchor="end" font-weight="400" >22 retained snapshots  /  14 NOV 2026</text>
+<g data-skill-circle="languages" data-total="2857215" aria-label="Language footprint">
 <rect x="30" y="137" width="650" height="485" rx="22" fill="url(#surface)" stroke="#303b4c" stroke-opacity=".7"/>
 <path d="M53 137h200" stroke="url(#rule)"/>
 <text x="58" y="178" fill="#79c0ff" font-size="15" text-anchor="start" font-weight="400" class="mono">01</text>
@@ -27,38 +27,38 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 <circle cx="194" cy="397" r="133" fill="none" stroke="#79c0ff" stroke-opacity=".1"/>
 <circle cx="194" cy="397" r="112" fill="none" stroke="#253144" stroke-width="26"/>
 <g class="segments">
-<circle data-segment="Python" data-value="2504469" cx="194" cy="397" r="112" fill="none" stroke="#79c0ff" stroke-width="26" stroke-dasharray="553.92005482 149.79669958" stroke-dashoffset="0.00000000" transform="rotate(-90 194 397)"><title>Python: 2,504,469 bytes, 78.7%</title></circle>
-<circle data-segment="TypeScript" data-value="401827" cx="194" cy="397" r="112" fill="none" stroke="#58a6ff" stroke-width="26" stroke-dasharray="88.87314392 614.84361049" stroke-dashoffset="-553.92005482" transform="rotate(-90 194 397)"><title>TypeScript: 401,827 bytes, 12.6%</title></circle>
-<circle data-segment="JavaScript" data-value="146057" cx="194" cy="397" r="112" fill="none" stroke="#a5a0ff" stroke-width="26" stroke-dasharray="32.30381428 671.41294012" stroke-dashoffset="-642.79319874" transform="rotate(-90 194 397)"><title>JavaScript: 146,057 bytes, 4.6%</title></circle>
-<circle data-segment="HTML" data-value="98695" cx="194" cy="397" r="112" fill="none" stroke="#65d6ce" stroke-width="26" stroke-dasharray="21.82863506 681.88811935" stroke-dashoffset="-675.09701302" transform="rotate(-90 194 397)"><title>HTML: 98,695 bytes, 3.1%</title></circle>
-<circle data-segment="CSS" data-value="24315" cx="194" cy="397" r="112" fill="none" stroke="#e3b86c" stroke-width="26" stroke-dasharray="5.37781307 698.33894133" stroke-dashoffset="-696.92564807" transform="rotate(-90 194 397)"><title>CSS: 24,315 bytes, 0.8%</title></circle>
-<circle data-segment="SQL" data-value="6390" cx="194" cy="397" r="112" fill="none" stroke="#c995e8" stroke-width="26" stroke-dasharray="1.41329326 702.30346115" stroke-dashoffset="-702.30346115" transform="rotate(-90 194 397)"><title>SQL: 6,390 bytes, 0.2%</title></circle>
+<circle data-segment="Python" data-value="2310492" cx="194" cy="397" r="112" fill="none" stroke="#79c0ff" stroke-width="26" stroke-dasharray="569.06180715 134.65494725" stroke-dashoffset="0.00000000" transform="rotate(-90 194 397)"><title>Python: 2,310,492 bytes, 80.9%</title></circle>
+<circle data-segment="TypeScript" data-value="401827" cx="194" cy="397" r="112" fill="none" stroke="#58a6ff" stroke-width="26" stroke-dasharray="98.96783836 604.74891605" stroke-dashoffset="-569.06180715" transform="rotate(-90 194 397)"><title>TypeScript: 401,827 bytes, 14.1%</title></circle>
+<circle data-segment="HTML" data-value="98695" cx="194" cy="397" r="112" fill="none" stroke="#a5a0ff" stroke-width="26" stroke-dasharray="24.30805000 679.40870441" stroke-dashoffset="-668.02964551" transform="rotate(-90 194 397)"><title>HTML: 98,695 bytes, 3.5%</title></circle>
+<circle data-segment="CSS" data-value="24315" cx="194" cy="397" r="112" fill="none" stroke="#65d6ce" stroke-width="26" stroke-dasharray="5.98865430 697.72810011" stroke-dashoffset="-692.33769551" transform="rotate(-90 194 397)"><title>CSS: 24,315 bytes, 0.9%</title></circle>
+<circle data-segment="JavaScript" data-value="15496" cx="194" cy="397" r="112" fill="none" stroke="#e3b86c" stroke-width="26" stroke-dasharray="3.81658182 699.90017258" stroke-dashoffset="-698.32634980" transform="rotate(-90 194 397)"><title>JavaScript: 15,496 bytes, 0.5%</title></circle>
+<circle data-segment="SQL" data-value="6390" cx="194" cy="397" r="112" fill="none" stroke="#c995e8" stroke-width="26" stroke-dasharray="1.57382278 702.14293162" stroke-dashoffset="-702.14293162" transform="rotate(-90 194 397)"><title>SQL: 6,390 bytes, 0.2%</title></circle>
 </g>
 <path class="shimmer" d="M100 303A133 133 0 0 1 288 303" fill="none" stroke="#a5d6ff" stroke-opacity=".45" stroke-width="1.2"/>
-<text x="194" y="399" fill="#f0f6fc" font-size="49" text-anchor="middle" font-weight="600" >3.18</text>
+<text x="194" y="399" fill="#f0f6fc" font-size="49" text-anchor="middle" font-weight="600" >2.86</text>
 <text x="194" y="428" fill="#9198a1" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1.5">MB OF SOURCE</text>
 <text x="194" y="574" fill="#7d8590" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1.2">PROPORTION OF TOTAL</text>
 <text x="354" y="242" fill="#7d8590" font-size="11" text-anchor="start" font-weight="400" class="mono" letter-spacing="1">LANGUAGE</text>
 <text x="652" y="242" fill="#7d8590" font-size="11" text-anchor="end" font-weight="400" class="mono" letter-spacing="1">SHARE</text>
 <g data-skill-node="Python"><circle cx="358" cy="259" r="4" fill="#79c0ff"/>
 <text x="371" y="265" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Python</text>
-<text x="652" y="265" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >78.7%</text>
+<text x="652" y="265" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >80.9%</text>
 </g>
 <g data-skill-node="TypeScript"><circle cx="358" cy="296" r="4" fill="#58a6ff"/>
 <text x="371" y="302" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >TypeScript</text>
-<text x="652" y="302" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >12.6%</text>
+<text x="652" y="302" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >14.1%</text>
 </g>
-<g data-skill-node="JavaScript"><circle cx="358" cy="333" r="4" fill="#a5a0ff"/>
-<text x="371" y="339" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >JavaScript</text>
-<text x="652" y="339" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >4.6%</text>
+<g data-skill-node="HTML"><circle cx="358" cy="333" r="4" fill="#a5a0ff"/>
+<text x="371" y="339" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >HTML</text>
+<text x="652" y="339" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >3.5%</text>
 </g>
-<g data-skill-node="HTML"><circle cx="358" cy="370" r="4" fill="#65d6ce"/>
-<text x="371" y="376" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >HTML</text>
-<text x="652" y="376" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >3.1%</text>
+<g data-skill-node="CSS"><circle cx="358" cy="370" r="4" fill="#65d6ce"/>
+<text x="371" y="376" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >CSS</text>
+<text x="652" y="376" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >0.9%</text>
 </g>
-<g data-skill-node="CSS"><circle cx="358" cy="407" r="4" fill="#e3b86c"/>
-<text x="371" y="413" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >CSS</text>
-<text x="652" y="413" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >0.8%</text>
+<g data-skill-node="JavaScript"><circle cx="358" cy="407" r="4" fill="#e3b86c"/>
+<text x="371" y="413" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >JavaScript</text>
+<text x="652" y="413" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >0.5%</text>
 </g>
 <g data-skill-node="SQL"><circle cx="358" cy="444" r="4" fill="#c995e8"/>
 <text x="371" y="450" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >SQL</text>
@@ -67,7 +67,7 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 <path d="M56 569h598" stroke="#303b4c" stroke-opacity=".65"/>
 <text x="58" y="597" fill="#9198a1" font-size="14" text-anchor="start" font-weight="400" >Deduplicated source bytes · excludes notebook/data exports</text>
 </g>
-<g data-skill-circle="engineering" data-total="47" aria-label="Engineering stack">
+<g data-skill-circle="engineering" data-total="44" aria-label="Engineering stack">
 <rect x="720" y="137" width="650" height="485" rx="22" fill="url(#surface)" stroke="#303b4c" stroke-opacity=".7"/>
 <path d="M743 137h200" stroke="url(#rule)"/>
 <text x="748" y="178" fill="#79c0ff" font-size="15" text-anchor="start" font-weight="400" class="mono">02</text>
@@ -77,59 +77,59 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 <circle cx="884" cy="397" r="133" fill="none" stroke="#79c0ff" stroke-opacity=".1"/>
 <circle cx="884" cy="397" r="112" fill="none" stroke="#253144" stroke-width="26"/>
 <g class="segments">
-<circle data-segment="CI / CD" data-value="17" cx="884" cy="397" r="112" fill="none" stroke="#79c0ff" stroke-width="26" stroke-dasharray="254.53584734 449.18090707" stroke-dashoffset="0.00000000" transform="rotate(-90 884 397)"><title>CI / CD: 17 matches, 36.2%</title></circle>
-<circle data-segment="Testing" data-value="6" cx="884" cy="397" r="112" fill="none" stroke="#58a6ff" stroke-width="26" stroke-dasharray="89.83618141 613.88057299" stroke-dashoffset="-254.53584734" transform="rotate(-90 884 397)"><title>Testing: 6 matches, 12.8%</title></circle>
-<circle data-segment="SQL databases" data-value="5" cx="884" cy="397" r="112" fill="none" stroke="#a5a0ff" stroke-width="26" stroke-dasharray="74.86348451 628.85326989" stroke-dashoffset="-344.37202875" transform="rotate(-90 884 397)"><title>SQL databases: 5 matches, 10.6%</title></circle>
-<circle data-segment="AWS" data-value="5" cx="884" cy="397" r="112" fill="none" stroke="#65d6ce" stroke-width="26" stroke-dasharray="74.86348451 628.85326989" stroke-dashoffset="-419.23551326" transform="rotate(-90 884 397)"><title>AWS: 5 matches, 10.6%</title></circle>
-<circle data-segment="Node.js / npm" data-value="4" cx="884" cy="397" r="112" fill="none" stroke="#e3b86c" stroke-width="26" stroke-dasharray="59.89078761 643.82596680" stroke-dashoffset="-494.09899777" transform="rotate(-90 884 397)"><title>Node.js / npm: 4 matches, 8.5%</title></circle>
-<circle data-segment="Backend APIs" data-value="4" cx="884" cy="397" r="112" fill="none" stroke="#c995e8" stroke-width="26" stroke-dasharray="59.89078761 643.82596680" stroke-dashoffset="-553.98978538" transform="rotate(-90 884 397)"><title>Backend APIs: 4 matches, 8.5%</title></circle>
-<circle data-segment="React" data-value="3" cx="884" cy="397" r="112" fill="none" stroke="#8bd49c" stroke-width="26" stroke-dasharray="44.91809071 658.79866370" stroke-dashoffset="-613.88057299" transform="rotate(-90 884 397)"><title>React: 3 matches, 6.4%</title></circle>
-<circle data-segment="Containers" data-value="3" cx="884" cy="397" r="112" fill="none" stroke="#a1b5ca" stroke-width="26" stroke-dasharray="44.91809071 658.79866370" stroke-dashoffset="-658.79866370" transform="rotate(-90 884 397)"><title>Containers: 3 matches, 6.4%</title></circle>
+<circle data-segment="CI / CD" data-value="16" cx="884" cy="397" r="112" fill="none" stroke="#79c0ff" stroke-width="26" stroke-dasharray="255.89700160 447.81975280" stroke-dashoffset="0.00000000" transform="rotate(-90 884 397)"><title>CI / CD: 16 matches, 36.4%</title></circle>
+<circle data-segment="Testing" data-value="6" cx="884" cy="397" r="112" fill="none" stroke="#58a6ff" stroke-width="26" stroke-dasharray="95.96137560 607.75537880" stroke-dashoffset="-255.89700160" transform="rotate(-90 884 397)"><title>Testing: 6 matches, 13.6%</title></circle>
+<circle data-segment="SQL databases" data-value="5" cx="884" cy="397" r="112" fill="none" stroke="#a5a0ff" stroke-width="26" stroke-dasharray="79.96781300 623.74894140" stroke-dashoffset="-351.85837720" transform="rotate(-90 884 397)"><title>SQL databases: 5 matches, 11.4%</title></circle>
+<circle data-segment="AWS" data-value="4" cx="884" cy="397" r="112" fill="none" stroke="#65d6ce" stroke-width="26" stroke-dasharray="63.97425040 639.74250400" stroke-dashoffset="-431.82619020" transform="rotate(-90 884 397)"><title>AWS: 4 matches, 9.1%</title></circle>
+<circle data-segment="Backend APIs" data-value="4" cx="884" cy="397" r="112" fill="none" stroke="#e3b86c" stroke-width="26" stroke-dasharray="63.97425040 639.74250400" stroke-dashoffset="-495.80044060" transform="rotate(-90 884 397)"><title>Backend APIs: 4 matches, 9.1%</title></circle>
+<circle data-segment="Node.js / npm" data-value="3" cx="884" cy="397" r="112" fill="none" stroke="#c995e8" stroke-width="26" stroke-dasharray="47.98068780 655.73606660" stroke-dashoffset="-559.77469100" transform="rotate(-90 884 397)"><title>Node.js / npm: 3 matches, 6.8%</title></circle>
+<circle data-segment="React" data-value="3" cx="884" cy="397" r="112" fill="none" stroke="#8bd49c" stroke-width="26" stroke-dasharray="47.98068780 655.73606660" stroke-dashoffset="-607.75537880" transform="rotate(-90 884 397)"><title>React: 3 matches, 6.8%</title></circle>
+<circle data-segment="Containers" data-value="3" cx="884" cy="397" r="112" fill="none" stroke="#a1b5ca" stroke-width="26" stroke-dasharray="47.98068780 655.73606660" stroke-dashoffset="-655.73606660" transform="rotate(-90 884 397)"><title>Containers: 3 matches, 6.8%</title></circle>
 </g>
 <path class="shimmer" d="M790 303A133 133 0 0 1 978 303" fill="none" stroke="#a5d6ff" stroke-opacity=".45" stroke-width="1.2"/>
-<text x="884" y="399" fill="#f0f6fc" font-size="49" text-anchor="middle" font-weight="600" >47</text>
+<text x="884" y="399" fill="#f0f6fc" font-size="49" text-anchor="middle" font-weight="600" >44</text>
 <text x="884" y="428" fill="#9198a1" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1.5">TOPIC MATCHES</text>
 <text x="884" y="574" fill="#7d8590" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1.2">PROPORTION OF TOTAL</text>
 <text x="1044" y="242" fill="#7d8590" font-size="11" text-anchor="start" font-weight="400" class="mono" letter-spacing="1">TOPIC</text>
 <text x="1342" y="242" fill="#7d8590" font-size="11" text-anchor="end" font-weight="400" class="mono" letter-spacing="1">SHARE</text>
 <g data-skill-node="CI / CD"><circle cx="1048" cy="259" r="4" fill="#79c0ff"/>
 <text x="1061" y="265" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >CI / CD</text>
-<text x="1342" y="265" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >36.2%</text>
-<text x="1061" y="279" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >17 repos</text>
+<text x="1342" y="265" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >36.4%</text>
+<text x="1061" y="279" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >16 repos</text>
 </g>
 <g data-skill-node="Testing"><circle cx="1048" cy="296" r="4" fill="#58a6ff"/>
 <text x="1061" y="302" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Testing</text>
-<text x="1342" y="302" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >12.8%</text>
+<text x="1342" y="302" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >13.6%</text>
 <text x="1061" y="316" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >6 repos</text>
 </g>
 <g data-skill-node="SQL databases"><circle cx="1048" cy="333" r="4" fill="#a5a0ff"/>
 <text x="1061" y="339" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >SQL databases</text>
-<text x="1342" y="339" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >10.6%</text>
+<text x="1342" y="339" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >11.4%</text>
 <text x="1061" y="353" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >5 repos</text>
 </g>
 <g data-skill-node="AWS"><circle cx="1048" cy="370" r="4" fill="#65d6ce"/>
 <text x="1061" y="376" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >AWS</text>
-<text x="1342" y="376" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >10.6%</text>
-<text x="1061" y="390" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >5 repos</text>
+<text x="1342" y="376" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >9.1%</text>
+<text x="1061" y="390" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >4 repos</text>
 </g>
-<g data-skill-node="Node.js / npm"><circle cx="1048" cy="407" r="4" fill="#e3b86c"/>
-<text x="1061" y="413" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Node.js / npm</text>
-<text x="1342" y="413" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >8.5%</text>
+<g data-skill-node="Backend APIs"><circle cx="1048" cy="407" r="4" fill="#e3b86c"/>
+<text x="1061" y="413" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Backend APIs</text>
+<text x="1342" y="413" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >9.1%</text>
 <text x="1061" y="427" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >4 repos</text>
 </g>
-<g data-skill-node="Backend APIs"><circle cx="1048" cy="444" r="4" fill="#c995e8"/>
-<text x="1061" y="450" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Backend APIs</text>
-<text x="1342" y="450" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >8.5%</text>
-<text x="1061" y="464" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >4 repos</text>
+<g data-skill-node="Node.js / npm"><circle cx="1048" cy="444" r="4" fill="#c995e8"/>
+<text x="1061" y="450" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Node.js / npm</text>
+<text x="1342" y="450" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.8%</text>
+<text x="1061" y="464" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >3 repos</text>
 </g>
 <g data-skill-node="React"><circle cx="1048" cy="481" r="4" fill="#8bd49c"/>
 <text x="1061" y="487" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >React</text>
-<text x="1342" y="487" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.4%</text>
+<text x="1342" y="487" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.8%</text>
 <text x="1061" y="501" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >3 repos</text>
 </g>
 <g data-skill-node="Containers"><circle cx="1048" cy="518" r="4" fill="#a1b5ca"/>
 <text x="1061" y="524" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Containers</text>
-<text x="1342" y="524" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.4%</text>
+<text x="1342" y="524" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.8%</text>
 <text x="1061" y="538" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >3 repos</text>
 </g>
 <path d="M746 569h598" stroke="#303b4c" stroke-opacity=".65"/>
@@ -203,7 +203,7 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 <path d="M56 1086h598" stroke="#303b4c" stroke-opacity=".65"/>
 <text x="58" y="1114" fill="#9198a1" font-size="14" text-anchor="start" font-weight="400" >Share of topic matches · a repository can match multiple topics</text>
 </g>
-<g data-skill-circle="agentic" data-total="15" aria-label="Agentic AI focus">
+<g data-skill-circle="agentic" data-total="13" aria-label="Agentic AI focus">
 <rect x="720" y="654" width="650" height="485" rx="22" fill="url(#surface)" stroke="#303b4c" stroke-opacity=".7"/>
 <path d="M743 654h200" stroke="url(#rule)"/>
 <text x="748" y="695" fill="#79c0ff" font-size="15" text-anchor="start" font-weight="400" class="mono">04</text>
@@ -213,59 +213,59 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 <circle cx="884" cy="914" r="133" fill="none" stroke="#79c0ff" stroke-opacity=".1"/>
 <circle cx="884" cy="914" r="112" fill="none" stroke="#253144" stroke-width="26"/>
 <g class="segments">
-<circle data-segment="Tracing / evals" data-value="3" cx="884" cy="914" r="112" fill="none" stroke="#79c0ff" stroke-width="26" stroke-dasharray="140.74335088 562.97340352" stroke-dashoffset="0.00000000" transform="rotate(-90 884 914)"><title>Tracing / evals: 3 matches, 20.0%</title></circle>
-<circle data-segment="Planning" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#58a6ff" stroke-width="26" stroke-dasharray="93.82890059 609.88785382" stroke-dashoffset="-140.74335088" transform="rotate(-90 884 914)"><title>Planning: 2 matches, 13.3%</title></circle>
-<circle data-segment="Tool use" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#a5a0ff" stroke-width="26" stroke-dasharray="93.82890059 609.88785382" stroke-dashoffset="-234.57225147" transform="rotate(-90 884 914)"><title>Tool use: 2 matches, 13.3%</title></circle>
-<circle data-segment="Memory / state" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#65d6ce" stroke-width="26" stroke-dasharray="93.82890059 609.88785382" stroke-dashoffset="-328.40115206" transform="rotate(-90 884 914)"><title>Memory / state: 2 matches, 13.3%</title></circle>
-<circle data-segment="Orchestration" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#e3b86c" stroke-width="26" stroke-dasharray="93.82890059 609.88785382" stroke-dashoffset="-422.23005264" transform="rotate(-90 884 914)"><title>Orchestration: 2 matches, 13.3%</title></circle>
-<circle data-segment="Guardrails" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#c995e8" stroke-width="26" stroke-dasharray="93.82890059 609.88785382" stroke-dashoffset="-516.05895323" transform="rotate(-90 884 914)"><title>Guardrails: 2 matches, 13.3%</title></circle>
-<circle data-segment="RAG / retrieval" data-value="1" cx="884" cy="914" r="112" fill="none" stroke="#8bd49c" stroke-width="26" stroke-dasharray="46.91445029 656.80230411" stroke-dashoffset="-609.88785382" transform="rotate(-90 884 914)"><title>RAG / retrieval: 1 matches, 6.7%</title></circle>
-<circle data-segment="Human review" data-value="1" cx="884" cy="914" r="112" fill="none" stroke="#a1b5ca" stroke-width="26" stroke-dasharray="46.91445029 656.80230411" stroke-dashoffset="-656.80230411" transform="rotate(-90 884 914)"><title>Human review: 1 matches, 6.7%</title></circle>
+<circle data-segment="Tracing / evals" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#79c0ff" stroke-width="26" stroke-dasharray="108.26411606 595.45263834" stroke-dashoffset="0.00000000" transform="rotate(-90 884 914)"><title>Tracing / evals: 2 matches, 15.4%</title></circle>
+<circle data-segment="Planning" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#58a6ff" stroke-width="26" stroke-dasharray="108.26411606 595.45263834" stroke-dashoffset="-108.26411606" transform="rotate(-90 884 914)"><title>Planning: 2 matches, 15.4%</title></circle>
+<circle data-segment="Tool use" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#a5a0ff" stroke-width="26" stroke-dasharray="108.26411606 595.45263834" stroke-dashoffset="-216.52823212" transform="rotate(-90 884 914)"><title>Tool use: 2 matches, 15.4%</title></circle>
+<circle data-segment="Memory / state" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#65d6ce" stroke-width="26" stroke-dasharray="108.26411606 595.45263834" stroke-dashoffset="-324.79234819" transform="rotate(-90 884 914)"><title>Memory / state: 2 matches, 15.4%</title></circle>
+<circle data-segment="Orchestration" data-value="2" cx="884" cy="914" r="112" fill="none" stroke="#e3b86c" stroke-width="26" stroke-dasharray="108.26411606 595.45263834" stroke-dashoffset="-433.05646425" transform="rotate(-90 884 914)"><title>Orchestration: 2 matches, 15.4%</title></circle>
+<circle data-segment="Guardrails" data-value="1" cx="884" cy="914" r="112" fill="none" stroke="#c995e8" stroke-width="26" stroke-dasharray="54.13205803 649.58469637" stroke-dashoffset="-541.32058031" transform="rotate(-90 884 914)"><title>Guardrails: 1 matches, 7.7%</title></circle>
+<circle data-segment="RAG / retrieval" data-value="1" cx="884" cy="914" r="112" fill="none" stroke="#8bd49c" stroke-width="26" stroke-dasharray="54.13205803 649.58469637" stroke-dashoffset="-595.45263834" transform="rotate(-90 884 914)"><title>RAG / retrieval: 1 matches, 7.7%</title></circle>
+<circle data-segment="Human review" data-value="1" cx="884" cy="914" r="112" fill="none" stroke="#a1b5ca" stroke-width="26" stroke-dasharray="54.13205803 649.58469637" stroke-dashoffset="-649.58469637" transform="rotate(-90 884 914)"><title>Human review: 1 matches, 7.7%</title></circle>
 </g>
 <path class="shimmer" d="M790 820A133 133 0 0 1 978 820" fill="none" stroke="#a5d6ff" stroke-opacity=".45" stroke-width="1.2"/>
-<text x="884" y="916" fill="#f0f6fc" font-size="49" text-anchor="middle" font-weight="600" >15</text>
+<text x="884" y="916" fill="#f0f6fc" font-size="49" text-anchor="middle" font-weight="600" >13</text>
 <text x="884" y="945" fill="#9198a1" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1.5">TOPIC MATCHES</text>
 <text x="884" y="1091" fill="#7d8590" font-size="12" text-anchor="middle" font-weight="400" class="mono" letter-spacing="1.2">PROPORTION OF TOTAL</text>
 <text x="1044" y="759" fill="#7d8590" font-size="11" text-anchor="start" font-weight="400" class="mono" letter-spacing="1">TOPIC</text>
 <text x="1342" y="759" fill="#7d8590" font-size="11" text-anchor="end" font-weight="400" class="mono" letter-spacing="1">SHARE</text>
 <g data-skill-node="Tracing / evals"><circle cx="1048" cy="776" r="4" fill="#79c0ff"/>
 <text x="1061" y="782" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Tracing / evals</text>
-<text x="1342" y="782" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >20.0%</text>
-<text x="1061" y="796" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >3 repos</text>
+<text x="1342" y="782" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >15.4%</text>
+<text x="1061" y="796" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >2 repos</text>
 </g>
 <g data-skill-node="Planning"><circle cx="1048" cy="813" r="4" fill="#58a6ff"/>
 <text x="1061" y="819" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Planning</text>
-<text x="1342" y="819" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >13.3%</text>
+<text x="1342" y="819" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >15.4%</text>
 <text x="1061" y="833" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >2 repos</text>
 </g>
 <g data-skill-node="Tool use"><circle cx="1048" cy="850" r="4" fill="#a5a0ff"/>
 <text x="1061" y="856" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Tool use</text>
-<text x="1342" y="856" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >13.3%</text>
+<text x="1342" y="856" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >15.4%</text>
 <text x="1061" y="870" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >2 repos</text>
 </g>
 <g data-skill-node="Memory / state"><circle cx="1048" cy="887" r="4" fill="#65d6ce"/>
 <text x="1061" y="893" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Memory / state</text>
-<text x="1342" y="893" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >13.3%</text>
+<text x="1342" y="893" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >15.4%</text>
 <text x="1061" y="907" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >2 repos</text>
 </g>
 <g data-skill-node="Orchestration"><circle cx="1048" cy="924" r="4" fill="#e3b86c"/>
 <text x="1061" y="930" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Orchestration</text>
-<text x="1342" y="930" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >13.3%</text>
+<text x="1342" y="930" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >15.4%</text>
 <text x="1061" y="944" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >2 repos</text>
 </g>
 <g data-skill-node="Guardrails"><circle cx="1048" cy="961" r="4" fill="#c995e8"/>
 <text x="1061" y="967" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Guardrails</text>
-<text x="1342" y="967" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >13.3%</text>
-<text x="1061" y="981" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >2 repos</text>
+<text x="1342" y="967" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >7.7%</text>
+<text x="1061" y="981" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >1 repos</text>
 </g>
 <g data-skill-node="RAG / retrieval"><circle cx="1048" cy="998" r="4" fill="#8bd49c"/>
 <text x="1061" y="1004" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >RAG / retrieval</text>
-<text x="1342" y="1004" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.7%</text>
+<text x="1342" y="1004" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >7.7%</text>
 <text x="1061" y="1018" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >1 repos</text>
 </g>
 <g data-skill-node="Human review"><circle cx="1048" cy="1035" r="4" fill="#a1b5ca"/>
 <text x="1061" y="1041" fill="#d1d9e0" font-size="17" text-anchor="start" font-weight="400" >Human review</text>
-<text x="1342" y="1041" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >6.7%</text>
+<text x="1342" y="1041" fill="#f0f6fc" font-size="18" text-anchor="end" font-weight="500" >7.7%</text>
 <text x="1061" y="1055" fill="#7d8590" font-size="10.5" text-anchor="start" font-weight="400" >1 repos</text>
 </g>
 <path d="M746 1086h598" stroke="#303b4c" stroke-opacity=".65"/>

@@ -18,7 +18,7 @@ def build():
     data=json.loads((ROOT/'config/portfolio-metrics.json').read_text(encoding='utf-8'))
     out=['''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1250" viewBox="0 0 1400 1250" role="img" aria-labelledby="chart-title chart-desc">
 <title id="chart-title">Portfolio composition: languages, engineering stack, AI and Agentic AI</title>
-<desc id="chart-desc">Four proportional doughnut charts with values and legends. Language percentages measure unique source-file bytes. Other percentages measure the share of selected documented repository-topic matches. Repositories can appear in multiple categories. These are evidence counts, not skill scores. Snapshot of 23 public project repositories, 14 November 2026.</desc>
+<desc id="chart-desc">Four proportional doughnut charts with values and legends. Language percentages measure unique source-file bytes. Other percentages measure the share of selected documented repository-topic matches. Repositories can appear in multiple categories. These are evidence counts, not skill scores. Snapshot of ''' + str(data['repo_count']) + ''' retained repository snapshots captured on 14 November 2026 and curated on 15 November 2026. Repository names and visibility describe the capture date.</desc>
 <defs>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3d444d" stroke-opacity=".16" stroke-width=".65"/></pattern>
 <linearGradient id="surface" x2=".9" y2="1"><stop stop-color="#131d2b"/><stop offset="1" stop-color="#0f151d"/></linearGradient>
@@ -32,7 +32,7 @@ text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,monospace
 </style></defs>
 <rect width="1400" height="1250" fill="#0d1117"/><rect width="1400" height="1250" fill="url(#grid)"/>
 ''']
-    out += [text(40,45,'PORTFOLIO / IN FOCUS',15,'#9198a1',extra='class="mono" letter-spacing="3"'),text(40,96,'The shape of my work.',38,'#f0f6fc',weight='700'),text(1360,92,f'{data["repo_count"]} public projects  /  14 NOV 2026',17,'#9198a1','end')]
+    out += [text(40,45,'PORTFOLIO / IN FOCUS',15,'#9198a1',extra='class="mono" letter-spacing="3"'),text(40,96,'The shape of my work.',38,'#f0f6fc',weight='700'),text(1360,92,f'{data["repo_count"]} retained snapshots  /  14 NOV 2026',17,'#9198a1','end')]
     summaries=[]
     for i,chart in enumerate(data['charts']):
         x,y=(30 if i%2==0 else 720),(137 if i<2 else 654)

@@ -1,7 +1,7 @@
 {
   "captured_at": "2026-11-14",
-  "repo_count": 23,
-  "scope": "23 public, non-archived project repositories; excludes the profile repository",
+  "repo_count": 22,
+  "scope": "22 retained repository snapshots from public, non-archived projects captured on 2026-11-14; excludes the profile repository. Names and visibility describe the capture date, not the current GitHub inventory.",
   "repositories": [
     {
       "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
@@ -76,10 +76,6 @@
       "tree_sha": "3d0b0287362f09fcc5abb7f4b5c9918ff6b7a50b"
     },
     {
-      "repo": "System-Design-Architecture-Concept-Prototype-2026",
-      "tree_sha": "039a8fa5b9e502d92f41da3cfb523815f60b2c09"
-    },
-    {
       "repo": "Fundamentals-of-Computers-and-Networks-CSC-40064-Keele-University-2024",
       "tree_sha": "2f59f10ef02cd4016acf6553c5eaac4b83d7554c"
     },
@@ -109,7 +105,7 @@
       "items": [
         {
           "label": "Python",
-          "value": 2504469,
+          "value": 2310492,
           "evidence": [
             {
               "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
@@ -1934,66 +1930,6 @@
               "path": "runtime/tests/test_support_regressions.py",
               "sha": "2701958132177f4b928d8ceaf7271593146b57fe",
               "size": 3030
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/build-formal-model.py",
-              "sha": "dda8006ba110f73f56ace2453b6567e5898d5bb0",
-              "size": 41379
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/build_aws.py",
-              "sha": "503df71874085f6d829dbeacdf29a80155a49d2c",
-              "size": 3520
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/build_communications.py",
-              "sha": "0c30a19d929cd52e8960cacb73fece1dd95d40d6",
-              "size": 7268
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/build_docs.py",
-              "sha": "96583b9dc6a6adb010e0976bf9486e606da749f9",
-              "size": 51634
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/integrate_enterprise.py",
-              "sha": "95a9721a521dac5dba13c24f03c316870ffbc341",
-              "size": 11573
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/package_enterprise.py",
-              "sha": "a7e6ec87d6b0ade9174a620e23534b681e22ed54",
-              "size": 7284
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/qa/enterprise-independent-checks.py",
-              "sha": "8e5d222865646c63d086cd4b104a06c44074cc2c",
-              "size": 14078
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/rebuild_enterprise.py",
-              "sha": "db3fab141e434d79ed4aadba61c748c15d65568b",
-              "size": 32510
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/render-case-diagrams.py",
-              "sha": "d5caa1992e3d2c0d4c8a324f5a489630c3844248",
-              "size": 17337
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "scripts/validate_design_export.py",
-              "sha": "3d20f52c49ed1acbb471cbfb0e5e31a328b24191",
-              "size": 7394
             }
           ]
         },
@@ -2454,198 +2390,6 @@
           ]
         },
         {
-          "label": "JavaScript",
-          "value": 146057,
-          "evidence": [
-            {
-              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
-              "path": "web/verify.cjs",
-              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
-              "size": 2880
-            },
-            {
-              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
-              "path": "script.js",
-              "sha": "44dfb236828562d51d92b63a169b25e896fdacbe",
-              "size": 209
-            },
-            {
-              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
-              "path": "frontend/eslint.config.mjs",
-              "sha": "05e726d1b4201bc8c7716d2b058279676582e8c0",
-              "size": 465
-            },
-            {
-              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
-              "path": "frontend/postcss.config.mjs",
-              "sha": "61e36849cf7cfa9f1f71b4a3964a4953e3e243d3",
-              "size": 94
-            },
-            {
-              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "frontend/jest.config.js",
-              "sha": "ed5ec03b2b7235bcac7d561f1f3f8160d2bbfdd2",
-              "size": 360
-            },
-            {
-              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "frontend/jest.setup.js",
-              "sha": "34d4562209839c059eb22ef06729ada79cfe6402",
-              "size": 105
-            },
-            {
-              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "frontend/next.config.js",
-              "sha": "466faa1e199e6a87c62c1a72b87753ad361c3350",
-              "size": 160
-            },
-            {
-              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "frontend/postcss.config.js",
-              "sha": "94ae506f073f1ae8d5799886e4d71f708613aad6",
-              "size": 146
-            },
-            {
-              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "web/verify.mjs",
-              "sha": "d74453edc9a42bd582f175a4601880571afb6efb",
-              "size": 1436
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "frontend/eslint.config.mjs",
-              "sha": "e7c58747d81e401392761b7c68f042ad2ccaf77c",
-              "size": 828
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "frontend/next.config.mjs",
-              "sha": "4e45555debe29f2c4a594793d0c19a4057ecd4e2",
-              "size": 424
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "frontend/postcss.config.mjs",
-              "sha": "2ef30fcf4272e19cf6a23d07b0544027954f9627",
-              "size": 157
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "web/app.js",
-              "sha": "6084ad9f385618083a82792efc4dfe0d556b97ab",
-              "size": 4737
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "web/scenario.js",
-              "sha": "344977b2a3e6dab3a3b4c08e5dc2c68104e226c3",
-              "size": 1879
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "web/tests/scenario.test.cjs",
-              "sha": "fc286a8c4bfe84d021c71d53d1bbb49e2ed4170f",
-              "size": 1616
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/aws-shared.js",
-              "sha": "a235d5b5389ba74261271ff99122149bb5968210",
-              "size": 20480
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/integrate-study.mjs",
-              "sha": "06c552f3ac1300277c162fe6f37061e3dc9a4cbb",
-              "size": 4808
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/polish-copy.mjs",
-              "sha": "8f1d9ba8ef2bffedfe2be9635ebafdaa7df9a664",
-              "size": 3678
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/qa/test-enterprise.cjs",
-              "sha": "7e8d0e4aba4042f5b35bea26b9e1fb05752985e0",
-              "size": 9240
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/test-case-studies.mjs",
-              "sha": "75473ecdb5c14b1192cd0f367ae7015fa29856d9",
-              "size": 3026
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/test-formal-model.mjs",
-              "sha": "a9ccb8c3107b1ca2964ecf006ce1dbf0db1b0bc8",
-              "size": 8693
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/test-native-case-studies.mjs",
-              "sha": "9a7ce698c8f42a409bb97408abd99a238080dbbc",
-              "size": 15241
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/test-workspace-guide.mjs",
-              "sha": "8b05a1128e0520bc89727bc95d6c2718daf1f258",
-              "size": 9427
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/build.mjs",
-              "sha": "8a9d139bbe7d6adea12c9b1c328cefc919266f30",
-              "size": 1892
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/index.mjs",
-              "sha": "9fe85315c60fc2c492d48187d9e8b19381b5cb8d",
-              "size": 8811
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/local-preview.mjs",
-              "sha": "9a6f9bf2b6d250407603c1df6e98384f81fcf1ec",
-              "size": 3182
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/preview.mjs",
-              "sha": "6c0de5d124c07f2c76b4f404f66eb1afdf1a18dd",
-              "size": 716
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/preview.test.mjs",
-              "sha": "ffe8d5c9eadf115091fe270619874f2fcbd120ea",
-              "size": 1894
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/test-workspace-store.mjs",
-              "sha": "853e2eb91a64d4cff473803355bd34e7ae8d408e",
-              "size": 15726
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/test.mjs",
-              "sha": "d168fb77f6a2e6790153e359c3c8e48bd7b204b4",
-              "size": 6477
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/worker/workspace-store.mjs",
-              "sha": "ed24c946b0a694a85defdb5c3cd330c90139ecac",
-              "size": 17270
-            }
-          ]
-        },
-        {
           "label": "HTML",
           "value": 98695,
           "evidence": [
@@ -2736,6 +2480,102 @@
           ]
         },
         {
+          "label": "JavaScript",
+          "value": 15496,
+          "evidence": [
+            {
+              "repo": "Collaborative-Application-Development-CSC-40038-Keele-University-2024",
+              "path": "web/verify.cjs",
+              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
+              "size": 2880
+            },
+            {
+              "repo": "Software-Engineering-CSC-40066-Keele-University-2024",
+              "path": "script.js",
+              "sha": "44dfb236828562d51d92b63a169b25e896fdacbe",
+              "size": 209
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/eslint.config.mjs",
+              "sha": "05e726d1b4201bc8c7716d2b058279676582e8c0",
+              "size": 465
+            },
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "frontend/postcss.config.mjs",
+              "sha": "61e36849cf7cfa9f1f71b4a3964a4953e3e243d3",
+              "size": 94
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/jest.config.js",
+              "sha": "ed5ec03b2b7235bcac7d561f1f3f8160d2bbfdd2",
+              "size": 360
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/jest.setup.js",
+              "sha": "34d4562209839c059eb22ef06729ada79cfe6402",
+              "size": 105
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/next.config.js",
+              "sha": "466faa1e199e6a87c62c1a72b87753ad361c3350",
+              "size": 160
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "frontend/postcss.config.js",
+              "sha": "94ae506f073f1ae8d5799886e4d71f708613aad6",
+              "size": 146
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "web/verify.mjs",
+              "sha": "d74453edc9a42bd582f175a4601880571afb6efb",
+              "size": 1436
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/eslint.config.mjs",
+              "sha": "e7c58747d81e401392761b7c68f042ad2ccaf77c",
+              "size": 828
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/next.config.mjs",
+              "sha": "4e45555debe29f2c4a594793d0c19a4057ecd4e2",
+              "size": 424
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "frontend/postcss.config.mjs",
+              "sha": "2ef30fcf4272e19cf6a23d07b0544027954f9627",
+              "size": 157
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/app.js",
+              "sha": "6084ad9f385618083a82792efc4dfe0d556b97ab",
+              "size": 4737
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/scenario.js",
+              "sha": "344977b2a3e6dab3a3b4c08e5dc2c68104e226c3",
+              "size": 1879
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "web/tests/scenario.test.cjs",
+              "sha": "fc286a8c4bfe84d021c71d53d1bbb49e2ed4170f",
+              "size": 1616
+            }
+          ]
+        },
+        {
           "label": "SQL",
           "value": 6390,
           "evidence": [
@@ -2757,7 +2597,7 @@
       "items": [
         {
           "label": "CI / CD",
-          "value": 17,
+          "value": 16,
           "evidence": [
             {
               "repo": "System-Design-and-Programming-CSC-40044-Keele-University-2024",
@@ -2854,12 +2694,6 @@
               "path": "README.md",
               "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
               "excerpt": "The tests construct synthetic cases and temporary SQLite state. They do not call models, send messages or access live career data. The historical 35-test exported-source receipt remains at [docs/verification/core-tests.json](docs/verification/core-tests.json). Fresh checks of the maintained code are recorded separately in [the 10 November maintenance report](docs/verification/2026-11-10-maintenance.md). Neither result establishes a full native-pl"
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": ".github/workflows/verify-workspace.yml",
-              "sha": "02f8d09ef5d6e9fdbcc155c74c72d3a7131818e3",
-              "excerpt": "Repository file exists."
             }
           ],
           "pattern": "github actions|\\bCI/CD\\b|continuous integration"
@@ -2946,7 +2780,7 @@
         },
         {
           "label": "AWS",
-          "value": 5,
+          "value": 4,
           "evidence": [
             {
               "repo": "nextwork-web-project-2025",
@@ -2971,46 +2805,9 @@
               "path": "README.md",
               "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
               "excerpt": "| Inspect the proposed AWS target | [Scoped architecture case study](docs/diagrams/Agentic-Core-AWS-Case-Study.md) |"
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
-              "excerpt": "Turn a customer idea into an architecture baseline an engineer can review: map component responsibilities, inspect connections, record controls and assumptions, and compare proposed AWS service choices in an interactive 3D workspace.\r"
             }
           ],
           "pattern": "\\bAWS\\b|Amazon (?:S3|Bedrock|Lambda|DynamoDB)"
-        },
-        {
-          "label": "Node.js / npm",
-          "value": 4,
-          "evidence": [
-            {
-              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
-              "excerpt": "Use Python 3.11 or 3.12 and a Node.js version supported by the pinned Next.js 16 release (20.9+). Run commands from the repository root unless shown otherwise."
-            },
-            {
-              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
-              "excerpt": "Use Python 3.11 and Node.js 22. Run backend commands from the **repository root**."
-            },
-            {
-              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "700af6368d48ff327c472378c76ee26690796200",
-              "excerpt": "**Prerequisites:** Python 3.11+, Node 22 (matching the frontend Docker image)"
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
-              "excerpt": "Node labels such as implemented or connection required are historical design/source-review descriptions. They are not fresh passing tests. Conditional mathematical arguments are design reasoning; defined acceptance tests are definitions unless an execution receipt states otherwise. The wider reference is not proof that every component exists in the bounded Agentic Core runtime.\r"
-            }
-          ],
-          "pattern": "\\bnode(?:\\.js)?\\b|\\bnpm\\b|@types/node"
         },
         {
           "label": "Backend APIs",
@@ -3042,6 +2839,31 @@
             }
           ],
           "pattern": "\\bfastapi\\b|\\bflask\\b|\\bdjango\\b|\\bexpress\\b"
+        },
+        {
+          "label": "Node.js / npm",
+          "value": 3,
+          "evidence": [
+            {
+              "repo": "Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "fc90dc1e908ec25a601af4dd3ee5178346f63730",
+              "excerpt": "Use Python 3.11 or 3.12 and a Node.js version supported by the pinned Next.js 16 release (20.9+). Run commands from the repository root unless shown otherwise."
+            },
+            {
+              "repo": "Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "6cd9a38e7f29ecfc7cabc4f3ad37f3c81f4ae54f",
+              "excerpt": "Use Python 3.11 and Node.js 22. Run backend commands from the **repository root**."
+            },
+            {
+              "repo": "NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
+              "path": "README.md",
+              "sha": "700af6368d48ff327c472378c76ee26690796200",
+              "excerpt": "**Prerequisites:** Python 3.11+, Node 22 (matching the frontend Docker image)"
+            }
+          ],
+          "pattern": "\\bnode(?:\\.js)?\\b|\\bnpm\\b|@types/node"
         },
         {
           "label": "React",
@@ -3299,7 +3121,7 @@
       "items": [
         {
           "label": "Tracing / evals",
-          "value": 3,
+          "value": 2,
           "evidence": [
             {
               "repo": "AWS-RAG-Chatbot-with-Bedrock-2025",
@@ -3312,12 +3134,6 @@
               "path": "README.md",
               "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
               "excerpt": "| Review the current code checks | [10 November validation](docs/verification/2026-11-10-maintenance.md) |"
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
-              "excerpt": "| Application validation | [Build, authentication and mocked storage receipts](app/docs/verification-receipts.json) |\r"
             }
           ],
           "pattern": "\\btracing\\b|\\btraces?\\b|\\bevaluation\\b|\\bverification\\b"
@@ -3400,19 +3216,13 @@
         },
         {
           "label": "Guardrails",
-          "value": 2,
+          "value": 1,
           "evidence": [
             {
               "repo": "agentic-core-evidence-2026",
               "path": "README.md",
               "sha": "5f450caa52882080a615cb2d8b7d680dc0948c8d",
               "excerpt": "Agentic Core is Jyothesh Karnam's personal project for compiling bounded requirements into governed workflows. This public repository contains the actual deterministic Python and SQLite core excerpt, with synthetic tests and an independently labelled reference design."
-            },
-            {
-              "repo": "System-Design-Architecture-Concept-Prototype-2026",
-              "path": "README.md",
-              "sha": "ab9fc4eae8345cce64a2891d301265c15ba32cf7",
-              "excerpt": "| Foundation design | `workspace/foundation-reference.json`: four Agentic Core components, inherited PIC controls, a bounded example and defined acceptance tests |\r"
             }
           ],
           "pattern": "\\bguardrails?\\b|\\bpermission rules\\b|\\bbounded\\b"
@@ -3445,5 +3255,6 @@
         }
       ]
     }
-  ]
+  ],
+  "filtered_at": "2026-11-15"
 }

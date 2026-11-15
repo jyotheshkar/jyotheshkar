@@ -1,6 +1,6 @@
 # Portfolio chart data and methodology
 
-Snapshot: **14 November 2026**. Scope: **23 public, non-archived project repositories** owned by jyotheshkar; excludes the profile repository and all private repositories. This dated snapshot is not automatically refreshed.
+Source capture: **14 November 2026**. Curated: **15 November 2026**. Scope: **22 retained repository snapshots** from public, non-archived projects owned by jyotheshkar at capture time; excludes the profile repository and private repositories. Names and visibility describe the capture date, not the current GitHub inventory. This dated snapshot is not automatically refreshed.
 
 The four doughnut charts preserve proportional data representation. Arc lengths directly encode values; labels show rounded shares. Animation changes only opacity and a decorative outer highlight, never the measured segment size. Original project and brand artwork above this section remains unchanged.
 
@@ -13,31 +13,31 @@ All per-file language bytes and topic evidence excerpts, paths and Git hashes ar
 
 ## Language footprint
 
-Total: 3,181,753 bytes.
+Total: 2,857,215 bytes.
 
 | Category | Value | Share |
 |---|---:|---:|
-| Python | 2,504,469 | 78.7% |
-| TypeScript | 401,827 | 12.6% |
-| JavaScript | 146,057 | 4.6% |
-| HTML | 98,695 | 3.1% |
-| CSS | 24,315 | 0.8% |
+| Python | 2,310,492 | 80.9% |
+| TypeScript | 401,827 | 14.1% |
+| HTML | 98,695 | 3.5% |
+| CSS | 24,315 | 0.9% |
+| JavaScript | 15,496 | 0.5% |
 | SQL | 6,390 | 0.2% |
 
 ## Engineering stack
 
-Total: 47 matches.
+Total: 44 matches.
 
 | Category | Value | Share |
 |---|---:|---:|
-| CI / CD | 17 | 36.2% |
-| Testing | 6 | 12.8% |
-| SQL databases | 5 | 10.6% |
-| AWS | 5 | 10.6% |
-| Node.js / npm | 4 | 8.5% |
-| Backend APIs | 4 | 8.5% |
-| React | 3 | 6.4% |
-| Containers | 3 | 6.4% |
+| CI / CD | 16 | 36.4% |
+| Testing | 6 | 13.6% |
+| SQL databases | 5 | 11.4% |
+| AWS | 4 | 9.1% |
+| Backend APIs | 4 | 9.1% |
+| Node.js / npm | 3 | 6.8% |
+| React | 3 | 6.8% |
+| Containers | 3 | 6.8% |
 
 ## AI & machine learning
 
@@ -56,18 +56,18 @@ Total: 22 matches.
 
 ## Agentic AI focus
 
-Total: 15 matches.
+Total: 13 matches.
 
 | Category | Value | Share |
 |---|---:|---:|
-| Tracing / evals | 3 | 20.0% |
-| Planning | 2 | 13.3% |
-| Tool use | 2 | 13.3% |
-| Memory / state | 2 | 13.3% |
-| Orchestration | 2 | 13.3% |
-| Guardrails | 2 | 13.3% |
-| RAG / retrieval | 1 | 6.7% |
-| Human review | 1 | 6.7% |
+| Tracing / evals | 2 | 15.4% |
+| Planning | 2 | 15.4% |
+| Tool use | 2 | 15.4% |
+| Memory / state | 2 | 15.4% |
+| Orchestration | 2 | 15.4% |
+| Guardrails | 1 | 7.7% |
+| RAG / retrieval | 1 | 7.7% |
+| Human review | 1 | 7.7% |
 
 ## Build and validation
 
