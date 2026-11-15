@@ -14,6 +14,11 @@ CHART_FILES={'skills-programming.svg':'technology','skills-cloud.svg':'cloud',
              'skills-aiml.svg':'aiml','skills-agentic.svg':'agentic'}
 PREFERRED_LIBRARIES=['NumPy','pandas','scikit-learn','PyTorch','TensorFlow',
                      'React','Next.js','FastAPI']
+AWS_SERVICES={'Amazon S3','Amazon Bedrock','API Gateway','AWS IAM','AWS Lambda',
+              'DynamoDB','Amazon Cognito','Amazon SQS','CloudWatch','Step Functions',
+              'Amazon ECR','Amazon ECS','AWS AppConfig','AWS CloudTrail','AWS Fargate',
+              'AWS KMS','Bedrock AgentCore','CloudFront','Amazon EventBridge',
+              'Amazon VPC','AWS CodeBuild','OpenSearch Serverless'}
 
 
 def display_charts(charts):
@@ -29,8 +34,14 @@ def display_charts(charts):
                   if item['label'] not in PREFERRED_LIBRARIES)
     if remainder:
         items.append({'label':'Others','value':remainder})
+    aws_items=[item for item in charts['cloud']['items'] if item['label'] in AWS_SERVICES]
+    other_cloud=sum(item['value'] for item in charts['cloud']['items']
+                    if item['label'] not in AWS_SERVICES)
+    if other_cloud:
+        aws_items=aws_items+[{'label':'Others','value':other_cloud}]
     return {'technology':{'key':'technology','items':items},
-            **{key:charts[key] for key in ('cloud','aiml','agentic')}}
+            'cloud':{'key':'cloud','items':aws_items},
+            **{key:charts[key] for key in ('aiml','agentic')}}
 
 
 def main():

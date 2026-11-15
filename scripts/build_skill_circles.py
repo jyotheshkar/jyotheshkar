@@ -7,12 +7,19 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 KEYS = ['technology', 'cloud', 'aiml', 'agentic']
-TITLES = {'technology': 'Languages, Libraries and Frameworks', 'cloud': 'Cloud Skills',
+TITLES = {'technology': 'Languages, Libraries and Frameworks', 'cloud': 'AWS Cloud Skills',
           'aiml': 'AI/ML Engineering', 'agentic': 'Agentic AI Engineering'}
 FILES = {'technology': 'skills-programming.svg', 'cloud': 'skills-cloud.svg',
          'aiml': 'skills-aiml.svg', 'agentic': 'skills-agentic.svg'}
 FEATURED_LIBRARIES = ['NumPy', 'pandas', 'scikit-learn', 'PyTorch',
                       'TensorFlow', 'React', 'Next.js', 'FastAPI']
+AWS_CLOUD_SERVICES = frozenset({
+    'Amazon S3', 'Amazon Bedrock', 'API Gateway', 'AWS IAM', 'AWS Lambda',
+    'DynamoDB', 'Amazon Cognito', 'Amazon SQS', 'CloudWatch', 'Step Functions',
+    'Amazon ECR', 'Amazon ECS', 'AWS AppConfig', 'AWS CloudTrail', 'AWS Fargate',
+    'AWS KMS', 'Bedrock AgentCore', 'CloudFront', 'Amazon EventBridge',
+    'Amazon VPC', 'AWS CodeBuild', 'OpenSearch Serverless',
+})
 PALETTE = ['#3572a5', '#3178c6', '#e34c26', '#f1e05a', '#563d7c', '#89e051',
            '#da5b0b', '#4f5d95', '#b07219', '#2b7489', '#e16737', '#c6538c',
            '#178600', '#00add8', '#dea584', '#a9b8c9']
@@ -46,7 +53,16 @@ def display_charts(evidence):
         items.append({'label': 'Others', 'value': sum(item['value'] for item in tail),
                       'evidence': [proof for item in tail for proof in item['evidence']]})
     technology = {'key': 'technology', 'title': TITLES['technology'], 'items': items}
-    return {'technology': technology, **{key: raw[key] for key in KEYS[1:]}}
+    cloud_items = [dict(item) for item in raw['cloud']['items']
+                   if item['label'] in AWS_CLOUD_SERVICES]
+    cloud_tail = [item for item in raw['cloud']['items']
+                  if item['label'] not in AWS_CLOUD_SERVICES]
+    if cloud_tail:
+        cloud_items.append({'label': 'Others', 'value': sum(item['value'] for item in cloud_tail),
+                            'evidence': [proof for item in cloud_tail for proof in item['evidence']]})
+    cloud = {**raw['cloud'], 'title': TITLES['cloud'], 'items': cloud_items}
+    return {'technology': technology, 'cloud': cloud,
+            **{key: raw[key] for key in ('aiml', 'agentic')}}
 
 
 def text(x, y, label, size=22, fill='#f0f6fc', weight=400, mono=False):

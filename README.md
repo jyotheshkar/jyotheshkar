@@ -10,7 +10,7 @@
 
 <picture>
   <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills.svg" width="100%" alt="Professional Skills. One GitHub-style box with four sections: Languages, Libraries and Frameworks at top left, Cloud Skills at top right, AI/ML Engineering at bottom left, and Agentic AI Engineering at bottom right. The first section features eight key libraries and a grey Others entry. Stacked bars and dot legends show combined repository evidence shares; cloud entries include project configuration, AWS labs and architecture learning." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/skills.svg" width="100%" alt="Professional Skills. One GitHub-style box with four sections: Languages, Libraries and Frameworks at top left, AWS Cloud Skills at top right, AI/ML Engineering at bottom left, and Agentic AI Engineering at bottom right. The first section features eight key libraries and a grey Others entry. Stacked bars and dot legends show combined repository evidence shares; AWS services are shown individually from repository evidence; non-AWS cloud and deployment tooling is grouped under grey Others. Cloud evidence includes project configuration, AWS labs and architecture learning." />
 </picture>
 
 
