@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "captured_at": "2026-11-15T09:17:30+00:00",
+  "captured_at": "2026-11-15T09:28:02+00:00",
   "public_snapshot": {
-    "captured_at": "2026-11-15T09:17:30+00:00",
+    "captured_at": "2026-11-15T09:28:02+00:00",
     "sources": [
       {
         "source_id": "5b770aa2d866d420",
@@ -13,6 +13,10 @@
           {
             "path": "core/broker/aios_skills.py",
             "sha": "a0b555448dfd6cadcd308df8df0fa14229e5e365"
+          },
+          {
+            "path": "core/broker/build_shared_library_v1.py",
+            "sha": "10f95c2e5210f915bbd52dfbc324ba7db6f19b16"
           },
           {
             "path": "core/validation/validate_shared_library_v1.py",
@@ -27,6 +31,10 @@
             "sha": "58a07b5fe443bbddec3c70a9212b5907baf812fd"
           },
           {
+            "path": "plugins/legacy/devil/scripts/validate_behavior.py",
+            "sha": "bc468a964a11dbced2c3d77ded1dc33269717aab"
+          },
+          {
             "path": "plugins/minister/scripts/route_minister.py",
             "sha": "ab236f1a89ab7c3f9fb876d8f038a9e1cc28cff6"
           },
@@ -37,6 +45,14 @@
           {
             "path": "plugins/scout/scripts/scout_core.py",
             "sha": "d91a1b5b59867d31c190b2f7414ce9a5eb1807e4"
+          },
+          {
+            "path": "scripts/import-runtime-sources/import_sources.py",
+            "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84"
+          },
+          {
+            "path": "scripts/validate-repository.py",
+            "sha": "fd365c98e7b796d2393e1d0ba90f0087a0dfd21f"
           }
         ],
         "skills": {
@@ -63,6 +79,11 @@
               "path": "plugins/moa/scripts/moa_core.py",
               "sha": "c1f9e139048e49fe7d4919ab568b49a75b2044de",
               "kind": "implementation"
+            },
+            "Guardrails": {
+              "path": "scripts/import-runtime-sources/import_sources.py",
+              "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
+              "kind": "implementation"
             }
           }
         }
@@ -73,6 +94,10 @@
         "repo": "jyotheshkar/agentic-core-evidence-2026",
         "tree_sha": "3d0b0287362f09fcc5abb7f4b5c9918ff6b7a50b",
         "scanned_files": [
+          {
+            "path": "runtime/core/__init__.py",
+            "sha": "04d75095a48c899ab038c3c1c150d194a56310ac"
+          },
           {
             "path": "runtime/core/algorithms.py",
             "sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132"
@@ -88,6 +113,10 @@
           {
             "path": "runtime/core/safety.py",
             "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e"
+          },
+          {
+            "path": "runtime/examples/__init__.py",
+            "sha": "a20a9ef4965421ce3a339b7277e917681650ffd7"
           },
           {
             "path": "runtime/examples/support_case.py",
@@ -146,7 +175,7 @@
         "source_id": "7db9375e9c0276f4",
         "visibility": "public",
         "repo": "jyotheshkar/Amazon-Prime-Marketing-Uplift-Analytics-Concept-Prototype-2026",
-        "tree_sha": "1ff3200cab952717134bf3463f5993c5c0041ba1",
+        "tree_sha": "96ccddc24380190574580993c41e7f5034a927ee",
         "scanned_files": [
           {
             "path": "backend/scripts/generate_dataset.py",
@@ -282,7 +311,7 @@
           },
           {
             "path": "frontend/src/components/dataset-models-live-dashboard.tsx",
-            "sha": "df23f3b083e4791e2f5deb33331492b80b29d788"
+            "sha": "0b6d52259a5791c7114e54d3140f4c68f94bbb63"
           },
           {
             "path": "frontend/src/lib/dataset-models-data.ts",
@@ -533,16 +562,76 @@
             "sha": "d806950164ba2c17f968774a7ffcdeb833fdbe65"
           },
           {
+            "path": "legacy/notebooks-before-desktop-2026-11-15/bigram.ipynb",
+            "sha": "079faac1ca7e2a656cbd6f5036794c2b88a9f83f"
+          },
+          {
+            "path": "legacy/notebooks-before-desktop-2026-11-15/gpt-v1 (3).ipynb",
+            "sha": "23f6e357ddc0b3614fce3935c296c0ee7295fc47"
+          },
+          {
+            "path": "packaging/build_desktop.py",
+            "sha": "8077af6c4d9a3a37f160766875e97c39ac5fdb8e"
+          },
+          {
+            "path": "packaging/build_python.py",
+            "sha": "9d24abcc370b639097d9f5ec953ae649f45fb485"
+          },
+          {
+            "path": "packaging/desktop_entry.py",
+            "sha": "972c63cd0fbb836d57f48f00f82d1e195dee5207"
+          },
+          {
+            "path": "packaging/install_wheel.py",
+            "sha": "0f7c0595110ff818e8e6674fb0e7911610d4806a"
+          },
+          {
+            "path": "packaging/publish_release.py",
+            "sha": "b29161e32bd81a060064e3b2c9ac7cbe8dc60556"
+          },
+          {
+            "path": "packaging/release_common.py",
+            "sha": "f8cf07334eef78844270b76a943c7948436494a1"
+          },
+          {
+            "path": "packaging/release_gate.py",
+            "sha": "14dcda7dd20e5c56f1723183b084c12940815e88"
+          },
+          {
+            "path": "scripts/notebook_smoke.py",
+            "sha": "57130c7595726057bdb1bdb19c2772165ad4a999"
+          },
+          {
+            "path": "src/gpt_scratch_lab/__init__.py",
+            "sha": "284bec59877469d0c89109282744dd3eaef0a22a"
+          },
+          {
+            "path": "src/gpt_scratch_lab/__main__.py",
+            "sha": "bfdcd0c1158dff4fcc25157b317419f0a89dd33f"
+          },
+          {
             "path": "src/gpt_scratch_lab/checkpoint.py",
             "sha": "d722a6a062b96a38501fbac308d37d8bdec76583"
+          },
+          {
+            "path": "src/gpt_scratch_lab/cli.py",
+            "sha": "34be9feedf1d0809bb7e2d3bbc4c2ce8d6d53a9b"
           },
           {
             "path": "src/gpt_scratch_lab/config.py",
             "sha": "05846ec15c6dbce024ab9c7d64bfe8e30bd2586b"
           },
           {
+            "path": "src/gpt_scratch_lab/gui.py",
+            "sha": "849f23d3e8a41ca14bf190c61f212800abe1ca1f"
+          },
+          {
             "path": "src/gpt_scratch_lab/model.py",
             "sha": "36eb1451f892c5c9c7148db10675d366d44331e3"
+          },
+          {
+            "path": "src/gpt_scratch_lab/smoke.py",
+            "sha": "2f824eba72e23e78b962b3ed8a33cc1059edc824"
           },
           {
             "path": "src/gpt_scratch_lab/tokenizer.py",
@@ -618,6 +707,10 @@
             "sha": "7d88b3472de29a3b4f7cca7f122cde1bda75fc9d"
           },
           {
+            "path": "legacy/advancepython3_2024.py",
+            "sha": "a9799b4d0c4165a595b3c3b6a7e7885ea5e5c108"
+          },
+          {
             "path": "warehouse_core.py",
             "sha": "e749ea9dc0201ca366da5167d412b41789349542"
           },
@@ -670,6 +763,10 @@
           {
             "path": "scripts/verify_repository.py",
             "sha": "e4a1fedf8e764326aeb24ae9d5718fe74ed14b92"
+          },
+          {
+            "path": "src/__init__.py",
+            "sha": "95a3a711b2c89be1f75eaaa8a0b135db0a65a373"
           },
           {
             "path": "src/workbench.py",
@@ -750,6 +847,10 @@
             "sha": "a7b6bc94a702ecbd47a27e031131fc3b752b07e2"
           },
           {
+            "path": "Codes/FAILEDCODES.py",
+            "sha": "0f0b4efa4af1c97624e9867ad6794e4457beb0bb"
+          },
+          {
             "path": "Codes/Generic_Activity_Model.py",
             "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5"
           },
@@ -766,6 +867,10 @@
             "sha": "b6fee2d35245e8ab10ab3897d7e5c225a75d4719"
           },
           {
+            "path": "Codes/alerts.py",
+            "sha": "349020b4dd2a68cbca1800c017d78ce05ed6512f"
+          },
+          {
             "path": "Codes/confusion_matrix.py",
             "sha": "d4a87f584b94c34b772e9f1a28d0ab5f2759d0e6"
           },
@@ -774,12 +879,104 @@
             "sha": "10ef03ab1aeb9c5456631746b1b498e031f46b23"
           },
           {
+            "path": "Codes/datavisualize.py",
+            "sha": "6a423479a311b5b2d702385edc20bfa1dc0e072b"
+          },
+          {
+            "path": "Codes/leftbuttons.py",
+            "sha": "307d645e87da8ed3eb9a94c1c981d5bccd6e414c"
+          },
+          {
+            "path": "Codes/leftgraphmain.py",
+            "sha": "b464dbe37c80dd5bfad43d7c255e5797ba3d927d"
+          },
+          {
+            "path": "Codes/main.py",
+            "sha": "922cc44ad637a0938b2ee153e20832723760326d"
+          },
+          {
+            "path": "Codes/multimodel.py",
+            "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "path": "Codes/originalgraph.py",
+            "sha": "7b47f7178853b3b19f4b31646af115a41fa5d075"
+          },
+          {
+            "path": "Codes/results.py",
+            "sha": "479f143b076b5af0bc2e7b7056b21dbf86f4a33c"
+          },
+          {
+            "path": "Codes/rightbuttons.py",
+            "sha": "c6f57430203915d39d891beedc97cdb3ad9d8a0c"
+          },
+          {
+            "path": "Codes/rightgraphmain.py",
+            "sha": "d8b80cb2374279f2ef8476a7fbd0c466aab1390e"
+          },
+          {
+            "path": "Codes/shared_functions.py",
+            "sha": "44527f527dd8208d3993f00dabb7451bfd70479e"
+          },
+          {
             "path": "Codes/temperature.py",
             "sha": "92e80f033891c74f60b1151ee508739ba0181764"
           },
           {
-            "path": "desktop/dhms/core.py",
-            "sha": "52979975028dd39f40a3b0ca4baa0d3bd05a354a"
+            "path": "Codes/test.py",
+            "sha": "099b63dd49c209b1bcb8b174554de7b49666004e"
+          },
+          {
+            "path": "Codes/upload_data.py",
+            "sha": "812f80f58396bc6e408e8c4854c028c07f84a779"
+          },
+          {
+            "path": "Codes/utils.py",
+            "sha": "da1a48e8ba2bc6ff268dc4a44621384e93129a0e"
+          },
+          {
+            "path": "Codes/visualize_uploaded_data.py",
+            "sha": "daa96d7378447cd1512358b7095614e9a2ae06e6"
+          },
+          {
+            "path": "Codes/visualizebutton.py",
+            "sha": "4cd838c8774d454b877e78283427a71386a07ea6"
+          },
+          {
+            "path": "desktop/build_app.py",
+            "sha": "3e5b1c3003010ced8b6b536038f8d6db8b01ce12"
+          },
+          {
+            "path": "desktop/dhms/__init__.py",
+            "sha": "ea79685adec01695f7f2656182c5594734f54a7d"
+          },
+          {
+            "path": "desktop/dhms/__main__.py",
+            "sha": "b982e5da755fc81ec8e7d008fbbf38e4330d34c1"
+          },
+          {
+            "path": "desktop/dhms/app.py",
+            "sha": "d8a843bf54b445c7e807152dac968014c50f6739"
+          },
+          {
+            "path": "desktop/launch.py",
+            "sha": "e66cfe4a742f0556d6bd230d8ab46e3948fe7b01"
+          },
+          {
+            "path": "desktop/package_release.py",
+            "sha": "41f9f4c32ee4d64161b55467078adb107a5fcd89"
+          },
+          {
+            "path": "original-work/Dairy-Herd-Monitoring/traincode.py",
+            "sha": "d344951e9feb10845696e98015252546bfef9e94"
+          },
+          {
+            "path": "scripts/verify_import.py",
+            "sha": "1e3c442420f15f972e749fb607f264c06fefc783"
+          },
+          {
+            "path": "web/verify.cjs",
+            "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe"
           }
         ],
         "skills": {
@@ -1053,6 +1250,10 @@
             "sha": "96583b9dc6a6adb010e0976bf9486e606da749f9"
           },
           {
+            "path": "app/tools/integrate-study.mjs",
+            "sha": "06c552f3ac1300277c162fe6f37061e3dc9a4cbb"
+          },
+          {
             "path": "app/tools/integrate_enterprise.py",
             "sha": "95a9721a521dac5dba13c24f03c316870ffbc341"
           },
@@ -1061,8 +1262,16 @@
             "sha": "a7e6ec87d6b0ade9174a620e23534b681e22ed54"
           },
           {
+            "path": "app/tools/polish-copy.mjs",
+            "sha": "8f1d9ba8ef2bffedfe2be9635ebafdaa7df9a664"
+          },
+          {
             "path": "app/tools/qa/enterprise-independent-checks.py",
             "sha": "8e5d222865646c63d086cd4b104a06c44074cc2c"
+          },
+          {
+            "path": "app/tools/qa/test-enterprise.cjs",
+            "sha": "7e8d0e4aba4042f5b35bea26b9e1fb05752985e0"
           },
           {
             "path": "app/tools/rebuild_enterprise.py",
@@ -1071,6 +1280,50 @@
           {
             "path": "app/tools/render-case-diagrams.py",
             "sha": "d5caa1992e3d2c0d4c8a324f5a489630c3844248"
+          },
+          {
+            "path": "app/tools/test-case-studies.mjs",
+            "sha": "75473ecdb5c14b1192cd0f367ae7015fa29856d9"
+          },
+          {
+            "path": "app/tools/test-formal-model.mjs",
+            "sha": "a9ccb8c3107b1ca2964ecf006ce1dbf0db1b0bc8"
+          },
+          {
+            "path": "app/tools/test-native-case-studies.mjs",
+            "sha": "9a7ce698c8f42a409bb97408abd99a238080dbbc"
+          },
+          {
+            "path": "app/tools/test-workspace-guide.mjs",
+            "sha": "8b05a1128e0520bc89727bc95d6c2718daf1f258"
+          },
+          {
+            "path": "app/worker/build.mjs",
+            "sha": "8a9d139bbe7d6adea12c9b1c328cefc919266f30"
+          },
+          {
+            "path": "app/worker/index.mjs",
+            "sha": "9fe85315c60fc2c492d48187d9e8b19381b5cb8d"
+          },
+          {
+            "path": "app/worker/local-preview.mjs",
+            "sha": "9a6f9bf2b6d250407603c1df6e98384f81fcf1ec"
+          },
+          {
+            "path": "app/worker/preview.mjs",
+            "sha": "6c0de5d124c07f2c76b4f404f66eb1afdf1a18dd"
+          },
+          {
+            "path": "app/worker/test-workspace-store.mjs",
+            "sha": "853e2eb91a64d4cff473803355bd34e7ae8d408e"
+          },
+          {
+            "path": "app/worker/test.mjs",
+            "sha": "d168fb77f6a2e6790153e359c3c8e48bd7b204b4"
+          },
+          {
+            "path": "app/worker/workspace-store.mjs",
+            "sha": "ed24c946b0a694a85defdb5c3cd330c90139ecac"
           },
           {
             "path": "scripts/validate_design_export.py",
@@ -1103,6 +1356,22 @@
           {
             "path": "ai.py",
             "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6"
+          },
+          {
+            "path": "legacy/baseline-2026-11-14/ai.py",
+            "sha": "027cbc97094b073ef609e4f61c5492d122990c3a"
+          },
+          {
+            "path": "packaging/build_desktop.py",
+            "sha": "6aed32dcbb4d3d678bac7287a680bba00398e87e"
+          },
+          {
+            "path": "packaging/publish_release.py",
+            "sha": "485e21ee4f3f3f729c2daeff93f27bde34243a75"
+          },
+          {
+            "path": "scripts/runtime_smoke.py",
+            "sha": "3d1bbfb6832182981fc950427e632da262f74896"
           }
         ],
         "skills": {
@@ -1131,7 +1400,7 @@
     ]
   },
   "private_snapshot": {
-    "captured_at": "2026-11-15",
+    "captured_at": "2026-11-15T09:28:02+00:00",
     "sources": [
       {
         "source_id": "0642b293da263416",
@@ -1166,19 +1435,19 @@
           },
           "aiml": {},
           "agentic": {
-            "Retrieval": {
+            "State and memory": {
               "kind": "verified source"
             },
-            "State and memory": {
+            "Retrieval": {
               "kind": "verified source"
             },
             "Task routing": {
               "kind": "verified source"
             },
-            "Agent evaluation": {
+            "Guardrails": {
               "kind": "verified source"
             },
-            "Workflow orchestration": {
+            "Agent evaluation": {
               "kind": "verified source"
             }
           }
@@ -1830,23 +2099,23 @@
           ]
         },
         {
-          "label": "Workflow orchestration",
+          "label": "Guardrails",
           "value": 3,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
               "visibility": "public",
               "repo": "jyotheshkar/Agentic-Core-Concept-Prototype-2026",
-              "path": "plugins/moa/scripts/moa_core.py",
-              "sha": "c1f9e139048e49fe7d4919ab568b49a75b2044de",
+              "path": "scripts/import-runtime-sources/import_sources.py",
+              "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
               "kind": "implementation"
             },
             {
               "source_id": "b8046dba1fbe37a0",
               "visibility": "public",
               "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/contracts.py",
-              "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
+              "path": "runtime/core/safety.py",
+              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
               "kind": "implementation"
             },
             {
@@ -1910,15 +2179,23 @@
           ]
         },
         {
-          "label": "Guardrails",
-          "value": 1,
+          "label": "Workflow orchestration",
+          "value": 2,
           "evidence": [
+            {
+              "source_id": "5b770aa2d866d420",
+              "visibility": "public",
+              "repo": "jyotheshkar/Agentic-Core-Concept-Prototype-2026",
+              "path": "plugins/moa/scripts/moa_core.py",
+              "sha": "c1f9e139048e49fe7d4919ab568b49a75b2044de",
+              "kind": "implementation"
+            },
             {
               "source_id": "b8046dba1fbe37a0",
               "visibility": "public",
               "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/safety.py",
-              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
+              "path": "runtime/core/contracts.py",
+              "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
               "kind": "implementation"
             }
           ]

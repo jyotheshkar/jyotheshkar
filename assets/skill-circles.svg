@@ -132,26 +132,26 @@
 <rect x="257" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
 <rect data-evidence-bar="NLP and transformers" x="257" y="517" width="35.200000" height="3.5" rx="1.75" fill="#9ca8ff"/>
 </g>
-</g></g><g transform="translate(940 90)"><g data-skill-circle="agentic" data-total="15" data-center-x="220" data-center-y="214" aria-label="Agentic AI Engineering">
+</g></g><g transform="translate(940 90)"><g data-skill-circle="agentic" data-total="16" data-center-x="220" data-center-y="214" aria-label="Agentic AI Engineering">
 <rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
 <text x="220" y="48" fill="#f0f6fc" font-size="28" font-weight="600" text-anchor="middle">Agentic AI Engineering</text>
 <circle cx="220" cy="214" r="100" fill="none" stroke="#30363d" stroke-width="40"/>
-<circle data-segment="Agent evaluation" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="125.66370614 502.65482457" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Agent evaluation</title></circle>
-<circle data-segment="Workflow orchestration" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="125.66370614 502.65482457" stroke-dashoffset="-125.66370614" transform="rotate(-90 220 214)"><title>Workflow orchestration</title></circle>
-<circle data-segment="Retrieval" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="83.77580410 544.54272662" stroke-dashoffset="-251.32741229" transform="rotate(-90 220 214)"><title>Retrieval</title></circle>
-<circle data-segment="State and memory" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="83.77580410 544.54272662" stroke-dashoffset="-335.10321638" transform="rotate(-90 220 214)"><title>State and memory</title></circle>
-<circle data-segment="Task routing" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="83.77580410 544.54272662" stroke-dashoffset="-418.87902048" transform="rotate(-90 220 214)"><title>Task routing</title></circle>
-<circle data-segment="Guardrails" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="41.88790205 586.43062867" stroke-dashoffset="-502.65482457" transform="rotate(-90 220 214)"><title>Guardrails</title></circle>
-<circle data-segment="Human approval" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="41.88790205 586.43062867" stroke-dashoffset="-544.54272662" transform="rotate(-90 220 214)"><title>Human approval</title></circle>
-<circle data-segment="Tool execution" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#9ca8ff" stroke-width="40" stroke-dasharray="41.88790205 586.43062867" stroke-dashoffset="-586.43062867" transform="rotate(-90 220 214)"><title>Tool execution</title></circle>
+<circle data-segment="Agent evaluation" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="117.80972451 510.50880621" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Agent evaluation</title></circle>
+<circle data-segment="Guardrails" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="117.80972451 510.50880621" stroke-dashoffset="-117.80972451" transform="rotate(-90 220 214)"><title>Guardrails</title></circle>
+<circle data-segment="Retrieval" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-235.61944902" transform="rotate(-90 220 214)"><title>Retrieval</title></circle>
+<circle data-segment="State and memory" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-314.15926536" transform="rotate(-90 220 214)"><title>State and memory</title></circle>
+<circle data-segment="Task routing" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-392.69908170" transform="rotate(-90 220 214)"><title>Task routing</title></circle>
+<circle data-segment="Workflow orchestration" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-471.23889804" transform="rotate(-90 220 214)"><title>Workflow orchestration</title></circle>
+<circle data-segment="Human approval" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="39.26990817 589.04862255" stroke-dashoffset="-549.77871438" transform="rotate(-90 220 214)"><title>Human approval</title></circle>
+<circle data-segment="Tool execution" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#9ca8ff" stroke-width="40" stroke-dasharray="39.26990817 589.04862255" stroke-dashoffset="-589.04862255" transform="rotate(-90 220 214)"><title>Tool execution</title></circle>
 <path d="M220.000 135.000L220.000 93.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M295.133 189.588L335.078 176.609" stroke="#0d1117" stroke-width="3"/>
-<path d="M266.435 277.912L291.122 311.891" stroke="#0d1117" stroke-width="3"/>
-<path d="M203.575 291.274L194.843 332.356" stroke="#0d1117" stroke-width="3"/>
-<path d="M151.584 253.500L115.211 274.500" stroke="#0d1117" stroke-width="3"/>
-<path d="M144.867 189.588L104.922 176.609" stroke="#0d1117" stroke-width="3"/>
-<path d="M161.292 161.139L130.079 133.035" stroke="#0d1117" stroke-width="3"/>
-<path d="M187.868 141.830L170.785 103.461" stroke="#0d1117" stroke-width="3"/>
+<path d="M292.986 183.768L331.789 167.695" stroke="#0d1117" stroke-width="3"/>
+<path d="M275.861 269.861L305.560 299.560" stroke="#0d1117" stroke-width="3"/>
+<path d="M220.000 293.000L220.000 335.000" stroke="#0d1117" stroke-width="3"/>
+<path d="M164.139 269.861L134.440 299.560" stroke="#0d1117" stroke-width="3"/>
+<path d="M141.000 214.000L99.000 214.000" stroke="#0d1117" stroke-width="3"/>
+<path d="M164.139 158.139L134.440 128.440" stroke="#0d1117" stroke-width="3"/>
+<path d="M189.768 141.014L173.695 102.211" stroke="#0d1117" stroke-width="3"/>
 <text x="220" y="224" fill="#f0f6fc" font-size="34" font-weight="600" text-anchor="middle">Agents</text>
 <g data-skill-legend="Agent evaluation">
 <circle cx="31" cy="376" r="3.5" fill="#58a6ff"/>
@@ -159,11 +159,11 @@
 <rect x="42" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
 <rect data-evidence-bar="Agent evaluation" x="42" y="391" width="176.000000" height="3.5" rx="1.75" fill="#58a6ff"/>
 </g>
-<g data-skill-legend="Workflow orchestration">
+<g data-skill-legend="Guardrails">
 <circle cx="246" cy="376" r="3.5" fill="#d2a8ff"/>
-<text x="257" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Workflow orchestration</text>
+<text x="257" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Guardrails</text>
 <rect x="257" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Workflow orchestration" x="257" y="391" width="176.000000" height="3.5" rx="1.75" fill="#d2a8ff"/>
+<rect data-evidence-bar="Guardrails" x="257" y="391" width="176.000000" height="3.5" rx="1.75" fill="#d2a8ff"/>
 </g>
 <g data-skill-legend="Retrieval">
 <circle cx="31" cy="418" r="3.5" fill="#7ee787"/>
@@ -183,11 +183,11 @@
 <rect x="42" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
 <rect data-evidence-bar="Task routing" x="42" y="475" width="117.333333" height="3.5" rx="1.75" fill="#f778ba"/>
 </g>
-<g data-skill-legend="Guardrails">
+<g data-skill-legend="Workflow orchestration">
 <circle cx="246" cy="460" r="3.5" fill="#39c5cf"/>
-<text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Guardrails</text>
+<text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Workflow orchestration</text>
 <rect x="257" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Guardrails" x="257" y="475" width="58.666667" height="3.5" rx="1.75" fill="#39c5cf"/>
+<rect data-evidence-bar="Workflow orchestration" x="257" y="475" width="117.333333" height="3.5" rx="1.75" fill="#39c5cf"/>
 </g>
 <g data-skill-legend="Human approval">
 <circle cx="31" cy="502" r="3.5" fill="#e3b341"/>
