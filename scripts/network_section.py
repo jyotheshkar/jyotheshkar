@@ -82,7 +82,7 @@ def _route(path, delay=0, secondary=False, period=9):
     for extra in (0, period/2):
         for cls, radius, filter_attr in (("nw-soft", 5, ' filter="url(#nw-packet-glow)"'), ("nw-packet", 3, "")):
             parts.append(f'<circle class="{cls}" r="{radius}"{filter_attr}><animateMotion dur="{period}s" '
-                         f'begin="{delay-extra}s" repeatCount="indefinite" calcMode="linear" path="{path}"/></circle>')
+                         f'begin="{delay-extra-period}s" repeatCount="indefinite" calcMode="linear" path="{path}"/></circle>')
     return "".join(parts)
 
 
