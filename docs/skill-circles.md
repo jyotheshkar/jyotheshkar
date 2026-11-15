@@ -1,78 +1,72 @@
 # Portfolio chart data and methodology
 
-Source capture: **14 November 2026**. Curated: **15 November 2026**. Scope: **22 retained repository snapshots** from public, non-archived projects owned by jyotheshkar at capture time; excludes the profile repository and private repositories. Names and visibility describe the capture date, not the current GitHub inventory. This dated snapshot is not automatically refreshed.
+Source capture: **14 November 2026**. Curated: **15 November 2026**. Scope: **22 retained repository snapshots**, captured from public, non-archived projects. Names and visibility describe the capture date, rather than today's GitHub inventory. Private projects and the profile repository are excluded.
 
-The four doughnut charts preserve proportional data representation. Arc lengths directly encode values; labels show rounded shares. Animation changes only opacity and a decorative outer highlight, never the measured segment size. Original project and brand artwork above this section remains unchanged.
+The three circles occupy one horizontal row: **Languages**, **AI & Machine Learning**, and **Agentic AI Engineering**. The presentation restores the original [orbital design](https://github.com/jyotheshkar/jyotheshkar/commit/59a6df4e4a41091c96c61f827f84c4efeb45c964): dark grid, blue halos, concentric rings, colored tool nodes and decorative moving routes. Original brand artwork retains its source colors.
 
-## What the charts measure
+The measured arcs retain the evidence proportions. Labels and tooltips show raw bytes or repository counts; no percentage labels or proficiency scores are displayed. Nodes and legends remain still; moving orbit highlights and dotted routes are decorative. Reduced motion is supported.
 
-- **Language footprint:** unique source-file bytes, classified by extension and deduplicated across repositories by Git blob hash. Excludes notebooks, dependencies, builds, data/report exports, historical original-work copies, minified files, TypeScript declarations and an identified revision-baseline HTML snapshot. HTML and CSS are included as web source. This is not GitHub Linguist, commit share, authorship share or proficiency.
-- **Engineering, AI and Agentic AI:** one repository-topic match per selected category using root README and dependency manifests. Containers and CI/CD additionally use Dockerfile/workflow filenames. Agentic topics are restricted to repositories whose root README mentions agentic, RAG, tool calling or LLM agents. A repository can match multiple topics. The denominator is the sum of category matches, not the number of projects. These describe documented coverage, including concepts and study, and do not establish implementation, mastery or a deployed system. Text can mention limitations or proposed work; matches should be read with the linked project context.
+## What the data measures
 
-All per-file language bytes and topic evidence excerpts, paths and Git hashes are in [the evidence data](../config/portfolio-metrics.json). Category rules are in [the summarizer](../scripts/summarize_portfolio.py). This avoids invented skill percentages. Exact duplicate blobs contribute to language totals once; related but non-identical versions may still be represented.
+- **Languages:** source-file bytes classified by extension and deduplicated across repositories by Git blob hash. Notebook/data/report exports, dependencies, build output, historical original-work copies, minified source, TypeScript declarations and an identified HTML revision baseline are excluded. This is source coverage, rather than GitHub Linguist, contribution share or authorship.
+- **AI and engineering topics:** one repository match per selected category based on captured README and dependency evidence. CI/CD and container categories also use workflow/Dockerfile names. A repository can appear in several categories, so the sum counts topic matches rather than distinct repositories. Text may describe study, concepts, limitations or proposed work; a match alone does not establish a deployed capability.
+- **Merged engineering circle:** preserves all eight Engineering Stack categories and all eight Agentic AI categories as sixteen distinct topics. The total is **44 + 13 = 57 topic matches**. Software-stack categories retain their original portfolio-wide scope; they are not relabeled as evidence that every project is an agent.
 
-## Language footprint
+The immutable captured values, paths, repository names and Git hashes remain in [portfolio-metrics.json](../config/portfolio-metrics.json). The original four source groups remain intact; the builder combines two only for display. No source evidence was added or recounted for this styling change.
 
-Total: 2,857,215 bytes.
+## Languages
 
-| Category | Value | Share |
-|---|---:|---:|
-| Python | 2,310,492 | 80.9% |
-| TypeScript | 401,827 | 14.1% |
-| HTML | 98,695 | 3.5% |
-| CSS | 24,315 | 0.9% |
-| JavaScript | 15,496 | 0.5% |
-| SQL | 6,390 | 0.2% |
+Total: **2,857,215 bytes**.
 
-## Engineering stack
+| Category | Source bytes |
+| --- | ---: |
+| Python | 2,310,492 |
+| TypeScript | 401,827 |
+| HTML | 98,695 |
+| CSS | 24,315 |
+| JavaScript | 15,496 |
+| SQL | 6,390 |
 
-Total: 44 matches.
+## AI & Machine Learning
 
-| Category | Value | Share |
-|---|---:|---:|
-| CI / CD | 16 | 36.4% |
-| Testing | 6 | 13.6% |
-| SQL databases | 5 | 11.4% |
-| AWS | 4 | 9.1% |
-| Backend APIs | 4 | 9.1% |
-| Node.js / npm | 3 | 6.8% |
-| React | 3 | 6.8% |
-| Containers | 3 | 6.8% |
+Total: **22 topic matches**.
 
-## AI & machine learning
+| Category | Repositories |
+| --- | ---: |
+| Model evaluation | 5 |
+| Scikit-learn | 4 |
+| PyTorch | 3 |
+| Transformers | 3 |
+| Embeddings | 3 |
+| NLP | 2 |
+| TensorFlow | 1 |
+| Reinforcement learning | 1 |
 
-Total: 22 matches.
+## Agentic AI Engineering
 
-| Category | Value | Share |
-|---|---:|---:|
-| Model evaluation | 5 | 22.7% |
-| Scikit-learn | 4 | 18.2% |
-| PyTorch | 3 | 13.6% |
-| Transformers | 3 | 13.6% |
-| Embeddings | 3 | 13.6% |
-| NLP | 2 | 9.1% |
-| TensorFlow | 1 | 4.5% |
-| Reinforcement learning | 1 | 4.5% |
+Total: **57 topic matches**.
 
-## Agentic AI focus
-
-Total: 13 matches.
-
-| Category | Value | Share |
-|---|---:|---:|
-| Tracing / evals | 2 | 15.4% |
-| Planning | 2 | 15.4% |
-| Tool use | 2 | 15.4% |
-| Memory / state | 2 | 15.4% |
-| Orchestration | 2 | 15.4% |
-| Guardrails | 1 | 7.7% |
-| RAG / retrieval | 1 | 7.7% |
-| Human review | 1 | 7.7% |
+| Category | Repositories |
+| --- | ---: |
+| CI / CD | 16 |
+| Testing | 6 |
+| SQL databases | 5 |
+| AWS | 4 |
+| Backend APIs | 4 |
+| Node.js / npm | 3 |
+| React | 3 |
+| Containers | 3 |
+| Tracing / evals | 2 |
+| Planning | 2 |
+| Tool use | 2 |
+| Memory / state | 2 |
+| Orchestration | 2 |
+| Guardrails | 1 |
+| RAG / retrieval | 1 |
+| Human review | 1 |
 
 ## Build and validation
 
-`python scripts/build_skill_circles.py` rebuilds the SVG offline from the evidence data. `python scripts/validate_profile.py` checks the chart keys, legend labels, totals and each segment's proportional arc length against that data. CI checks deterministic output. SVG titles, descriptions, README alt text, this text table and a reduced-motion fallback support accessibility.
+Run `python scripts/build_skill_circles.py`, then `python scripts/validate_profile.py`. Validation checks the three-circle row, both source groups in the merged circle, legend/node coverage, exact totals, proportional arc lengths, local icon references and absence of numeric percentage labels. CI also checks deterministic SVG output.
 
-To update the snapshot, collect the current public repository recursive Git trees and root README/dependency manifests using GitHub, retaining tree and blob hashes. Supply a JSON object with `captured_at`, `scope`, `repositories` (repo, tree_sha, files with path/sha/size), and `evidence` (repo/path/sha/content) to `python scripts/summarize_portfolio.py snapshot.json`. Inspect classifications and exclusions, rebuild, validate and advance the README's immutable SVG revision after committing the verified asset. Do not include private repositories.
-
-The old 3D calendar and snake remain historical files; their scheduled refresh workflow is removed. GitHub's native contribution section is unaffected.
+The profile README pins the chart SVG to its verified asset commit. The YouTube/Crypto Agent artwork above it is unchanged.
