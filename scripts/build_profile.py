@@ -35,7 +35,7 @@ def document(width, height, title, body, icons, keys):
 
 
 def heading(mobile=False):
-    size, end = (44, 660) if mobile else (48, 1360)
+    size, end = (38, 660) if mobile else (42, 1360)
     return ('<text x="40" y="49" fill="#91a9c3" font-family="Consolas,monospace" font-size="18">EXPERIENCE AND EDUCATION</text>'
             f'<text x="40" y="110" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="{size}" font-weight="700">Experience / Education</text>'
             '<text x="40" y="150" fill="#a9b8c9" font-family="Arial,Helvetica,sans-serif" font-size="23">Professional experience. Academic achievement.</text>'

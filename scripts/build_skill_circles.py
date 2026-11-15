@@ -87,7 +87,7 @@ def section(chart):
     total = sum(i['value'] for i in items)
     assert total > 0 and all(i['value'] > 0 and i['evidence'] for i in items)
     out = [f'<g data-skill-section="{key}" data-total="{total}" aria-label="{escape(TITLES[key])}">',
-           text(0, 30, TITLES[key], 30, weight=700),
+           text(0, 30, TITLES[key], 26, weight=700),
            f'<clipPath id="bar-{key}"><rect y="60" width="{BAR_WIDTH}" height="14" rx="7"/></clipPath>',
            f'<g clip-path="url(#bar-{key})">']
     offset = 0
@@ -129,7 +129,7 @@ def document(width, height, title, contents):
 
 
 def shell(width, height, mobile=False):
-    size = 44 if mobile else 48
+    size = 38 if mobile else 42
     return ('<defs><pattern id="skills-dots" width="25" height="25" patternUnits="userSpaceOnUse">'
             '<circle cx="1" cy="1" r=".7" fill="#3d444d" opacity=".45"/></pattern>'
             '<linearGradient id="skills-rule"><stop stop-color="#4493f8" stop-opacity=".8"/>'

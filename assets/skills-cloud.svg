@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="318" viewBox="0 0 660 318" role="img" aria-labelledby="skills-title"><title id="skills-title">Cloud Skills</title><desc>Combined repository evidence. Each stacked bar and percentage shows a category share of verified repository evidence, not language byte totals or proficiency. One repository can support several categories. Cloud skills reflect project deployment configuration, not proof of live production services. Java includes JSP template evidence.</desc><rect width="660" height="318" fill="#0d1117"/><g transform="translate(32 28)"><g data-skill-section="cloud" data-total="11" aria-label="Cloud Skills">
-<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">Cloud Skills</text>
+<text x="0" y="30" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">Cloud Skills</text>
 <clipPath id="bar-cloud"><rect y="60" width="596" height="14" rx="7"/></clipPath>
 <g clip-path="url(#bar-cloud)">
 <rect data-segment="Docker" data-value="3" x="0.00000000" y="60" width="162.54545455" height="14" fill="#3572a5"><title>Docker</title></rect>

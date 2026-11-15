@@ -33,7 +33,9 @@ def render_career(icons):
         'Red teaming on Amazon Nova multimodal research models. Quality '
         'and verification for red-teaming workflows across London, Cambridge, Boston, '
         'and Amsterdam. MSc Computer Science with Distinction and Best Performance '
-        'Award. THESIS: DHMS, Dairy Herd Monitoring System.</desc>',
+        'Award. Amazon role location: London, United Kingdom. Earlier role locations: '
+        'Flione IT, Bangalore, India; Thrive and Shine and Edu Lettings, '
+        'Stoke-on-Trent, United Kingdom. THESIS: DHMS, Dairy Herd Monitoring System.</desc>',
     ]
     for x in (24, 714):
         out += [
@@ -48,7 +50,7 @@ def render_career(icons):
         _brand(icons, "amazon", 58, 89, 88, 32),
         _text(170, 83, "Amazon AGI Data Services", 27, weight=700),
         _text(170, 122, "Machine Learning Data Associate II", 22, weight=600),
-        _text(170, 157, "JUN 2025 — PRESENT  /  LONDON", 17, "#9198a1", mono=True),
+        _text(170, 157, "JUN 2025 - PRESENT  /  LONDON, UNITED KINGDOM", 17, "#9198a1", mono=True),
     ]
     bullets = (
         (218, ("Model evaluation on Alexa and Nova research models",)),
@@ -64,24 +66,25 @@ def render_career(icons):
         '<path d="M56 374H654" stroke="#3d444d" stroke-opacity=".65"/>',
         _text(56, 420, "EARLIER EXPERIENCE", 17, "#9198a1", mono=True, tracking=1.5),
     ]
-    for y, employer, role, date in (
-        (464, "Flione IT", "Associate Web Developer", "OCT 2022 — JUL 2023"),
-        (530, "Thrive and Shine", "Web Developer Intern", "SEP 2024 — DEC 2024"),
-        (596, "Edu Lettings", "Recreational Assistant · part-time", "APR 2024 — JUN 2025"),
+    for y, employer, role, date, location in (
+        (464, "Flione IT", "Associate Web Developer", "OCT 2022 - JUL 2023", "Bangalore, India"),
+        (530, "Thrive and Shine", "Web Developer Intern", "SEP 2024 - DEC 2024", "Stoke-on-Trent, United Kingdom"),
+        (596, "Edu Lettings", "Recreational Assistant · part-time", "APR 2024 - JUN 2025", "Stoke-on-Trent, United Kingdom"),
     ):
         out += [
             _text(56, y, employer, 22, weight=600),
             _text(654, y, date, 16, "#9198a1", anchor="end", mono=True),
             _text(56, y+23, role, 18, "#9198a1"),
+            _text(654, y+23, location, 16, "#9198a1", anchor="end", mono=True),
         ]
 
     out += [
-        _brand(icons, "keele", 746, 55, 130, 100),
-        _text(900, 83, "Keele University", 32, weight=700),
-        _text(900, 123, "MSc Computer Science", 27, weight=600),
-        _text(900, 157, "SEP 2023 — SEP 2024", 17, "#9198a1", mono=True),
-        _text(746, 218, "Awarded Distinction", 29, "#79c0ff", 600),
-        _text(746, 267, "Received Best Performance Award", 27, weight=700),
+        _brand(icons, "keele", 740, 55, 104, 100),
+        _text(860, 83, "Keele University", 27, weight=700),
+        _text(860, 122, "MSc Computer Science", 22, weight=600),
+        _text(860, 157, "SEP 2023 - SEP 2024", 17, "#9198a1", mono=True),
+        _text(746, 218, "Awarded Distinction", 29, "#f0f6fc", 600),
+        _text(746, 267, "Received Best Performance Award", 27, "#79c0ff", weight=700),
         _text(746, 309, "From the Department of Mathematics", 21, "#c9d1d9"),
         _text(746, 338, "and Computer Science at Keele University.", 21, "#c9d1d9"),
         '<path d="M746 374H1344" stroke="#3d444d" stroke-opacity=".65"/>',

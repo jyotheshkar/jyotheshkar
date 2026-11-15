@@ -130,13 +130,13 @@ def _shell(width, height, mobile=False):
         f'<ellipse cx="{width/2}" cy="{height/2}" rx="{width*.55}" ry="{height*.48}" fill="url(#nw-aura)"/>']
     if mobile:
         parts += [_text(36, 48, "AGENTIC AI SYSTEM ENGINEERING", 21, "#91a9c3", mono=True),
-                  _text(36, 106, "LinkedIn Agent", 44, weight=700),
+                  _text(36, 106, "LinkedIn Agent", 38, weight=700),
                   _text(36, 145, "One workflow. Connected evidence.", 25, "#a9b8c9"),
                   _text(36, 179, "Source-verified architecture · v"+SOURCE_VERSION, 20, "#7d92aa"),
                   '<path d="M36 209H664" stroke="url(#nw-rule)"/>']
     else:
         parts += [_text(40, 49, "AGENTIC AI SYSTEM ENGINEERING", 18, "#91a9c3", mono=True),
-                  _text(40, 110, "LinkedIn Agent", 48, weight=700),
+                  _text(40, 110, "LinkedIn Agent", 42, weight=700),
                   _text(40, 150, "One workflow. Connected evidence. Verified outcomes.", 25, "#a9b8c9"),
                   _text(1360, 53, "INSTALLED WORKFLOW  /  v"+SOURCE_VERSION, 16, "#7d92aa", anchor="end", mono=True),
                   '<path d="M40 178H1360" stroke="url(#nw-rule)"/>']
@@ -247,4 +247,5 @@ def render_network_mobile(icons):
         out.append(f'<circle cx="{x}" cy="{y}" r="4" fill="#79c0ff"/>')
     out.append("</g>")
     return "\n".join(out)
+
 

@@ -29,7 +29,7 @@
 <rect width="1400" height="1290" fill="url(#nw-dots)"/>
 <ellipse cx="700.0" cy="645.0" rx="770.0000000000001" ry="619.1999999999999" fill="url(#nw-aura)"/>
 <text x="40" y="49" font-family="Consolas,monospace" font-size="18" font-weight="400" fill="#91a9c3" text-anchor="start">AGENTIC AI SYSTEM ENGINEERING</text>
-<text x="40" y="110" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700" fill="#f0f6fc" text-anchor="start">LinkedIn Agent</text>
+<text x="40" y="110" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#f0f6fc" text-anchor="start">LinkedIn Agent</text>
 <text x="40" y="150" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="400" fill="#a9b8c9" text-anchor="start">One workflow. Connected evidence. Verified outcomes.</text>
 <text x="1360" y="53" font-family="Consolas,monospace" font-size="16" font-weight="400" fill="#7d92aa" text-anchor="end">INSTALLED WORKFLOW  /  v1.3.19</text>
 <path d="M40 178H1360" stroke="url(#nw-rule)"/>

@@ -1,6 +1,6 @@
 # GitHub profile maintenance
 
-The overview opens with the installed LinkedIn Agent workflow in GitHub's dark palette. Experience, education and skills share its dark canvas, subtle borders, blue heading rules and typography. Both experience and education cards have transparent backgrounds, while the Amazon logo retains its opaque white plate. Each section has desktop and mobile artwork selected by README picture elements. Skills use one box with four sections, GitHub-style stacked bars and inline dot legends.
+The overview opens with the installed LinkedIn Agent workflow in GitHub's dark palette. Experience, education and skills share its dark canvas, subtle borders, blue heading rules and reduced heading sizes. Both experience and education cards have transparent backgrounds, while the Amazon logo retains its opaque white plate. The institution headers use matching logo slots, text offsets and typography. Awarded Distinction is white; Received Best Performance Award uses the blue accent. Each work role displays its city and full country name, taken from owner-approved employment records. Each section has desktop and mobile artwork selected by README picture elements. Skills use one box with four sections, GitHub-style stacked bars and inline dot legends.
 
 ## Rebuild
 
