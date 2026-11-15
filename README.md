@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/profile-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/profile.svg" width="100%" alt="LinkedIn Agent — Agentic AI System Engineering. ChatGPT coordinates LinkedIn discovery, GitHub project evidence, Atlas knowledge and Gmail history. Verified materials move through Google Drive to application and outreach routes; receipts converge in Atlas and Google Sheets, then the dashboard and learning checkpoints. Moving blue dots illustrate the architecture." />
+  <img src="https://raw.githubusercontent.com/jyotheshkar/jyotheshkar/main/assets/profile.svg" width="100%" alt="LinkedIn Agent Concept Architecture — Agentic AI System Engineering. ChatGPT coordinates LinkedIn discovery, GitHub project evidence, Atlas knowledge and Gmail history. Verified materials move through Google Drive to application and outreach routes; receipts converge in Atlas and Google Sheets, then the dashboard and learning checkpoints. Moving blue dots illustrate the architecture." />
 </picture>
 
 <picture>

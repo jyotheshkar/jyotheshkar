@@ -9,7 +9,7 @@ WIDTH, HEIGHT = 1400, 1290
 MOBILE_WIDTH, MOBILE_HEIGHT = 700, 1910
 SOURCE_VERSION = "1.3.19"
 PROJECTS = ({
-    "key": "linkedin", "icon": "linkedin", "title": "LinkedIn Agent",
+    "key": "linkedin", "icon": "linkedin", "title": "LinkedIn Agent Concept Architecture",
     "tools": (
         ("openai", "ChatGPT", "Workflow coordinator"),
         ("linkedin", "LinkedIn", "Vacancy discovery"),
@@ -124,7 +124,7 @@ def _node(key, x, y, w, h, icons, compact=False, mobile=False, body_lines=None):
 
 def _shell(width, height, mobile=False):
     parts = ['<g id="linkedin-architecture" aria-labelledby="linkedin-architecture-title">',
-        '<title id="linkedin-architecture-title">LinkedIn Agent — Agentic AI System Engineering</title>',
+        '<title id="linkedin-architecture-title">LinkedIn Agent Concept Architecture — Agentic AI System Engineering</title>',
         '<desc>The installed private LinkedIn workflow coordinates ChatGPT, LinkedIn vacancy research, GitHub project evidence, Gmail history and outreach, Google Drive CV storage, and canonical Atlas records in Google Sheets. Verified receipts converge in Atlas; Atlas alone delivers the approved dashboard projection. Blue packet animation illustrates the architecture, not live activity.</desc>',
         _defs(),
         f'<rect width="{width}" height="{height}" fill="#0d1117"/>',
@@ -132,13 +132,13 @@ def _shell(width, height, mobile=False):
         f'<ellipse cx="{width/2}" cy="{height/2}" rx="{width*.55}" ry="{height*.48}" fill="url(#nw-aura)"/>']
     if mobile:
         parts += [_text(36, 48, "AGENTIC AI SYSTEM ENGINEERING", 21, "#91a9c3", mono=True),
-                  _text(36, 106, "LinkedIn Agent", 38, weight=700),
+                  _text(36, 106, "LinkedIn Agent Concept Architecture", 34, weight=700),
                   _text(36, 145, "One workflow. Connected evidence.", 25, "#a9b8c9"),
                   _text(36, 179, "Source-verified architecture · v"+SOURCE_VERSION, 20, "#7d92aa"),
                   '<path d="M36 209H664" stroke="url(#nw-rule)"/>']
     else:
         parts += [_text(40, 49, "AGENTIC AI SYSTEM ENGINEERING", 18, "#91a9c3", mono=True),
-                  _text(40, 110, "LinkedIn Agent", 42, weight=700),
+                  _text(40, 110, "LinkedIn Agent Concept Architecture", 42, weight=700),
                   _text(40, 150, "One workflow. Connected evidence. Verified outcomes.", 25, "#a9b8c9"),
                   _text(1360, 53, "INSTALLED WORKFLOW  /  v"+SOURCE_VERSION, 16, "#7d92aa", anchor="end", mono=True),
                   '<path d="M40 178H1360" stroke="url(#nw-rule)"/>']

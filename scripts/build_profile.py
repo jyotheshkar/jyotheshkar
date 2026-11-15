@@ -56,8 +56,8 @@ def build():
     icons = load_icons()
     network_keys = {'openai', 'linkedin', 'github', 'gmail', 'googledrive', 'googlesheets'}
     outputs = {
-        'profile.svg': document(network.WIDTH, network.HEIGHT, 'LinkedIn Agent — Agentic AI System Engineering', network.render_network(icons), icons, network_keys),
-        'profile-mobile.svg': document(network.MOBILE_WIDTH, network.MOBILE_HEIGHT, 'LinkedIn Agent — connected workflow architecture', network.render_network_mobile(icons), icons, network_keys),
+        'profile.svg': document(network.WIDTH, network.HEIGHT, 'LinkedIn Agent Concept Architecture — Agentic AI System Engineering', network.render_network(icons), icons, network_keys),
+        'profile-mobile.svg': document(network.MOBILE_WIDTH, network.MOBILE_HEIGHT, 'LinkedIn Agent Concept Architecture — connected workflow architecture', network.render_network_mobile(icons), icons, network_keys),
         'career.svg': document(career.WIDTH, career.HEIGHT + 194, 'Experience / Education', career_shell(career.WIDTH, career.HEIGHT + 194) + heading() + '<g transform="translate(0 194)">' + career.render_career(icons) + '</g>', icons, {'amazon', 'keele'}),
         'career-mobile.svg': document(career.MOBILE_WIDTH, career.MOBILE_HEIGHT + 194, 'Experience / Education', career_shell(career.MOBILE_WIDTH, career.MOBILE_HEIGHT + 194) + heading(True) + '<g transform="translate(0 194)">' + career.render_career_mobile(icons) + '</g>', icons, {'amazon', 'keele'}),
     }
