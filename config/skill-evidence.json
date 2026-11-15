@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "captured_at": "2026-11-15T09:28:02+00:00",
+  "captured_at": "2026-11-15T09:29:37+00:00",
   "public_snapshot": {
-    "captured_at": "2026-11-15T09:28:02+00:00",
+    "captured_at": "2026-11-15T09:29:37+00:00",
     "sources": [
       {
         "source_id": "5b770aa2d866d420",
@@ -83,89 +83,6 @@
             "Guardrails": {
               "path": "scripts/import-runtime-sources/import_sources.py",
               "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
-              "kind": "implementation"
-            }
-          }
-        }
-      },
-      {
-        "source_id": "b8046dba1fbe37a0",
-        "visibility": "public",
-        "repo": "jyotheshkar/agentic-core-evidence-2026",
-        "tree_sha": "3d0b0287362f09fcc5abb7f4b5c9918ff6b7a50b",
-        "scanned_files": [
-          {
-            "path": "runtime/core/__init__.py",
-            "sha": "04d75095a48c899ab038c3c1c150d194a56310ac"
-          },
-          {
-            "path": "runtime/core/algorithms.py",
-            "sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132"
-          },
-          {
-            "path": "runtime/core/contracts.py",
-            "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595"
-          },
-          {
-            "path": "runtime/core/engine.py",
-            "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d"
-          },
-          {
-            "path": "runtime/core/safety.py",
-            "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e"
-          },
-          {
-            "path": "runtime/examples/__init__.py",
-            "sha": "a20a9ef4965421ce3a339b7277e917681650ffd7"
-          },
-          {
-            "path": "runtime/examples/support_case.py",
-            "sha": "1b8d5ed421f86cc029280c2c04b9b3d069ea91e3"
-          }
-        ],
-        "skills": {
-          "languages": {
-            "Python": {
-              "path": "runtime/core/__init__.py",
-              "sha": "04d75095a48c899ab038c3c1c150d194a56310ac",
-              "kind": "source"
-            }
-          },
-          "aiml": {},
-          "agentic": {
-            "Agent evaluation": {
-              "path": "runtime/core/algorithms.py",
-              "sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132",
-              "kind": "implementation"
-            },
-            "Workflow orchestration": {
-              "path": "runtime/core/contracts.py",
-              "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
-              "kind": "implementation"
-            },
-            "Tool execution": {
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
-              "kind": "implementation"
-            },
-            "Retrieval": {
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
-              "kind": "implementation"
-            },
-            "State and memory": {
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
-              "kind": "implementation"
-            },
-            "Human approval": {
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
-              "kind": "implementation"
-            },
-            "Guardrails": {
-              "path": "runtime/core/safety.py",
-              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
               "kind": "implementation"
             }
           }
@@ -732,6 +649,314 @@
         }
       },
       {
+        "source_id": "918f1f1ea56f3b08",
+        "visibility": "public",
+        "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+        "tree_sha": "ad42da3211291925af1020f88090874174b20498",
+        "scanned_files": [
+          {
+            "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+            "sha": "324dd809987153d1817594be58467e7acb4a0b2e"
+          },
+          {
+            "path": "Classification Models/Random Forest Full Data Accuracy.py",
+            "sha": "540e8eb1ce201d7ae6e399bf7ed8589852eefb2c"
+          },
+          {
+            "path": "Data Analysis/dataAnalysis.py",
+            "sha": "a1b2a3c971e23efc52a5cd28e519baf7c26ac982"
+          },
+          {
+            "path": "Data Imputation/KNN test.py",
+            "sha": "764a754794b66b44d249b0d1079b320895e57b18"
+          },
+          {
+            "path": "Data Imputation/KNN.py",
+            "sha": "2f6e4c46b197c3c2fa46546c323d613c24165018"
+          },
+          {
+            "path": "Data Imputation/Linear regression.py",
+            "sha": "6e24271aca582f32733225df881c377e3a1aa94f"
+          },
+          {
+            "path": "Data Imputation/Logistic First Accuracy.py",
+            "sha": "77a8eaa9e0e5599091dc029d0764ef5cf81ea498"
+          },
+          {
+            "path": "Data Imputation/Logistic First Prediction.py",
+            "sha": "c4856b2a44110483a57cbd3f2ef263e4208070b2"
+          },
+          {
+            "path": "Data Imputation/Mode.py",
+            "sha": "65f181639c8f43613f50c598d47e7f123344e1f3"
+          },
+          {
+            "path": "Prediction Model and GUI/DataPrep.py",
+            "sha": "e6de1d258082140012bed6ae363fbbd8707ef816"
+          },
+          {
+            "path": "Prediction Model and GUI/FinalModel.py",
+            "sha": "dbfcd818b3b1bf9675081d7cecde46e1cb3db3b1"
+          },
+          {
+            "path": "Prediction Model and GUI/FutureWorkPrediction.py",
+            "sha": "00583031d54c977b94055fcbe3110bb9dfe4ac04"
+          },
+          {
+            "path": "Prediction Model and GUI/GUI.py",
+            "sha": "60e82db3e012c34786268544046919489a0bce37"
+          },
+          {
+            "path": "Regression Models/data_prep.py",
+            "sha": "aac1a582d2696b11ed2efb117305a2d1f09a2753"
+          },
+          {
+            "path": "Regression Models/elastic net.py",
+            "sha": "bf2c265ca0147aacd4f0ac08e0cf65cb64a7a20d"
+          },
+          {
+            "path": "Regression Models/regression trees.py",
+            "sha": "ed918b4c6b7a17a827f3cf6a9855842481167939"
+          },
+          {
+            "path": "Regression Models/regression with cv.py",
+            "sha": "e23b86e339e89c6933cd0096a9bb3718be9e8683"
+          },
+          {
+            "path": "Time Series Models/TimeSeriesModels 1.py",
+            "sha": "7c57334270d9b6c42431c3290fe7506a16978725"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics1.py",
+            "sha": "a133b31545e708293fb4265d5d350263c80644e2"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics2.py",
+            "sha": "d5fb4da43d658a19b3a6bafa4099c0ddf4019860"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics3.py",
+            "sha": "dce73be8fbb5ca4872847b81a756b1965b9f7c8f"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics4.py",
+            "sha": "37f10a0bccdb5cc2cd092347859c523f71cac701"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics5.py",
+            "sha": "f2b40d82136dfa23f20fcb3c3492bdbc775b4531"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics6.py",
+            "sha": "14ee64cf31f60048c8f497a2e2ceb0249ec0f484"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics7.py",
+            "sha": "bb5c1337af01de44c95e77c29c54e256bb8364af"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics8.py",
+            "sha": "43f4052db19b349554993b3e74635d63eccdae9c"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics9.py",
+            "sha": "9f0f82749a9416d9c4a974a27a3ed372c28baeaa"
+          },
+          {
+            "path": "original-work/Data-Analytics/FinalAnalytics.py",
+            "sha": "960228d20df72c69f5fe071960a59badbccaf553"
+          },
+          {
+            "path": "web/verify.cjs",
+            "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe"
+          }
+        ],
+        "skills": {
+          "languages": {
+            "Python": {
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "source"
+            },
+            "JavaScript": {
+              "path": "web/verify.cjs",
+              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
+              "kind": "source"
+            }
+          },
+          "aiml": {
+            "Supervised learning": {
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "implementation"
+            },
+            "Data preparation": {
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "implementation"
+            },
+            "Model evaluation": {
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "implementation"
+            },
+            "Time-series modelling": {
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "implementation"
+            }
+          },
+          "agentic": {}
+        }
+      },
+      {
+        "source_id": "7e208207800ec346",
+        "visibility": "public",
+        "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+        "tree_sha": "5af9f47836db1b4f3e7e5929591e7e66bffff0cb",
+        "scanned_files": [
+          {
+            "path": "DataAnalytics.ipynb",
+            "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e"
+          },
+          {
+            "path": "DatabaseManagement.ipynb",
+            "sha": "c3ac7dcf7de5787919d65c1dbb10b18368b7f391"
+          },
+          {
+            "path": "original-work/DADB/DB01.py",
+            "sha": "8401e7964a523db57686673e5254b974e8e543d6"
+          },
+          {
+            "path": "original-work/DADB/DB02.py",
+            "sha": "243e3e913ef01587f8575271c0796b49bbfa5fc2"
+          },
+          {
+            "path": "original-work/DADB/DB03.py",
+            "sha": "edba44ebfc8e3bcc1056e289af5d0cd7c66a1195"
+          },
+          {
+            "path": "original-work/DADB/DB04.py",
+            "sha": "0147147bf93a6fd86528e597de1b93a3cb549ee9"
+          },
+          {
+            "path": "original-work/DADB/DB05.py",
+            "sha": "ea6c051ca20afad6aeda2b8eb36b3484ad3539df"
+          },
+          {
+            "path": "original-work/DADB/DB06.py",
+            "sha": "7e3cd3e54ce82ff3b083279b4bcab0ffa360673f"
+          },
+          {
+            "path": "original-work/DADB/DB07.py",
+            "sha": "bd7c83d7508cb6360ff9f65b1548ffe472522c02"
+          },
+          {
+            "path": "original-work/DADB/Testing.py",
+            "sha": "ddb122842163285240338842104a4faeb37cf52b"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics1.py",
+            "sha": "a133b31545e708293fb4265d5d350263c80644e2"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics2.py",
+            "sha": "d5fb4da43d658a19b3a6bafa4099c0ddf4019860"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics3.py",
+            "sha": "dce73be8fbb5ca4872847b81a756b1965b9f7c8f"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics4.py",
+            "sha": "37f10a0bccdb5cc2cd092347859c523f71cac701"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics5.py",
+            "sha": "f2b40d82136dfa23f20fcb3c3492bdbc775b4531"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics6.py",
+            "sha": "14ee64cf31f60048c8f497a2e2ceb0249ec0f484"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics7.py",
+            "sha": "bb5c1337af01de44c95e77c29c54e256bb8364af"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics8.py",
+            "sha": "43f4052db19b349554993b3e74635d63eccdae9c"
+          },
+          {
+            "path": "original-work/Data-Analytics/Analytics9.py",
+            "sha": "9f0f82749a9416d9c4a974a27a3ed372c28baeaa"
+          },
+          {
+            "path": "original-work/Data-Analytics/FinalAnalytics.py",
+            "sha": "960228d20df72c69f5fe071960a59badbccaf553"
+          },
+          {
+            "path": "scripts/inspect_database.py",
+            "sha": "0c20a32c308484b4751a2bc961384ef607612cbc"
+          },
+          {
+            "path": "scripts/verify_migration_archive.py",
+            "sha": "3d3c0e44ff95eb1b20145a67c961255d4b447720"
+          },
+          {
+            "path": "web/verify.cjs",
+            "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe"
+          }
+        ],
+        "skills": {
+          "languages": {
+            "Python": {
+              "path": "original-work/DADB/DB01.py",
+              "sha": "8401e7964a523db57686673e5254b974e8e543d6",
+              "kind": "source"
+            },
+            "JavaScript": {
+              "path": "web/verify.cjs",
+              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
+              "kind": "source"
+            }
+          },
+          "aiml": {
+            "Supervised learning": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            "Unsupervised learning": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            "Deep learning": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            "Time-series modelling": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            "Data preparation": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            "Model evaluation": {
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            }
+          },
+          "agentic": {}
+        }
+      },
+      {
         "source_id": "828ee02bf918ff0c",
         "visibility": "public",
         "repo": "jyotheshkar/MSc-CS-Fundamentals-of-Computers-and-Networks-Keele-University-2024",
@@ -778,6 +1003,150 @@
             "Python": {
               "path": "scripts/verify_repository.py",
               "sha": "e4a1fedf8e764326aeb24ae9d5718fe74ed14b92",
+              "kind": "source"
+            }
+          },
+          "aiml": {},
+          "agentic": {}
+        }
+      },
+      {
+        "source_id": "a433af822388c5b4",
+        "visibility": "public",
+        "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+        "tree_sha": "9f7fe2ada4c96d1c360d0e86f2f38e4654491932",
+        "scanned_files": [
+          {
+            "path": "Nova Authentication/Auth.py",
+            "sha": "7ef72ef0992a06b8558b9b8a5de89e0d7901fb21"
+          },
+          {
+            "path": "Nova Authentication/face_auth.py",
+            "sha": "f82d8aed0a9b0dc2d1d88dd772fdc24250a853a6"
+          },
+          {
+            "path": "Nova Authentication/test.py",
+            "sha": "7ff54221b2c4664603fda40e3e5378fe1d12a0c8"
+          },
+          {
+            "path": "Nova Software/DT.py",
+            "sha": "fac011cc3e317fba9e04da8e502fd5e2665ae7a0"
+          },
+          {
+            "path": "Nova Software/api.py",
+            "sha": "60bb651c2fe20ba459db977c5c3ae70120bfc90f"
+          },
+          {
+            "path": "Nova Software/config.py",
+            "sha": "c2076b271bfe0244a85a54013b5921c18c597e25"
+          },
+          {
+            "path": "Nova Software/convo.py",
+            "sha": "c36f170abb00c7f9ac665b0952c43e6617b39546"
+          },
+          {
+            "path": "Nova Software/folders.py",
+            "sha": "6998f756970be7de7f11f8adab1afefad6d47d66"
+          },
+          {
+            "path": "Nova Software/joke.py",
+            "sha": "339f205db03f2b30dcce9c77e8a59ea5d687dc12"
+          },
+          {
+            "path": "Nova Software/main.py",
+            "sha": "9c1340be7e3b3fd1ea7590445cc719f95436d23e"
+          },
+          {
+            "path": "Nova Software/makenotes.py",
+            "sha": "a215b899fa5b4802b7b519b30294e8c4f3b99130"
+          },
+          {
+            "path": "Nova Software/novah.py",
+            "sha": "f7c1551f80cafbbcbf7159c43ae00d7ed0d83e2b"
+          },
+          {
+            "path": "Nova Software/open.py",
+            "sha": "2df3b4ea946af95911b730123b6aed46320430fc"
+          },
+          {
+            "path": "Nova Software/voice.py",
+            "sha": "e489d3b880fd378d6545d1a64309ae8090a8df44"
+          },
+          {
+            "path": "Nova Software/weather.py",
+            "sha": "e51d387463eb5b55a5924db9a8683d751dd27d20"
+          },
+          {
+            "path": "Nova Software/web.py",
+            "sha": "a38996211ee5b61dac4914649e54c7d3fc8b97a3"
+          },
+          {
+            "path": "Nova Software/youtube.py",
+            "sha": "eb8a8e97316175ef89efdc1c269cd50889be29a5"
+          },
+          {
+            "path": "Unit and Integration Testing/integrated_test_api.py",
+            "sha": "ce1230a35d10625f58a3cfc0a4138f3240da3964"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_DT.py",
+            "sha": "1ac034cb5e7b75a8ed8819caf65c2f9377f767fc"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_folders.py",
+            "sha": "62d5c3b9e524878737f0f6ec8ef8709d11f31805"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_joke.py",
+            "sha": "b0934f6fe1877a50f4088bb88407412ced5c2a45"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_main.py",
+            "sha": "4cd813038893ff1be9630fd0a6dd34a9e6215b91"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_novah.py",
+            "sha": "58fe85a2207a2678534f09e864c7d4106532cb29"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_open.py",
+            "sha": "53f98086c10bf939b2a68949b695998a42357289"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_voice.py",
+            "sha": "88513f6e3bbfede3e99d497f306dbf5cd39a9ebc"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_weather.py",
+            "sha": "b7c411199dd7e17e69b00af941d6131a6f0c1f6d"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_web.py",
+            "sha": "b88cc006bf8db21f07527001e4d477230c01c124"
+          },
+          {
+            "path": "Unit and Integration Testing/unit_test_youtube.py",
+            "sha": "bad5c1f3521b3323cec0ae15408ce8fc4d7ab9fe"
+          },
+          {
+            "path": "Unit and Integration Testing/unite_test_makenotes.py",
+            "sha": "64a73ff52664397ee02549fbfb386f5696446cff"
+          },
+          {
+            "path": "script.js",
+            "sha": "44dfb236828562d51d92b63a169b25e896fdacbe"
+          }
+        ],
+        "skills": {
+          "languages": {
+            "Python": {
+              "path": "Nova Authentication/Auth.py",
+              "sha": "7ef72ef0992a06b8558b9b8a5de89e0d7901fb21",
+              "kind": "source"
+            },
+            "JavaScript": {
+              "path": "script.js",
+              "sha": "44dfb236828562d51d92b63a169b25e896fdacbe",
               "kind": "source"
             }
           },
@@ -1023,6 +1392,94 @@
         }
       },
       {
+        "source_id": "d869c87f13ff9b5b",
+        "visibility": "public",
+        "repo": "jyotheshkar/MSc-CS-Web-Technologies-and-Security-Keele-University-2024",
+        "tree_sha": "d1bb94c2e971e9efb5bb7f41db1ad3842fd48985",
+        "scanned_files": [
+          {
+            "path": "body.php",
+            "sha": "1189a90b4b4317a381d0892755e4781d64cce2ca"
+          },
+          {
+            "path": "database/schema.sql",
+            "sha": "de7eacc5d9839c109eb48ca425deb77d073098c2"
+          },
+          {
+            "path": "db_connect.php",
+            "sha": "0563bf13aa0b7b81f7048404e723da07f356dcfb"
+          },
+          {
+            "path": "delete_post.php",
+            "sha": "0df433f1303fc5b84fff5032c343e4f2b6edd562"
+          },
+          {
+            "path": "friends.php",
+            "sha": "f5153b17d92e5a9d9a9899bf9442e8c69f982b66"
+          },
+          {
+            "path": "index.php",
+            "sha": "43583f63767f390d3da2cea9beb386186beb2848"
+          },
+          {
+            "path": "login.php",
+            "sha": "9df33418196b6080393bc9915164714acd5a51f0"
+          },
+          {
+            "path": "logincode.php",
+            "sha": "39511bae8a9e1f88d66f85d4f97f32e2558727f5"
+          },
+          {
+            "path": "logout.php",
+            "sha": "27ab0afb6d38ccef40bc71f3d97a577735162632"
+          },
+          {
+            "path": "media.php",
+            "sha": "678d15b363801ad1ef2dd64f786c3e387fed9643"
+          },
+          {
+            "path": "myposts.php",
+            "sha": "9eb814e60b39cd8f73f091b3ff0b217bdbeb2e07"
+          },
+          {
+            "path": "posts.php",
+            "sha": "352e49e4f3f4d98fecf827bf242981cf55561143"
+          },
+          {
+            "path": "security.php",
+            "sha": "a2136ce3e97647379cda22aee816b2a7b46ceff4"
+          },
+          {
+            "path": "signupcode.php",
+            "sha": "627fe273514b7a9d21474aa1f91dbc0bc4d842a0"
+          },
+          {
+            "path": "submit_post.php",
+            "sha": "c0a466da3fea5c6c0e41aead09e26eb3fcedb7bf"
+          },
+          {
+            "path": "uploads.php",
+            "sha": "0823c0a943ebf4abe00e1d8ab172db044d3c51dc"
+          }
+        ],
+        "skills": {
+          "languages": {
+            "PHP": {
+              "path": "body.php",
+              "sha": "1189a90b4b4317a381d0892755e4781d64cce2ca",
+              "kind": "source"
+            },
+            "SQL": {
+              "path": "database/schema.sql",
+              "sha": "de7eacc5d9839c109eb48ca425deb77d073098c2",
+              "kind": "source"
+            }
+          },
+          "aiml": {},
+          "agentic": {}
+        }
+      },
+      {
         "source_id": "6c0542a157bf4163",
         "visibility": "public",
         "repo": "jyotheshkar/NHS-Elective-Care-Decision-Intelligence-Concept-Prototype-2026",
@@ -1201,153 +1658,6 @@
         }
       },
       {
-        "source_id": "c8efd093f295ccfc",
-        "visibility": "public",
-        "repo": "jyotheshkar/system-architecture-workspace-data-2026",
-        "tree_sha": "fad0a22694fd8aad83e598d78bf40e324f22b03d",
-        "scanned_files": [
-          {
-            "path": "scripts/validate_workspace.py",
-            "sha": "2c68a89feaad2767dc242731214071481faeef7f"
-          }
-        ],
-        "skills": {
-          "languages": {
-            "Python": {
-              "path": "scripts/validate_workspace.py",
-              "sha": "2c68a89feaad2767dc242731214071481faeef7f",
-              "kind": "source"
-            }
-          },
-          "aiml": {},
-          "agentic": {}
-        }
-      },
-      {
-        "source_id": "db6196397de6cbb8",
-        "visibility": "public",
-        "repo": "jyotheshkar/System-Design-Architecture-Concept-Prototype-2026",
-        "tree_sha": "039a8fa5b9e502d92f41da3cfb523815f60b2c09",
-        "scanned_files": [
-          {
-            "path": "app/tools/aws-shared.js",
-            "sha": "a235d5b5389ba74261271ff99122149bb5968210"
-          },
-          {
-            "path": "app/tools/build-formal-model.py",
-            "sha": "dda8006ba110f73f56ace2453b6567e5898d5bb0"
-          },
-          {
-            "path": "app/tools/build_aws.py",
-            "sha": "503df71874085f6d829dbeacdf29a80155a49d2c"
-          },
-          {
-            "path": "app/tools/build_communications.py",
-            "sha": "0c30a19d929cd52e8960cacb73fece1dd95d40d6"
-          },
-          {
-            "path": "app/tools/build_docs.py",
-            "sha": "96583b9dc6a6adb010e0976bf9486e606da749f9"
-          },
-          {
-            "path": "app/tools/integrate-study.mjs",
-            "sha": "06c552f3ac1300277c162fe6f37061e3dc9a4cbb"
-          },
-          {
-            "path": "app/tools/integrate_enterprise.py",
-            "sha": "95a9721a521dac5dba13c24f03c316870ffbc341"
-          },
-          {
-            "path": "app/tools/package_enterprise.py",
-            "sha": "a7e6ec87d6b0ade9174a620e23534b681e22ed54"
-          },
-          {
-            "path": "app/tools/polish-copy.mjs",
-            "sha": "8f1d9ba8ef2bffedfe2be9635ebafdaa7df9a664"
-          },
-          {
-            "path": "app/tools/qa/enterprise-independent-checks.py",
-            "sha": "8e5d222865646c63d086cd4b104a06c44074cc2c"
-          },
-          {
-            "path": "app/tools/qa/test-enterprise.cjs",
-            "sha": "7e8d0e4aba4042f5b35bea26b9e1fb05752985e0"
-          },
-          {
-            "path": "app/tools/rebuild_enterprise.py",
-            "sha": "db3fab141e434d79ed4aadba61c748c15d65568b"
-          },
-          {
-            "path": "app/tools/render-case-diagrams.py",
-            "sha": "d5caa1992e3d2c0d4c8a324f5a489630c3844248"
-          },
-          {
-            "path": "app/tools/test-case-studies.mjs",
-            "sha": "75473ecdb5c14b1192cd0f367ae7015fa29856d9"
-          },
-          {
-            "path": "app/tools/test-formal-model.mjs",
-            "sha": "a9ccb8c3107b1ca2964ecf006ce1dbf0db1b0bc8"
-          },
-          {
-            "path": "app/tools/test-native-case-studies.mjs",
-            "sha": "9a7ce698c8f42a409bb97408abd99a238080dbbc"
-          },
-          {
-            "path": "app/tools/test-workspace-guide.mjs",
-            "sha": "8b05a1128e0520bc89727bc95d6c2718daf1f258"
-          },
-          {
-            "path": "app/worker/build.mjs",
-            "sha": "8a9d139bbe7d6adea12c9b1c328cefc919266f30"
-          },
-          {
-            "path": "app/worker/index.mjs",
-            "sha": "9fe85315c60fc2c492d48187d9e8b19381b5cb8d"
-          },
-          {
-            "path": "app/worker/local-preview.mjs",
-            "sha": "9a6f9bf2b6d250407603c1df6e98384f81fcf1ec"
-          },
-          {
-            "path": "app/worker/preview.mjs",
-            "sha": "6c0de5d124c07f2c76b4f404f66eb1afdf1a18dd"
-          },
-          {
-            "path": "app/worker/test-workspace-store.mjs",
-            "sha": "853e2eb91a64d4cff473803355bd34e7ae8d408e"
-          },
-          {
-            "path": "app/worker/test.mjs",
-            "sha": "d168fb77f6a2e6790153e359c3c8e48bd7b204b4"
-          },
-          {
-            "path": "app/worker/workspace-store.mjs",
-            "sha": "ed24c946b0a694a85defdb5c3cd330c90139ecac"
-          },
-          {
-            "path": "scripts/validate_design_export.py",
-            "sha": "3d20f52c49ed1acbb471cbfb0e5e31a328b24191"
-          }
-        ],
-        "skills": {
-          "languages": {
-            "JavaScript": {
-              "path": "app/tools/aws-shared.js",
-              "sha": "a235d5b5389ba74261271ff99122149bb5968210",
-              "kind": "source"
-            },
-            "Python": {
-              "path": "app/tools/build-formal-model.py",
-              "sha": "dda8006ba110f73f56ace2453b6567e5898d5bb0",
-              "kind": "source"
-            }
-          },
-          "aiml": {},
-          "agentic": {}
-        }
-      },
-      {
         "source_id": "a2eaa58fe4a6142f",
         "visibility": "public",
         "repo": "jyotheshkar/Zombie-Hunter-DQN-2025",
@@ -1454,102 +1764,6 @@
         }
       },
       {
-        "source_id": "918f1f1ea56f3b08",
-        "visibility": "private",
-        "skills": {
-          "languages": {
-            "Python": {
-              "kind": "verified source"
-            },
-            "JavaScript": {
-              "kind": "verified source"
-            }
-          },
-          "aiml": {
-            "Supervised learning": {
-              "kind": "verified source"
-            },
-            "Data preparation": {
-              "kind": "verified source"
-            },
-            "Model evaluation": {
-              "kind": "verified source"
-            },
-            "Time-series modelling": {
-              "kind": "verified source"
-            }
-          },
-          "agentic": {}
-        }
-      },
-      {
-        "source_id": "7e208207800ec346",
-        "visibility": "private",
-        "skills": {
-          "languages": {
-            "Python": {
-              "kind": "verified source"
-            },
-            "JavaScript": {
-              "kind": "verified source"
-            }
-          },
-          "aiml": {
-            "Supervised learning": {
-              "kind": "verified source"
-            },
-            "Unsupervised learning": {
-              "kind": "verified source"
-            },
-            "Deep learning": {
-              "kind": "verified source"
-            },
-            "Time-series modelling": {
-              "kind": "verified source"
-            },
-            "Data preparation": {
-              "kind": "verified source"
-            },
-            "Model evaluation": {
-              "kind": "verified source"
-            }
-          },
-          "agentic": {}
-        }
-      },
-      {
-        "source_id": "a433af822388c5b4",
-        "visibility": "private",
-        "skills": {
-          "languages": {
-            "Python": {
-              "kind": "verified source"
-            },
-            "JavaScript": {
-              "kind": "verified source"
-            }
-          },
-          "aiml": {},
-          "agentic": {}
-        }
-      },
-      {
-        "source_id": "d869c87f13ff9b5b",
-        "visibility": "private",
-        "skills": {
-          "languages": {
-            "PHP": {
-              "kind": "verified source"
-            },
-            "SQL": {
-              "kind": "verified source"
-            }
-          },
-          "aiml": {},
-          "agentic": {}
-        }
-      },
-      {
         "source_id": "a6d9f8bbb48d543e",
         "visibility": "private",
         "skills": {
@@ -1590,7 +1804,7 @@
       "items": [
         {
           "label": "Python",
-          "value": 19,
+          "value": 16,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -1598,14 +1812,6 @@
               "repo": "jyotheshkar/Agentic-Core-Concept-Prototype-2026",
               "path": "core/broker/aios_skills.py",
               "sha": "a0b555448dfd6cadcd308df8df0fa14229e5e365",
-              "kind": "source"
-            },
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/__init__.py",
-              "sha": "04d75095a48c899ab038c3c1c150d194a56310ac",
               "kind": "source"
             },
             {
@@ -1641,6 +1847,22 @@
               "kind": "source"
             },
             {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "source"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "original-work/DADB/DB01.py",
+              "sha": "8401e7964a523db57686673e5254b974e8e543d6",
+              "kind": "source"
+            },
+            {
               "source_id": "828ee02bf918ff0c",
               "visibility": "public",
               "repo": "jyotheshkar/MSc-CS-Fundamentals-of-Computers-and-Networks-Keele-University-2024",
@@ -1654,6 +1876,14 @@
               "repo": "jyotheshkar/MSc-CS-Mathematics-for-AI-and-Data-Science-Keele-University-2024",
               "path": "scripts/verify_repository.py",
               "sha": "e4a1fedf8e764326aeb24ae9d5718fe74ed14b92",
+              "kind": "source"
+            },
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "Nova Authentication/Auth.py",
+              "sha": "7ef72ef0992a06b8558b9b8a5de89e0d7901fb21",
               "kind": "source"
             },
             {
@@ -1681,22 +1911,6 @@
               "kind": "source"
             },
             {
-              "source_id": "c8efd093f295ccfc",
-              "visibility": "public",
-              "repo": "jyotheshkar/system-architecture-workspace-data-2026",
-              "path": "scripts/validate_workspace.py",
-              "sha": "2c68a89feaad2767dc242731214071481faeef7f",
-              "kind": "source"
-            },
-            {
-              "source_id": "db6196397de6cbb8",
-              "visibility": "public",
-              "repo": "jyotheshkar/System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/build-formal-model.py",
-              "sha": "dda8006ba110f73f56ace2453b6567e5898d5bb0",
-              "kind": "source"
-            },
-            {
               "source_id": "a2eaa58fe4a6142f",
               "visibility": "public",
               "repo": "jyotheshkar/Zombie-Hunter-DQN-2025",
@@ -1709,18 +1923,6 @@
               "visibility": "private"
             },
             {
-              "source_id": "918f1f1ea56f3b08",
-              "visibility": "private"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
-            },
-            {
-              "source_id": "a433af822388c5b4",
-              "visibility": "private"
-            },
-            {
               "source_id": "a6d9f8bbb48d543e",
               "visibility": "private"
             }
@@ -1728,7 +1930,7 @@
         },
         {
           "label": "JavaScript",
-          "value": 10,
+          "value": 9,
           "evidence": [
             {
               "source_id": "7db9375e9c0276f4",
@@ -1744,6 +1946,30 @@
               "repo": "jyotheshkar/Amazon-Rufus-AI-Evaluation-Concept-Prototype-2026",
               "path": "frontend/jest.config.js",
               "sha": "ed5ec03b2b7235bcac7d561f1f3f8160d2bbfdd2",
+              "kind": "source"
+            },
+            {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "web/verify.cjs",
+              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
+              "kind": "source"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "web/verify.cjs",
+              "sha": "d2b39f6b8b3202191005b96e502cc2f13086ffbe",
+              "kind": "source"
+            },
+            {
+              "source_id": "a433af822388c5b4",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Software-Engineering-Keele-University-2024",
+              "path": "script.js",
+              "sha": "44dfb236828562d51d92b63a169b25e896fdacbe",
               "kind": "source"
             },
             {
@@ -1763,31 +1989,11 @@
               "kind": "source"
             },
             {
-              "source_id": "db6196397de6cbb8",
-              "visibility": "public",
-              "repo": "jyotheshkar/System-Design-Architecture-Concept-Prototype-2026",
-              "path": "app/tools/aws-shared.js",
-              "sha": "a235d5b5389ba74261271ff99122149bb5968210",
-              "kind": "source"
-            },
-            {
               "source_id": "0642b293da263416",
               "visibility": "private"
             },
             {
               "source_id": "8688d4d019b119b4",
-              "visibility": "private"
-            },
-            {
-              "source_id": "918f1f1ea56f3b08",
-              "visibility": "private"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
-            },
-            {
-              "source_id": "a433af822388c5b4",
               "visibility": "private"
             }
           ]
@@ -1796,6 +2002,14 @@
           "label": "SQL",
           "value": 3,
           "evidence": [
+            {
+              "source_id": "d869c87f13ff9b5b",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Web-Technologies-and-Security-Keele-University-2024",
+              "path": "database/schema.sql",
+              "sha": "de7eacc5d9839c109eb48ca425deb77d073098c2",
+              "kind": "source"
+            },
             {
               "source_id": "6c0542a157bf4163",
               "visibility": "public",
@@ -1806,10 +2020,6 @@
             },
             {
               "source_id": "8688d4d019b119b4",
-              "visibility": "private"
-            },
-            {
-              "source_id": "d869c87f13ff9b5b",
               "visibility": "private"
             }
           ]
@@ -1864,7 +2074,11 @@
           "evidence": [
             {
               "source_id": "d869c87f13ff9b5b",
-              "visibility": "private"
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Web-Technologies-and-Security-Keele-University-2024",
+              "path": "body.php",
+              "sha": "1189a90b4b4317a381d0892755e4781d64cce2ca",
+              "kind": "source"
             }
           ]
         },
@@ -1898,6 +2112,14 @@
               "kind": "implementation"
             },
             {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            {
               "source_id": "2a019076db1771ec",
               "visibility": "public",
               "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
@@ -1912,10 +2134,6 @@
               "path": "ai.py",
               "sha": "31e823ba142feba406202bc54a1bacfa23a3b3e6",
               "kind": "implementation"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
             },
             {
               "source_id": "a6d9f8bbb48d543e",
@@ -1936,20 +2154,28 @@
               "kind": "implementation"
             },
             {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "implementation"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            {
               "source_id": "2a019076db1771ec",
               "visibility": "public",
               "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
               "path": "Codes/Generic_Activity_Model.py",
               "sha": "b9f08988a1ad380b398161a01f1fcfe564c076e5",
               "kind": "implementation"
-            },
-            {
-              "source_id": "918f1f1ea56f3b08",
-              "visibility": "private"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
             }
           ]
         },
@@ -1958,20 +2184,28 @@
           "value": 3,
           "evidence": [
             {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "implementation"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            {
               "source_id": "2a019076db1771ec",
               "visibility": "public",
               "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
               "path": "Codes/BeSpoke_Activity_model.py",
               "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
               "kind": "implementation"
-            },
-            {
-              "source_id": "918f1f1ea56f3b08",
-              "visibility": "private"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
             }
           ]
         },
@@ -1980,20 +2214,28 @@
           "value": 3,
           "evidence": [
             {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Classification Models/Decision Trees Full Data Accuracy.py",
+              "sha": "324dd809987153d1817594be58467e7acb4a0b2e",
+              "kind": "implementation"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            {
               "source_id": "2a019076db1771ec",
               "visibility": "public",
               "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
               "path": "Codes/BeSpoke_Multimodel.py",
               "sha": "8393a77ab1b24c31e9c3297b90038267e7733fa8",
               "kind": "implementation"
-            },
-            {
-              "source_id": "918f1f1ea56f3b08",
-              "visibility": "private"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
             }
           ]
         },
@@ -2002,20 +2244,28 @@
           "value": 3,
           "evidence": [
             {
+              "source_id": "918f1f1ea56f3b08",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Collaborative-Application-Development-Keele-University-2024",
+              "path": "Time Series Models/TimeSeriesModels 1.py",
+              "sha": "7c57334270d9b6c42431c3290fe7506a16978725",
+              "kind": "implementation"
+            },
+            {
+              "source_id": "7e208207800ec346",
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
+            },
+            {
               "source_id": "2a019076db1771ec",
               "visibility": "public",
               "repo": "jyotheshkar/MSc-CS-Thesis-DHMS-Keele-University-2024",
               "path": "Codes/BeSpoke_Activity_model.py",
               "sha": "a27117ade7d16fed1dcb1abe4300d683d51f05ac",
               "kind": "implementation"
-            },
-            {
-              "source_id": "918f1f1ea56f3b08",
-              "visibility": "private"
-            },
-            {
-              "source_id": "7e208207800ec346",
-              "visibility": "private"
             }
           ]
         },
@@ -2043,7 +2293,11 @@
           "evidence": [
             {
               "source_id": "7e208207800ec346",
-              "visibility": "private"
+              "visibility": "public",
+              "repo": "jyotheshkar/MSc-CS-Data-Analytics-and-Databases-Keele-University-2024",
+              "path": "DataAnalytics.ipynb",
+              "sha": "37a36b5b4ac614d3df845685764ed4ac8d17fd5e",
+              "kind": "implementation"
             },
             {
               "source_id": "a6d9f8bbb48d543e",
@@ -2074,7 +2328,7 @@
       "items": [
         {
           "label": "Agent evaluation",
-          "value": 3,
+          "value": 2,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -2085,14 +2339,6 @@
               "kind": "implementation"
             },
             {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/algorithms.py",
-              "sha": "a9f209b9b0067c79af2b5ae69fba8ac4fd98c132",
-              "kind": "implementation"
-            },
-            {
               "source_id": "8688d4d019b119b4",
               "visibility": "private"
             }
@@ -2100,7 +2346,7 @@
         },
         {
           "label": "Guardrails",
-          "value": 3,
+          "value": 2,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -2108,50 +2354,6 @@
               "repo": "jyotheshkar/Agentic-Core-Concept-Prototype-2026",
               "path": "scripts/import-runtime-sources/import_sources.py",
               "sha": "a49ec1387893cef67e20ed08d7c19ee98ef9cd84",
-              "kind": "implementation"
-            },
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/safety.py",
-              "sha": "adf6b2dead2658902efe64c5849fa2b09c3c3c5e",
-              "kind": "implementation"
-            },
-            {
-              "source_id": "8688d4d019b119b4",
-              "visibility": "private"
-            }
-          ]
-        },
-        {
-          "label": "Retrieval",
-          "value": 2,
-          "evidence": [
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
-              "kind": "implementation"
-            },
-            {
-              "source_id": "8688d4d019b119b4",
-              "visibility": "private"
-            }
-          ]
-        },
-        {
-          "label": "State and memory",
-          "value": 2,
-          "evidence": [
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
               "kind": "implementation"
             },
             {
@@ -2179,8 +2381,28 @@
           ]
         },
         {
+          "label": "Retrieval",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
+          "label": "State and memory",
+          "value": 1,
+          "evidence": [
+            {
+              "source_id": "8688d4d019b119b4",
+              "visibility": "private"
+            }
+          ]
+        },
+        {
           "label": "Workflow orchestration",
-          "value": 2,
+          "value": 1,
           "evidence": [
             {
               "source_id": "5b770aa2d866d420",
@@ -2188,42 +2410,6 @@
               "repo": "jyotheshkar/Agentic-Core-Concept-Prototype-2026",
               "path": "plugins/moa/scripts/moa_core.py",
               "sha": "c1f9e139048e49fe7d4919ab568b49a75b2044de",
-              "kind": "implementation"
-            },
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/contracts.py",
-              "sha": "93aa6fb20a8e5f97eb497e5980fef5e428af8595",
-              "kind": "implementation"
-            }
-          ]
-        },
-        {
-          "label": "Human approval",
-          "value": 1,
-          "evidence": [
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
-              "kind": "implementation"
-            }
-          ]
-        },
-        {
-          "label": "Tool execution",
-          "value": 1,
-          "evidence": [
-            {
-              "source_id": "b8046dba1fbe37a0",
-              "visibility": "public",
-              "repo": "jyotheshkar/agentic-core-evidence-2026",
-              "path": "runtime/core/engine.py",
-              "sha": "3bce845d2165c9e137927e60707c2c3fec5a875d",
               "kind": "implementation"
             }
           ]

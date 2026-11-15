@@ -2,24 +2,24 @@
 <title>Professional Skills</title>
 <desc>Repository evidence shown as segmented doughnuts. Names and unnumbered bars appear below each circle in two columns. Coverage is not a proficiency score. Transparent background.</desc>
 <style>text{font-family:Arial,Helvetica,sans-serif}</style>
-<text x="20" y="57" fill="#f0f6fc" font-size="40" font-weight="700" text-anchor="start">Professional Skills</text><g transform="translate(20 90.0) scale(1.5)"><g data-skill-circle="languages" data-total="38" data-center-x="220" data-center-y="214" aria-label="Programming Languages">
+<text x="20" y="57" fill="#f0f6fc" font-size="40" font-weight="700" text-anchor="start">Professional Skills</text><g transform="translate(20 90.0) scale(1.5)"><g data-skill-circle="languages" data-total="34" data-center-x="220" data-center-y="214" aria-label="Programming Languages">
 <rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
 <text x="220" y="48" fill="#f0f6fc" font-size="28" font-weight="600" text-anchor="middle">Programming Languages</text>
 <circle cx="220" cy="214" r="100" fill="none" stroke="#30363d" stroke-width="40"/>
-<circle data-segment="Python" data-value="19" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="314.15926536 314.15926536" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Python</title></circle>
-<circle data-segment="JavaScript" data-value="10" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="165.34698177 462.97154895" stroke-dashoffset="-314.15926536" transform="rotate(-90 220 214)"><title>JavaScript</title></circle>
-<circle data-segment="SQL" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="49.60409453 578.71443619" stroke-dashoffset="-479.50624713" transform="rotate(-90 220 214)"><title>SQL</title></circle>
-<circle data-segment="TypeScript" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="49.60409453 578.71443619" stroke-dashoffset="-529.11034166" transform="rotate(-90 220 214)"><title>TypeScript</title></circle>
-<circle data-segment="JSP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="16.53469818 611.78383254" stroke-dashoffset="-578.71443619" transform="rotate(-90 220 214)"><title>JSP</title></circle>
-<circle data-segment="PHP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="16.53469818 611.78383254" stroke-dashoffset="-595.24913436" transform="rotate(-90 220 214)"><title>PHP</title></circle>
-<circle data-segment="Shell" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="16.53469818 611.78383254" stroke-dashoffset="-611.78383254" transform="rotate(-90 220 214)"><title>Shell</title></circle>
+<circle data-segment="Python" data-value="16" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="295.67930857 332.63922214" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Python</title></circle>
+<circle data-segment="JavaScript" data-value="9" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="166.31961107 461.99891965" stroke-dashoffset="-295.67930857" transform="rotate(-90 220 214)"><title>JavaScript</title></circle>
+<circle data-segment="SQL" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="55.43987036 572.87866036" stroke-dashoffset="-461.99891965" transform="rotate(-90 220 214)"><title>SQL</title></circle>
+<circle data-segment="TypeScript" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="55.43987036 572.87866036" stroke-dashoffset="-517.43879000" transform="rotate(-90 220 214)"><title>TypeScript</title></circle>
+<circle data-segment="JSP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="18.47995679 609.83857393" stroke-dashoffset="-572.87866036" transform="rotate(-90 220 214)"><title>JSP</title></circle>
+<circle data-segment="PHP" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="18.47995679 609.83857393" stroke-dashoffset="-591.35861715" transform="rotate(-90 220 214)"><title>PHP</title></circle>
+<circle data-segment="Shell" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="18.47995679 609.83857393" stroke-dashoffset="-609.83857393" transform="rotate(-90 220 214)"><title>Shell</title></circle>
 <path d="M220.000 135.000L220.000 93.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M220.000 293.000L220.000 335.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M141.270 207.476L99.413 204.008" stroke="#0d1117" stroke-width="3"/>
-<path d="M153.864 170.791L118.703 147.819" stroke="#0d1117" stroke-width="3"/>
-<path d="M182.400 144.522L162.410 107.584" stroke="#0d1117" stroke-width="3"/>
-<path d="M194.349 139.280L180.711 99.556" stroke="#0d1117" stroke-width="3"/>
-<path d="M206.997 136.077L200.084 94.650" stroke="#0d1117" stroke-width="3"/>
+<path d="M234.516 291.655L242.234 332.940" stroke="#0d1117" stroke-width="3"/>
+<path d="M141.337 221.289L99.516 225.164" stroke="#0d1117" stroke-width="3"/>
+<path d="M149.282 178.787L111.685 160.066" stroke="#0d1117" stroke-width="3"/>
+<path d="M178.412 146.833L156.302 111.124" stroke="#0d1117" stroke-width="3"/>
+<path d="M191.462 140.335L176.290 101.171" stroke="#0d1117" stroke-width="3"/>
+<path d="M205.484 136.345L197.766 95.060" stroke="#0d1117" stroke-width="3"/>
 <text x="220" y="224" fill="#f0f6fc" font-size="34" font-weight="600" text-anchor="middle">Code</text>
 <g data-skill-legend="Python">
 <circle cx="31" cy="376" r="3.5" fill="#58a6ff"/>
@@ -31,37 +31,37 @@
 <circle cx="246" cy="376" r="3.5" fill="#d2a8ff"/>
 <text x="257" y="382" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">JavaScript</text>
 <rect x="257" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="JavaScript" x="257" y="391" width="92.631579" height="3.5" rx="1.75" fill="#d2a8ff"/>
+<rect data-evidence-bar="JavaScript" x="257" y="391" width="99.000000" height="3.5" rx="1.75" fill="#d2a8ff"/>
 </g>
 <g data-skill-legend="SQL">
 <circle cx="31" cy="418" r="3.5" fill="#7ee787"/>
 <text x="42" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">SQL</text>
 <rect x="42" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="SQL" x="42" y="433" width="27.789474" height="3.5" rx="1.75" fill="#7ee787"/>
+<rect data-evidence-bar="SQL" x="42" y="433" width="33.000000" height="3.5" rx="1.75" fill="#7ee787"/>
 </g>
 <g data-skill-legend="TypeScript">
 <circle cx="246" cy="418" r="3.5" fill="#ffa657"/>
 <text x="257" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">TypeScript</text>
 <rect x="257" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="TypeScript" x="257" y="433" width="27.789474" height="3.5" rx="1.75" fill="#ffa657"/>
+<rect data-evidence-bar="TypeScript" x="257" y="433" width="33.000000" height="3.5" rx="1.75" fill="#ffa657"/>
 </g>
 <g data-skill-legend="JSP">
 <circle cx="31" cy="460" r="3.5" fill="#f778ba"/>
 <text x="42" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">JSP</text>
 <rect x="42" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="JSP" x="42" y="475" width="9.263158" height="3.5" rx="1.75" fill="#f778ba"/>
+<rect data-evidence-bar="JSP" x="42" y="475" width="11.000000" height="3.5" rx="1.75" fill="#f778ba"/>
 </g>
 <g data-skill-legend="PHP">
 <circle cx="246" cy="460" r="3.5" fill="#39c5cf"/>
 <text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">PHP</text>
 <rect x="257" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="PHP" x="257" y="475" width="9.263158" height="3.5" rx="1.75" fill="#39c5cf"/>
+<rect data-evidence-bar="PHP" x="257" y="475" width="11.000000" height="3.5" rx="1.75" fill="#39c5cf"/>
 </g>
 <g data-skill-legend="Shell">
 <circle cx="31" cy="502" r="3.5" fill="#e3b341"/>
 <text x="42" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Shell</text>
 <rect x="42" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Shell" x="42" y="517" width="9.263158" height="3.5" rx="1.75" fill="#e3b341"/>
+<rect data-evidence-bar="Shell" x="42" y="517" width="11.000000" height="3.5" rx="1.75" fill="#e3b341"/>
 </g>
 </g></g><g transform="translate(20 985.0) scale(1.5)"><g data-skill-circle="aiml" data-total="23" data-center-x="220" data-center-y="214" aria-label="AI/ML Engineering">
 <rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
@@ -132,26 +132,22 @@
 <rect x="257" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
 <rect data-evidence-bar="NLP and transformers" x="257" y="517" width="35.200000" height="3.5" rx="1.75" fill="#9ca8ff"/>
 </g>
-</g></g><g transform="translate(20 1880.0) scale(1.5)"><g data-skill-circle="agentic" data-total="16" data-center-x="220" data-center-y="214" aria-label="Agentic AI Engineering">
+</g></g><g transform="translate(20 1880.0) scale(1.5)"><g data-skill-circle="agentic" data-total="9" data-center-x="220" data-center-y="214" aria-label="Agentic AI Engineering">
 <rect x="1" y="1" width="438" height="578" rx="20" fill="none" stroke="#30363d"/>
 <text x="220" y="48" fill="#f0f6fc" font-size="28" font-weight="600" text-anchor="middle">Agentic AI Engineering</text>
 <circle cx="220" cy="214" r="100" fill="none" stroke="#30363d" stroke-width="40"/>
-<circle data-segment="Agent evaluation" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="117.80972451 510.50880621" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Agent evaluation</title></circle>
-<circle data-segment="Guardrails" data-value="3" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="117.80972451 510.50880621" stroke-dashoffset="-117.80972451" transform="rotate(-90 220 214)"><title>Guardrails</title></circle>
-<circle data-segment="Retrieval" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-235.61944902" transform="rotate(-90 220 214)"><title>Retrieval</title></circle>
-<circle data-segment="State and memory" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-314.15926536" transform="rotate(-90 220 214)"><title>State and memory</title></circle>
-<circle data-segment="Task routing" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-392.69908170" transform="rotate(-90 220 214)"><title>Task routing</title></circle>
-<circle data-segment="Workflow orchestration" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="78.53981634 549.77871438" stroke-dashoffset="-471.23889804" transform="rotate(-90 220 214)"><title>Workflow orchestration</title></circle>
-<circle data-segment="Human approval" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#e3b341" stroke-width="40" stroke-dasharray="39.26990817 589.04862255" stroke-dashoffset="-549.77871438" transform="rotate(-90 220 214)"><title>Human approval</title></circle>
-<circle data-segment="Tool execution" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#9ca8ff" stroke-width="40" stroke-dasharray="39.26990817 589.04862255" stroke-dashoffset="-589.04862255" transform="rotate(-90 220 214)"><title>Tool execution</title></circle>
+<circle data-segment="Agent evaluation" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#58a6ff" stroke-width="40" stroke-dasharray="139.62634016 488.69219056" stroke-dashoffset="0.00000000" transform="rotate(-90 220 214)"><title>Agent evaluation</title></circle>
+<circle data-segment="Guardrails" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#d2a8ff" stroke-width="40" stroke-dasharray="139.62634016 488.69219056" stroke-dashoffset="-139.62634016" transform="rotate(-90 220 214)"><title>Guardrails</title></circle>
+<circle data-segment="Task routing" data-value="2" cx="220" cy="214" r="100" fill="none" stroke="#7ee787" stroke-width="40" stroke-dasharray="139.62634016 488.69219056" stroke-dashoffset="-279.25268032" transform="rotate(-90 220 214)"><title>Task routing</title></circle>
+<circle data-segment="Retrieval" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#ffa657" stroke-width="40" stroke-dasharray="69.81317008 558.50536064" stroke-dashoffset="-418.87902048" transform="rotate(-90 220 214)"><title>Retrieval</title></circle>
+<circle data-segment="State and memory" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#f778ba" stroke-width="40" stroke-dasharray="69.81317008 558.50536064" stroke-dashoffset="-488.69219056" transform="rotate(-90 220 214)"><title>State and memory</title></circle>
+<circle data-segment="Workflow orchestration" data-value="1" cx="220" cy="214" r="100" fill="none" stroke="#39c5cf" stroke-width="40" stroke-dasharray="69.81317008 558.50536064" stroke-dashoffset="-558.50536064" transform="rotate(-90 220 214)"><title>Workflow orchestration</title></circle>
 <path d="M220.000 135.000L220.000 93.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M292.986 183.768L331.789 167.695" stroke="#0d1117" stroke-width="3"/>
-<path d="M275.861 269.861L305.560 299.560" stroke="#0d1117" stroke-width="3"/>
-<path d="M220.000 293.000L220.000 335.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M164.139 269.861L134.440 299.560" stroke="#0d1117" stroke-width="3"/>
-<path d="M141.000 214.000L99.000 214.000" stroke="#0d1117" stroke-width="3"/>
-<path d="M164.139 158.139L134.440 128.440" stroke="#0d1117" stroke-width="3"/>
-<path d="M189.768 141.014L173.695 102.211" stroke="#0d1117" stroke-width="3"/>
+<path d="M297.800 200.282L339.162 192.989" stroke="#0d1117" stroke-width="3"/>
+<path d="M247.020 288.236L261.384 327.703" stroke="#0d1117" stroke-width="3"/>
+<path d="M151.584 253.500L115.211 274.500" stroke="#0d1117" stroke-width="3"/>
+<path d="M142.200 200.282L100.838 192.989" stroke="#0d1117" stroke-width="3"/>
+<path d="M169.220 153.482L142.223 121.309" stroke="#0d1117" stroke-width="3"/>
 <text x="220" y="224" fill="#f0f6fc" font-size="34" font-weight="600" text-anchor="middle">Agents</text>
 <g data-skill-legend="Agent evaluation">
 <circle cx="31" cy="376" r="3.5" fill="#58a6ff"/>
@@ -165,41 +161,29 @@
 <rect x="257" y="391" width="176" height="3.5" rx="1.75" fill="#30363d"/>
 <rect data-evidence-bar="Guardrails" x="257" y="391" width="176.000000" height="3.5" rx="1.75" fill="#d2a8ff"/>
 </g>
-<g data-skill-legend="Retrieval">
+<g data-skill-legend="Task routing">
 <circle cx="31" cy="418" r="3.5" fill="#7ee787"/>
-<text x="42" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Retrieval</text>
+<text x="42" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Task routing</text>
 <rect x="42" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Retrieval" x="42" y="433" width="117.333333" height="3.5" rx="1.75" fill="#7ee787"/>
+<rect data-evidence-bar="Task routing" x="42" y="433" width="176.000000" height="3.5" rx="1.75" fill="#7ee787"/>
+</g>
+<g data-skill-legend="Retrieval">
+<circle cx="246" cy="418" r="3.5" fill="#ffa657"/>
+<text x="257" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Retrieval</text>
+<rect x="257" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
+<rect data-evidence-bar="Retrieval" x="257" y="433" width="88.000000" height="3.5" rx="1.75" fill="#ffa657"/>
 </g>
 <g data-skill-legend="State and memory">
-<circle cx="246" cy="418" r="3.5" fill="#ffa657"/>
-<text x="257" y="424" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">State and memory</text>
-<rect x="257" y="433" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="State and memory" x="257" y="433" width="117.333333" height="3.5" rx="1.75" fill="#ffa657"/>
-</g>
-<g data-skill-legend="Task routing">
 <circle cx="31" cy="460" r="3.5" fill="#f778ba"/>
-<text x="42" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Task routing</text>
+<text x="42" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">State and memory</text>
 <rect x="42" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Task routing" x="42" y="475" width="117.333333" height="3.5" rx="1.75" fill="#f778ba"/>
+<rect data-evidence-bar="State and memory" x="42" y="475" width="88.000000" height="3.5" rx="1.75" fill="#f778ba"/>
 </g>
 <g data-skill-legend="Workflow orchestration">
 <circle cx="246" cy="460" r="3.5" fill="#39c5cf"/>
 <text x="257" y="466" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Workflow orchestration</text>
 <rect x="257" y="475" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Workflow orchestration" x="257" y="475" width="117.333333" height="3.5" rx="1.75" fill="#39c5cf"/>
-</g>
-<g data-skill-legend="Human approval">
-<circle cx="31" cy="502" r="3.5" fill="#e3b341"/>
-<text x="42" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Human approval</text>
-<rect x="42" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Human approval" x="42" y="517" width="58.666667" height="3.5" rx="1.75" fill="#e3b341"/>
-</g>
-<g data-skill-legend="Tool execution">
-<circle cx="246" cy="502" r="3.5" fill="#9ca8ff"/>
-<text x="257" y="508" fill="#d1d9e0" font-size="16.5" font-weight="400" text-anchor="start">Tool execution</text>
-<rect x="257" y="517" width="176" height="3.5" rx="1.75" fill="#30363d"/>
-<rect data-evidence-bar="Tool execution" x="257" y="517" width="58.666667" height="3.5" rx="1.75" fill="#9ca8ff"/>
+<rect data-evidence-bar="Workflow orchestration" x="257" y="475" width="88.000000" height="3.5" rx="1.75" fill="#39c5cf"/>
 </g>
 </g></g>
 </svg>
